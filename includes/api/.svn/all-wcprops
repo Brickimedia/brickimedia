@@ -1,0 +1,533 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svnroot/!svn/ver/2/live/includes/api
+END
+ApiQueryAllLinks.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryAllLinks.php
+END
+ApiQueryRecentChanges.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryRecentChanges.php
+END
+ApiQueryAllCategories.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryAllCategories.php
+END
+ApiQueryLinks.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryLinks.php
+END
+ApiComparePages.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/!svn/ver/2/live/includes/api/ApiComparePages.php
+END
+ApiMove.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/api/ApiMove.php
+END
+ApiQueryRandom.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryRandom.php
+END
+ApiQuerySiteinfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/api/ApiQuerySiteinfo.php
+END
+ApiWatch.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/api/ApiWatch.php
+END
+ApiFileRevert.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/api/ApiFileRevert.php
+END
+ApiLogout.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/api/ApiLogout.php
+END
+ApiParse.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/api/ApiParse.php
+END
+ApiQueryExtLinksUsage.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryExtLinksUsage.php
+END
+ApiFormatWddx.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/api/ApiFormatWddx.php
+END
+ApiProtect.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/api/ApiProtect.php
+END
+ApiPurge.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/api/ApiPurge.php
+END
+ApiQueryAllImages.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryAllImages.php
+END
+ApiQueryAllMessages.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryAllMessages.php
+END
+ApiQueryPageProps.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryPageProps.php
+END
+ApiQueryBacklinks.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryBacklinks.php
+END
+ApiRollback.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/api/ApiRollback.php
+END
+ApiQueryDeletedrevs.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryDeletedrevs.php
+END
+ApiExpandTemplates.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/includes/api/ApiExpandTemplates.php
+END
+ApiUserrights.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/api/ApiUserrights.php
+END
+ApiQueryBase.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryBase.php
+END
+ApiFormatPhp.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/api/ApiFormatPhp.php
+END
+ApiDelete.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/api/ApiDelete.php
+END
+ApiQueryBlocks.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryBlocks.php
+END
+ApiTokens.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/api/ApiTokens.php
+END
+ApiQueryFilearchive.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryFilearchive.php
+END
+ApiDisabled.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/api/ApiDisabled.php
+END
+ApiImport.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/api/ApiImport.php
+END
+ApiFormatYaml.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/api/ApiFormatYaml.php
+END
+ApiQueryCategoryMembers.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryCategoryMembers.php
+END
+ApiResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/api/ApiResult.php
+END
+ApiQueryCategoryInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryCategoryInfo.php
+END
+ApiEditPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/api/ApiEditPage.php
+END
+ApiFormatBase.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/api/ApiFormatBase.php
+END
+ApiSetNotificationTimestamp.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/includes/api/ApiSetNotificationTimestamp.php
+END
+ApiFormatTxt.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/api/ApiFormatTxt.php
+END
+ApiQuerySearch.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/2/live/includes/api/ApiQuerySearch.php
+END
+ApiQueryLogEvents.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryLogEvents.php
+END
+ApiUnblock.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/api/ApiUnblock.php
+END
+ApiFormatRaw.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/api/ApiFormatRaw.php
+END
+ApiQueryWatchlistRaw.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryWatchlistRaw.php
+END
+ApiQueryProtectedTitles.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryProtectedTitles.php
+END
+ApiQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/api/ApiQuery.php
+END
+ApiFormatDbg.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/api/ApiFormatDbg.php
+END
+ApiQueryIWLinks.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryIWLinks.php
+END
+ApiQueryLangLinks.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryLangLinks.php
+END
+ApiLogin.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/api/ApiLogin.php
+END
+ApiFormatXml.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/api/ApiFormatXml.php
+END
+ApiFormatDump.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/api/ApiFormatDump.php
+END
+ApiQueryUserInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryUserInfo.php
+END
+ApiFormatJson.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/api/ApiFormatJson.php
+END
+ApiQueryImageInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryImageInfo.php
+END
+ApiMain.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/api/ApiMain.php
+END
+ApiFeedContributions.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/includes/api/ApiFeedContributions.php
+END
+ApiEmailUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/api/ApiEmailUser.php
+END
+ApiQueryIWBacklinks.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryIWBacklinks.php
+END
+ApiOpenSearch.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/api/ApiOpenSearch.php
+END
+ApiQueryStashImageInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryStashImageInfo.php
+END
+ApiHelp.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/api/ApiHelp.php
+END
+ApiPageSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/api/ApiPageSet.php
+END
+ApiQueryQueryPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryQueryPage.php
+END
+ApiQueryWatchlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryWatchlist.php
+END
+ApiRsd.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/api/ApiRsd.php
+END
+ApiQueryLangBacklinks.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryLangBacklinks.php
+END
+ApiBlock.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/api/ApiBlock.php
+END
+ApiOptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/api/ApiOptions.php
+END
+ApiQueryDisabled.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryDisabled.php
+END
+ApiPatrol.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/api/ApiPatrol.php
+END
+ApiUndelete.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/api/ApiUndelete.php
+END
+ApiQueryRevisions.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryRevisions.php
+END
+ApiQueryExternalLinks.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryExternalLinks.php
+END
+ApiBase.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/api/ApiBase.php
+END
+ApiQueryCategories.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryCategories.php
+END
+ApiParamInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/api/ApiParamInfo.php
+END
+ApiQueryAllPages.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryAllPages.php
+END
+ApiQueryAllUsers.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryAllUsers.php
+END
+ApiQueryInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryInfo.php
+END
+ApiQueryDuplicateFiles.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryDuplicateFiles.php
+END
+ApiQueryTags.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryTags.php
+END
+ApiUpload.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/api/ApiUpload.php
+END
+ApiFeedWatchlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/api/ApiFeedWatchlist.php
+END
+ApiQueryUserContributions.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryUserContributions.php
+END
+ApiQueryUsers.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryUsers.php
+END
+ApiQueryImages.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/2/live/includes/api/ApiQueryImages.php
+END

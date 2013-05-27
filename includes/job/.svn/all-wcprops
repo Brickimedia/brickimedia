@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svnroot/!svn/ver/2/live/includes/job
+END
+Job.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/!svn/ver/2/live/includes/job/Job.php
+END
+RefreshLinksJob.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/!svn/ver/2/live/includes/job/RefreshLinksJob.php
+END
+EmaillingJob.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/job/EmaillingJob.php
+END
+UploadFromUrlJob.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/job/UploadFromUrlJob.php
+END
+DoubleRedirectJob.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/job/DoubleRedirectJob.php
+END
+EnotifNotifyJob.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/!svn/ver/2/live/includes/job/EnotifNotifyJob.php
+END

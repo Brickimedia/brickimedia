@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/!svn/ver/2/live/includes/normal
+END
+UtfNormalTest2.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/normal/UtfNormalTest2.php
+END
+Utf8CaseGenerate.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/includes/normal/Utf8CaseGenerate.php
+END
+UtfNormalDataK.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/normal/UtfNormalDataK.inc
+END
+UtfNormalDefines.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/includes/normal/UtfNormalDefines.php
+END
+UtfNormalUtil.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/normal/UtfNormalUtil.php
+END
+UtfNormalTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/normal/UtfNormalTest.php
+END
+UtfNormalBench.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/includes/normal/UtfNormalBench.php
+END
+UtfNormal.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/normal/UtfNormal.php
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/normal/README
+END
+UtfNormalMemStress.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/includes/normal/UtfNormalMemStress.php
+END
+RandomTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/normal/RandomTest.php
+END
+UtfNormalGenerate.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/includes/normal/UtfNormalGenerate.php
+END
+Utf8Case.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/normal/Utf8Case.php
+END
+UtfNormalData.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/normal/UtfNormalData.inc
+END
+Utf8Test.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/normal/Utf8Test.php
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/normal/Makefile
+END

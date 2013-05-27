@@ -1,0 +1,773 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svnroot/!svn/ver/2/live/includes
+END
+Xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/!svn/ver/2/live/includes/Xml.php
+END
+ProxyTools.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/ProxyTools.php
+END
+Timestamp.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/Timestamp.php
+END
+LinkFilter.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/LinkFilter.php
+END
+SpecialPageFactory.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/2/live/includes/SpecialPageFactory.php
+END
+Categoryfinder.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/Categoryfinder.php
+END
+ImageQueryPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/ImageQueryPage.php
+END
+CryptRand.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/CryptRand.php
+END
+ProtectionForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/ProtectionForm.php
+END
+CategoryPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/CategoryPage.php
+END
+Defines.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/!svn/ver/2/live/includes/Defines.php
+END
+User.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/!svn/ver/2/live/includes/User.php
+END
+FormOptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/FormOptions.php
+END
+ExternalUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/ExternalUser.php
+END
+Status.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/includes/Status.php
+END
+SiteStats.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/SiteStats.php
+END
+PrefixSearch.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/PrefixSearch.php
+END
+Article.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/!svn/ver/2/live/includes/Article.php
+END
+FeedUtils.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/FeedUtils.php
+END
+RecentChange.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/RecentChange.php
+END
+MimeMagic.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/MimeMagic.php
+END
+MWFunction.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/MWFunction.php
+END
+GlobalFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/GlobalFunctions.php
+END
+WatchedItem.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/WatchedItem.php
+END
+OutputHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/OutputHandler.php
+END
+WikiFilePage.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/WikiFilePage.php
+END
+SeleniumWebSettings.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/!svn/ver/2/live/includes/SeleniumWebSettings.php
+END
+CacheHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/CacheHelper.php
+END
+StubObject.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/StubObject.php
+END
+Licenses.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/2/live/includes/Licenses.php
+END
+LocalisationCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/LocalisationCache.php
+END
+DeferredUpdates.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/DeferredUpdates.php
+END
+DataUpdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/DataUpdate.php
+END
+ImagePage.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/ImagePage.php
+END
+TitleArray.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/TitleArray.php
+END
+Linker.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/includes/Linker.php
+END
+ExternalEdit.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/ExternalEdit.php
+END
+AjaxDispatcher.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/AjaxDispatcher.php
+END
+SqlDataUpdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/SqlDataUpdate.php
+END
+Setup.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/!svn/ver/2/live/includes/Setup.php
+END
+Feed.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/!svn/ver/2/live/includes/Feed.php
+END
+Init.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/!svn/ver/2/live/includes/Init.php
+END
+ChangeTags.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/ChangeTags.php
+END
+UserMailer.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/UserMailer.php
+END
+ZhClient.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/2/live/includes/ZhClient.php
+END
+Export.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/includes/Export.php
+END
+EditPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/2/live/includes/EditPage.php
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/!svn/ver/2/live/includes/.htaccess
+END
+SquidPurgeClient.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/SquidPurgeClient.php
+END
+HTMLForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/2/live/includes/HTMLForm.php
+END
+ChangesFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/ChangesFeed.php
+END
+OutputPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/OutputPage.php
+END
+Cdb_PHP.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/!svn/ver/2/live/includes/Cdb_PHP.php
+END
+CategoryViewer.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/CategoryViewer.php
+END
+Html.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/!svn/ver/2/live/includes/Html.php
+END
+Sanitizer.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/Sanitizer.php
+END
+Hooks.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/!svn/ver/2/live/includes/Hooks.php
+END
+LinksUpdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/LinksUpdate.php
+END
+WebRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/WebRequest.php
+END
+Cdb.php
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/!svn/ver/2/live/includes/Cdb.php
+END
+WebStart.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/2/live/includes/WebStart.php
+END
+PathRouter.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/PathRouter.php
+END
+Revision.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/2/live/includes/Revision.php
+END
+PageQueryPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/PageQueryPage.php
+END
+AutoLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/AutoLoader.php
+END
+WikiMap.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/!svn/ver/2/live/includes/WikiMap.php
+END
+BacklinkCache.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/BacklinkCache.php
+END
+Wiki.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/!svn/ver/2/live/includes/Wiki.php
+END
+mime.types
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/includes/mime.types
+END
+ChangesList.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/ChangesList.php
+END
+PoolCounter.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/PoolCounter.php
+END
+MagicWord.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/MagicWord.php
+END
+AuthPlugin.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/AuthPlugin.php
+END
+Title.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/!svn/ver/2/live/includes/Title.php
+END
+Message.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/!svn/ver/2/live/includes/Message.php
+END
+Collation.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/Collation.php
+END
+HttpFunctions.old.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/HttpFunctions.old.php
+END
+FileDeleteForm.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/FileDeleteForm.php
+END
+SkinLegacy.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/SkinLegacy.php
+END
+StreamFile.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/StreamFile.php
+END
+Namespace.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/Namespace.php
+END
+ConfEditor.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/ConfEditor.php
+END
+ExternalStore.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/ExternalStore.php
+END
+Fallback.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/2/live/includes/Fallback.php
+END
+WikiPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/2/live/includes/WikiPage.php
+END
+SkinTemplate.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/SkinTemplate.php
+END
+DefaultSettings.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/DefaultSettings.php
+END
+ExternalStoreDB.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/ExternalStoreDB.php
+END
+ForkController.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/includes/ForkController.php
+END
+tidy.conf
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/!svn/ver/2/live/includes/tidy.conf
+END
+HttpFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/includes/HttpFunctions.php
+END
+ZipDirectoryReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/2/live/includes/ZipDirectoryReader.php
+END
+WikiError.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/WikiError.php
+END
+Autopromote.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/Autopromote.php
+END
+Metadata.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/2/live/includes/Metadata.php
+END
+ViewCountUpdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/ViewCountUpdate.php
+END
+RevisionList.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/RevisionList.php
+END
+Block.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/!svn/ver/2/live/includes/Block.php
+END
+SiteConfiguration.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/SiteConfiguration.php
+END
+ExternalStoreHttp.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/ExternalStoreHttp.php
+END
+XmlTypeCheck.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/XmlTypeCheck.php
+END
+MessageBlobStore.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/MessageBlobStore.php
+END
+UserRightsProxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/UserRightsProxy.php
+END
+Preferences.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/Preferences.php
+END
+QueryPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/QueryPage.php
+END
+Skin.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/!svn/ver/2/live/includes/Skin.php
+END
+PHPVersionError.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/PHPVersionError.php
+END
+FakeTitle.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/FakeTitle.php
+END
+Import.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/includes/Import.php
+END
+UserArray.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/UserArray.php
+END
+SpecialPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/SpecialPage.php
+END
+Action.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/includes/Action.php
+END
+ZhConversion.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/ZhConversion.php
+END
+mime.info
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/!svn/ver/2/live/includes/mime.info
+END
+WebResponse.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/WebResponse.php
+END
+ScopedPHPTimeout.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/ScopedPHPTimeout.php
+END
+WikiCategoryPage.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/WikiCategoryPage.php
+END
+Pager.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/!svn/ver/2/live/includes/Pager.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/includes/Exception.php
+END
+GitInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/!svn/ver/2/live/includes/GitInfo.php
+END
+HistoryBlob.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/HistoryBlob.php
+END
+AjaxResponse.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/AjaxResponse.php
+END
+ImageGallery.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/ImageGallery.php
+END
+IP.php
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/!svn/ver/2/live/includes/IP.php
+END
+Cookie.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/includes/Cookie.php
+END
+Category.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/2/live/includes/Category.php
+END
+DeprecatedGlobal.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/includes/DeprecatedGlobal.php
+END
+StringUtils.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/includes/StringUtils.php
+END
