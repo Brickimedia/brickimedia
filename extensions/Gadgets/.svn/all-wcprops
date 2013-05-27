@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/!svn/ver/2/live/extensions/Gadgets
+END
+Gadgets_body.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/extensions/Gadgets/Gadgets_body.php
+END
+Gadgets.i18n.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/extensions/Gadgets/Gadgets.i18n.php
+END
+ApiQueryGadgets.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/extensions/Gadgets/ApiQueryGadgets.php
+END
+Gadgets.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/extensions/Gadgets/Gadgets.php
+END
+SpecialGadgets.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/extensions/Gadgets/SpecialGadgets.php
+END
+install.settings
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/extensions/Gadgets/install.settings
+END
+Gadgets_tests.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/extensions/Gadgets/Gadgets_tests.php
+END
+ApiQueryGadgetCategories.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/!svn/ver/2/live/extensions/Gadgets/ApiQueryGadgetCategories.php
+END
+Gadgets.alias.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/extensions/Gadgets/Gadgets.alias.php
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/extensions/Gadgets/README
+END

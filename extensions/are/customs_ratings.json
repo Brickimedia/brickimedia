@@ -1,0 +1,30 @@
+[
+{
+"name":"Unrated",
+"link":"BC:U",
+"img":"Rating-u-glossy.png",
+"codename":"un",
+"category":"Unrated Customs"
+},
+{
+"name":"Unacceptable",
+"link":"BC:UC",
+"img":"Rating-uc-glossy.png",
+"codename":"uc",
+"category":"Unacceptable Customs"
+},
+{
+"name":"Acceptable",
+"link":"BC:AC",
+"img":"Rating-ac-glossy.png",
+"codename":"ac",
+"category":"Acceptable Customs"
+},
+{
+"name":"Featured",
+"link":"BC:FC",
+"img":"Rating-fc-glossy.png",
+"codename":"fc",
+"category":"Featured Customs"
+}
+]

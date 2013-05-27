@@ -1,0 +1,86 @@
+[
+{
+"name":"Unrated",
+"link":"BP:U",
+"img":"Rating-u-glossy.png",
+"codename":"un",
+"category":"Unrated Articles"
+},
+{
+"name":"Class 5",
+"link":"BP:C5",
+"img":"Rating-5-glossy.png",
+"codename":"C5",
+"category":"Class 5 Articles"
+},
+{
+"name":"Class 4",
+"link":"BP:C4",
+"img":"Rating-4-glossy.png",
+"codename":"C4",
+"category":"Class 4 Articles"
+},
+{
+"name":"Class 3",
+"link":"BP:C3",
+"img":"Rating-3-glossy.png",
+"codename":"C3",
+"category":"Class 3 Articles"
+},
+{
+"name":"Class 2 (Complete)",
+"link":"BP:C2",
+"img":"Rating-2-glossy.png",
+"codename":"C2",
+"category":"Class 3 Articles"
+},
+{
+"name":"Class 1 (Good)",
+"link":"BP:C1",
+"img":"Rating-1-glossy.png",
+"codename":"C1",
+"category":"Class 3 Articles"
+},
+{
+"name":"Featured",
+"link":"BP:FA",
+"img":"Rating-fa-glossy.png",
+"codename":"FA",
+"category":"Featured Articles"
+},
+{
+"name":"Class 4 - Contested",
+"link":"BP:C4c",
+"img":"Rating-4-glossy contested.png",
+"codename":"4c",
+"category":"Unrated Articles"
+},
+{
+"name":"Class 3 - Contested",
+"link":"BP:C3c",
+"img":"Rating-3-glossy contested.png",
+"codename":"3c",
+"category":"Unrated Articles"
+},
+{
+"name":"Class 2 - Contested",
+"link":"BP:C2c",
+"img":"Rating-2-glossy contested.png",
+"codename":"2c",
+"category":"Unrated Articles"
+},
+{
+"name":"Class 1 - Contested",
+"link":"BP:C1c",
+"img":"Rating-1-glossy contested.png",
+"codename":"1c",
+"category":"Unrated Articles"
+},
+{
+"name":"Featured - Contested",
+"link":"BP:FAc",
+"img":"Rating-fa-glossy contested.png",
+"codename":"Fc",
+"category":"Unrated Articles"
+}
+]
