@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svnroot/!svn/ver/2/live/docs/databases
+END
+sqlite.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/docs/databases/sqlite.txt
+END
+postgres.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/docs/databases/postgres.txt
+END
+ibm_db2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/docs/databases/ibm_db2.txt
+END
