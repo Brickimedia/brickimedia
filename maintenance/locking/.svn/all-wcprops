@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/maintenance/locking
+END
+file_locks.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/maintenance/locking/file_locks.sql
+END
+LockServerDaemon.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/maintenance/locking/LockServerDaemon.php
+END

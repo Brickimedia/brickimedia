@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2
+END
+patch-uq96_module_deps.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-uq96_module_deps.sql
+END
+foreignkeys.sql
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/foreignkeys.sql
+END
+patch-iw_api-field.sql
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-iw_api-field.sql
+END
+patch-iw_api_and_wikiid.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-iw_api_and_wikiid.sql
+END
+patch-rd_interwiki.sql
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-rd_interwiki.sql
+END
+patch-user_properties.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-user_properties.sql
+END
+patch-change_tag_summary.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-change_tag_summary.sql
+END
+patch-l10n_cache.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-l10n_cache.sql
+END
+patch-msg_resource.sql
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-msg_resource.sql
+END
+patch-msg_resource_links.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-msg_resource_links.sql
+END
+patch-change_valid_tag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-change_valid_tag.sql
+END
+patch-iw_wikiid-field.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-iw_wikiid-field.sql
+END
+patch-module_deps.sql
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-module_deps.sql
+END
+patch-ss_active_users.sql
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-ss_active_users.sql
+END
+patch-log_search.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-log_search.sql
+END
+patch-uq61_msg_resource_links.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-uq61_msg_resource_links.sql
+END
+patch-uq81_msg_resource.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-uq81_msg_resource.sql
+END
+patch-cl_sortkey_prefix-field.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-cl_sortkey_prefix-field.sql
+END
+patch-ul_value.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-ul_value.sql
+END
+patch-change_tag-indexes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-change_tag-indexes.sql
+END
+tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/tables.sql
+END
+patch-iwlinks.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-iwlinks.sql
+END
+patch-external_user.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-external_user.sql
+END
+patch-cl_type-field.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-cl_type-field.sql
+END
+patch-change_tag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-change_tag.sql
+END
+patch-log_search-rename-index.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-log_search-rename-index.sql
+END
+patch-ipb_allow_usertalk.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-ipb_allow_usertalk.sql
+END
+patch-cl_collation-field.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-cl_collation-field.sql
+END
+patch-categorylinks-better-collation.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-categorylinks-better-collation.sql
+END
+patch-log_user_text.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/maintenance/ibm_db2/patch-log_user_text.sql
+END

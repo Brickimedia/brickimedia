@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/maintenance/storage
+END
+blobs.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/maintenance/storage/blobs.sql
+END
+fixBug20757.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/maintenance/storage/fixBug20757.php
+END
+compressOld.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/maintenance/storage/compressOld.php
+END
+moveToExternal.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/maintenance/storage/moveToExternal.php
+END
+recompressTracked.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/maintenance/storage/recompressTracked.php
+END
+resolveStubs.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/maintenance/storage/resolveStubs.php
+END
+testCompression.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/!svn/ver/2/live/maintenance/storage/testCompression.php
+END
+checkStorage.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/maintenance/storage/checkStorage.php
+END
+dumpRev.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/2/live/maintenance/storage/dumpRev.php
+END
+storageTypeStats.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/maintenance/storage/storageTypeStats.php
+END
+make-blobs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/maintenance/storage/make-blobs
+END
+orphanStats.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/maintenance/storage/orphanStats.php
+END
+trackBlobs.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/maintenance/storage/trackBlobs.php
+END
+blob_tracking.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/maintenance/storage/blob_tracking.sql
+END
