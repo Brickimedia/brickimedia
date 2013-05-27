@@ -1,0 +1,126 @@
+10
+
+dir
+0
+http://scm.brickimedia.org/svnroot/live/skins/monaco
+http://scm.brickimedia.org/svnroot
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+81acc20f-604a-436c-82c1-4857a5c3e880
+
+Monaco.i18n.php
+file
+
+
+
+add
+
+style
+dir
+
+
+
+add
+
+OutputPageBodyAttributes.patch
+file
+
+
+
+add
+
+MonacoSidebar.class.php
+file
+
+
+
+add
+
+monaco.php
+file
+
+
+
+add
+
+TODO
+file
+
+
+
+add
+
+Monaco.skin.php
+file
+
+
+
+add
+
+ContentRightSidebar.i18n.php
+file
+
+
+
+add
+
+AniMonaco.i18n.php
+file
+
+
+
+add
+
+ContentRightSidebar.php
+file
+
+
+
+add
+
+animonaco.php
+file
+
+
+
+add
+
+ExtendedBodyAttributes.php
+file
+
+
+
+add
+
+README
+file
+
+
+
+add
+
+AniMonaco.skin.php
+file
+
+
+
+add
+

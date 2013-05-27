@@ -1,0 +1,1541 @@
+/*
+ * Any rules which should not be flipped automatically in right-to-left situations should be
+ * prepended with @noflip in a comment block. Images that should be embedded as base64 data-URLs
+ * should be prepended with @embed in a comment block.
+ *
+ * This style-sheet employs a few CSS trick to accomplish compatibility with a wide range of web
+ * browsers. The most common trick is to use some styles in IE6 only. This is accomplished by using
+ * a rule that makes things work in IE6, and then following it with a rule that begins with
+ * "html > body" or use a child selector ">", which is ignored by IE6 because it does not support
+ * the child selector. You can spot this by looking for the "OVERRIDDEN BY COMPLIANT BROWSERS" and
+ * "IGNORED BY IE6" comments.
+ */
+
+/* Framework */
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: 1em;
+}
+body {
+	background-color: #f3f3f3;
+	background-color: #fdfdfd;
+	background-image: -moz-linear-gradient(top,  #f2f2f4 0%, #b2b7c4 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#b2b7c4));
+	background-image: -webkit-linear-gradient(top,  #f2f2f4 0%,#b2b7c4 100%);
+	background-image: -o-linear-gradient(top,  #f2f2f4 0%,#b2b7c4 100%);
+	background-image: -ms-linear-gradient(top,  #f2f2f4 0%,#b2b7c4 100%);
+	background-image: linear-gradient(to bottom,  #f2f2f4 0%,#b2b7c4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#cfd2da',GradientType=0 );
+	background-attachment: fixed;
+	/* @embed 
+	background-image: url(images/page-base.png);*/
+}
+
+/* Content */
+div#content {
+	margin-left: 11em;
+	margin-right: 1em;
+	min-height: 6.2em;
+	padding: 1em;
+	/* @embed 
+	background-image: url(images/border.png);
+	background-position: top left;
+	background-repeat: repeat-y;*/
+	background-color: white;
+	color: black;
+	direction: ltr;
+	font-family: Arial;
+	box-shadow: 0 10px 20px #AAA;
+	-webkit-box-shadow: 0 10px 20px #AAA;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+}
+
+#catlinks {
+	border-radius: 5px;
+	border: 1px solid #C9C9C9;
+	background-color:#f3f3f3;
+}
+
+/* Head */
+#mw-page-base {
+	height: 6em;
+	/*background-color: white;
+	 @embed 
+	background-image: url(images/page-fade.png);
+	background-position: bottom left;
+	background-repeat: repeat-x;*/
+}
+#mw-head-base {
+	margin-top: -5em;
+	margin-left: 10em;
+	height: 5em;
+	/* @embed 
+	background-image: url(images/border.png);*/
+	background-position: bottom left;
+	background-repeat: repeat-x;
+}
+/*div#mw-head {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+}*/
+div#mw-head h5 {
+	margin: 0;
+	padding: 0;
+}
+/* Hide empty portlets */
+div.emptyPortlet {
+		display: none;
+}
+/* Personal */
+#p-personal {
+	position: absolute;
+	top: 0.33em;
+	right: 0.75em;
+}
+#p-personal h5 {
+	display: none;
+}
+
+#p-personal ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 15em; /* Keep from overlapping logo */
+	padding-right: 0.8em;
+}
+
+/* @noflip */
+#p-personal li {
+    line-height: 1.125em;
+	float: right;
+}
+
+/* This one flips! */
+#p-personal li {
+	margin-left: 0.75em;
+	margin-top: 0.5em;
+	font-size: 0.75em;
+	white-space: nowrap;
+}
+
+/* Navigation Containers */
+#left-navigation {
+	position: absolute;
+	left: 11em;
+	background-color:white;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+}
+#right-navigation {
+	/*float: right;*/
+	position:absolute;
+	margin-top:3.5em;
+	margin-right: 1em;
+	background-color:white;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+	right: 0;
+	height: 30px;
+}
+
+#ca-talk, #ca-nstab-special {
+        border-top-right-radius:10px;
+}
+
+#ca-nstab-main {
+        border-top-left-radius:10px;
+}
+        
+/* Navigation Labels */
+div.vectorTabs h5,
+div.vectorMenu h5 span {
+	display: none;
+}
+/* Namespaces and Views */
+/* @noflip */
+div.vectorTabs {
+	float: left;
+	height: 2.5em;
+}
+div.vectorTabs {
+	/* @embed 
+	background-image: url(images/tab-break.png);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	padding-left: 1px;*/
+	backgroudn-color:white;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+}
+/* @noflip */
+div.vectorTabs ul {
+	float: left;
+	background-image: none !important;
+}
+div.vectorTabs ul {
+	height: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/* @noflip */
+div.vectorTabs ul li {
+	float: left;
+}
+/* OVERRIDDEN BY COMPLIANT BROWSERS */
+div.vectorTabs ul li {
+	line-height: 1.125em;
+	display: inline-block;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #f3f3f3;
+	/* @embed 
+	background-image: url(images/tab-normal-fade.png);*/
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	white-space: nowrap;
+}
+/* IGNORED BY IE6 */
+div.vectorTabs ul > li {
+	display: block;
+}
+div.vectorTabs li.selected {
+	/* @embed 
+	background-image: url(images/tab-current-fade.png);*/
+	background-color:white;
+}
+/* OVERRIDDEN BY COMPLIANT BROWSERS */
+div.vectorTabs li a {
+	display: inline-block;
+	height: 1.9em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	color: #0645ad;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+/* IGNORED BY IE6 */
+div.vectorTabs li > a {
+	display: block;
+}
+div.vectorTabs li.icon a {
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+/* OVERRIDDEN BY COMPLIANT BROWSERS */
+div.vectorTabs span a  {
+	display: inline-block;
+	padding-top: 1em;
+}
+/* IGNORED BY IE6 */
+/* @noflip */
+div.vectorTabs span > a {
+	float: left;
+	display: block;
+}
+div.vectorTabs span {
+	display: inline-block;
+	/* @embed 
+	background-image: url(images/tab-break.png);*/
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+div.vectorTabs li.selected a,
+div.vectorTabs li.selected a:visited{
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+}
+div.vectorTabs li.new a,
+div.vectorTabs li.new a:visited{
+	/*color: #a55858;*/
+}
+
+#ca-nstab-mediawiki, #ca-nstab-special, #ca-view {
+border-top-left-radius:15px;
+}
+
+/* Variants and Actions */
+/* @noflip */
+div.vectorMenu {
+	direction: ltr;
+	float: left;
+	/* @embed */
+	background-image: url(images/arrow-down-icon.png);
+	background-position: 100% 60%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	transition: background-image 0.3s;
+	-moz-transition: background-image 0.3s; /* Firefox 4 */
+	-webkit-transition: background-image 0.3s; /* Safari and Chrome */
+	-o-transition: background-image 0.3s; /* Opera */
+}
+
+div.vectorMenu:hover {
+	background-image: url(images/arrow-down-focus-two.png);
+}
+
+div.vectorMenuFocus {
+	/* @embed */
+	background-image: url(images/arrow-down-focus-icon.png);
+	background-position: 100% 60%;
+}
+/* @noflip */
+body.rtl div.vectorMenu {
+	direction: rtl;
+}
+/* OVERRIDDEN BY COMPLIANT BROWSERS */
+/* @noflip */
+div#mw-head div.vectorMenu h5 {
+	float: left;
+	/* @embed 
+	background-image: url(images/tab-break.png);*/
+	background-repeat: no-repeat;
+}
+/* This will be flipped - unlike the one above it */
+div#mw-head div.vectorMenu h5 {
+	background-position: bottom left;
+	margin-left: -1px;
+}
+/* IGNORED BY IE6 */
+div#mw-head div.vectorMenu > h5 {
+	background-image: none;
+}
+div#mw-head div.vectorMenu h4 {
+	display: inline-block;
+	float: left;
+	font-size: 0.8em;
+	padding-left: 0.5em;
+	padding-top: 1.375em;
+	font-weight: normal;
+	border: none;
+}
+/* OVERRIDDEN BY COMPLIANT BROWSERS */
+/* @noflip */
+div.vectorMenu h5 a {
+	display: inline-block;
+	width: 24px;
+	height: 2.5em;
+	text-decoration: none;
+	/* @embed 
+	background-image: url(images/tab-break.png);*/
+	background-repeat: no-repeat;
+}
+/* This will be flipped - unlike the one above it */
+div.vectorMenu h5 a {
+	background-position: bottom right;
+}
+/* IGNORED BY IE6 */
+div.vectorMenu h5 > a {
+	display: block;
+}
+div.vectorMenu div.menu {
+	position: relative;
+	display: none;
+	clear: both;
+	text-align: left;
+}
+/* OVERRIDDEN BY COMPLIANT BROWSERS */
+/* @noflip */
+body.rtl div.vectorMenu div.menu {
+	margin-left: 24px;
+}
+/* IGNORED BY IE6 */
+/* @noflip */
+body.rtl div.vectorMenu > div.menu {
+	margin-left: auto;
+}
+/* IGNORED BY IE6 */
+/* Also fixes old versions of FireFox */
+/* @noflip */
+body.rtl div.vectorMenu > div.menu,
+x:-moz-any-link {
+	margin-left: 23px;
+}
+/* Enable forcing showing of the menu for accessibility */
+div.vectorMenu:hover div.menu,
+div.vectorMenu div.menuForceShow {
+	display: block;
+}
+div.vectorMenu ul {
+	position: absolute;
+	background-color: white;
+	border: solid 1px silver;
+	border-top-width: 0;
+	list-style: none;
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-left: -1px;
+	text-align: left;
+}
+/* Fixes old versions of FireFox */
+div.vectorMenu ul,
+x:-moz-any-link {
+	min-width: 5em;
+}
+/* Returns things back to normal in modern versions of FireFox */
+div.vectorMenu ul,
+x:-moz-any-link,
+x:default {
+	min-width: 0;
+}
+div.vectorMenu li {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	line-height: 1em;
+}
+/* OVERRIDDEN BY COMPLIANT BROWSERS */
+div.vectorMenu li a {
+	display: inline-block;
+	padding: 0.5em;
+	white-space: nowrap;
+	color: #0645ad;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+/* IGNORED BY IE6 */
+div.vectorMenu li > a {
+	display: block;
+}
+div.vectorMenu li.selected a,
+div.vectorMenu li.selected a:visited {
+	color: #333;
+	text-decoration: none;
+}
+/* Search */
+#p-search h5 {
+	display: none;
+}
+/* @noflip */
+#p-search {
+	float: left;
+}
+#p-search {
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+}
+#p-search form,
+#p-search input {
+	margin: 0;
+	margin-top: 0.2em;
+	padding-bottom:-10px;
+}
+div#simpleSearch {
+	display: block;
+	width: 14em;
+	height: 1.4em;
+	margin-top: 0.65em;
+	position: relative;
+	min-height: 1px; /* Gotta trigger hasLayout for IE7 */
+	border: solid 1px #aaa;
+	color: black;
+	background-color: white;
+	/* @embed */
+	background-image: url(images/search-fade.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+div#simpleSearch label {
+	/*
+	 * DON'T PANIC! Browsers that won't scale this properly are the same browsers that have JS issues that prevent
+	 * this from ever being shown anyways.
+	*/
+	font-size: 13px;
+	top: 0.25em;
+	direction: ltr;
+}
+div#simpleSearch input {
+	color: black;
+	direction: ltr;
+}
+div#simpleSearch input:focus {
+	outline: none;
+}
+div#simpleSearch input.placeholder {
+	color: #999;
+}
+div#simpleSearch input::-webkit-input-placeholder {
+	color: #999;
+}
+div#simpleSearch input#searchInput {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	margin: 0;
+	padding: 0;
+	padding-left: 0.2em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	outline: none;
+	border: none;
+	/*
+	 * DON'T PANIC! Browsers that won't scale this properly are the same browsers that have JS issues that prevent
+	 * this from ever being shown anyways.
+	*/
+	font-size: 13px;
+	background-color: transparent;
+	direction: ltr;
+}
+div#simpleSearch button#searchButton {
+	position: absolute;
+	width: 10%;
+	right: 0;
+	top: 0;
+	padding: 0;
+	padding-top: 0.3em;
+	padding-bottom: 0.2em;
+	padding-right: 0.4em;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	background-image: none;
+}
+/* OVERRIDDEN BY COMPLIANT BROWSERS */
+div#simpleSearch button#searchButton img {
+	border: none;
+	margin: 0;
+	margin-top: -3px;
+	padding: 0;
+}
+/* IGNORED BY IE6 */
+div#simpleSearch button#searchButton > img {
+	margin: 0;
+}
+/* Panel */
+div#mw-panel {
+	position: absolute;
+	top: 160px;
+	padding-top: 1em;
+	width: 10em;
+	left: 0.5em;
+}
+div#mw-panel div.portal {
+	padding-bottom: 0.3em;
+	direction: ltr;
+}
+div#mw-panel div.portal h5 {
+	font-weight: normal;
+	color: #444;
+	padding: 0.25em;
+	padding-top: 0;
+	padding-left: 1.75em;
+	cursor: default;
+	border: none;
+	font-size: 0.75em;
+}
+div#mw-panel div.portal div.body {
+	margin: 0;
+	padding-top: 0.5em;
+	margin-left: 1.25em;
+	/* @embed */
+	background-image: url(images/portal-break.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+div#mw-panel div.portal div.body ul {
+	list-style: none;
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+div#mw-panel div.portal div.body ul li {
+	line-height: 1.125em;
+	padding: 0;
+	padding-bottom: 0.5em;
+	margin: 0;
+	font-size: 0.75em;
+	word-wrap: break-word;
+}
+div#mw-panel div.portal div.body ul li a {
+	color: #0645ad;
+}
+div#mw-panel div.portal div.body ul li a:visited {
+	color: #0645ad;
+}
+/* Footer */
+div#footer {
+	margin-left: 11em;
+	margin-top: 0;
+	margin-right: 1em;
+	padding: 0.75em;
+	/* @embed 
+	background-image: url(images/border.png);*/
+	background-position: top left;
+	background-repeat: repeat-x;
+	direction: ltr;
+}
+div#footer ul {
+	list-style: none;
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+div#footer ul li {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	color: #333;
+	font-size: 0.7em;
+}
+div#footer #footer-icons {
+	float: right;
+}
+/* @noflip */
+body.ltr div#footer #footer-places {
+	float: left;
+}
+div#footer #footer-info li {
+	line-height: 1.4em;
+}
+div#footer #footer-icons li {
+	float: left;
+	margin-left: 0.5em;
+	line-height: 2em;
+	text-align: right;
+}
+div#footer #footer-places li {
+	float: left;
+	margin-right: 1em;
+	line-height: 2em;
+}
+/* Logo */
+#p-logo {
+	position: absolute;
+	top: -120px;
+	left: 0;
+	width: 10em;
+	height: 160px;
+}
+#p-logo a {
+	display: block;
+	width: 10em;
+	height: 160px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-decoration: none;
+}
+
+/*
+ *
+ * The following code is highly modified from monobook. It would be nice if the
+ * preftoc id was more human readable like preferences-toc for instance,
+ * howerver this would require backporting the other skins.
+ */
+
+/* Preferences */
+#preftoc {
+	/* Tabs */
+	width: 100%;
+	float: left;
+	clear: both;
+	margin: 0 !important;
+	padding: 0 !important;
+	/* @embed */
+	background-image: url(images/preferences-break.png);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+	#preftoc li {
+		/* Tab */
+		float: left;
+		margin: 0;
+		padding: 0;
+		padding-right: 1px;
+		height: 2.25em;
+		white-space: nowrap;
+		list-style-type: none;
+		list-style-image: none;
+		/* @embed */
+		background-image: url(images/preferences-break.png);
+		background-position: bottom right;
+		background-repeat: no-repeat;
+	}
+	/* Sadly, IE6 won't understand this */
+	#preftoc li:first-child {
+		margin-left: 1px;
+	}
+	#preftoc a,
+	#preftoc a:active {
+		display: inline-block;
+		position: relative;
+		color: #0645ad;
+		padding: 0.5em;
+		text-decoration: none;
+		background-image: none;
+		font-size: 0.9em;
+	}
+	#preftoc a:hover,
+	#preftoc a:focus {
+		text-decoration: underline;
+	}
+	#preftoc li.selected a {
+		/* @embed */
+		background-image: url(images/preferences-fade.png);
+		background-position: bottom;
+		background-repeat: repeat-x;
+		color: #333;
+		text-decoration: none;
+	}
+#preferences {
+	float: left;
+	width: 100%;
+	margin: 0;
+	margin-top: -2px;
+	clear: both;
+	border: solid 1px #ccc;
+	background-color: #f9f9f9;
+	/* @embed */
+	background-image: url(images/preferences-base.png);
+}
+#preferences fieldset {
+	border: none;
+	border-top: solid 1px #ccc;
+}
+#preferences fieldset.prefsection {
+	border: none;
+	padding: 0;
+	margin: 1em;
+}
+#preferences legend {
+	color: #666;
+}
+#preferences fieldset.prefsection legend.mainLegend {
+	display: none;
+}
+#preferences td {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+.htmlform-tip {
+	font-size: x-small;
+	padding: .2em 2em;
+	color: #666;
+}
+#preferences div.mw-prefs-buttons {
+	padding: 1em;
+}
+#preferences div.mw-prefs-buttons input {
+	margin-right: 0.25em;
+}
+
+/**
+ * The following code is slightly modified from monobook
+ */
+div#content {
+	line-height: 1.5em;
+}
+#bodyContent {
+	font-size: 0.8em;
+}
+
+.editsection {
+	float: right;
+}
+
+ul {
+	/* @embed */
+	list-style-image: url(images/bullet-icon.png);
+}
+
+pre, .mw-code {
+	line-height: 1.3em;
+}
+
+/* Site Notice (includes notices from CentralNotice extension) */
+#siteNotice {
+	font-size: 0.8em;
+	margin-top:7px;
+	font-weight: bold;
+}
+#firstHeading {
+	padding-top: 0;
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 1.6em;
+}
+div#content a.external,
+div#content a.external[href ^="gopher://"] {
+	/* @embed */
+	background: url(images/external-link-ltr-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href ^="https://"],
+.link-https {
+	/* @embed */
+	background: url(images/lock-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href ^="mailto:"],
+.link-mailto {
+	/* @embed */
+	background: url(images/mail-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href ^="news:"] {
+	/* @embed */
+	background: url(images/news-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href ^="ftp://"],
+.link-ftp {
+	/* @embed */
+	background: url(images/file-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href ^="irc://"],
+div#content a.external[href ^="ircs://"],
+.link-irc {
+	/* @embed */
+	background: url(images/talk-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href $=".ogg"], div#content a.external[href $=".OGG"],
+div#content a.external[href $=".mid"], div#content a.external[href $=".MID"],
+div#content a.external[href $=".midi"], div#content a.external[href $=".MIDI"],
+div#content a.external[href $=".mp3"], div#content a.external[href $=".MP3"],
+div#content a.external[href $=".wav"], div#content a.external[href $=".WAV"],
+div#content a.external[href $=".wma"], div#content a.external[href $=".WMA"],
+.link-audio {
+	/* @embed */
+	background: url(images/audio-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href $=".ogm"], div#content a.external[href $=".OGM"],
+div#content a.external[href $=".avi"], div#content a.external[href $=".AVI"],
+div#content a.external[href $=".mpeg"], div#content a.external[href $=".MPEG"],
+div#content a.external[href $=".mpg"], div#content a.external[href $=".MPG"],
+.link-video {
+	/* @embed */
+	background: url(images/video-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href $=".pdf"], div#content a.external[href $=".PDF"],
+div#content a.external[href *=".pdf#"], div#content a.external[href *=".PDF#"],
+div#content a.external[href *=".pdf?"], div#content a.external[href *=".PDF?"],
+.link-document {
+	/* @embed */
+	background: url(images/document-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+
+/* Icon for Usernames */
+#pt-userpage,
+#pt-anonuserpage,
+#pt-login {
+	/* @embed */
+	background: url(images/user-icon.png) left top no-repeat;
+	padding-left: 15px !important;
+	text-transform: none;
+}
+
+.redirectText {
+	font-size: 140%;
+}
+
+.redirectMsg img {
+	vertical-align: text-bottom;
+}
+
+#bodyContent {
+	position: relative;
+	width: 100%;
+}
+div#bodyContent {
+	line-height: 1.5em;
+}
+
+/* mediawiki.notification */
+.skin-vector #mw-notification-area {
+	top: 7em;
+	font-size: 0.8em;
+}
+.skin-vector .mw-notification {
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.93);
+	padding: 0.75em 1.5em;
+	border: solid 1px #a7d7f9;
+	border-radius: 0.75em;
+	-webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.125);
+	-moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.125);
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.125);
+}
+
+/* Watch/Unwatch Icon Styling */
+#ca-unwatch.icon a,
+#ca-watch.icon a {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	display: block;
+	width: 26px;
+	/* This hides the text but shows the background image */
+	padding-top: 3.1em;
+	margin-top: 0;
+	/* Only applied in IE6 */
+	margin-top: -0.8em !ie;
+	height: 0;
+	overflow: hidden;
+	/* @embed */
+	background-image: url(images/watch-icons.png);
+}
+#ca-unwatch.icon a {
+	background-position: -43px 60%;
+}
+#ca-watch.icon a {
+	background-position: 5px 60%;
+}
+#ca-unwatch.icon a:hover,
+#ca-unwatch.icon a:focus {
+	background-position: -67px 60%;
+}
+#ca-watch.icon a:hover,
+#ca-watch.icon a:focus {
+	background-position: -19px 60%;
+}
+#ca-unwatch.icon a.loading,
+#ca-watch.icon a.loading {
+	/* @embed */
+	background-image: url(images/watch-icon-loading.gif);
+	background-position: 5px 60%;
+}
+#ca-unwatch.icon a span,
+#ca-watch.icon a span {
+	display: none;
+}
+div.vectorTabs ul {
+	/* @embed */
+	background-image: url(images/tab-break.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+/* Tooltips are outside of the normal body code, so this helps make the size of the text sensible */
+.tipsy {
+	font-size: 0.8em;
+}
+
+/* Animate between standard and high definition layouts */
+
+body.vector-animateLayout div#content,
+body.vector-animateLayout div#footer {
+	-moz-transition: margin-left 250ms, padding 250ms, border-top-left-radius 250ms;
+	-webkit-transition: margin-left 250ms, padding 250ms, border-top-left-radius 250ms;
+	-o-transition: margin-left 250ms, padding 250ms, border-top-left-radius 250ms;
+	transition: margin-left 250ms, padding 250ms, border-top-left-radius 250ms;
+}
+body.vector-animateLayout #p-logo,
+body.vector-animateLayout #left-navigation {
+	-moz-transition: left 250ms;
+	-webkit-transition: left 250ms;
+	-o-transition: left 250ms;
+	transition: left 250ms;
+}
+body.vector-animateLayout #mw-panel {
+	-moz-transition: padding-left 250ms;
+	-webkit-transition: padding-left 250ms;
+	-o-transition: padding-left 250ms;
+	transition: padding-left 250ms;
+}
+body.vector-animateLayout #p-search {
+	-moz-transition: margin-right 250ms;
+	-webkit-transition: margin-right 250ms;
+	-o-transition: margin-right 250ms;
+	transition: margin-right 250ms;
+}
+body.vector-animateLayout #p-personal {
+	-moz-transition: right 250ms;
+	-webkit-transition: right 250ms;
+	-o-transition: right 250ms;
+	transition: right 250ms;
+}
+body.vector-animateLayout #mw-head-base {
+	-moz-transition: margin-left 250ms;
+	-webkit-transition: margin-left 250ms;
+	-o-transition: margin-left 250ms;
+	transition: margin-left 250ms;
+}
+body.vector-animateLayout #siteNotice {
+	-moz-transition: margin 250ms;
+	-webkit-transition: margin 250ms;
+	-o-transition: margin 250ms;
+	transition: margin 250ms;
+}
+
+.searchButton, #wpSave, #wpPreview, #wpDiff, .button , .edit-button-group {
+border-radius: 10px;
+-webkit-border-radius: 10px;
+border: none !important;
+background-color: #ffa726 !important;
+background-image: -moz-linear-gradient(top,  #ffa726 0%, #e36600 100%) !important;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa726), color-stop(100%,#e36600)) !important;
+background-image: -webkit-linear-gradient(top,  #ffa726 0%,#e36600 100%) !important;
+background-image: -o-linear-gradient(top,  #ffa726 0%,#e36600 100%) !important;
+background-image: -ms-linear-gradient(top,  #ffa726 0%,#e36600 100%) !important;
+background-image: linear-gradient(to bottom,  #ffa726 0%,#e36600 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa726', endColorstr='#e36600',GradientType=0 );
+height: 20px !important;
+line-height: 20px !important;
+color: white !important;
+font-weight: bold !important;
+transition: background-image 0.3s;
+-moz-transition: background-image 0.3s; /* Firefox 4 */
+-webkit-transition: background-image 0.3s; /* Safari and Chrome */
+-o-transition: background-image 0.3s; /* Opera */
+padding:-4px;
+}
+
+.pageButtons {
+position:absolute;
+right:2em;
+}
+
+.pageButtons a:visited {
+color:white !important;
+}
+
+.button, .edit-button-group {
+background-color:#FFA726;
+float:right;
+padding-left:5px;
+padding-right:5px;
+position:relative;
+top:2px;
+font-size:12px;
+font-weight:bold;
+}
+
+.searchButton:hover, #wpSave:hover, #wpPreview:hover, #wpDiff:hover, .button:hover, .edit-button-group .edit:hover, .edit-button-group .drop:hover  {
+cursor: pointer;
+background-color: #ffb74d !important;
+background-image: -moz-linear-gradient(top,  #ffb74d 0%, #ff790b 100%) !important;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb74d), color-stop(100%,#ff790b)) !important;
+background-image: -webkit-linear-gradient(top,  #ffb74d 0%,#ff790b 100%) !important;
+background-image: -o-linear-gradient(top,  #ffb74d 0%,#ff790b 100%) !important;
+background-image: -ms-linear-gradient(top,  #ffb74d 0%,#ff790b 100%) !important;
+background-image: linear-gradient(to bottom,  #ffb74d 0%,#ff790b 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb74d', endColorstr='#ff790b',GradientType=0 );
+text-decoration:none !important;
+}
+
+.searchButton:active, #wpSave:active, #wpPreview:active, #wpDiff:active, .button:active, .edit-button-group .edit:active, .edit-button-group .drop:active, .edit-button-group.active .drop {
+background-color: #e36600 !important;
+background-image: -moz-linear-gradient(top,  #e36600 0%, #ffa726 100%) !important;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e36600), color-stop(100%,#ffa726)) !important;
+background-image: -webkit-linear-gradient(top,  #e36600 0%,#ffa726 100%) !important;
+background-image: -o-linear-gradient(top,  #e36600 0%,#ffa726 100%) !important;
+background-image: -ms-linear-gradient(top,  #e36600 0%,#ffa726 100%) !important;
+background-image: linear-gradient(to bottom,  #e36600 0%,#ffa726 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e36600', endColorstr='#ffa726',GradientType=0 );
+}
+
+#p-media {
+float:left;
+position:absolute;
+top:-2px;
+left:-0.1em;
+display:block !important;
+line-height: 1.125em;
+}
+
+/*Top nav (the bar running across the top)*/
+#p-personal {
+width:100%;
+height:30px;
+position:absolute;
+top:-5px;
+background-image: -moz-linear-gradient(top,  #fdfdfd 0%, #cfd2da 100%) !important;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#cfd2da)) !important;
+background-image: -webkit-linear-gradient(top,  #fdfdfd 0%,#cfd2da 100%) !important;
+background-image: -o-linear-gradient(top,  #fdfdfd 0%,#cfd2da 100%) !important;
+background-image: -ms-linear-gradient(top,  #fdfdfd 0%,#cfd2da 100%) !important;
+background-image: linear-gradient(to bottom,  #fdfdfd 0%,#cfd2da 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#cfd2da',GradientType=0 );
+box-shadow: none !important;
+-webkit-box-shadow: none !important;
+border-width: 0 0 2px;
+border-style: solid;
+border-color: #91aacf;
+padding-top:8px;
+padding-right:10px;
+margin-bottom:30em;
+text-align:right;
+margin-right:-0.7em;
+}
+
+/*Sitenotice CSS*/
+#siteNotice {
+	background-color: #fdfdfd;
+	background-image: -moz-linear-gradient(top, #FCA022 0%, #E36600 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FCA022), color-stop(100%,#E36600));
+	background-image: -webkit-linear-gradient(top, #FCA022 0%,#E36600 100%);
+	background-image: -o-linear-gradient(top, #FCA022 0%,#E36600 100%);
+	background-image: -ms-linear-gradient(top, #FCA022 0%,#E36600 100%);
+	background-image: linear-gradient(to bottom, #FCA022 0%,#E36600 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FCA022', endColorstr='#E36600',GradientType=0 );
+    color: white;
+    border-radius: 5px 5px 0 0;
+    left: -2.5em;
+    height: 2em;
+    padding: 1px;
+    top: -0.5em;
+    margin-right: -4.4em;
+    margin-left: 0.6em;
+}
+#siteNotice::before {
+    content: "";
+    position: absolute;
+    border-width: 3px 4px;
+    border-style: solid;
+    border-color: #A15A00 #A15A00 transparent transparent;
+    top: 2.15em;
+    left: 0;
+}
+#siteNotice::after {
+    content: "";
+    position: absolute;
+    border-width: 3px 4px;
+    border-style: solid;
+    border-color: #A15A00 transparent transparent #A15A00;
+    top: 2.15em;
+    right: 0;
+}
+
+/*Button Group Styles - by ShermanTheMythran*/
+.edit-button-group {
+padding: 0 !important;
+z-index: 100;
+transition: border-radius .3s linear;
+-moz-transition: border-radius .3s linear;
+-webkit-transition: border-radius .3s linear;
+-o-transition: border-radius .3s linear;
+-ms-transition: border-radius .3s linear;
+}
+
+.edit-button-group.active {
+border-radius: 10px 10px 0 0;
+-webkit-border-radius: 10px 10px 0 0;
+transition: border-radius 0s linear;
+-moz-transition: border-radius 0s linear;
+-webkit-transition: border-radius 0s linear;
+-o-transition: border-radius 0s linear;
+-ms-transition: border-radius 0s linear;
+}
+
+.edit-button-group .edit {
+float: left;
+padding: 0 5px 0 10px;
+color: white;
+border-radius: 10px 0 0 10px;
+-webkit-border-radius: 10px 0 0 10px;
+}
+
+.edit-button-group.active .edit {
+border-radius: 10px 0 0 0;
+-webkit-border-radius: 10px 0 0 0;
+}
+
+.edit-button-group .drop {
+float: right;
+padding: 0 10px 0 5px;
+font-size: 10px;
+border-radius: 0 10px 10px 0;
+-webkit-border-radius: 0 10px 10px 0;
+cursor: pointer;
+}
+
+.edit-button-group.active .drop {
+border-radius: 0 10px 0 0;
+-webkit-border-radius: 0 10px 0 0;
+}
+
+.edit-button-group .menu  {
+position: absolute;
+border-radius: 0 0 10px 10px;
+-webkit-border-radius: 0 0 10px 10px;
+background: #ffa726;
+margin: 0;
+left: 0;
+right: 0;
+width: auto;
+}
+
+.edit-button-group .menu li {
+list-style: none;
+margin: 0;
+}
+
+.edit-button-group .menu a {
+color: white;
+display: inline-block;
+padding: 7px 11px;
+width: 3.9em;
+transition: background .3s linear;
+-moz-transition: background .3s linear;
+-webkit-transition: background .3s linear;
+-o-transition: background .3s linear;
+-ms-transition: background .3s linear;
+}
+
+.edit-button-group .menu a:hover {
+background: #e36600;
+text-decoration: none;
+}
+
+.edit-button-group .menu li:last-child a {
+border-radius: 0 0 10px 10px;
+-webkit-border-radius: 0 0 10px 10px;
+}
+
+#p-views, #p-cactions {
+display: none;
+}
+
+#swapTabs {
+cursor: pointer;
+}
+
+.button.talk {
+padding: none !important;
+margin-left: 5px;
+}
+
+.button.talk a {
+padding: 2px 5px 3px;
+color: white;
+text-decoration: none !important;
+}
+
+/*Recent Changes Modifications - By ShermanTheMythran*/
+/*.mw-line {
+list-style: none;
+margin: 0;
+padding: 1em 1em 1em 0;
+border-bottom: 1px solid lightGrey;
+}
+
+.mw-line::before {
+content: "";
+background-image: url('http://meta.brickimedia.org/images/meta/4/4c/Sprites.png');
+background-repeat: no-repeat;
+position: absolute;
+width: 16px;
+height: 16px;
+margin: 2px 0 0 -20px;
+}
+
+.mw-line:last-child {
+border-bottom: none;
+}
+
+.mw-line .mw-title {
+font-size: 1.4em;
+}
+
+.mw-line .mw-actions a {
+margin: 0 0.5em;
+}
+
+.mw-line .mw-changeslist-date {
+float: right;
+}
+
+.mw-line .mw-userlink::before {
+content: "by:";
+color: lightgray;
+font-style: italic;
+margin-right: 0.5em;
+}
+
+.mw-line .mw-section::before {
+content: "edited section:";
+color: lightgray;
+font-style: italic;
+margin-right: 0.5em;
+}
+
+.mw-line .mw-comment::before {
+content: "comment:";
+color: lightgray;
+font-style: italic;
+margin-right: 0.5em;
+}
+
+.mw-line .mw-usertoollinks {
+margin-left: 0.5em;
+text-transform: lowercase;
+}
+
+.mw-line .mw-plusminus-pos, .mw-line .mw-plusminus-neg, .mw-line .mw-plusminus-null {
+float: right;
+font-size: 80%;
+}
+
+.mw-line.edit::before {
+background-position: 0 -16px;
+}
+
+.mw-line.edit.new::before {
+background-position: -16px 0;
+}
+
+.mw-line.edit.minor::before {
+background-position: -16px -16px;
+}
+
+.mw-line.log::before {
+background-position: -32px -32px;
+}*/
+
+/* CSS placed here will affect users of the Lia skin - Temporairly placed here until Lia.css is created. */
+
+#p-navigation {
+    margin-top: 2em;
+}
+
+.portal {
+background-color: #fdfdfd !important;
+background-image: -moz-linear-gradient(top,  #fdfdfd 0%, #cfd2da 100%) !important;
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#cfd2da)) !important;
+background-image: -webkit-linear-gradient(top,  #fdfdfd 0%,#cfd2da 100%) !important;
+background-image: -o-linear-gradient(top,  #fdfdfd 0%,#cfd2da 100%) !important;
+background-image: -ms-linear-gradient(top,  #fdfdfd 0%,#cfd2da 100%) !important;
+background-image: linear-gradient(to bottom,  #fdfdfd 0%,#cfd2da 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#cfd2da',GradientType=0 );
+border-radius: 15px;
+-webkit-border-radius: 15px;
+border: 2px solid #91aacf !important;
+padding-top:5px;
+padding-right:5px;
+margin:5px;
+}
+
+#p-media li{
+    display: block;
+    float: left;
+    padding: 0.5em;
+    position: relative;
+    top: -2.1em;
+    left: -1em;
+    font-size: 12px;
+    z-index: 100;
+}
+
+a.editsection {
+/*color:#A8A8A8 !important;
+transition: color 0.5s;
+-moz-transition: color 0.5s;
+-webkit-transition: color 0.5s;
+-o-transition: color 0.5s;*/
+font-size:50% !important;
+}
+
+/*a.editsection:hover {
+text-decoration:none !important;
+color:#C0C0C0;
+}
+
+a.editsection:active {
+text-decoration:none !important;
+color:#C0C0C0;
+}*/
+
+#p-search input {
+outline: none;
+border: 1px solid #C9C9C9;
+background-color: #fdfdfd;
+background-image: -moz-linear-gradient(top,  #fdfdfd 0%, #cfd2da 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#cfd2da));
+background-image: -webkit-linear-gradient(top,  #fdfdfd 0%,#cfd2da 100%);
+background-image: -o-linear-gradient(top,  #fdfdfd 0%,#cfd2da 100%);
+background-image: -ms-linear-gradient(top,  #fdfdfd 0%,#cfd2da 100%);
+background-image: linear-gradient(to bottom,  #fdfdfd 0%,#cfd2da 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#cfd2da',GradientType=0 );
+border-radius: 15px;
+-webkit-border-radius: 15px;
+-webkit-appearance: none
+}
+
+#p-search input:focus {
+background: white;
+box-shadow: inset 2px 2px 7px #C9C9C9;
+-webkit-box-shadow: inset 2px 2px 7px #C9C9C9;
+}
+
+/*#searchGoButton,*/ #mw-searchButton {
+display:none;
+}
+
+#p-navigation {
+margin-top:25px;
+}
+
+/*test*/
+#p-namespaces {
+display:none;
+}
+
+#searchInput, #searchform {
+/*border:1px solid grey;*/
+border-radius:10px;
+}
+
+.button talk {
+margin-left:5px;
+}
+
+a.button talk {
+color:white !important;
+font-weight:bold;
+}
+
+#navCover {
+	position: relative;
+	margin-left: 11em;
+	margin-right: 1em;
+}
+
+.navCover {
+	position: absolute;
+	height: 1em;
+	width: 50%;
+	right: 0;
+	background: white;
+	z-index: 1;
+}
+
+/* Merged from Button.css */
+.p-namespaces li {
+background-color:#ffa827;
+}
+
+.edit-button-group li.selected {
+background-color: transparent !important;
+}
+
+#content {
+border-top-left-radius: 15px;
+}
+
+#left-navigation, #p-views, #p-cactions {
+display: none;
+}
+
+/* Merged from Tabs.css*/
+#right-navigation li:first-child, #left-navigation li:first-child {
+border-top-left-radius:10px;
+}
+
+#left-navigation li:last-child {
+border-top-right-radius:10px;
+}
+
+#left-navigation li, #right-navigation li {
+background-color:#f3f3f3;
+transition: background-color 0.5s;
+-moz-transition: background-color 0.5s;
+-webkit-transition: background-color 0.5s;
+-o-transition: background-color 0.5s;
+}
+
+#left-navigation li:hover, #right-navigation li:hover {
+background-color:white;
+}
+
+#right-navigation a:hover, #left-navigation a:hover {
+text-decoration:none !important;
+}
+
+#p-namespaces {
+display: block;
+}
+.selected {
+background-color:white !important;
+}
+
+#right-navigation {
+position:aboslute;
+bottom:0px;
+right:0;
+box-shadow: 0 2px 20px #AAA;
+-webkit-box-shadow: 0 2px 20px #AAA;
+}
+
+#left-navigation {
+bottom:0px;
+box-shadow: 0 2px 20px #AAA;
+-webkit-box-shadow: 0 2px 20px #AAA;
+}
+
+#left-right-nav {
+position: absolute;
+top: 6em;
+width: 100%;
+}
+
+.vectorMenu .menu {
+position: absolute !important;
+padding-top: 2.5em;
+}
+
+.vectorMenu .menu ul {
+background: white;
+border-radius: 10px;
+box-shadow: 0 0 20px #AAA;
+border: none;
+z-index: 10;
+position: relative;
+display: none;
+}
+
+.vectorMenu .menu li {
+padding: 5px;
+background: white !important;
+transition: background .3s linear;
+-moz-transition: background .3s linear;
+-webkit-transition: background .3s linear;
+-o-transition: background .3s linear;
+-ms-transition: background .3s linear;
+}
+
+.vectorMenu .menu li:first-child {
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}
+
+.vectorMenu .menu li:last-child {
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+.vectorMenu .menu li:hover {
+background: #f3f3f3 !important;
+}
+
+a.new:visited {
+	color: #BA0000;
+}
+a:visited {
+	color: #0645AD;
+}
+.mw-body a.external:visited {
+	color: #0645AD;
+}
+
+.printfooter {
+display: none;
+}

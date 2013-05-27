@@ -1,0 +1,295 @@
+#wikia_header {
+	border-bottom: 1px solid #999;
+	/*height: 2.6em;
+	min-height: 35px;*/
+	height: 50px;
+	position: absolute;
+	left: 0; right: 0;
+}
+#wikia_logo a {
+	display: block;
+	height: 24px;
+	width: 93px;
+}
+
+.header-button, .header-button:hover, .header-button:active {
+	background-image: none;
+	border: 0;
+	font: bold 8pt/15px "Arial", sans-serif;
+	height: 15px;
+	text-shadow: none;
+	text-transform: uppercase;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: none;
+	-khtml-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+	box-shadow: none;
+	filter: none;
+}
+.header-button img {
+	background: url(../images/monaco-sprite.png) -72px -94px;
+	height: 4px;
+	margin-left: 3px;
+	width: 7px;
+}
+
+#wikia_header .headerMenuButton {
+	cursor: pointer;
+	margin-top: 13px;
+	overflow: hidden;
+	padding-right: 20px;
+	position: relative;
+}
+#wikia_header .headerMenuButton * {
+	float: left;
+	font-size: 8pt;
+	font-weight: bold;
+	height: 15px;
+	line-height: 15px;
+}
+.headerMenuButton dt, .headerMenuButton dd {
+	background: url(../images/header_button.png);
+}
+.headerMenuButton dt {
+	color: #EEE;
+	padding-left: 6px;
+	text-transform: uppercase;
+}
+.headerMenuButton dd {
+	clip: rect(0px 300px 15px 280px);
+	float: right !important;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 300px;
+}
+#wikia_header a.bigButton {
+	margin-top: -5px;
+}
+
+/* macbre: to be removed - replaced by .wikia_button */
+a.bigButton {
+	display: block;
+	float: left;
+	height: 21px;
+	overflow: hidden;
+	padding-right: 10px;
+	position: relative;
+	text-decoration: none;
+}
+a.bigButton:hover {
+	text-decoration: none;
+}
+a.bigButton * {
+	cursor: pointer;
+	float: left;
+	font-family: "Lucida Grande", arial, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	height: 21px;
+	line-height: 21px;
+}
+a.bigButton big, a.bigButton small {
+	background: url(../images/big_button.png) no-repeat;
+}
+a.bigButton big {
+	color: #EEE;
+	padding-left: 10px;
+}
+a.bigButton small {
+	clip: rect(0px 300px 21px 290px);
+	position: absolute;
+	right: 0;
+	width: 300px;
+}
+
+a.greyButton big {
+	color: #111;
+}
+
+/*** USER DATA ***/
+#userData {
+	line-height: 32px;
+	position: absolute;
+	right: 5px;
+	top: 0;
+}
+#userData span {
+	font-size: 9pt;
+	margin-right: 5px;
+}
+
+#userData .hovermenu {
+	position: relative;
+}
+#userData .hovermenu .invisibleBridge {
+	position: absolute;
+	display: none;
+	left: 0;
+	right: 0;
+	top: 1em;
+	height: 2em;
+	z-index: 999;
+}
+#userData .hovermenu.open .invisibleBridge,
+#userData .hovermenu:hover .invisibleBridge {
+	display: block;
+}
+
+#userData #fbconnect { 
+	margin-right: 12px;
+}
+
+#userData span .fb_button_text {
+	margin-right: 1px;
+}
+#header_username a {
+	color: #36C;
+	font-weight: bold;
+	text-decoration: none;
+}
+#header_username a:hover {
+	text-decoration: underline;
+}
+#userData .headerMenuButton {
+	margin-top: 9px;
+}
+#userName {
+	font-weight: bold;
+	color: #36C;
+}
+
+/*** HEADER MENU ***/
+.headerMenu {
+	border-width: 0 1px 1px;
+	border-style: solid;
+	border-color: #999;
+	font-size: 9pt;
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	/* Hide the menu but leave the contents available for tab selection */
+	top: -100%;
+	-moz-opacity: 0;
+	opacity: 0;
+	z-index: 0;
+}
+.hovermenu.open .headerMenu,
+.hovermenu:hover .headerMenu {
+	top: 21px;
+	-moz-opacity: .95;
+	opacity: .95;
+	z-index: 1000;
+}
+.headerMenu a {
+	background: transparent;
+	color: inherit;
+}
+.headerMenu td {
+	padding: 7px;
+}
+#goToHub {
+	display: block;
+	font-weight: bold;
+	padding-bottom: 5px;
+	text-align: center;
+}
+#wikia_header.headerMenu a {
+	background-color: transparent;
+}
+#headerMenuUser ul {
+	padding: 3px;
+}
+#headerMenuUser li {
+	padding: 2px 5px;
+}
+#headerMenuUser a {
+	text-decoration: none;
+}
+#headerMenuUser a:hover {
+	text-decoration: underline;
+}
+
+#monacoBranding {
+	text-align: center;
+	padding-top: 5px;
+	position: relative;
+	width: 216px;
+	z-index: 2;
+}
+#wikia_header #headerButtonHub {
+	margin-top: 3px;
+}
+
+/*** BACKGROUND STRIP ***/
+#background_strip {
+	background: white;
+	border-bottom: 1px solid #999;
+	height: 155px;
+	position: absolute;
+	left: 0; right: 0;
+	top: 51px;
+}
+
+#wiki_logo {
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 155px;
+	text-indent: -1000px;
+	z-index: 3;
+	margin-bottom: 7px;
+}
+#wiki_logo a {
+	display: block;
+	height: 155px;
+	text-decoration: none;
+}
+#header_ad {
+	float: right;
+	margin: 15px 16px 0 284px;
+	position: relative;
+	text-align: center;
+	z-index: 2;
+}
+
+/* LeanMonaco code */
+body.ajax * {
+	cursor: wait !important;
+}
+ul.jq-ui-autocomplete {
+    position: absolute;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    font: normal .75em/.75em Verdana, Arial, sans-serif;
+    color: #333;
+    z-index: 30;
+}
+ul.jq-ui-autocomplete li {
+  display: block;
+  padding: .3em .5em .3em .3em;
+  overflow: hidden;
+  width: 100%;
+}
+
+ul.jq-ui-autocomplete li.active {
+  background-color: #3875d7;
+  color: #fff;
+}
+
+.fb_usermenu_button {
+	height:18px;
+	left:-26px;
+	position:absolute;
+	top:7px;
+	width:17px;
+}

@@ -1,0 +1,8 @@
+* Fix js
+* Make js menus properly fallback to css
+* Consider creating a optional replacement component for the "Latest activity" chunk in the sidebar
+* Add hookable areas to make my subskin ideas possible
+* Check out language box
+* Check the normal toolbox and see if Monaco is missing anything not shown elsewhere
+* Feed icons
+* When we add scripts add /*@cc_on'abbr article aside audio canvas details figcaption figure footer header hgroup mark menu meter nav output progress section summary time video'.replace(/\w+/g,function(n){document.createElement(n)})@*/ into the code

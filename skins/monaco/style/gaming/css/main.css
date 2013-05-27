@@ -1,0 +1,217 @@
+/*** MAIN COLORS ***/
+.color1, .yui-panel .hd {
+	background-color: #ffcb3b;
+}
+.color1, .color1 a, .yui-panel .hd {
+	color: #000;
+}
+.color2 {
+	background-color: #09101d;
+}
+
+
+.dark_text_1 {
+	color: #0E192D;
+}
+.dark_text_2 {
+	color: #FFF;
+}
+.accent	{
+	background-color: #71D1EF;
+	border-color: #FFCB3B;
+	color: #000;
+}
+#article-comments-pagination .accent {
+	color: #000;
+}
+
+#user_masthead ul.nav_links li a {
+	background: transparent;
+	color: #000;
+}
+
+
+
+#background_strip {
+	background: #09101d url(../images/background.jpg);
+	border-color: #71d1ef;
+}
+.page_bar {
+	background-image: none;
+}
+
+/*** WIDGETS ***/
+.sidebox,
+.sub-menu {
+	background-color: #0e192d;
+	border-color: #71d1ef;
+	color: #FFF;
+}
+.sidebox a {
+	color: #FFF;
+}
+.hover-navigation .menu-item {
+	border-color: #666;
+}
+.hover-navigation a {
+	color: #71d1ef;
+}
+.hover-navigation .menu-item:hover > a,
+.hover-navigation .menu-item > a:active,
+.hover-navigation .navigation-hover > a {
+	background-color: #386878;
+}
+#link_box, #link_box a {
+	background-color: #09101D;
+	color: #FFF !important;
+}
+.hover-navigation_widget {
+	border-color: #AAA;
+}
+#search_button {
+	background-image: url(../images/search.png);
+}
+#search_box {
+	background-image: none;
+}
+
+/*** HEADER AND FOOTER ***/
+#wikia_header {
+	background-color: #0e192d;
+	border-color: #71d1ef;
+}
+#userData a, #monacoBranding a {
+	color: #FFF;
+}
+#header_username a {
+	color: #fec423;
+}
+#wikia_footer {
+	color: #FFF;
+}
+#wikia_footer a {
+	color: #EEE;
+}
+.header-button img {
+	background-position: -72px -78px;
+}
+
+/*** PAGE ***/
+body {
+	color: #FFF;
+}
+.page {
+	background: #0e192d;
+	color: #FFF;
+}
+.page a, .body_content a.extiw, .body_content a.extiw:active {
+	color: #71d1ef;
+}
+.page a.new {
+	color: #C20;
+}
+.page a:visited {
+	color: #809def;
+}
+.page code {
+	background-color: #112266;
+	color: #FFF;
+}
+.page_bar .page_tabs li {
+	background: #555;
+	color: #FFF;
+}
+.page_bar .page_tabs li.selected, .page_bar .page_tabs li.selected a {
+	background: #0e192d;
+	color: #FFF !important;
+}
+.article_footer {
+	background-color: transparent;
+}
+.article_footer strong {
+	color: #FFF;
+}
+#preftoc li {
+	background-color: #ffcb3b;
+}
+#preftoc li a {
+	color: #000;
+}
+
+.page table.toc,
+#catlinks,
+.page table.gallery td,
+ul#filetoc,
+#preferences,
+.prefsection table,
+.prefsection legend
+{
+	background-color: #09101D;
+	color: #FFF;
+}
+
+table.gallery {
+	background-color: #09101D;
+}
+table.gallery td {
+	border: 0;
+}
+
+.problemReportsList .odd {
+	background-color: #09101D !important;
+	color: #FFF !important;
+}
+
+
+/* color fixes */
+.page_bar .page_buttons a {color: #000 !important}
+
+#pagehistory li.selected,
+#toc,
+.toc,
+.toccolours,
+.mw-warning {
+    background-color: #1E293D;
+    color: #fff
+}
+#pagehistory li {
+	border-color: #0E192D;
+}
+
+table.diff,
+td.diff-otitle,
+td.diff-ntitle,
+td.diff-article {
+    background-color: #0e192d;
+}
+
+td.diff-context {
+    background-color: #3e495d;
+	color: #000;
+}
+td.diff-deletedline {
+	background-color: #FFFFAA;
+	color: #000;
+}
+
+td.diff-addedline {
+    background-color: #2e594d;
+	color: #000;
+}
+
+.mw-plusminus-pos { color: #00FF00 !important; }
+.mw-plusminus-neg { color: #FF0000 !important; }
+
+.editsectionbutton {
+	background-color: #09101d;
+	border: 1px solid #ffcb3b;
+	color: #09101d;
+}
+
+/* Special pages */
+#lu-result .TablePager a {
+	color:blue;
+}
+#lu-result .TablePager a.new {
+	color:red;
+}
