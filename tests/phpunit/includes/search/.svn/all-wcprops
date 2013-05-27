@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/search
+END
+SearchEngineTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/search/SearchEngineTest.php
+END
+SearchUpdateTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/search/SearchUpdateTest.php
+END

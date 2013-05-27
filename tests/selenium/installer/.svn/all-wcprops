@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/!svn/ver/2/live/tests/selenium/installer
+END
+MediaWikiInstallationMessage.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiInstallationMessage.php
+END
+MediaWikiErrorsNamepageTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiErrorsNamepageTestCase.php
+END
+MediaWikiInstallerTestSuite.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiInstallerTestSuite.php
+END
+MediaWikiErrorsConnectToDatabasePageTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiErrorsConnectToDatabasePageTestCase.php
+END
+MediaWikiOnAlreadyInstalledTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiOnAlreadyInstalledTestCase.php
+END
+MediaWikiHelpFieldHintTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiHelpFieldHintTestCase.php
+END
+MediaWikiInstallationCommonFunction.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiInstallationCommonFunction.php
+END
+MediaWikiUpgradeExistingDatabaseTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiUpgradeExistingDatabaseTestCase.php
+END
+MediaWikiButtonsAvailabilityTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiButtonsAvailabilityTestCase.php
+END
+MediaWikiMySQLDataBaseTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiMySQLDataBaseTestCase.php
+END
+MediaWikiInstallationConfig.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiInstallationConfig.php
+END
+MediaWikiMySQLiteDataBaseTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiMySQLiteDataBaseTestCase.php
+END
+MediaWikiRightFrameworkLinksTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiRightFrameworkLinksTestCase.php
+END
+MediaWikiInstallationVariables.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiInstallationVariables.php
+END
+MediaWikiUserInterfaceTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiUserInterfaceTestCase.php
+END
+MediaWikiDifferntDatabasePrefixTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiDifferntDatabasePrefixTestCase.php
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/tests/selenium/installer/README.txt
+END
+MediaWikiRestartInstallationTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiRestartInstallationTestCase.php
+END
+MediaWikiDifferentDatabaseAccountTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/!svn/ver/2/live/tests/selenium/installer/MediaWikiDifferentDatabaseAccountTestCase.php
+END

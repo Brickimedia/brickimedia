@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/parser
+END
+TagHooksTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/parser/TagHooksTest.php
+END
+MediaWikiParserTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/parser/MediaWikiParserTest.php
+END
+ParserMethodsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/parser/ParserMethodsTest.php
+END
+ParserPreloadTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/parser/ParserPreloadTest.php
+END
+MagicVariableTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/parser/MagicVariableTest.php
+END
+NewParserTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/parser/NewParserTest.php
+END
+PreprocessorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/parser/PreprocessorTest.php
+END

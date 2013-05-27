@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/tests/parser/preprocess
+END
+All_system_messages.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/!svn/ver/2/live/tests/parser/preprocess/All_system_messages.txt
+END
+Factorial.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/tests/parser/preprocess/Factorial.txt
+END
+QuoteQuran.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/tests/parser/preprocess/QuoteQuran.txt
+END
+All_system_messages.expected
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/!svn/ver/2/live/tests/parser/preprocess/All_system_messages.expected
+END
+Factorial.expected
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/tests/parser/preprocess/Factorial.expected
+END
+QuoteQuran.expected
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/tests/parser/preprocess/QuoteQuran.expected
+END
+Fundraising.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/!svn/ver/2/live/tests/parser/preprocess/Fundraising.txt
+END
+Fundraising.expected
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/parser/preprocess/Fundraising.expected
+END

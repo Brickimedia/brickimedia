@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery
+END
+jquery.textSelection.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.textSelection.test.js
+END
+jquery.colorUtil.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.colorUtil.test.js
+END
+jquery.highlightText.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.highlightText.test.js
+END
+jquery.autoEllipsis.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.autoEllipsis.test.js
+END
+jquery.getAttrs.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.getAttrs.test.js
+END
+jquery.client.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.client.test.js
+END
+jquery.tabIndex.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.tabIndex.test.js
+END
+jquery.mwExtension.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.mwExtension.test.js
+END
+jquery.byteLimit.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.byteLimit.test.js
+END
+jquery.localize.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.localize.test.js
+END
+jquery.delayedBind.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.delayedBind.test.js
+END
+jquery.byteLength.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.byteLength.test.js
+END
+jquery.tablesorter.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/jquery/jquery.tablesorter.test.js
+END

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media
+END
+FormatMetadataTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/FormatMetadataTest.php
+END
+ExifTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/ExifTest.php
+END
+SVGMetadataExtractorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/SVGMetadataExtractorTest.php
+END
+IPTCTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/IPTCTest.php
+END
+GIFMetadataExtractorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/GIFMetadataExtractorTest.php
+END
+XMPTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/XMPTest.php
+END
+GIFTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/GIFTest.php
+END
+ExifRotationTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/ExifRotationTest.php
+END
+BitmapMetadataHandlerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/BitmapMetadataHandlerTest.php
+END
+MediaHandlerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/MediaHandlerTest.php
+END
+BitmapScalingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/BitmapScalingTest.php
+END
+XMPValidateTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/XMPValidateTest.php
+END
+PNGMetadataExtractorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/PNGMetadataExtractorTest.php
+END
+JpegMetadataExtractorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/JpegMetadataExtractorTest.php
+END
+PNGTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/PNGTest.php
+END
+JpegTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/JpegTest.php
+END
+ExifBitmapTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/ExifBitmapTest.php
+END
+TiffTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/media/TiffTest.php
+END
