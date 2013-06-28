@@ -1,14 +1,7 @@
 <?php
-# Example WikiMedia extension
-# with WikiMedia's extension mechanism it is possible to define
-# new tags of the form
-# <TAGNAME> some text </TAGNAME>
-# the function registered by the extension gets the text between the
-# tags as input and can transform it into arbitrary HTML code.
-# Note: The output is not interpreted as WikiText but directly
-#       included in the HTML output. So Wiki markup is not supported.
-# To activate the extension, include it from your LocalSettings.php
-# with: include("extensions/YourExtensionName.php");
+# Images tag from BIONICLEsector01
+# Made by Steven Wert
+# Modified for use on Brickimedia
 
 $wgExtensionFunctions[] = "wfEemageExtension";
 
