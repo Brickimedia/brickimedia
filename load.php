@@ -1,5 +1,7 @@
 <?php
 /**
+ * Brickimedia access point
+ *
  * This file is the entry point for the resource loader.
  *
  * This program is free software; you can redistribute it and/or modify
