@@ -55,7 +55,7 @@ $wgEmailAuthentication = true;
 $wgDBtype           = "mysql";
 $wgDBserver         = "localhost";
 $wgDBname           = "meta";
-require_once( __DIR__ . 'LocalSettings_private.php' );
+require_once( __DIR__ . '/LocalSettings_private.php' );
 //$wgDBuser           = "NOT STORED ON GITHUB";
 //$wgDBpassword       = "NOT STORED ON GITHUB";
 
