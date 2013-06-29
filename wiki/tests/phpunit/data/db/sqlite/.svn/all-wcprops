@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/tests/phpunit/data/db/sqlite
+END
+tables-1.13.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/data/db/sqlite/tables-1.13.sql
+END
+tables-1.15.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/data/db/sqlite/tables-1.15.sql
+END
+tables-1.16.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/data/db/sqlite/tables-1.16.sql
+END
+tables-1.17.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/data/db/sqlite/tables-1.17.sql
+END
+tables-1.18.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/data/db/sqlite/tables-1.18.sql
+END

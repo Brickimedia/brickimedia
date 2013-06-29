@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/upload
+END
+UploadFromUrlTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/upload/UploadFromUrlTest.php
+END
+UploadTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/upload/UploadTest.php
+END
+UploadStashTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/upload/UploadStashTest.php
+END

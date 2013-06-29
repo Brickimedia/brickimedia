@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api
+END
+ApiTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/ApiTest.php
+END
+ApiTestCaseUpload.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/ApiTestCaseUpload.php
+END
+RandomImageGenerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/RandomImageGenerator.php
+END
+ApiEditPageTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/ApiEditPageTest.php
+END
+ApiPurgeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/ApiPurgeTest.php
+END
+PrefixUniquenessTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/PrefixUniquenessTest.php
+END
+ApiUploadTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/ApiUploadTest.php
+END
+ApiQueryTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/ApiQueryTest.php
+END
+ApiWatchTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/ApiWatchTest.php
+END
+generateRandomImages.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/generateRandomImages.php
+END
+ApiBlockTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/ApiBlockTest.php
+END
+ApiOptionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/ApiOptionsTest.php
+END
+ApiTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/ApiTestCase.php
+END
+words.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/api/words.txt
+END

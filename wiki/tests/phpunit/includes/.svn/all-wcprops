@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/!svn/ver/2/live/tests/phpunit/includes
+END
+DiffHistoryBlobTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/DiffHistoryBlobTest.php
+END
+BlockTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/BlockTest.php
+END
+SiteConfigurationTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/SiteConfigurationTest.php
+END
+PathRouterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/PathRouterTest.php
+END
+XmlJsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/XmlJsTest.php
+END
+RevisionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/RevisionTest.php
+END
+ExtraParserTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/ExtraParserTest.php
+END
+XmlTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/XmlTest.php
+END
+PreferencesTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/PreferencesTest.php
+END
+TimestampTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/TimestampTest.php
+END
+TitleMethodsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/TitleMethodsTest.php
+END
+TimeAdjustTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/TimeAdjustTest.php
+END
+LanguageConverterTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/LanguageConverterTest.php
+END
+ArticleTablesTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/ArticleTablesTest.php
+END
+TestUser.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/TestUser.php
+END
+UserTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/UserTest.php
+END
+FormOptionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/FormOptionsTest.php
+END
+HttpTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/HttpTest.php
+END
+SampleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/SampleTest.php
+END
+TitleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/TitleTest.php
+END
+EditPageTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/EditPageTest.php
+END
+FauxResponseTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/FauxResponseTest.php
+END
+RevisionStorageTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/RevisionStorageTest.php
+END
+ArticleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/ArticleTest.php
+END
+MessageTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/MessageTest.php
+END
+RecentChangeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/RecentChangeTest.php
+END
+FormOptionsInitializationTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/FormOptionsInitializationTest.php
+END
+MWFunctionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/MWFunctionTest.php
+END
+LocalFileTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/LocalFileTest.php
+END
+SanitizerValidateEmailTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/SanitizerValidateEmailTest.php
+END
+TitlePermissionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/TitlePermissionTest.php
+END
+ExternalStoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/ExternalStoreTest.php
+END
+MWNamespaceTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/MWNamespaceTest.php
+END
+WikiPageTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/WikiPageTest.php
+END
+XmlSelectTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/XmlSelectTest.php
+END
+HtmlTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/HtmlTest.php
+END
+LocalisationCacheTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/LocalisationCacheTest.php
+END
+LicensesTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/LicensesTest.php
+END
+ParserOptionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/ParserOptionsTest.php
+END
+IPTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/IPTest.php
+END
+SanitizerTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/SanitizerTest.php
+END
+JsonTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/JsonTest.php
+END
+SeleniumConfigurationTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/SeleniumConfigurationTest.php
+END
+ZipDirectoryReaderTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/ZipDirectoryReaderTest.php
+END
+Providers.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/Providers.php
+END
+ResourceLoaderTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/ResourceLoaderTest.php
+END
+TemplateCategoriesTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/TemplateCategoriesTest.php
+END
+LinksUpdateTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/LinksUpdateTest.php
+END
+HooksTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/HooksTest.php
+END
+WebRequestTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/WebRequestTest.php
+END
+CdbTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/CdbTest.php
+END

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/!svn/ver/2/live/maintenance/language
+END
+generateCollationData.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/!svn/ver/2/live/maintenance/language/generateCollationData.php
+END
+messages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/maintenance/language/messages.inc
+END
+validate.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/maintenance/language/validate.php
+END
+rebuildLanguage.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/maintenance/language/rebuildLanguage.php
+END
+messageTypes.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/maintenance/language/messageTypes.inc
+END
+dumpMessages.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/maintenance/language/dumpMessages.php
+END
+checkExtensions.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/maintenance/language/checkExtensions.php
+END
+checkLanguage.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/maintenance/language/checkLanguage.inc
+END
+writeMessagesArray.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/maintenance/language/writeMessagesArray.inc
+END
+langmemusage.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/maintenance/language/langmemusage.php
+END
+digit2html.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/maintenance/language/digit2html.php
+END
+StatOutputs.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/maintenance/language/StatOutputs.php
+END
+countMessages.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/maintenance/language/countMessages.php
+END
+alltrans.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/maintenance/language/alltrans.php
+END
+checkLanguage.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/maintenance/language/checkLanguage.php
+END
+checkDupeMessages.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/maintenance/language/checkDupeMessages.php
+END
+transstat.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/maintenance/language/transstat.php
+END
+date-formats.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/2/live/maintenance/language/date-formats.php
+END
+generateNormalizerData.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/!svn/ver/2/live/maintenance/language/generateNormalizerData.php
+END
+languages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/2/live/maintenance/language/languages.inc
+END

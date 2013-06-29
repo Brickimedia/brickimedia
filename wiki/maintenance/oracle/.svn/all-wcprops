@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/!svn/ver/2/live/maintenance/oracle
+END
+patch_seq_names_pre1.16.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/!svn/ver/2/live/maintenance/oracle/patch_seq_names_pre1.16.sql
+END
+tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/maintenance/oracle/tables.sql
+END
+alterSharedConstraints.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/!svn/ver/2/live/maintenance/oracle/alterSharedConstraints.php
+END
+user.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/maintenance/oracle/user.sql
+END

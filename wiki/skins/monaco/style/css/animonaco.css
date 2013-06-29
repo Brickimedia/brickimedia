@@ -1,0 +1,33 @@
+
+#skiplinks a.skiplink,
+.left_sidebar { width: 240px }
+#monaco_shrinkwrap_main.with_left_sidebar #page_wrapper { left: 245px }
+.right_sidebar { width: 306px; top: 5px; }
+#monaco_shrinkwrap_main.with_right_sidebar #page_wrapper { right: 311px }
+
+#page_wrapper { top: 5px }
+
+.monaco_shrinkwrap { min-width: 750px; }
+.monaco_shrinkwrap.with_right_sidebar { min-width: 1200px; }
+
+.widget.sharebox table td {
+	text-align: center;
+}
+
+#ad_page {
+	text-align: center;
+}
+
+#monacoBranding { display: none }
+
+#userData {
+	line-height: 24px;
+	left: 0;
+	right: auto;
+	width: 240px;
+	padding-left: 5px;
+}
+
+#searchInput {
+	width: 198px;
+}

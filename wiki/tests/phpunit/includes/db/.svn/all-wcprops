@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/db
+END
+DatabaseSQLTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/db/DatabaseSQLTest.php
+END
+DatabaseTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/db/DatabaseTest.php
+END
+ORMRowTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/db/ORMRowTest.php
+END
+TestORMRowTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/db/TestORMRowTest.php
+END
+DatabaseSqliteTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/tests/phpunit/includes/db/DatabaseSqliteTest.php
+END

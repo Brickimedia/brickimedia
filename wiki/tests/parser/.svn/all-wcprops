@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svnroot/!svn/ver/2/live/tests/parser
+END
+extraParserTests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/tests/parser/extraParserTests.txt
+END
+parserTestsParserHook.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/!svn/ver/2/live/tests/parser/parserTestsParserHook.php
+END
+parserTest.inc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/tests/parser/parserTest.inc
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/!svn/ver/2/live/tests/parser/README
+END
+parserTests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/tests/parser/parserTests.txt
+END

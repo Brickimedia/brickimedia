@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/resourceloader
+END
+ResourceLoaderUserCSSPrefsModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderUserCSSPrefsModule.php
+END
+ResourceLoaderUserOptionsModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderUserOptionsModule.php
+END
+ResourceLoaderNoscriptModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderNoscriptModule.php
+END
+ResourceLoaderUserTokensModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderUserTokensModule.php
+END
+ResourceLoaderStartUpModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderStartUpModule.php
+END
+ResourceLoaderWikiModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderWikiModule.php
+END
+ResourceLoaderSiteModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderSiteModule.php
+END
+ResourceLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoader.php
+END
+ResourceLoaderFilePageModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderFilePageModule.php
+END
+ResourceLoaderLanguageDataModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderLanguageDataModule.php
+END
+ResourceLoaderUserModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderUserModule.php
+END
+ResourceLoaderUserGroupsModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderUserGroupsModule.php
+END
+ResourceLoaderContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderContext.php
+END
+ResourceLoaderModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderModule.php
+END
+ResourceLoaderFileModule.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/!svn/ver/2/live/includes/resourceloader/ResourceLoaderFileModule.php
+END

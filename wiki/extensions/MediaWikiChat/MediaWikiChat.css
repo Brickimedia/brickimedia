@@ -1,0 +1,81 @@
+#mwchat-container {
+	position: relative;
+	width: 100%;
+}
+#mwchat-main {
+	width: 67%;
+}
+#mwchat-content {
+	height: 450px;
+	overflow-y: scroll;
+}
+.mwchat-useritem-content {
+	height: 200px;
+	overflow-y: scroll;
+}
+#mwchat-users {
+	width: 33%;
+	position: absolute;
+	left: 67%;
+	top: 0;
+}
+#mwchat-me {
+	width: 33%;
+	position: absolute;
+	left: 67%;
+	top: 450px;
+	padding-left: 10px;
+}
+#mwchat-type input, .mwchat-useritem input {
+	width: 100%;
+}
+.mwchat-item-user {
+	margin: 5px;
+}
+.mwchat-item-message {
+	margin: 5px;
+}
+.mwchat-item-timestamp {
+	float: right;
+	color: #CCC;
+	margin-left: 6px;
+}
+.mwchat-message:hover .mwchat-item-timestamp {
+	color: #555;
+}
+.mwchat-item-user {
+	display: inline-block;
+	width: 180px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: right;
+}
+.mwchat-useritem-content .mwchat-item-user {
+	width: 90px;
+}
+.mwchat-useritem-user {
+	margin: 5px;
+}
+.mwchat-useritem {
+	margin: 5px;
+	background-color: #FFF;
+	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s;
+}
+.mwchat-useritem[data-read="true"] {
+	background-color: #FDD;
+}
+/*
+.mwchat-useritem.noshow .mwchat-useritem-window {
+	display: none;
+}
+*/
+.mwchat-useritem.noshow {
+	cursor: pointer;
+}
+img {
+	vertical-align: middle;
+}
+.mwchat-item-message * {
+	display: inline;
+}

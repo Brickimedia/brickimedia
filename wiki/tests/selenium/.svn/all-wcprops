@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svnroot/!svn/ver/2/live/tests/selenium
+END
+selenium_settings.ini.sample
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/tests/selenium/selenium_settings.ini.sample
+END
+SeleniumTestSuite.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/2/live/tests/selenium/SeleniumTestSuite.php
+END
+SeleniumTestCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/tests/selenium/SeleniumTestCase.php
+END
+SeleniumTestConstants.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/tests/selenium/SeleniumTestConstants.php
+END
+selenium_settings_grid.ini.sample
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/tests/selenium/selenium_settings_grid.ini.sample
+END
+Selenium.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/2/live/tests/selenium/Selenium.php
+END
+SeleniumServerManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/!svn/ver/2/live/tests/selenium/SeleniumServerManager.php
+END
+SeleniumTestConsoleLogger.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/tests/selenium/SeleniumTestConsoleLogger.php
+END
+SeleniumTestHTMLLogger.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/!svn/ver/2/live/tests/selenium/SeleniumTestHTMLLogger.php
+END
+SeleniumConfig.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/tests/selenium/SeleniumConfig.php
+END
+SeleniumTestListener.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/!svn/ver/2/live/tests/selenium/SeleniumTestListener.php
+END
+SeleniumLoader.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/tests/selenium/SeleniumLoader.php
+END

@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives
+END
+patch-page_restrictions.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-page_restrictions.sql
+END
+patch-revision_rev_user_fkey.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-revision_rev_user_fkey.sql
+END
+patch-profiling.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-profiling.sql
+END
+patch-msg_resource.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-msg_resource.sql
+END
+patch-rc_cur_id-not-null.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-rc_cur_id-not-null.sql
+END
+patch-page_props.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-page_props.sql
+END
+patch-redirect.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-redirect.sql
+END
+patch-kill-iwl_prefix.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-kill-iwl_prefix.sql
+END
+patch-page_deleted.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-page_deleted.sql
+END
+patch-testrun.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-testrun.sql
+END
+patch-ts2pagetitle.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-ts2pagetitle.sql
+END
+patch-tsearch2funcs.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-tsearch2funcs.sql
+END
+patch-page.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-page.sql
+END
+patch-rename-iwl_prefix.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-rename-iwl_prefix.sql
+END
+patch-add_interwiki.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-add_interwiki.sql
+END
+patch-external_user.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-external_user.sql
+END
+patch-iwlinks.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-iwlinks.sql
+END
+patch-querycachetwo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-querycachetwo.sql
+END
+patch-categorylinks-better-collation.sql
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-categorylinks-better-collation.sql
+END
+patch-updatelog.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-updatelog.sql
+END
+patch-uploadstash.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-uploadstash.sql
+END
+patch-user_former_groups.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-user_former_groups.sql
+END
+patch-tag_summary.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-tag_summary.sql
+END
+patch-user_properties.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-user_properties.sql
+END
+patch-valid_tag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-valid_tag.sql
+END
+patch-update_sequences.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-update_sequences.sql
+END
+patch-kill-iwl_pft.sql
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-kill-iwl_pft.sql
+END
+patch-l10n_cache.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-l10n_cache.sql
+END
+patch-msg_resource_links.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-msg_resource_links.sql
+END
+patch-remove-archive2.sql
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-remove-archive2.sql
+END
+patch-module_deps.sql
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-module_deps.sql
+END
+patch-ipb_address_unique.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-ipb_address_unique.sql
+END
+patch-log_search.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-log_search.sql
+END
+patch-protected_titles.sql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-protected_titles.sql
+END
+patch-category.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-category.sql
+END
+patch-uploadstash_sequence.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-uploadstash_sequence.sql
+END
+patch-change_tag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/!svn/ver/2/live/maintenance/postgres/archives/patch-change_tag.sql
+END

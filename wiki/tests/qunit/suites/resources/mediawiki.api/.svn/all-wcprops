@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/mediawiki.api
+END
+mediawiki.api.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/mediawiki.api/mediawiki.api.test.js
+END
+mediawiki.api.parse.test.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/!svn/ver/2/live/tests/qunit/suites/resources/mediawiki.api/mediawiki.api.parse.test.js
+END

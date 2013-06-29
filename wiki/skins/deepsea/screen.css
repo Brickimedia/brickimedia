@@ -1,0 +1,880 @@
+/*
+ * Any rules which should not be flipped automatically in right-to-left situations should be
+ * prepended with @noflip in a comment block. Images that should be embedded as base64 data-URLs
+ * should be prepended with @embed in a comment block.
+ *
+ * This style-sheet employs a few CSS trick to accomplish compatibility with a wide range of web
+ * browsers. The most common trick is to use some styles in IE6 only. This is accomplished by using
+ * a rule that makes things work in IE6, and then following it with a rule that begins with
+ * "html > body" or use a child selector ">", which is ignored by IE6 because it does not support
+ * the child selector. You can spot this by looking for the "OVERRIDDEN BY COMPLIANT BROWSERS" and
+ * "IGNORED BY IE6" comments.
+ */
+ 
+/**:not(#content) a:hover {
+ 	text-decoration: none;
+}*/
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: 1em;
+}
+/* Content */
+div#content {
+	border-right: 0px;
+	padding: 1em;
+	color: black;
+	direction: ltr;
+	background-color: white;
+}
+/* Head */
+#mw-page-base {
+	height: 6em;
+}
+#mw-head-base {
+	margin-top: -6em;
+	margin-left: 15%;
+	height: 6em;
+}
+div#mw-head {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+div#mw-head h5 {
+	margin: 0;
+	padding: 0;
+}
+	/* Hide empty portlets */
+	div.emptyPortlet {
+		display: none;
+	}
+	/* Personal */
+	#p-personal {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-bottom-left-radius: 1em;
+	}
+	#p-personal h5 {
+		display: none;
+	}
+	#p-personal ul {
+		list-style: none;
+		margin: 0;
+	}
+	#p-personal li:first-child {
+		border-bottom-left-radius: 1em;
+	}
+	#p-personal li:last-child {
+		padding-right: 10px;
+	}
+	
+	/* @noflip */
+	div.top-nav li {
+		line-height: 1.125em;
+		float: left;
+	}
+	/* This flips! */
+	div.top-nav li {
+		padding: 0.5em;
+		padding-right: 0.25em;
+		padding-left: 0.25em;
+		font-size: 0.75em;
+		white-space: nowrap;
+	}
+	div.top-nav li a {
+		padding: 0.5em;
+	}
+	div.top-nav li a:hover {
+		text-decoration: none;
+	}
+	/* Media */
+	#p-media {
+		position: absolute;
+		top: 0;
+		border-bottom-right-radius: 1em;
+	}
+	#p-media h5 {
+		display: none;
+	}
+	#p-media ul {
+		list-style: none;
+		margin: 0;
+	}
+	#p-media li:last-child {
+		padding: 0.5em;
+		padding-right: 0.8em;
+		border-bottom-right-radius: 1em;
+	}
+	#p-media li.selected {
+		background-color: #FFFFFF;
+	}
+	
+	/* Navigation Containers */
+	#left-navigation {
+		position: absolute;
+	}
+	#right-navigation {
+		float: right;
+	}
+	/* Navigation Labels */
+	div.vectorTabs h5,
+	div.vectorMenu h5 span {
+		display: none;
+	}
+	/* Namespaces and Views */
+	/* @noflip */
+	div.vectorTabs {
+		float: left;
+		height: 2.5em;
+	}
+	/* @noflip */
+	/*div.vectorTabs ul {
+		float: left;
+	}*/
+	div.vectorTabs ul {
+		height: 65%;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	/* @noflip */
+	div.vectorTabs li {
+		float: left;
+	}
+	/* OVERRIDDEN BY COMPLIANT BROWSERS */
+	div.vectorTabs li {
+		line-height: 1.125em;
+		display: inline-block;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		white-space:nowrap;
+	}
+	/* IGNORED BY IE6 */
+	/*div.vectorTabs li {
+		display: block;
+	}*/
+
+	/* OVERRIDDEN BY COMPLIANT BROWSERS */
+	div.vectorTabs li a {
+		display: inline-block;
+		height: 1em;
+		padding: 1em;
+		padding-bottom: 1.1em;
+		cursor: pointer;
+		font-size: 0.8em;
+	}
+	div.vectorTabs li a:hover {
+		text-decoration: none;
+	}
+
+	/* IGNORED BY IE6 */
+	div.vectorTabs li > a {
+		display: block;
+	}
+	div.vectorTabs li.icon a {
+		background-position: bottom right;
+		background-repeat: no-repeat;
+	}
+	#p-namespaces li:first-of-type, #p-views li:first-of-type {
+		border-top-left-radius: 1em;
+	}
+	#p-namespaces li:last-of-type {
+		border-top-right-radius: 1em;
+	}
+	#right-navigation div.emptyPortlet + div.emptyPortlet + div {
+		border-top-left-radius: 1em;
+	}
+	
+	/* OVERRIDDEN BY COMPLIANT BROWSERS */
+	div.vectorTabs a  {
+		display: inline-block;
+		padding-top: 1em;
+	}
+	
+	div.vectorTabs li.selected a,
+	div.vectorTabs li.selected a:visited{
+		color: #333333;
+		text-decoration: none;
+	}
+	div.vectorTabs li.new a,
+	div.vectorTabs li.new a:visited {
+		color: #815252 !important;
+	}
+	/* Variants and Actions */
+	/* @noflip */
+	div.vectorMenu {
+		direction: ltr;
+		padding-right: 5px;
+		float: left;
+		/* @embed */
+		background-image: url(images/arrow-down-icon.png);
+		background-position: 100% 60%;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	div.vectorMenuFocus {
+		/* @embed */
+		background-image: url(images/arrow-down-focus-icon.png);
+		background-position: 100% 60%;
+	}
+	/* @noflip */
+	body.rtl div.vectorMenu {
+		direction: rtl;
+	}
+	/* OVERRIDDEN BY COMPLIANT BROWSERS */
+	/* @noflip */
+	div#mw-head div.vectorMenu h5 {
+		float: left;
+	}
+	/* This will be flipped - unlike the one above it */
+	div#mw-head div.vectorMenu h5 {
+		background-position: bottom left;
+		margin-left: -1px;
+	}
+	/* IGNORED BY IE6 */
+	div#mw-head div.vectorMenu > h5 {
+		background-image: none;
+	}
+	div#mw-head div.vectorMenu h4 {
+		display: inline-block;
+		float: left;
+		font-size: 0.8em;
+		padding-left: 0.5em;
+		padding-top: 1.375em;
+		font-weight: normal;
+		border: none;
+	}
+	/* OVERRIDDEN BY COMPLIANT BROWSERS */
+	/* @noflip */
+	div.vectorMenu h5 a {
+		display: inline-block;
+		width: 24px;
+		height: 2.5em;
+		text-decoration: none;
+	}
+	
+	/* IGNORED BY IE6 */
+	div.vectorMenu h5 > a {
+		display: block;
+	}
+	div.vectorMenu div.menu {
+		left: -26px;
+		position: relative;
+		display: none;
+		clear: both;
+		text-align: left;
+	}
+	/* OVERRIDDEN BY COMPLIANT BROWSERS */
+	/* @noflip */
+	body.rtl div.vectorMenu div.menu {
+		margin-left: 24px;
+	}
+	/* IGNORED BY IE6 */
+	/* @noflip */
+	body.rtl div.vectorMenu > div.menu {
+		margin-left: auto;
+	}
+	/* IGNORED BY IE6 */
+	/* Also fixes old versions of FireFox */
+	/* @noflip */
+	body.rtl div.vectorMenu > div.menu,
+	x:-moz-any-link {
+		margin-left: 23px;
+	}
+	/* Enable forcing showing of the menu for accessibility */
+	div.vectorMenu:hover div.menu,
+	div.vectorMenu div.menuForceShow {
+		display: block;
+	}
+	div.vectorMenu ul {
+		position: absolute;
+		border-top-width: 0;
+		list-style: none;
+		list-style-image: none;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		margin-left: -1px;
+		text-align: left;
+		background-color: white;
+	}
+	/* Fixes old versions of FireFox */
+	div.vectorMenu ul,
+	x:-moz-any-link {
+		min-width: 5em;
+	}
+	/* Returns things back to normal in modern versions of FireFox */
+	div.vectorMenu ul,
+	x:-moz-any-link,
+	x:default {
+		min-width: 0;
+	}
+	div.vectorMenu li {
+		padding: 0;
+		margin: 0;
+		text-align: left;
+		line-height: 1em;
+	}
+	/* OVERRIDDEN BY COMPLIANT BROWSERS */
+	div.vectorMenu li a {
+		display: inline-block;
+		padding: 0.5em;
+		white-space: nowrap;
+		cursor: pointer;
+		font-size: 0.8em;
+	}
+	/* IGNORED BY IE6 */
+	div.vectorMenu li > a {
+		display: block;
+	}
+	div.vectorMenu li.selected a,
+	div.vectorMenu li.selected a:visited {
+		color: #333333;
+		text-decoration: none;
+	}
+	/* Search */
+	#p-search h5 {
+		display: none;
+	}
+	/* @noflip */
+	#p-search {
+		float: left;
+	}
+	#p-search {
+		height: 1.5em;
+		padding-left: 1em;
+		padding-top: 0.6em;
+		padding-bottom: 0.4em;
+		padding-right: 1em;
+	}
+	#p-search form,
+	#p-search input {
+		margin: 0;
+	}
+	#p-search input[type=search], #p-search input[name=search] {
+		width:8em;
+	}
+	
+	div#simpleSearch {
+		display: block;
+		width: 14em;
+		height: 1.5em;
+		/*margin-top: 0.65em;*/
+		position: relative;
+		min-height: 1px; /* Gotta trigger hasLayout for IE7 */
+		border: solid 1px #AAAAAA;
+		color: black;
+		background-color: white;
+	}
+	div#simpleSearch label {
+		/*
+		 * DON'T PANIC! Browsers that won't scale this properly are the same browsers that have JS issues that prevent
+		 * this from ever being shown anyways.
+		*/
+		font-size: 13px;
+		top: 0.25em;
+		direction: ltr;
+	}
+	div#simpleSearch input {
+		color: black;
+		direction: ltr;
+	}
+	div#simpleSearch input:focus {
+		outline: none;
+	}
+	div#simpleSearch input.placeholder {
+		color: #999999;
+	}
+	div#simpleSearch input::-webkit-input-placeholder {
+		color: #999999;
+	}
+	div#simpleSearch input#searchInput {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 90%;
+		margin: 0;
+		padding: 0;
+		padding-left: 0.2em;
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+		outline: none;
+		border: none;
+		/*
+		 * DON'T PANIC! Browsers that won't scale this properly are the same browsers that have JS issues that prevent
+		 * this from ever being shown anyways.
+		*/
+		font-size: 13px;
+		background-color: transparent;
+		direction: ltr;
+	}
+	div#simpleSearch button#searchButton {
+		position: absolute;
+		right: 5%;
+		top: 0;
+		padding: 0;
+		padding-top: 0.3em;
+		padding-bottom: 0.2em;
+		margin: 0;
+		border: none;
+		cursor: pointer;
+		background-color: transparent;
+		background-image: none;
+	}
+	/* OVERRIDDEN BY COMPLIANT BROWSERS */
+	div#simpleSearch button#searchButton img {
+		border: none;
+		margin: 0;
+		margin-top: -3px;
+		padding: 0;
+	}
+	/* IGNORED BY IE6 */
+	div#simpleSearch button#searchButton > img {
+		margin: 0;
+	}
+/* Panel */
+div#mw-panel {
+	position: absolute;
+	top: 160px;
+	padding-top: 1em;
+	width: 15%;
+/*	min-width: 160px;*/
+/*	left: 0px;*/
+}
+	div#mw-panel div.portal {
+		margin-bottom: 1.5em;
+		direction: ltr;
+	}
+	div#mw-panel div.portal h5 {
+        font-weight: normal;
+		/* Nathan's rejected idea:
+        font-weight: bold;
+        text-transform: uppercase;*/
+		color: #444444;
+		padding: 0.25em;
+		padding-left: 1.75em;
+		cursor: default;
+		border: none;
+		font-size: 0.75em;
+		margin-right: 1.25em;
+		margin-bottom: 0em;
+		background-color: white;
+	}
+	div#mw-panel div.portal div.body {
+		margin: 0;
+	}
+	div#mw-panel div.portal div.body ul {
+		list-style: none;
+		list-style-image: none;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	div#mw-panel div.portal div.body ul li {
+		line-height: 1.125em;
+		padding: 0;
+		/*padding-bottom: 0.25em;
+		padding-top: 0.25em;*/
+		padding-left: 1.25em;
+		margin: 0;
+		overflow: hidden;
+		font-size: 0.75em;
+		margin-right: 1.25em;
+	}
+	div#mw-panel div.portal div.body ul li:first-child {
+		padding-top: 0.25em;
+	}
+	div#mw-panel div.portal div.body ul li:last-child {
+		border-bottom-right-radius: 1em;
+	}
+	div#mw-panel div.portal div.body ul li a {
+		display: block;
+		padding-top: 0.25em;
+		padding-bottom: 0.25em;
+	}
+	div#mw-panel div.portal div.body ul li a:visited {
+		color: #0b0080;
+	}
+	div#mw-panel div.portal div.body ul li a:hover {
+		text-decoration: none;
+	}
+	
+	#expander {
+		z-index: 2;
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		/*opacity: 0.5;*/
+		border-bottom-right-radius: 1em;
+		padding: 1px 3px 1px 3px;
+	}
+	
+.ad {
+	background-color: #CCCCCC;
+}
+
+.ad.left {
+	width: 160px;
+	height: 600px;
+	margin: auto;
+	margin-top: 0.3em;
+}
+
+.ad.bottom {
+	width: 720px;
+	height: 90px;
+}
+
+/* Footer */
+div#footer {
+	margin-left: 15%;
+	margin-top: 0;
+	padding: 0.75em;
+	direction: ltr;
+}
+div#footer ul {
+	list-style: none;
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+div#footer ul li {
+	margin: 0;
+	padding: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	color: #333333;
+	font-size: 0.7em;
+}
+div#footer #footer-icons {
+	/*float: right;*/
+}
+/* @noflip */
+body.ltr div#footer #footer-places {
+	float: left;
+}
+div#footer #footer-info li {
+	line-height: 1.4em;
+	display: inline;
+	white-space: nowrap;
+	margin-right: 2em;
+}
+div#footer #footer-icons li {
+	float: left;
+	margin-left: 0.5em;
+	line-height: 2em;
+	text-align: right;
+}
+div#footer #footer-places li {
+	float: left;
+	margin-right: 1em;
+	line-height: 2em;
+}
+/* Logo */
+#p-logo {
+}
+#p-logo a {
+	display: block;
+	width: 100%;
+	height: 160px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-decoration: none;
+}
+
+/*
+ *
+ * The following code is highly modified from monobook. It would be nice if the
+ * preftoc id was more human readable like preferences-toc for instance,
+ * howerver this would require backporting the other skins.
+ */
+
+/* Preferences */
+#preftoc {
+	/* Tabs */
+	width: 100%;
+	float: left;
+	clear: both;
+	margin: 0 !important;
+	padding: 0 !important;
+	/* @embed */
+	background-image: url(images/preferences-break.png);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+	#preftoc li {
+		/* Tab */
+		float: left;
+		margin: 0;
+		padding: 0;
+		padding-right: 1px;
+		height: 2.25em;
+		white-space: nowrap;
+		list-style-type: none;
+		list-style-image: none;
+		/* @embed */
+		background-image: url(images/preferences-break.png);
+		background-position: bottom right;
+		background-repeat: no-repeat;
+	}
+	/* Sadly, IE6 won't understand this */
+	#preftoc li:first-child {
+		margin-left: 1px;
+	}
+	#preftoc a,
+	#preftoc a:active {
+		display: inline-block;
+		position: relative;
+		color: #0645ad;
+		padding: 0.5em;
+		text-decoration: none;
+		background-image: none;
+		font-size: 0.9em;
+	}
+	#preftoc a:hover,
+	#preftoc a:focus {
+		text-decoration: underline;
+	}
+	#preftoc li.selected a {
+		/* @embed */
+		background-image: url(images/preferences-fade.png);
+		background-position: bottom;
+		background-repeat: repeat-x;
+		color: #333333;
+		text-decoration: none;
+	}
+#preferences {
+	float: left;
+	width: 100%;
+	margin: 0;
+	margin-top: -2px;
+	clear: both;
+	border: solid 1px #cccccc;
+	background-color: #f9f9f9;
+	/* @embed */
+	background-image: url(images/preferences-base.png);
+}
+#preferences fieldset {
+	border: none;
+	border-top: solid 1px #cccccc;
+}
+#preferences fieldset.prefsection {
+	border: none;
+	padding: 0;
+	margin: 1em;
+}
+#preferences legend {
+	color: #666666;
+}
+#preferences fieldset.prefsection legend.mainLegend {
+	display: none;
+}
+#preferences td {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+#preferences td.htmlform-tip {
+	font-size: x-small;
+	padding: .2em 2em;
+	color: #666666;
+}
+#preferences div.mw-prefs-buttons {
+	padding: 1em;
+}
+#preferences div.mw-prefs-buttons input {
+	margin-right: 0.25em;
+}
+
+/**
+ * The following code is slightly modified from monobook
+ */
+div#content {
+	line-height: 1.5em;
+}
+#bodyContent {
+	font-size: 0.8em;
+}
+
+.editsection {
+	float: right;
+}
+
+ul {
+	/* @embed */
+	list-style-image: url(images/bullet-icon.png);
+}
+
+pre {
+	line-height: 1.3em;
+}
+
+/* Site Notice (includes notices from CentralNotice extension) */
+#siteNotice {
+	font-size: 0.8em;
+}
+#firstHeading {
+	padding-top: 0;
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 1.6em;
+}
+div#content a.external,
+div#content a.external[href ^="gopher://"] {
+	/* @embed */
+	background: url(images/external-link-ltr-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href ^="https://"],
+.link-https {
+	/* @embed */
+	background: url(images/lock-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href ^="mailto:"],
+.link-mailto {
+	/* @embed */
+	background: url(images/mail-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href ^="news:"] {
+	/* @embed */
+	background: url(images/news-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href ^="ftp://"],
+.link-ftp {
+	/* @embed */
+	background: url(images/file-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href ^="irc://"],
+div#content a.external[href ^="ircs://"],
+.link-irc {
+	/* @embed */
+	background: url(images/talk-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href $=".ogg"], div#content a.external[href $=".OGG"],
+div#content a.external[href $=".mid"], div#content a.external[href $=".MID"],
+div#content a.external[href $=".midi"], div#content a.external[href $=".MIDI"],
+div#content a.external[href $=".mp3"], div#content a.external[href $=".MP3"],
+div#content a.external[href $=".wav"], div#content a.external[href $=".WAV"],
+div#content a.external[href $=".wma"], div#content a.external[href $=".WMA"],
+.link-audio {
+	/* @embed */
+	background: url(images/audio-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href $=".ogm"], div#content a.external[href $=".OGM"],
+div#content a.external[href $=".avi"], div#content a.external[href $=".AVI"],
+div#content a.external[href $=".mpeg"], div#content a.external[href $=".MPEG"],
+div#content a.external[href $=".mpg"], div#content a.external[href $=".MPG"],
+.link-video {
+	/* @embed */
+	background: url(images/video-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+div#content a.external[href $=".pdf"], div#content a.external[href $=".PDF"],
+div#content a.external[href *=".pdf#"], div#content a.external[href *=".PDF#"],
+div#content a.external[href *=".pdf?"], div#content a.external[href *=".PDF?"],
+.link-document {
+	/* @embed */
+	background: url(images/document-icon.png) center right no-repeat;
+	padding-right: 13px;
+}
+
+div#content .printfooter {
+	display: none;
+}
+/* Icon for Usernames */
+#pt-userpage,
+#pt-anonuserpage,
+#pt-login {
+	/* @embed */
+	/*background: url(images/user-icon.png) left center no-repeat;*/
+	padding-left: 15px !important;
+	text-transform: none;
+}
+
+.redirectText {
+	font-size: 140%;
+}
+
+.redirectMsg img {
+	vertical-align: text-bottom;
+}
+
+#bodyContent {
+	position: relative;
+	width: 100%;
+}
+#mw-js-message {
+	font-size: 0.8em;
+}
+div#bodyContent {
+	line-height: 1.5em;
+}
+
+/* Watch/Unwatch Icon Styling */
+#ca-unwatch.icon a,
+#ca-watch.icon a {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	display: block;
+	width: 27px;
+	/* This hides the text but shows the background image */
+	padding-top: 3.1em;
+	margin-top: 0;
+	/* Only applied in IE6 */
+	margin-top: -0.8em !ie;
+	height: 0;
+	overflow: hidden;
+	/* @embed */
+	background-image: url(images/watch-icons.png);
+}
+#ca-unwatch.icon a {
+	background-position: -43px 60%;
+}
+#ca-watch.icon a {
+	background-position: 5px 60%;
+}
+#ca-unwatch.icon a:hover,
+#ca-unwatch.icon a:focus {
+	background-position: -67px 60%;
+}
+#ca-watch.icon a:hover,
+#ca-watch.icon a:focus {
+	background-position: -19px 60%;
+}
+#ca-unwatch.icon a.loading,
+#ca-watch.icon a.loading {
+	/* @embed */
+	background-image: url(images/watch-icon-loading.gif);
+	background-position: 5px 60%;
+}
+#ca-unwatch.icon a span,
+#ca-watch.icon a span {
+	display: none;
+}
+div.vectorTabs ul {
+	/* @embed */
+	background-image:url(images/tab-break.png);
+	background-position:right bottom;
+	background-repeat:no-repeat;
+}
+
+/* Tooltips are outside of the normal body code, so this helps make the size of the text sensible */
+.tipsy {
+	font-size: 0.8em;
+}

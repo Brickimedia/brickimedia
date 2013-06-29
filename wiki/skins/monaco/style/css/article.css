@@ -1,0 +1,326 @@
+
+#page_wrapper {
+	position: absolute;
+	left: 0; right: 0;
+	top: 31px;
+	
+}
+#monaco_shrinkwrap_main.with_left_sidebar #page_wrapper { left: 211px }
+#monaco_shrinkwrap_main.with_right_sidebar #page_wrapper { right: 211px }
+
+.page {
+	background: #FFF;
+	border: 1px solid #AAA;
+	height: 1%;
+	margin: 0 5px 5px;
+	position: relative;
+	overflow: visible;
+}
+
+.page_bar {
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0) 33%, rgba(0,0,0,0) 42%, rgba(0,0,0,0.1) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, rgba(0,0,0,0.06)), color-stop(0.33, rgba(0,0,0,0)), color-stop(0.42, rgba(0,0,0,0)), color-stop(1.0, rgba(0,0,0,0.1)));
+	background-position: top left;
+	background-repeat: repeat-x;
+	color: white;
+	font-family: tahoma, sans-serif;
+	font-size: 11pt;
+	margin: 2px 2px 0;
+	/*overflow: hidden;*/
+	padding: 0 5px;
+}
+
+.page_bar.alt {
+	margin: 0 2px;
+	position: fixed;
+	top: 0;
+}
+
+.page_bar u {
+	float: none;
+}
+.page_bar .page_buttons li {
+	float: left;
+	margin-right: 12px;
+	line-height: 32px;
+	position: relative;
+}
+.page_bar .page_buttons img {
+	top: -1px;
+}
+.page_bar .page_buttons a {
+	background: transparent;
+	margin-left: 2px;
+	position: relative;
+	text-decoration: none;
+}
+.page_bar .page_buttons a:hover {
+	text-decoration: underline;
+}
+/** Highlight active page controls */
+.page_bar .page_buttons li.selected {
+	background: #FFF;
+	padding: 0 8px !important;
+	height: 27px;
+	margin-top: 5px;
+}
+.page_bar .page_buttons li.selected a {
+	color: #000;
+	font-family: arial;
+	font-weight: bold;
+	line-height: 27px;
+}
+
+.page_bar .page_buttons .disabled a:hover {
+	text-decoration: none;
+}
+
+.page_bar .page_tabs,
+.page .compact_page_tabs {
+	float: right;
+	font-family: arial, sans-serif;
+}
+.page_bar .page_tabs li,
+.page .compact_page_tabs li {
+	background-color: #EEE;
+	color: #000;
+	cursor: pointer;
+	float: left;
+	position: relative;
+	padding: 0 8px;
+	height: 27px;
+	line-height: 27px;
+	margin-left: 3px;
+	margin-top: 5px;
+}
+.page_bar .page_tabs li.selected {
+	background-color: white;
+	color: #000;
+	font-weight: bold;
+}
+.page_bar .page_tabs a,
+.page .compact_page_tabs a {
+	background: transparent;
+	color: #000;
+	text-decoration: none;
+}
+.page_bar .page_tabs a:hover,
+.page .compact_page_tabs a:hover {
+	text-decoration: underline;
+}
+
+.page_bar .page_tabs ul {
+    display: none;
+    position: absolute;
+    right: -1px;
+    background: white;
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    z-index: 6;
+}
+.page_bar .page_tabs ul li {
+	display: block;
+	float: none;
+	background: none;
+	margin: 0;
+}
+.page_bar .page_tabs ul li {
+	display: block;
+}
+.page_bar .page_tabs .hovermenu img {
+	background: url(../images/monaco-sprite.png) -72px -98px;
+	height: 4px;
+	margin-left: 3px;
+	width: 7px;
+}
+.page_bar .page_tabs .hovermenu.open ul,
+.page_bar .page_tabs .hovermenu:hover ul {
+	display: block;
+}
+.page_bar .page_tabs ul li.selected {
+	background-color: #ccc;
+}
+
+.compact_page_bar {
+	margin: 0;
+	height: 5px;
+}
+
+.page .compact_page_tabs {
+	list-style: none;
+	margin: 0;
+	margin-right: 10px;
+	position: relative;
+	z-index: 1;
+}
+.page .compact_page_tabs li {
+	margin-top: 0;
+}
+
+.page article {
+	padding: 10px;
+	position: relative;
+	overflow: visible;
+}
+#article {
+	min-height: 200px;
+}
+
+/*** ARTICLE FOOTER ***/
+.article_footer {
+	border-top: 1px dashed #CCC;
+	font-size: 9pt;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+.article_footer table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.article_footer td {
+	padding: 10px;
+	vertical-align: top;
+}
+.article_footer td.col2 {
+	border-left: 1px dashed #CCC;
+	width: 50%;
+}
+.article_footer strong {
+	border: 0;
+	color: #333;
+	font-size: 10pt;
+	font-weight: bold;
+	float: left;
+	line-height: 22px;
+	margin: 0 10px 0 0;
+	padding: 0;
+	clear: both;
+}
+.article_footer ul.actions {
+	margin: 0;
+	padding: 0;
+}
+.article_footer ul.actions li {
+	line-height: 1.5em;
+	padding: 2px 0;
+	position: relative;
+	clear: both;
+	margin-right: 25px;
+	overflow: hidden !important; /* Opera fix */
+}
+.article_footer ul.actions li div {
+	display: inline;
+	position: relative;
+}
+
+#fe_history {
+	float: left;
+}
+#fe_permalink {
+	float: left;
+}
+#fe_recent {
+	float: left;
+	clear: none !important;
+}
+#fe_whatlinkshere {
+	float: left;
+	clear: none !important;
+}
+.article_footer .col2 strong {
+	display: block;
+}
+
+/* macbre: standard button CSS */
+.button {
+	border: 4px double #FFFFFF;
+	cursor: pointer;
+	font-family: "Lucida Grande",Tahoma,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px 5px;
+}
+
+.editingTips .accordion-menu {
+	display: block !important;
+	position: absolute;
+	left: 10px;
+	width: 200px;
+	margin-top: -20px
+}
+.editingTips #widget_sidebar,
+.editingTips #background_strip .monaco_shrinkwrap,
+.editingTips #headerButtonHub {
+	display: none
+}
+.editingTips #wikia_page {
+	margin-left: 5px
+}
+.editingTips .body_content {
+	margin-left: 216px
+}
+.editingWide .accordion-menu {
+	display: none !important
+}
+.editingWide .body_content {
+	margin-left: 0px
+}
+.editingWide #wikiPreview {
+	margin-left: 216px
+}
+#editingTips {
+	height: 363px;
+}
+.editsectionbutton {
+	background-color: #FFC;
+	border: 1px solid #999;
+	color: #FFC;
+	float: none;
+	padding: 3px 1px;
+	position: relative;
+	top: -2px;
+}
+.editsectionbutton a {
+	background: transparent !important;
+	color: #333;
+}
+
+/* Bartek - for RT 37771 */
+.editsection-upper {
+	margin-left: 16px;
+	position: relative;
+	margin-bottom: -2px;
+	top: -3px;		
+	font-size: 67%;
+}
+
+/*** Search results ***/
+ul.mw-search-results {
+	margin-top: 1.25em;
+	list-style-type: none;
+	list-style-image: none;
+	font-family: "Arial", sans-serif;
+}
+body div.searchresult {
+	font-size: small;
+	max-width: 42em;
+	width: auto !important;
+}
+.mw-search-results a {
+	font-size: medium;
+	text-decoration: underline;
+}
+.mw-search-results .mw-search-result-data {
+	font-size: 70%;
+}
+span.searchmatch {
+	color: inherit;
+}
+
+.body_content a.external, .body_content a[href^="gopher://"] {
+	background: url(../images/monaco-sprite.png) top right no-repeat;
+}

@@ -1,0 +1,235 @@
+/* Fonts */
+@font-face {
+font-family: 'Exo';
+src: url('/skins/quartz/fonts/exo-regular-webfont.eot');
+src: url('/skins/quartz/fonts/exo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/skins/quartz/fonts/exo-regular-webfont.woff') format('woff'), url('/skins/quartz/fonts/exo-regular-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Open Sans';
+src: url('/skins/quartz/fonts/opensans-regular-webfont.eot');
+src: url('/skins/quartz/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/skins/quartz/fonts/opensans-regular-webfont.woff') format('woff'), url('/skins/quartz/fonts/opensans-regular-webfont.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, #mw-head, #mw-panel, #footer {
+font-family: 'Exo', sans-serif;
+}
+
+/* Textures */
+.layered, #mw-head, #p-logo, #p-utilities, .section.heading {
+background-image: url('/skins/quartz/images/texture-1.png');
+}
+
+.rippled, #mw-head .menu, #p-handle, #left-navigation, #right-navigation, .chapter.heading, #p-utilities .menu {
+background-image: url('/skins/quartz/images/texture-2.png');
+}
+
+.scratched, #footer, #mw-head .submenu {
+background-image: url('/skins/quartz/images/texture-3.png');
+}
+
+/* Transitions */
+.module, #mw-head, #p-logo, #mw-head .menu, #p-handle, #left-navigation, #right-navigation, #mw-head .submenu, #searchInput, #p-personal a, #p-interwiki a, .navigation a, .tier-2-item > a::before, .navigation .return, .tier-2-item.parent, .heading, #p-utilities, #p-utilities .menu, #p-utilities a {
+transition: background .5s, text-shadow .5s, color .5s;
+-moz-transition: background .5s, text-shadow .5s, color .5s;
+-webkit-transition: background .5s, text-shadow .5s, color .5s;
+-o-transition: background .5s, text-shadow .5s, color .5s;
+-ms-transition: background .5s, text-shadow .5s, color .5s;
+}
+
+/* Border Radii */
+#p-logo, #info, .module {
+border-radius: 100% / 1em;
+-moz-border-radius: 100% / 1em;
+-webkit-border-radius: 100% / 1em;
+}
+
+.heading {
+border-radius: 100% / .5em;
+-moz-border-radius: 100% / .5em;
+-webkit-border-radius: 100% / .5em;
+}
+
+#searchInput {
+border-radius: 1em / 100%;
+-moz-border-radius: 1em / 100%;
+-webkit-border-radius: 1em / 100%;
+}
+
+#mw-head {
+border-radius: 0 0 100% 100% / 0 0 1em 1em;
+-moz-border-radius: 0 0 100% 100% / 0 0 1em 1em;
+-webkit-border-radius: 0 0 100% 100% / 0 0 1em 1em;
+}
+
+#p-personal .menu {
+border-radius: 0 0 0 100% / 0 0 0 1em;
+-moz-border-radius: 0 0 0 100% / 0 0 0 1em;
+-webkit-border-radius: 0 0 0 100% / 0 0 0 1em;
+}
+
+#p-interwiki .menu {
+border-radius: 0 0 100% 0 / 0 0 1em 0;
+-moz-border-radius: 0 0 100% 0 / 0 0 1em 0;
+-webkit-border-radius: 0 0 100% 0 / 0 0 1em 0;
+}
+
+#p-utilities .menu {
+border-radius: 0 100% 0 0 / 0 1em 0 0;
+-moz-border-radius: 0 100% 0 0 / 0 1em 0 0;
+-webkit-border-radius: 0 100% 0 0 / 0 1em 0 0;
+}
+
+#p-utilities {
+border-radius: 0 100% 0 0 / 0 .5em 0 0;
+-moz-border-radius: 0 100% 0 0 / 0 .5em 0 0;
+-webkit-border-radius: 0 100% 0 0 / 0 .5em 0 0;
+}
+
+#p-handle {
+border-radius: 0 0 100% 100% / 0 0 .5em .5em;
+-moz-border-radius: 0 0 100% 100% / 0 0 .5em .5em;
+-webkit-border-radius: 0 0 100% 100% / 0 0 .5em .5em;
+}
+
+#left-navigation {
+border-radius: 100% 0 0 100% / .5em 0 0 .5em;
+-moz-border-radius: 100% 0 0 100% / .5em 0 0 .5em;
+-webkit-border-radius: 100% 0 0 100% / .5em 0 0 .5em;
+}
+
+#right-navigation {
+border-radius: 0 100% 100% 0 / 0 .5em .5em 0;
+-moz-border-radius: 0 100% 100% 0 / 0 .5em .5em 0;
+-webkit-border-radius: 0 100% 100% 0 / 0 .5em .5em 0;
+}
+
+.ribbon.left {
+border-radius: 1em 0 0 1em / 100% 0% 0% 100%;
+-moz-border-radius: 1em 0 0 1em / 100% 0% 0% 100%;
+-webkit-border-radius: 1em 0 0 1em / 100% 0% 0% 100%;
+}
+
+.ribbon.right, #mw-head .submenu {
+border-radius: 0 1em 1em 0 / 0% 100% 100% 0%;
+-moz-border-radius: 0 1em 1em 0 / 0% 100% 100% 0%;
+-webkit-border-radius: 0 1em 1em 0 / 0% 100% 100% 0%;
+}
+
+/* Colors */
+.module, #mw-head, #p-logo, #p-utilities, .section.heading.expanded {
+background-color: rgb(0%, 40%, 40%); /* fallback */
+background-color: rgba(0%, 40%, 40%, .8);
+}
+
+.module:hover, #mw-head:hover, #p-logo:hover, .section.heading.expanded:hover, #p-utilities:hover {
+background-color: rgba(0%, 40%, 40%, 1);
+}
+
+#left-navigation, #right-navigation, #mw-head .submenu, .chapter.heading {
+background-color: rgb(40%, 0%, 0%); /* fallback */
+background-color: rgba(40%, 0%, 0%, .8);
+}
+
+#mw-panel:hover #left-navigation, #mw-panel:hover #right-navigation, #mw-head .submenu:hover, .chapter.heading:hover {
+background-color: rgba(40%, 0%, 0%, 1);
+}
+
+#mw-head .menu, #p-handle, .section.heading, #p-utilities .menu {
+background-color: rgb(60%, 60%, 60%); /* fallback */
+background-color: rgba(60%, 60%, 60%, .8);
+}
+
+#mw-head .menu:hover, #p-handle:hover, .section.heading:hover, #p-utilities .menu:hover {
+background-color: rgba(60%, 60%, 60%, 1);
+}
+
+#content{
+background-color: rgb(60%, 60%, 60%); /* fallback */
+background-color: rgba(60%, 60%, 60%, .5);
+}
+
+#footer {
+background-color: rgb(40%, 40%, 40%); /* fallback */
+background-color: rgba(40%, 40%, 40%, 1);
+}
+
+.navigation .return, #searchInput {
+background: rgb(0%, 0%, 0%); /* fallback */
+background: rgba(0%, 0%, 0%, .2);
+}
+
+.navigation .return:hover, .ribbon, #simpleSearch:hover #searchInput, #searchInput:focus {
+background: rgba(0%, 0%, 0%, .4);
+}
+
+/* Text */
+#p-personal a, #p-interwiki a, .navigation a, .navigation .return, .tier-2-item > a::before, .navigation .return, #searchInput, #info, #localNotice, .heading, #p-utilities span, #p-utilities a {
+color: rgb(100%, 100%, 100%);
+}
+
+.tier-2-item:hover > a::before, .navigation .return:hover, #p-utilities a:hover {
+text-shadow: 0 0 .5em rgb(100%, 100%, 100%);
+}
+
+#p-personal a:hover, #p-interwiki a:hover, #p-interwiki li:hover > a, .navigation a:hover, .tier-2-item:hover > a {
+text-shadow: 0 0 1em rgb(100%, 100%, 100%);
+}
+
+/* Themes */
+/*** LEGO Universe ***/
+.ns-302 .module, .ns-302 #mw-head, .ns-302 #p-logo, .ns-302 .section.heading.expanded, .ns-302 #p-utilities {
+background-color: rgb(0%, 20%, 40%); /* fallback */
+background-color: rgba(0%, 20%, 40%, .8);
+}
+
+.ns-302 .module:hover, .ns-302 #mw-head:hover, .ns-302 #p-logo:hover, .ns-302 .section.heading.expanded:hover, .ns-302 #p-utilities:hover {
+background-color: rgba(0%, 20%, 40%, 1);
+}
+
+.ns-302 #left-navigation, .ns-302 #right-navigation, .ns-302 #mw-head .submenu, .ns-302 .chapter.heading {
+background-color: rgb(100%, 100%, 100%); /* fallback */
+background-color: rgba(100%, 100%, 100%, .8);
+}
+
+.ns-302 #mw-panel:hover #left-navigation, .ns-302 #mw-panel:hover #right-navigation, .ns-302 #mw-head .submenu:hover, .ns-302 .chapter.heading:hover {
+background-color: rgba(100%, 100%, 100%, 1);
+}
+
+.ns-302 #mw-head .menu, .ns-302 #p-handle, .ns-302 .section.heading, .ns-302 #p-utilities .menu {
+background-color: rgb(60%, 60%, 60%); /* fallback */
+background-color: rgba(60%, 60%, 60%, .8);
+}
+
+.ns-302 #mw-head .menu:hover, .ns-302 #p-handle:hover, .ns-302 .section.heading:hover, .ns-302 #p-utilities .menu:hover {
+background-color: rgba(60%, 60%, 60%, 1);
+}
+
+.ns-302 #content {
+background-color: rgb(50%, 60%, 70%); /* fallback */
+background-color: rgba(0%, 20%, 40%, .5);
+}
+
+.ns-302 #p-interwiki .menu > li:hover a, .ns-302 .navigation a, .ns-302 .navigation .return, .ns-302 .tier-2-item > a::before, .ns-302 .navigation .return, .ns-302 .chapter.heading {
+color: rgb(60%, 60%, 60%);
+}
+
+.ns-302 .tier-2-item.parent:hover > a, .ns-302 .navigation .return:hover, .ns-302 .tier-2-item:hover > a::before, .ns-302 #right-navigation li:hover a {
+color: rgb(100%, 100%, 100%);
+}
+
+.ns-302 .tier-2-item:hover > a::before {
+text-shadow: 0 0 .5em rgb(60%, 60%, 60%);
+}
+
+.ns-302 #p-interwiki a:hover, .ns-302 #p-interwiki li:hover > a, .ns-302 .navigation a:hover, .ns-302 .tier-2-item:hover > a, .ns-302 .navigation .return:hover {
+text-shadow: 0 0 1em rgb(60%, 60%, 60%);
+}

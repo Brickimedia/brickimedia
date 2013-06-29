@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/!svn/ver/2/live/includes/zhtable
+END
+toCN.manual
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/zhtable/toCN.manual
+END
+toHK.manual
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/zhtable/toHK.manual
+END
+simp2trad.manual
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/zhtable/simp2trad.manual
+END
+trad2simp.manual
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/2/live/includes/zhtable/trad2simp.manual
+END
+simpphrases_exclude.manual
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/includes/zhtable/simpphrases_exclude.manual
+END
+printutf8.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/zhtable/printutf8.c
+END
+toSimp.manual
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/zhtable/toSimp.manual
+END
+toSG.manual
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/zhtable/toSG.manual
+END
+tradphrases.manual
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/includes/zhtable/tradphrases.manual
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/2/live/includes/zhtable/README
+END
+simp2trad_supp_set.manual
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/includes/zhtable/simp2trad_supp_set.manual
+END
+trad2simp_supp_set.manual
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/!svn/ver/2/live/includes/zhtable/trad2simp_supp_set.manual
+END
+Makefile.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/zhtable/Makefile.py
+END
+tradphrases_exclude.manual
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/includes/zhtable/tradphrases_exclude.manual
+END
+trad2simp_supp_unset.manual
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/2/live/includes/zhtable/trad2simp_supp_unset.manual
+END
+toTrad.manual
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/2/live/includes/zhtable/toTrad.manual
+END
+toTW.manual
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/2/live/includes/zhtable/toTW.manual
+END
+simpphrases.manual
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/2/live/includes/zhtable/simpphrases.manual
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/2/live/includes/zhtable/Makefile
+END
+simp2trad_noconvert.manual
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/includes/zhtable/simp2trad_noconvert.manual
+END
+trad2simp_noconvert.manual
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/2/live/includes/zhtable/trad2simp_noconvert.manual
+END
