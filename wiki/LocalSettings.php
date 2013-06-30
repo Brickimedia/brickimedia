@@ -132,3 +132,4 @@ $wgResourceLoaderMaxQueryLength = 512;
 # End of automatically generated settings.
 # Add more configuration options below.
 
+require_once( __DIR__ . '/LocalSettings_ext.php' );
