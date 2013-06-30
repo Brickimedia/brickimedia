@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	margin: 0;
+}
+
+#header {
+	background-color: midnightblue;
+	width: 100%;
+	height: 3em;
+	z-index: 2;
+	position: fixed;
+}
+
+#maintitle, #maintitle2 {
+	font-size: 3em;
+	font-family: "Lato", sans-serif;
+}
+#maintitle2 {
+	/*margin-bottom: 0.2em;*/
+	padding-right: 15px;
+}
+	#editbutton {
+		background-color: #CCC;
+		font-size: 1.5em;
+		float: right;
+		padding: 0.2em 0.5em 0.3em 0.5em;
+		border-radius: 0.25em;
+		font-family: "Lato", sans-serif;
+	}
+
+#fullwrapper {
+	/*margin-left: 5%;
+	margin-right: 5%;*/
+}
+
+#contentwrapper {
+	/*width: 64%;*/
+	width: calc(100% - 28em);
+	position: absolute;
+	margin-left: 17em;
+	margin-right: 11em;
+	top: 3em;
+}
+	#content {
+		border-left: 1px solid midnightblue;
+		border-right: 1px solid midnightblue;
+		padding: 1em 1em 0 1em;
+		font-size: 1em;
+	}
+	#content h2 {
+		/*font-family: "Lato", sans-serif;*/
+	}
+
+#leftbar {
+	width: 17em;
+	left: 0;
+}
+#rightbar {
+	width: 11em;
+	right: 0;
+}
+#leftbar, #rightbar {
+	height: 100%;
+	position: fixed;
+	background-color: lavender;
+	top: 3em;
+}
+	#leftbar-top, #rightbar-top {
+		position: absolute;
+		top: 0;
+	}
+	#leftbar-bottom, #rightbar-bottom {
+		position: absolute;
+		bottom: 4em;
+	}
+	#leftbar-top {
+		right: 0;
+	}
+	#leftbar-bottom {
+		right: 0
+	}
+	#rightbar-top {
+		left: 0;
+	}
+	#rightbar-bottom {
+		left: 0
+	}
+	#leftbar a, #rightbar a {
+		display: block;
+		color: #000;
+		text-decoration: none;
+	}
+	#leftbar a {
+		padding: 0.15em 10px 0.15em 0;
+		text-align: right;
+		margin-right: 5px;
+	}
+	#rightbar a {
+		padding: 0.2em 0 0.2em 10px;
+		text-align: left;
+		margin-left: 5px;
+	}
+	#leftbar a:hover, #rightbar a:hover {
+		color: midnightblue;
+		cursor: pointer;
+	}
+	#leftbar a:hover {
+		border-right: 5px solid midnightblue;
+		margin-right: 0px;
+	}
+	#rightbar a:hover {
+		border-left: 5px solid midnightblue;
+		margin-left: 0px;
+	}
+	
+	.tocnumber {
+		display: none;
+	}
+	#toc-box {
+		width: 5px;
+		background-color: midnightblue;
+		height: 1.7em;
+		position: absolute;
+		right: 0;
+	}
+	#refreshed-toc {
+		position: relative;
+	}
+	
+	#pagelinks a {
+		text-transform: lowercase;
+	}

@@ -127,9 +127,10 @@ $wgDiff3 = "/usr/bin/diff3";
 # that value)
 $wgResourceLoaderMaxQueryLength = 512;
 
-
-
 # End of automatically generated settings.
 # Add more configuration options below.
+
+require_once( "$IP/skins/Refreshed.php" );
+$wgDefaultSkin = 'refreshed';
 
 require_once( __DIR__ . '/LocalSettings_ext.php' );
