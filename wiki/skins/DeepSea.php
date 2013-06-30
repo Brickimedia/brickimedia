@@ -577,6 +577,8 @@ class DeepSeaTemplate extends BaseTemplate {
 							'hover' => 'The LEGO Message Boards Wiki' ),
 						'stories' => array( 'name' => 'Stories',
 							'hover' => 'For all your own LEGO Stories' ),
+						'cuusoo' => array( 'name' => 'CUUSOO',
+							'hover' => 'The LEGO CUUSOO Wiki' ),
 						//'dev' => array( 'name' => 'Test' ),
 					);
 					global $bmProject;
@@ -594,8 +596,15 @@ class DeepSeaTemplate extends BaseTemplate {
 		
 		<div class="submenu">
 			<a href="http://<?php echo $code;?>.brickimedia.org/wiki/Special:RecentChanges">Recent Changes</a>
-			<a href="http://<?php echo $code;?>.brickimedia.org/wiki/Special:Mytalk">My Talk</a>
+			<a style="display:none;" href="http://<?php echo $code;?>.brickimedia.org/wiki/Special:Mytalk">My Talk</a>
 			<a href="http://<?php echo $code;?>.brickimedia.org/wiki/Forum:Index">Forums</a>
+			<?php if( $code != 'meta' ){
+            	echo "<a href='http://$code.brickimedia.org/wiki/Special:Chat'>Chat</a>";
+			}?>
+			<?php if( $code != $bmProject ){
+				global $wgTitle;
+            	echo "<a href='http://$code.brickimedia.org/wiki/$wgTitle'>This Page</a>";
+			}?>
 		</div>
 		
 		</li>
