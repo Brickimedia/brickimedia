@@ -133,4 +133,57 @@ $wgResourceLoaderMaxQueryLength = 512;
 require_once( "$IP/skins/Refreshed.php" );
 $wgDefaultSkin = 'refreshed';
 
-require_once( __DIR__ . '/LocalSettings_ext.php' );
+# PROJECT CONFIGURATION
+if( $wgCommandLineMode ) {
+	$_SERVER["SERVER_NAME"] = getenv("WIKI") . ".brickimedia.org";
+	$_SERVER["HTTP_HOST"] = getenv("WIKI") . ".brickimedia.org";
+} else {
+	$_SERVER["SERVER_NAME"] = $_SERVER["HTTP_HOST"];
+}
+
+if( !$wgCommandLineMode ){
+	require_once( __DIR__ . '/LocalSettings_ext.php' );
+}
+
+$ls_path = "LocalSettings_meta.php";
+switch ( $_SERVER["HTTP_HOST"] ) {
+	case "meta.brickimedia.org":
+		$ls_path = "LocalSettings_meta.php";
+		$bmProject = 'meta';
+		break;
+	case "en.brickimedia.org":
+		$ls_path = "LocalSettings_en.php";
+		$bmProject = 'en';
+		//$loadExt = false;
+		break; 
+	case "customs.brickimedia.org":
+		$ls_path = "LocalSettings_customs.php";
+		$bmProject = 'customs';
+		break;
+	case "dev.brickimedia.org":
+		$ls_path = "LocalSettings_dev.php";
+		$bmProject = 'dev';
+		break;
+	case "legomessageboardswiki.brickimedia.org":
+		$ls_path = "LocalSettings_lmbw.php";
+		$bmProject = 'lmbw';
+		break;
+	case "lmbw.brickimedia.org":
+		$ls_path = "LocalSettings_lmbw.php";
+		$bmProject = 'lmbw';
+		break;
+	case "stories.brickimedia.org":
+		$ls_path = "LocalSettings_stories.php";
+		$bmProject = 'stories';
+		break;
+	case "cuusoo.brickimedia.org":
+		$ls_path = "LocalSettings_cuusoo.php";
+		$bmProject = 'cuusoo';
+		break;
+	default:
+		header( 'Location: http://www.brickimedia.org/notfound.html' ) ;
+		// echo "This site does not exist. Check your spelling or <a href='http://www.brickimedia.org'>go back to home</a>.";
+		exit(0);
+	}
+	
+require_once( $ls_path );
