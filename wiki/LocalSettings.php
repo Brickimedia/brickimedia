@@ -132,9 +132,6 @@ $wgResourceLoaderMaxQueryLength = 512;
 # End of automatically generated settings.
 # Add more configuration options below.
 
-require_once( "$IP/skins/Refreshed.php" );
-$wgDefaultSkin = 'refreshed';
-
 # PROJECT CONFIGURATION
 if( $wgCommandLineMode ) {
 	$_SERVER["SERVER_NAME"] = getenv("WIKI") . ".brickimedia.org";
@@ -143,9 +140,6 @@ if( $wgCommandLineMode ) {
 	$_SERVER["SERVER_NAME"] = $_SERVER["HTTP_HOST"];
 }
 
-if( !$wgCommandLineMode ){
-	require_once( __DIR__ . '/LocalSettings_ext.php' );
-}
 
 $ls_path = "LocalSettings_meta.php";
 switch ( $_SERVER["HTTP_HOST"] ) {
@@ -188,4 +182,11 @@ switch ( $_SERVER["HTTP_HOST"] ) {
 		exit(0);
 	}
 	
-require_once( $ls_path );
+if( !$wgCommandLineMode ){
+	//require_once( __DIR__ . '/LocalSettings_ext.php' );
+}
+//require_once( $ls_path );
+
+
+require_once( "$IP/skins/Refreshed.php" );
+$wgDefaultSkin = 'refreshed';
