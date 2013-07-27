@@ -56,7 +56,6 @@ $wgEmailAuthentication = true;
 ## Database settings
 $wgDBtype           = "mysql";
 $wgDBserver         = "localhost";
-$wgDBname           = "meta";
 require_once( __DIR__ . '/LocalSettings_private.php' );
 //$wgDBuser           = "NOT STORED ON GITHUB";
 //$wgDBpassword       = "NOT STORED ON GITHUB";
@@ -147,56 +146,56 @@ switch ( $_SERVER["HTTP_HOST"] ) {
 		$ls_path = "LocalSettings_meta.php";
 		$bmProject = 'meta';
 		$wgServer = "http://meta.brickimedia.org";
+		$wgDBname = "meta";
 		break;
 	case "en.brickimedia.org":
 		$ls_path = "LocalSettings_en.php";
 		$bmProject = 'en';
 		$wgServer = "http://en.brickimedia.org";
+		$wgDBname = "en";
 		break; 
 	case "customs.brickimedia.org":
 		$ls_path = "LocalSettings_customs.php";
 		$bmProject = 'customs';
 		$wgServer = "http://customs.brickimedia.org";
+		$wgDBname = "customs";
 		break;
 	case "dev.brickimedia.org":
 		$ls_path = "LocalSettings_dev.php";
 		$bmProject = 'dev';
 		$wgServer = "http://dev.brickimedia.org";
+		$wgDBname = "dev";
 		break;
 	case "legomessageboardswiki.brickimedia.org":
-		$ls_path = "LocalSettings_lmbw.php";
-		$bmProject = 'lmbw';
-		$wgServer = "http://lmbw.brickimedia.org";
-		break;
 	case "lmbw.brickimedia.org":
 		$ls_path = "LocalSettings_lmbw.php";
 		$bmProject = 'lmbw';
 		$wgServer = "http://lmbw.brickimedia.org";
+		$wgDBname = "lmbw";
 		break;
 	case "stories.brickimedia.org":
 		$ls_path = "LocalSettings_stories.php";
 		$bmProject = 'stories';
 		$wgServer = "http://stories.brickimedia.org";
+		$wgDBname = "stories";
 		break;
 	case "cuusoo.brickimedia.org":
 		$ls_path = "LocalSettings_cuusoo.php";
 		$bmProject = 'cuusoo';
 		$wgServer = "http://cuusoo.brickimedia.org";
+		$wgDBname = "cuusoo";
 		break;
 	default:
-		//header( 'Location: http://www.brickimedia.org/notfound.html' ) ;
+		header( 'Location: http://www.brickimedia.org/notfound.html' ) ;
 		// echo "This site does not exist. Check your spelling or <a href='http://www.brickimedia.org'>go back to home</a>.";
-		//exit(0);
-		
-		$ls_path = "LocalSettings_meta.php";
-		$bmProject = 'meta';
+		exit(0);
 		break;
 	}
 	
 if( !$wgCommandLineMode ){
-	//require_once( __DIR__ . '/LocalSettings_ext.php' );
+	require_once( __DIR__ . '/LocalSettings_ext.php' );
 }
-//require_once( $ls_path );
+require_once( $ls_path );
 
 
 require_once( "$IP/skins/Refreshed.php" );
