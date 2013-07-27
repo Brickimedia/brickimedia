@@ -57,39 +57,5 @@ if ( isset( $_SERVER['MW_COMPILED'] ) ) {
 	require ( __DIR__ . '/includes/WebStart.php' );
 }
 
-// start profiler
-global $wgRequest;
-if( $wgRequest -> getVal('profiler') == 'true' ){
-	$profile = true;
-} else {
-	$profile = false;
-}
-
-if( $profile ){
-	include_once '/usr/share/pear/xhprof_lib/utils/xhprof_lib.php';
-	include_once '/usr/share/pear/xhprof_lib/utils/xhprof_runs.php';
-	xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
-}
-
 $mediaWiki = new MediaWiki();
 $mediaWiki->run();
-
-if( $profile ){
-	$profiler_namespace = 'mw';  // namespace for your application
-	$xhprof_data = xhprof_disable();
-	$xhprof_runs = new XHProfRuns_Default();
-	$run_id = $xhprof_runs->save_run($xhprof_data, $profiler_namespace);
-	
-	// url to the XHProf UI libraries (change the host name and path)
-	$profiler_url = sprintf('http://brickimedia.org/xhprof_html/index.php?run=%s&source=%s', $run_id, $profiler_namespace);
-	echo '<a href="'. $profiler_url .'" target="_blank">Profiler output</a>';
-	
-	// stop profiler
-	/*$xhprof_data = xhprof_disable();
-
-	ob_start();
-	var_dump($xhprof_data);
-	$out = ob_get_clean();
-
-	file_put_contents("/var/log/profiler.log", $out);*/
-}

@@ -32,7 +32,7 @@ $wgArticlePath      = "/wiki/$1";
 $wgUsePathInfo      = true;
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer           = "http://brickimedia.org";
+//$wgServer           = "http://brickimedia.org"; SET LATER ON, BASED ON PROJECT
 
 ## The relative URL path to the skins directory
 $wgStylePath        = "$wgScriptPath/skins";
@@ -146,35 +146,42 @@ switch ( $_SERVER["HTTP_HOST"] ) {
 	case "meta.brickimedia.org":
 		$ls_path = "LocalSettings_meta.php";
 		$bmProject = 'meta';
+		$wgServer = "http://meta.brickimedia.org";
 		break;
 	case "en.brickimedia.org":
 		$ls_path = "LocalSettings_en.php";
 		$bmProject = 'en';
-		//$loadExt = false;
+		$wgServer = "http://en.brickimedia.org";
 		break; 
 	case "customs.brickimedia.org":
 		$ls_path = "LocalSettings_customs.php";
 		$bmProject = 'customs';
+		$wgServer = "http://customs.brickimedia.org";
 		break;
 	case "dev.brickimedia.org":
 		$ls_path = "LocalSettings_dev.php";
 		$bmProject = 'dev';
+		$wgServer = "http://dev.brickimedia.org";
 		break;
 	case "legomessageboardswiki.brickimedia.org":
 		$ls_path = "LocalSettings_lmbw.php";
 		$bmProject = 'lmbw';
+		$wgServer = "http://lmbw.brickimedia.org";
 		break;
 	case "lmbw.brickimedia.org":
 		$ls_path = "LocalSettings_lmbw.php";
 		$bmProject = 'lmbw';
+		$wgServer = "http://lmbw.brickimedia.org";
 		break;
 	case "stories.brickimedia.org":
 		$ls_path = "LocalSettings_stories.php";
 		$bmProject = 'stories';
+		$wgServer = "http://stories.brickimedia.org";
 		break;
 	case "cuusoo.brickimedia.org":
 		$ls_path = "LocalSettings_cuusoo.php";
 		$bmProject = 'cuusoo';
+		$wgServer = "http://cuusoo.brickimedia.org";
 		break;
 	default:
 		//header( 'Location: http://www.brickimedia.org/notfound.html' ) ;
