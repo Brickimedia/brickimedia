@@ -1,0 +1,71 @@
+body {
+	background: url(img/bg.jpg) 0px 0px no-repeat fixed;
+	background-size: 100% auto;
+	text-align: center;
+}
+
+#topbar {
+	position: fixed;
+	top: 0px;
+	right: 0;
+	width: 100%;
+	height: 30px;
+	background: rgba(33,33,33,0.5);
+	z-index: 9999;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700);
+#middle {
+	display: inline-block;
+	width: auto;
+	min-width: 80%;
+	max-width: 100%;
+	background: rgba(65,158,200,0.6);
+	margin-top: 150px;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 25px;
+}
+.big {
+	font-size: 330%;
+}
+
+.small {
+	font-size: 170%;
+}
+
+#bottom {
+	width: 75%;
+	height: 100px;
+	background: rgba(33,33,33,0.5);
+	position: absolute;
+	bottom: 0px;
+	margin-right: 12.5%;
+	margin-left: 12.5%;
+}
+.tab {
+	width: 33%;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.tab b {
+	font-size: 140%;
+	margin: 10px;
+	color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+}
