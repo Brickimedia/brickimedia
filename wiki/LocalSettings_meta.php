@@ -94,5 +94,3 @@ require_once("$IP/extensions/Donate/Donate.php");
 #images
 #$wgShowSQLErrors = true;
 require_once("$IP/extensions/UnimportedImages2/UnimportedImages.php");
-
-$wgAddGroups['*'] = array( 'sysop', 'sysadmin', 'bureaucrat' );
