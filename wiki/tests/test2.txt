@@ -1,1 +1,0 @@
-Testing Git integration from WebMatrix 3.
