@@ -1,4 +1,6 @@
 <?php
+# This extension is obsolete and was succeeded by MediaWikiChat
+
 # set to false to deny access to anonymous users
 define('CHAT_ALLOW_ANONYMOUS_USERS', true);
  

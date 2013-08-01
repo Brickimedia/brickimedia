@@ -13,16 +13,11 @@ class SpecialChat extends SpecialPage {
                 $request = $this->getRequest();
                 $output = $this->getOutput();
                 $this->setHeaders();
- 
-                # Get request data from, e.g.
                 $param = $request->getText( 'param' );
- 
-                # Do stuff
-                # ...
-                global $bmProject; //NXT (sorry if I forget to tell you)
+                global $bmProject;
                 
 				$wikitext = '{{#ifexist: MediaWiki:Chat-notice|{{MediaWiki:Chat-notice}}<br />|}}';
-				$html = '<iframe width="100%" src="http://dev.brickimedia.org/chat/cometchat/modules/chatrooms/index.php?basedata=null&preoject=' . $bmProject . 'width="100%" height="600px" style="border:1px solid #888888;"></iframe>';
+				$html = '<iframe width="100%" src="http://dev.brickimedia.org/chat/cometchat/modules/chatrooms/index.php?basedata=null&project=' . $bmProject . 'width="100%" height="600px" style="border:1px solid #888888;"></iframe>';
                 $output->addWikiText( $wikitext );
                 $output->addHTML( $html );
 				function __construct() {
