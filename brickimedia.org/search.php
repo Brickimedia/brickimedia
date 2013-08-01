@@ -9,9 +9,6 @@ switch ($_GET['site']) {
 	case "customs":
 		header( 'Location: http://customs.brickimedia.org/wiki/Special:Search/' . ($_GET['search']) ) ;
 		break;
-	case "lmbw":
-		header( 'Location: http://lmbw.brickimedia.org/wiki/Special:Search/' . ($_GET['search']) ) ;
-		break;
 	case "stories":
 		header( 'Location: http://stories.brickimedia.org/wiki/Special:Search/' . ($_GET['search']) ) ;
 		break;

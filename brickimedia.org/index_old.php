@@ -132,7 +132,7 @@ body {
 }
 
 .tab {
-	width: 13%;
+	width: 15%;
 	height: 100%;
 	font-family: 'Lato', sans-serif;
 	-webkit-transition: all .4s ease-in-out;
@@ -153,9 +153,6 @@ body {
 }
 .tab.customs:hover {
 	background: #AD2B2B;
-}
-.tab.lmbw:hover {
-	background: #E36600;
 }
 .tab.stories:hover {
 	background: #608e8e;
@@ -275,7 +272,6 @@ img {
 				<option value="meta">Brickimedia Meta</option>
 				<option value="en" selected="selected">Brickipedia</option>
 				<option value="customs">Brickipedia Customs</option>
-				<option value="lmbw">LEGO Message Boards Wiki</option>
 				<option value="stories">LEGO Stories Wiki</option>
 				<option value="cuusoo">LEGO CUUSOO Wiki</option>
 			</select>
@@ -335,9 +331,6 @@ img {
     </div></a>
     <a href="http://customs.brickimedia.org"><div class="tab customs">
     	<b>CUSTOMS</b>
-    </div></a>
-    <a href="http://lmbw.brickimedia.org"><div class="tab lmbw">
-    	<b>LMB WIKI</b>
     </div></a>
     <a href="http://stories.brickimedia.org"><div class="tab stories">
     	<b>STORIES</b>
