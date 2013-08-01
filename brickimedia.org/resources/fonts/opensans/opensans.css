@@ -1,0 +1,27 @@
+/* Open Sans font for use on Brickimedia */
+@font-face {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	src: url(http://www.brickimedia.org/resources/fonts/opensans/OpenSans-Regular.woff),
+		 url(http://www.brickimedia.org/resources/fonts/opensans/OpenSans-Regular.ttf),
+		 url(http://www.brickimedia.org/resources/fonts/opensans/OpenSans-Regular.eot);
+}
+@font-face {
+	font-family: Open Sans;
+	font-style: italic;
+	font-weight: normal;
+	src: url(http://www.brickimedia.org/resources/fonts/opensans/OpenSans-Italic.ttf);
+}
+@font-face {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: bold;
+	src: url(http://www.brickimedia.org/resources/fonts/opensans/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: Open Sans;
+	font-style: italic;
+	font-weight: bold;
+	src: url(http://www.brickimedia.org/resources/fonts/opensans/OpenSans-BoldItalic.ttf);
+}
