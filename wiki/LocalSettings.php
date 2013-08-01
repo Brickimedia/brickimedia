@@ -187,7 +187,6 @@ switch ( $_SERVER["HTTP_HOST"] ) {
 		break;
 	default:
 		header( 'Location: http://www.brickimedia.org/notfound.html' ) ;
-		// echo "This site does not exist. Check your spelling or <a href='http://www.brickimedia.org'>go back to home</a>.";
 		exit(0);
 		break;
 	}

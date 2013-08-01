@@ -68,7 +68,7 @@ $wgCiteEnablePopups = true;                             // Pop-up citations
 
 # Brickimedia Footer Icon
 $wgFooterIcons['brickimedia']['brickimedia'] = array(
-"src" => "$wgScriptPath/brickimedia-tag.png",
+"src" => "http://www.brickimedia.org/img/brickimedia-tag.png",
 "url" => "http://www.brickimedia.org",
 "alt" => "Brickimedia",
 "height" => "31",
