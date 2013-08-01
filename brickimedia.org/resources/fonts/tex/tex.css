@@ -3,23 +3,31 @@
 	font-family: TeX;
 	font-style: normal;
 	font-weight: normal;
-	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-regular.otf);
+	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-regular.woff),
+		 url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-regular.otf),
+		 url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-regular.eot);
 }
 @font-face {
 	font-family: TeX;
 	font-style: italic;
 	font-weight: normal;
-	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-italic.otf);
+	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-italic.woff),
+		 url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-italic.otf),
+		 url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-italic.eot);
 }
 @font-face {
 	font-family: TeX;
 	font-style: normal;
 	font-weight: bold;
-	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-bold.otf);
+	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-bold.woff),
+		 url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-bold.otf),
+		 url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-bold.eot);
 }
 @font-face {
 	font-family: TeX;
 	font-style: italic;
 	font-weight: bold;
-	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-bolditalic.otf;
+	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-bolditalic.woff),
+		 url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-bolditalic.otf)
+		 url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-bolditalic.eot);
 }
