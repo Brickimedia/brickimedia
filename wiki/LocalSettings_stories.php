@@ -4,6 +4,7 @@ $wgSitename      = "LEGO Stories Wiki";
 $wgMetaNamespace = "LEGO Stories Wiki";
 
 $wgLogo             = "http://meta.brickimedia.org/images/e/ec/Lswlogo.png";
+$wgFavicon          = "http://www.brickimedia.org/favicon.ico";
 
 $wgLanguageCode = "en";
 
