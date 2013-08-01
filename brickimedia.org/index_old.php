@@ -11,9 +11,8 @@ google_ad_width = 728;
 google_ad_height = 90;
 //-->
 </script>
+<link rel="stylesheet" type="text/css" href="resources/fonts/lato/lato.css">
 <style>
-@import url(http://fonts.googleapis.com/css?family=Lato:300,700);
-
 @media screen and (max-width: 1024px) {
 	.tab {
 		width: 16.67%;
