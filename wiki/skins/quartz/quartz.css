@@ -1,19 +1,6 @@
 /* Fonts */
-@font-face {
-font-family: 'Exo';
-src: url('/skins/quartz/fonts/exo-regular-webfont.eot');
-src: url('/skins/quartz/fonts/exo-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/skins/quartz/fonts/exo-regular-webfont.woff') format('woff'), url('/skins/quartz/fonts/exo-regular-webfont.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-
-@font-face {
-font-family: 'Open Sans';
-src: url('/skins/quartz/fonts/opensans-regular-webfont.eot');
-src: url('/skins/quartz/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/skins/quartz/fonts/opensans-regular-webfont.woff') format('woff'), url('/skins/quartz/fonts/opensans-regular-webfont.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
+@import url(http://www.brickimedia.org/resources/fonts/exo/exo.css);
+@import url(http://www.brickimedia.org/resources/fonts/opensans/opensans.css);
 
 body {
 font-family: 'Open Sans', sans-serif;
