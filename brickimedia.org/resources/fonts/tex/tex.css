@@ -1,0 +1,25 @@
+/* TeX font for use on Brickimedia */
+@font-face {
+	font-family: TeX;
+	font-style: normal;
+	font-weight: normal;
+	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-regular.otf);
+}
+@font-face {
+	font-family: TeX;
+	font-style: italic;
+	font-weight: normal;
+	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-italic.otf);
+}
+@font-face {
+	font-family: TeX;
+	font-style: normal;
+	font-weight: bold;
+	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-bold.otf);
+}
+@font-face {
+	font-family: TeX;
+	font-style: italic;
+	font-weight: bold;
+	src: url(http://www.brickimedia.org/resources/fonts/tex/texgyreadventor-bolditalic.otf;
+}

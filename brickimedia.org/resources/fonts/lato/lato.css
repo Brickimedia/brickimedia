@@ -1,0 +1,25 @@
+/* Lato font for use on Brickimedia */
+@font-face {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	src: url(http://www.brickimedia.org/resources/fonts/lato/Lato-Reg.ttf);
+}
+@font-face {
+	font-family: Lato;
+	font-style: italic;
+	font-weight: normal;
+	src: url(http://www.brickimedia.org/resources/fonts/lato/Lato-RegIta.ttf);
+}
+@font-face {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	src: url(http://www.brickimedia.org/resources/fonts/lato/Lato-Bol.ttf);
+}
+@font-face {
+	font-family: Lato;
+	font-style: italic;
+	font-weight: bold;
+	src: url(http://www.brickimedia.org/resources/fonts/lato/Lato-BolIta.ttf;
+}

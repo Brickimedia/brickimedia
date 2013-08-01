@@ -1,0 +1,25 @@
+/* Exo font for use on Brickimedia */
+@font-face {
+	font-family: Exo;
+	font-style: normal;
+	font-weight: normal;
+	src: url(http://www.brickimedia.org/resources/fonts/exo/Exo-Regular.otf);
+}
+@font-face {
+	font-family: Exo;
+	font-style: italic;
+	font-weight: normal;
+	src: url(http://www.brickimedia.org/resources/fonts/exo/Exo-Regular-Italic.otf);
+}
+@font-face {
+	font-family: Exo;
+	font-style: normal;
+	font-weight: bold;
+	src: url(http://www.brickimedia.org/resources/fonts/exo/Exo-Bold.otf);
+}
+@font-face {
+	font-family: Exo;
+	font-style: italic;
+	font-weight: bold;
+	src: url(http://www.brickimedia.org/resources/fonts/exo/Exo-Bold-Italic.otf;
+}
