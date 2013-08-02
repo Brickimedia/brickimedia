@@ -70,18 +70,10 @@ require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 #GlobalNewUsers
 require_once("$IP/extensions/GlobalNewUsers/GlobalNewUsers.php");
 
-#Chat
-#$wgFooterManagerBanners = array();
-#$wgFooterManagerBanners[] = array( 'headscript' => '<link type="text/css" href="/cometchat/cometchatcss.php" rel="stylesheet" charset="utf-8">
-#<script type="text/javascript" src="/cometchat/cometchatjs.php" charset="utf-8"></script>', 'icon' => '', 'bottomscript' =>'', );
-
 $wgShowSQLErrors = true;
 
 
 require_once("$IP/extensions/WhosGloballyOnline/WhosGloballyOnline.php");
-require_once( "$IP/extensions/awc/forums/awc_forum.php" );
-
-#require_once("$IP/extensions/ChatMods/ChatMods.php");
 
 require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
 
