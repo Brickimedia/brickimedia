@@ -170,14 +170,10 @@ $wgEnableAjaxLogin = array(
 		'deepsea' => true,
 );*/
 
-#Image Tags by Swert at BIONICLEsector01
-require_once("/$IP/extensions/images.php");
-
 #MediaWikiChat
 if( $bmProject != 'meta' ){
 	require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
 }
-
 
 #render pdfs
 require_once("$IP/extensions/PdfHandler/PdfHandler.php");
