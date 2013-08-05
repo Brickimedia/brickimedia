@@ -59,6 +59,13 @@ body {
 	cursor: pointer;
 }
 
+.social {
+	margin-right: 12px;
+}
+.social:last-of-type {
+	margin-right: 0px;
+}
+
 .tab b {
 	font-size: 140%;
 	margin: 10px;
@@ -67,4 +74,10 @@ body {
 
 a {
 	color: #ffffff;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+ul {
+	text-align: left;
 }
