@@ -182,9 +182,8 @@ $wgEnableAjaxLogin = array(
 );*/
 
 #MediaWikiChat
-if( $bmProject != 'meta' ){
-	require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
-}
+require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
+
 
 #render pdfs
 require_once("$IP/extensions/PdfHandler/PdfHandler.php");
