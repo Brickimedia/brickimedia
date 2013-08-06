@@ -21,8 +21,19 @@ require_once("$IP/extensions/EditUser/EditUser.php");
 #Stop those spammers!
 require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
 #...without reCAPTCHA. --southerner
-require_once("$IP/extensions/ConfirmEdit/Asirra.php");
-$wgCaptchaClass = 'Asirra';
+#require_once("$IP/extensions/ConfirmEdit/Asirra.php");
+#$wgCaptchaClass = 'Asirra';
+require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php");
+$wgCaptchaClass = 'QuestyCaptcha';
+$arr = array (
+        "What is Brickimedia about?" => "LEGO",
+        'Please write the magic word, "passion", here:' => 'passion',
+        'Type the code word, 567, here:' => '567',
+        'What is half of 8?' => '4',
+);
+foreach ( $arr as $key => $value ) {
+        $wgCaptchaQuestions[] = array( 'question' => $key, 'answer' => $value );
+}
 $wgGroupPermissions['autoconfirmed']['skipcaptcha'] = true;
 $wgGroupPermissions['bot']['skipcaptcha'] = true;
 $wgCaptchaTriggers['edit']          = true;
