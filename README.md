@@ -10,3 +10,4 @@ For information about Brickimedia development, please see http://meta.brickimedi
 To Do
 ----------
 - Finish refreshed default Brickimedia skin
+- Pass W3 validation
