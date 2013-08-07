@@ -78,7 +78,6 @@ $wgGroupPermissions['sysop']['editnews'] = true;
 define("NS_CUSTOM", 116);
 $wgExtraNamespaces[NS_CUSTOM] = "Custom";
 
-require_once( "$IP/extensions/Validator/Validator.php" );
 include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
 enableSemantics('en.brickimedia.org');
 

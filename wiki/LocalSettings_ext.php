@@ -158,7 +158,7 @@ $smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
 #require_once ('extensions/FooterManager/FooterManager.php');
 
 #EveryXLoad (hooks for scripts that don't need to run every pageload
-require_once("$IP/extensions/EveryXLoad/EveryXLoad.php");
+//require_once("$IP/extensions/EveryXLoad/EveryXLoad.php");
 
 #WhosOnline
 #require_once("$IP/extensions/WhosOnline/WhosOnline.php");
