@@ -60,11 +60,7 @@ $wgUserLevels = array(
 $wgUserProfileDisplay['stats'] = true;
 
 #global file descriptors
-$wgGlobalUsageDatabase = 'brickimedia_meta';
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
-
-# ChatLogger
-#require_once("$IP/extensions/ChatLogger/ChatLogger.php");
 
 #TEMPORARY
 $wgGroupPermissions['*']['edit'] = false;

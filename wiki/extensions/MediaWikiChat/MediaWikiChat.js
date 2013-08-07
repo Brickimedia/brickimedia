@@ -223,10 +223,9 @@ function getNew(called){
 
 function addMessage(user, message, url, timestamp){
 	
-	var messages = $(".mwchat-message");
-	$.each(messages, function(index, value){
-		if(value.children(".mwchat-item-timestamp").attr("data-timestamp") == timestamp){
-			if(value.children(".mwchat-item-user").html() == user){
+	$(".mwchat-message").each(function(index, value){
+		if($(value).children(".mwchat-item-timestamp").attr("data-timestamp") == timestamp){
+			if($(value).children(".mwchat-item-user").html() == user){
 				return;
 			}
 		}

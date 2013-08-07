@@ -67,5 +67,4 @@ $wgUserLevels = array(
 $wgUserProfileDisplay['stats'] = true;
 
 #global file descriptors
-$wgGlobalUsageDatabase = 'brickimedia_meta';
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");

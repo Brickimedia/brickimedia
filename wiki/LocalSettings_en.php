@@ -147,7 +147,6 @@ if( in_array(700, $wgExtraNamespaces)){
 
 
 #global file descriptors
-$wgGlobalUsageDatabase = 'brickimedia_meta';
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 
 #for {{colourbox}}

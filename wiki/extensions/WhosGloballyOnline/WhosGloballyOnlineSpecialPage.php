@@ -19,12 +19,12 @@ class SpecialWhosGloballyOnline extends SpecialPage {
 		$this->setHeaders();
 		
 		$users = array();
-		$dbs = array( 'brickimedia_meta',
-			/*'brickimedia_dev',
-			'brickimedia_en',
-			'brickimedia_customs',
-			'brickimedia_stories',
-			'brickimedia_lmbw',*/
+		$dbs = array( 'meta',
+			/*'dev',
+			'en',
+			'customs',
+			'stories',
+			'lmbw',*/
 		);
 		
 		foreach( $dbs as $db ){

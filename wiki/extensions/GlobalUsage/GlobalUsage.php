@@ -80,4 +80,4 @@ $wgHooks['LoadExtensionSchemaUpdates'][] = 'GlobalUsageHooks::onLoadExtensionSch
 
 // If set to false, the local database contains the globalimagelinks table
 // Else set to something understandable to LBFactory
-$wgGlobalUsageDatabase = 'brickimedia_meta';///GRRRRRRRRRRRRRRRRRRRRRRRR NXT
+$wgGlobalUsageDatabase = 'meta';///GRRRRRRRRRRRRRRRRRRRRRRRR NXT

@@ -24,7 +24,6 @@ class GlobalUsageQuery {
 	 */
 	public function __construct( $target ) {
 		global $wgGlobalUsageDatabase;
-		$wgGlobalUsageDatabase = 'brickimedia_meta'; /* NXT */
 		$this->db = wfGetDB( DB_SLAVE, array(), $wgGlobalUsageDatabase );
 		if ( $target instanceof Title ) {
 			$this->target = $target;

@@ -21,7 +21,6 @@ class RefreshGlobalImageLinks extends Maintenance {
 
 	public function execute() {
 		global $wgGlobalUsageDatabase;
-		$wgGlobalUsageDatabase = 'brickimedia_meta'; /* NXT */
 
 		$dbr = wfGetDB( DB_SLAVE );
 		$dbw = wfGetDB( DB_MASTER, array(), $wgGlobalUsageDatabase );
