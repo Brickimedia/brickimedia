@@ -1,7 +1,8 @@
-<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!-- SPLASH PAGE DESIGN BY GEORGE BARNICK -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Brickimedia</title>
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-9543775174763951";
@@ -285,7 +286,7 @@ img {
 </div>
 <div class="announcetri">&nbsp;</div>
 <div id="topbar">
-	<img src="img/logo.png" />
+	<img src="img/logo.png" alt="Brickimedia Logo" />
     <div id="toplinks">
     	<!--<a href="http://meta.brickimedia.org/wiki/Special:UserLogin">
         	Log in
@@ -374,13 +375,13 @@ img {
     <br/><br/>
     <center>
     	<a href="http://www.facebook.com/brickimedia" style="margin-right:20px;">
-        	<img src="img/facebook.png" />
+        	<img src="img/facebook.png" alt="Facebook" />
         </a>
         <a href="http://www.twitter.com/brickimedia" style="margin-right:20px;">
-        	<img src="img/twitter.png" />
+        	<img src="img/twitter.png" alt="Twitter" />
         </a>
         <a href="http://www.youtube.com/brickimedia">
-        	<img src="img/youtube.png" />
+        	<img src="img/youtube.png" alt="YouTube" />
         </a>
     </center>
     <br/><br/><br/><br/>
