@@ -10,4 +10,3 @@ For information about Brickimedia development, please see http://meta.brickimedi
 To Do
 ----------
 - Finish refreshed default Brickimedia skin
-- Update /brickimedia.org/resources/fonts to have cross-browser support
