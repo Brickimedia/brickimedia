@@ -3,6 +3,12 @@
 <head>
 <!-- SPLASH PAGE DESIGN BY GEORGE BARNICK -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#429ec8"/>
+<meta name="msapplication-square70x70logo" content="tiny.png"/>
+<meta name="msapplication-square150x150logo" content="square.png"/>
+<meta name="msapplication-wide310x150logo" content="wide.png"/>
+<meta name="msapplication-square310x310logo" content="large.png"/>
 <title>Brickimedia</title>
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-9543775174763951";
