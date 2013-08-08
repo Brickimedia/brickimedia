@@ -199,3 +199,7 @@ require_once( $ls_path );
 
 require_once( "$IP/skins/Refreshed.php" );
 $wgDefaultSkin = 'refreshed';
+
+#disable anonymous editing during beta
+$wgGroupPermissions['*']['edit'] = false;
+$wgGroupPermissions['user']['edit'] = true;
