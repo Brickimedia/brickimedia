@@ -18,8 +18,8 @@ google_ad_width = 728;
 google_ad_height = 90;
 //-->
 </script>
-<link rel="stylesheet" type="text/css" href="resources/fonts/lato/lato.css">
-<style>
+<link rel="stylesheet" type="text/css" href="resources/fonts/lato/lato.css" />
+<style type="text/css">
 @media screen and (max-width: 1024px) {
 	.tab {
 		width: 16.67%;
@@ -256,12 +256,12 @@ img {
 	margin-bottom: 100px;
 }
 </style>
-<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="shortcut icon" href="img/favicon.ico" />
 </head>
 <body>
 <!-- BEGIN FACEBOOK LIKE BUTTON SCRIPT -->
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script type="text/css">(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
@@ -283,7 +283,7 @@ img {
 				<option value="cuusoo">LEGO CUUSOO Wiki</option>
 			</select>
 
-			<input id="formBtn" type="submit" value="Search" onClick="openSearchPage">
+			<input id="formBtn" type="submit" value="Search">
 
 		</fieldset>
 	</form>
@@ -352,7 +352,7 @@ img {
     <div id="video">
     	<iframe width="560" height="315" src="http://www.youtube.com/embed/TjpGeZvr7wQ?vq=hd720" frameborder="0" allowfullscreen>
         </iframe>
-        <hr color="#888888" size="1"/>
+        <hr size="1"/>
         <div class="fb-like" data-href="http://www.facebook.com/brickimedia" data-send="true" data-width="450" data-show-faces="true" height="50px"></div>
     </div>
     <div class="secMargin">
