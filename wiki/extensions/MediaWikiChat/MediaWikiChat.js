@@ -367,7 +367,7 @@ function clickUser(e){
 
 }
 
-$("#mwchat-type input").keypress(function(e) {
+$($("#mwchat-type input")[0]).keypress(function(e) {
 
     if(e.which == 13 && e.shiftKey) {
     	
