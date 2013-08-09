@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #3d9ec8;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#toolbar {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    background: white;
+    top: 0;
+    z-index: 2;
+}
+
+#toolbar .toggle {
+    margin: 20px auto 0;
+    background: white;
+    width: 30px;
+    height: 15px;
+    border-radius: 0 0 5px 5px;
+}
+
+#interwiki {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#interwiki #mid {
+    width: 200px;
+    background: #BFDBEE;
+    border-radius: 0 0 5px 5px;
+}
+
+#interwiki .sub {
+    display: inline-block;
+    float: left;
+}
+
+#interwiki #left, #interwiki #right {
+    width: calc(50% - 100px);
+}
+
+#interwiki #left a, #interwiki #right a {
+    width: 50%;
+    padding: 20px 0;
+}
+
+#interwiki #mid a {
+    width: 100%;
+    padding: 25px 0;
+    border-radius: 0 0 5px 5px;
+    font-size: 125%;
+}
+
+#interwiki a {
+    display: block;
+    float: left;
+    background: #BFDBEE;
+    color: black;
+    text-decoration: none;
+    transition: background 200ms linear;
+}
+
+#interwiki a:hover {
+    background: white;
+}
+
+#page {
+    position: absolute;
+    background: white;
+    top: 151px;
+    bottom: 0;
+    left: 70px;
+    right: 0;
+    border-top-left-radius: 5px;
+}
+
+#page #top {
+    position: absolute;
+    margin-top: -33px;
+    padding-left: 20px;
+}
+
+#page #top li {
+    display: inline-block;
+    margin: 0 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #BFDBEE;
+    transition: border 200ms linear;
+}
+
+#page #top li:hover, #page #top li.active {
+    border-color: transparent transparent white;
+}
+
+#page #top li.active a, #page #top li:hover a {
+    background: white;
+}
+
+#page #top a {
+    display: inline-block;
+    background: #BFDBEE;
+    padding: 5px 20px 0;
+    border-bottom: 1px solid #BFDBEE;
+    color: black;
+    text-decoration: none;
+    font-size: 80%;
+    border-radius: 5px 5px 0 0;
+    transition: background 200ms linear, border 200ms linear;
+}
+
+#page #top li:hover a, #page #top li.active a {
+    border-bottom-color: white;
+}
+
+#page #left {
+    position: absolute;
+    margin-left: -49px;
+}
