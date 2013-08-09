@@ -9,6 +9,10 @@
 <meta name="msapplication-square150x150logo" content="square.png"/>
 <meta name="msapplication-wide310x150logo" content="wide.png"/>
 <meta name="msapplication-square310x310logo" content="large.png"/>
+<meta property="og:image" content="http://www.brickimedia.org/large.png"/>
+<meta property="og:title" content="Brickimedia - An open project to create the largest LEGO fan network on the web"/>
+<meta property="og:url" content="http://www.brickimedia.org"/>
+<meta property="og:site_name" content="Brickimedia"/>
 <title>Brickimedia</title>
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-9543775174763951";
