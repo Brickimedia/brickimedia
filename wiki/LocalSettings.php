@@ -109,7 +109,7 @@ $wgUpgradeKey = "4d6c44c3c40f5030";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
-$wgDefaultSkin = "vector";
+//$wgDefaultSkin = "vector";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -199,6 +199,8 @@ require_once( $ls_path );
 
 require_once( "$IP/skins/Refreshed.php" );
 $wgDefaultSkin = 'refreshed';
+
+require_once( "$IP/skins/Custard.php" );
 
 #disable anonymous editing during beta
 $wgGroupPermissions['*']['edit'] = false;
