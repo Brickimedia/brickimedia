@@ -26,6 +26,7 @@ body {
     height: 15px;
     border-radius: 0 0 5px 5px;
     cursor: pointer;
+    transition: background 200ms linear;
 }
 
 #toolbar .toggle .text {
@@ -33,7 +34,8 @@ body {
     width: 30px;
     height: 15px;
     text-align: center;
-    font-weight: bold;
+    color: #BBB;
+    line-height: 10px;
 }
 
 #toolbar .toggle .invert {
@@ -53,6 +55,7 @@ body {
     background: transparent;
     border: 5px solid white;
     border-top-right-radius: 10px;
+    transition: border 200ms linear;
 }
 
 #toolbar .toggle .invert::after {
@@ -64,6 +67,15 @@ body {
     background: transparent;
     border: 5px solid white;
     border-top-left-radius: 10px;
+    transition: border 200ms linear;
+}
+
+#toolbar .toggle:hover {
+    background: #DFEDF6;
+}
+
+#toolbar .toggle:hover .invert::before, #toolbar .toggle:hover .invert::after {
+    border: #DFEDF6;
 }
 
 /* Interwiki */
@@ -123,11 +135,11 @@ body {
 }
 
 #interwiki a:hover {
-    background: white;
+    background: #DFEDF6;
 }
 
 #interwiki a:hover .invert::after {
-    border-color: white;
+    border-color: #DFEDF6;
 }
 
 #interwiki .left .shell div {
