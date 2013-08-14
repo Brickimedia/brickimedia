@@ -145,14 +145,14 @@ body {
 }
 
 #interwiki .left .shell div {
-    text-align: right;
+    float: right;
 }
 
 #interwiki .left .invert {
     position: absolute;
     width: 5px;
     height: 5px;
-    margin-left: -5px;
+    margin: 60px 0 0 -5px;
     overflow: hidden;
 }
 
@@ -162,19 +162,20 @@ body {
     width: 5px;
     height: 5px;
     border: 5px solid #BFDBEE;  
-    margin: -5px 0 0 -10px;
+    margin: -5px 0 0 -5px;
     border-top-right-radius: 10px;
     transition: border 200ms linear;
 }
 
 #interwiki .right .shell div {
-    text-align: left;
+    float: left;
 }
 
 #interwiki .right .invert {
     position: absolute;
     width: 5px;
     height: 5px;
+    margin-top: 60px;
     overflow: hidden;
 }
 
