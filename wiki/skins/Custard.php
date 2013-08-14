@@ -82,7 +82,7 @@ class CustardTemplate extends BaseTemplate
 				
         <div id="toolbar">
         <div class="toggle">
-            <span class="text">&or;</span>
+            <span class="text">≡</span>
             <span class="invert"></span>
         </div>
         <div id="mw-js-message" class="message" style="display:none;"></div>

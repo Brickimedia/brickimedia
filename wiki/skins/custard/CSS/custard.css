@@ -39,8 +39,8 @@ body {
 #toolbar .toggle .invert {
     position: absolute;
     width: 40px;
-    height: 15px;
-    margin-left: 5px;
+    height: 5px;
+    margin-left: -5px;
     overflow: hidden;
 }
 
@@ -63,7 +63,7 @@ body {
     height: 5px;
     background: transparent;
     border: 5px solid white;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 /* Interwiki */
