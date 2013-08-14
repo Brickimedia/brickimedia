@@ -146,6 +146,7 @@ body {
 
 #interwiki .left .shell div {
     float: right;
+    text-align: left;
 }
 
 #interwiki .left .invert {
@@ -169,6 +170,7 @@ body {
 
 #interwiki .right .shell div {
     float: left;
+    text-align: left;
 }
 
 #interwiki .right .invert {
