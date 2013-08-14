@@ -81,7 +81,10 @@ class CustardTemplate extends BaseTemplate
         $this->html('headelement'); ?>
 				
         <div id="toolbar">
-        <div class="toggle"></div>
+        <div class="toggle">
+            <span class="text">&or;</span>
+            <span class="invert"></span>
+        </div>
         <div id="mw-js-message" class="message" style="display:none;"></div>
         <?php if ( $this->data['sitenotice'] ) { ?>
             <div id="site-notice">
@@ -96,16 +99,28 @@ class CustardTemplate extends BaseTemplate
         </div>
 
         <div id="interwiki">
-            <div id="left" class="sub">
-                <a href="#meta">Meta</a>
-                <a href="#pedia">Pedia</a>
+            <div class="left">
+                <div class="shell">
+                    <a href="#meta">Meta</a>
+                    <a href="#pedia">Pedia
+                        <div>
+                            <span class="invert"></span>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div id="mid" class="sub">
+            <div class="mid">
                 <a href="#main">Brickimedia</a>
             </div>
-            <div id="right" class="sub">
-                <a href="#lmbw">LMBW</a>
-                <a href="#stories">Stories</a>
+            <div class="right">
+                <div class="shell">
+                    <a href="#lmbw">LMBW
+                        <div>
+                            <span class="invert"></span>
+                        </div>
+                    </a>
+                    <a href="#stories">Stories</a>
+                </div>
             </div>
         </div>
 				
