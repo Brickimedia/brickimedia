@@ -73,6 +73,17 @@ a {
 	cursor: pointer;
 }
 
+a > img {
+	border: 0;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: Arial, sans-serif !important;
+}
+
 ul {
 	text-align: left;
+	font-family: Arial, sans-serif !important;
 }
