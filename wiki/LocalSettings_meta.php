@@ -2,7 +2,7 @@
 
 $wgSitename         = "Brickimedia Meta";
 $wgMetaNamespace    = "Brickimedia";
-$wgLogo             = "http://brickimedia.org/brickimedia_brick.png";
+$wgLogo             = "$IP/skins/common/images/common-logo.png";
 $wgFavicon          = "http://www.brickimedia.org/favicon.ico";
 
 $wgLanguageCode = "en";

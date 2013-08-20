@@ -573,8 +573,6 @@ class DeepSeaTemplate extends BaseTemplate {
 							'hover' => 'The LEGO Wiki' ),
 						'customs' => array( 'name' => 'Customs',
 							'hover' => 'Upload your own creations' ),
-						'lmbw' => array( 'name' => 'LMB Wiki',
-							'hover' => 'The LEGO Message Boards Wiki' ),
 						'stories' => array( 'name' => 'Stories',
 							'hover' => 'For all your own LEGO Stories' ),
 						'cuusoo' => array( 'name' => 'CUUSOO',
