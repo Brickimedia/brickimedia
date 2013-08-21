@@ -1,6 +1,8 @@
 <?php
 /**
  * Lia - Modified version of Vector.
+ * Originally designed for the LEGO Message Boards Wiki on Brickimedia
+ * http://www.brickimedia.org
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -263,18 +265,26 @@ class LiaTemplate extends BaseTemplate {
 		<div id="mw-head" class="noprint">
 		<div id="p-media" class="top-nav">
 	<h5>Brickimedia Navigation</h5>
-	<ul><li class="not-link">
+	<ul>
+    	<li class="not-link">
 			Brickimedia:
-		</li><li class="">
+		</li>
+        <li class="">
 			<a href="http://meta.brickimedia.org">Meta</a>
-		</li><li class="">
+		</li>
+        <li class="">
 			<a href="http://en.brickimedia.org">Brickipedia</a>
-		</li><li class="">
+		</li>
+        <li class="">
 			<a href="http://customs.brickimedia.org">Customs</a>
-		</li><li class="">
-			<a href="http://lmbwiki.brickimedia.org">LMBW</a>
-		</li><li class="">
-			<a href="http://stories.brickimedia.org">Stories</a></li></ul></div>
+		</li>
+        <li class="">
+			<a href="http://stories.brickimedia.org">Stories</a>
+		</li>
+        <li class="">
+			<a href="http://cuusoo.brickimedia.org">CUUSOO</a>
+		</li>
+	</ul></div>
 			<!-- Code was here -->
 			<?php $this->renderNavigation( 'PERSONAL' ); ?>
 			<div id="left-right-nav">
@@ -524,6 +534,5 @@ class LiaTemplate extends BaseTemplate {
 			}
 			echo "\n<!-- /{$name} -->\n";
 		}
-		/*It is just an older version of the Brickimedia nav, and you were adding it in the wrong place anyway. :P*/
 	}
 }

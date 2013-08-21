@@ -606,11 +606,7 @@ div#footer #footer-places li {
 }
 /* Logo */
 #p-logo {
-	position: absolute;
-	top: -120px;
-	left: 0;
-	width: 10em;
-	height: 160px;
+	margin-top: -135px;
 }
 #p-logo a {
 	display: block;
@@ -1371,4 +1367,9 @@ margin-left:5px;
 a.button talk {
 color:white !important;
 font-weight:bold;
+}
+
+/* Special Page Tab Fix */
+.ns-special .pageButtons {
+	display: none;
 }
