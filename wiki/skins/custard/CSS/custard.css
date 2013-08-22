@@ -113,7 +113,7 @@ body {
 }
 
 #interwiki .left a, #interwiki .right a {
-    width: 50%;
+    width: 33.33%;
     height: 60px;
     line-height: 60px;
 }

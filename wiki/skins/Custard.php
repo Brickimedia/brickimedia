@@ -93,7 +93,8 @@ class CustardTemplate extends BaseTemplate
             <div class="left">
                 <div class="shell">
                     <a href="#meta">Meta</a>
-                    <a href="#pedia">Pedia
+                    <a href="#pedia">Pedia</a>
+                    <a href="#customs">Customs
                         <div>
                             <span class="invert"></span>
                         </div>
@@ -105,12 +106,13 @@ class CustardTemplate extends BaseTemplate
             </div>
             <div class="right">
                 <div class="shell">
-                    <a href="#lmbw">LMBW
+                    <a href="#stories">Stories
                         <div>
                             <span class="invert"></span>
                         </div>
                     </a>
-                    <a href="#stories">Stories</a>
+                    <a href="#cuusoo">CUUSOO</a>
+                    <a href="#dev">Dev</a>
                 </div>
             </div>
         </div>
