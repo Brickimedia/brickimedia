@@ -11,5 +11,5 @@ To Do
 ----------
 - Finish refreshed default Brickimedia skin
 - Finish custard Brickimedia skin
-- Change Brickimedia-specific items in the custard skin to variables for open source
+- Change Brickimedia-specific items in our skins to variables for open source
 - Pass W3 validation
