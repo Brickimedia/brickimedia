@@ -130,9 +130,6 @@ class QuartzTemplate extends BaseTemplate {
 		// Output HTML Page
 		$this->html( 'headelement' );
 ?>
-<?php
-    require_once('$IP/skins/quartz/resources.php');
-?>
 		<!-- header -->
 		<div id="mw-head" class="noprint">
 			<div id="p-interwiki">
