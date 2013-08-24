@@ -12,4 +12,4 @@ $wgResourceModules['skins.quartz'] = array(
     ),
     'remoteBasePath' => $GLOBALS['wgStylePath'],
     'localBasePath' => $GLOBALS['wgStyleDirectory']
-);require_once( "$IP/extensions/Verbatim/verbatim.php" );
+);require_once( "$IP/extensions/Verbatim/verbatim.php" );?>
