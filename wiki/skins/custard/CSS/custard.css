@@ -307,3 +307,8 @@ body {
     position: absolute;
     margin-left: -49px;
 }
+
+/* SocialProfile fixes */
+.ns-2 #header {
+	display: none;
+}
