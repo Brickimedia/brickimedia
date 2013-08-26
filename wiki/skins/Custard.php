@@ -79,21 +79,21 @@ class CustardTemplate extends BaseTemplate
         $this->html('headelement'); ?>
 				
         <div id="toolbar">
-        <div class="toggle">
-            <span class="text">≡</span>
-            <span class="invert"></span>
-        </div>
-        <div id="mw-js-message" class="message" style="display:none;"></div>
-        <?php if ( $this->data['sitenotice'] ) { ?>
-            <div id="site-notice">
-                <?php $this->html('sitenotice'); ?>
+            <div class="toggle">
+                <span class="text">≡</span>
+                <span class="invert"></span>
             </div>
-        <?php } ?>
-        <?php if ( $this->data['newtalk'] ) { ?>
+            <div id="mw-js-message" class="message" style="display:none;"></div>
+            <?php if ( $this->data['sitenotice'] ) { ?>
+                <div id="site-notice">
+                    <?php $this->html('sitenotice'); ?>
+                </div>
+            <?php } ?>
+            <?php if ( $this->data['newtalk'] ) { ?>
             <div id="new-talk" class="message">
                 <?php $this->html('newtalk'); ?>
             </div>
-        <?php } ?>
+            <?php } ?>
         </div>
 
         <div id="interwiki">
@@ -125,29 +125,30 @@ class CustardTemplate extends BaseTemplate
         </div>
 				
         <div id="page">
-            <div class="tabs">
-                <div class="test">
-                    <?php $this->html('content-navigation'); ?>
-                </div>
+            <div id="tabs">
+                <ul class="top">
+                    <?php foreach ( $this->data['content_navigation']['namespaces'] as $key => $tab ) { ?>
+                        <?php echo $this->makeListItem( $key, $tab ); ?>
+                    <?php } ?>
+                </ul>
             </div>
-                <h1 id="header">
-                    <?php $this->html('title'); ?>
-                </h1>
-                <?php if ( $this->data['subtitle'] ) { ?>
-                    <div class="sub-header">
-                        <?php $this->html('subtitle'); ?>
-                    </div>
-                <?php } ?>
-                <?php if ( $this->data['undelete'] ) { ?>
-                    <div id="sub-header">
-                        <?php $this->html('undelete'); ?>
-                    </div>
-                <?php } ?>
-                <div id="content">
-                    <?php $this->html('bodytext') ?>
+            <h1 id="header">
+                <?php $this->html('title'); ?>
+            </h1>
+            <?php if ( $this->data['subtitle'] ) { ?>
+                <div class="sub-header">
+                    <?php $this->html('subtitle'); ?>
                 </div>
-                <?php $this->html('catlinks'); ?>
+            <?php } ?>
+            <?php if ( $this->data['undelete'] ) { ?>
+                <div id="sub-header">
+                    <?php $this->html('undelete'); ?>
+                </div>
+            <?php } ?>
+            <div id="content">
+                <?php $this->html('bodytext') ?>
             </div>
+            <?php $this->html('catlinks'); ?>
             <?php $this->printTrail(); ?>
         </div>
         </body>
