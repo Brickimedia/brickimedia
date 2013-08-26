@@ -19,7 +19,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 # $wgDisableOutputCompression = true;
 
 $wgSitename      = "Brickimedia Meta";
-$wgMetaNamespace = "MyWiki";
+$wgMetaNamespace = "Meta";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -166,13 +166,13 @@ switch ( $_SERVER["HTTP_HOST"] ) {
 		$wgServer = "http://dev.brickimedia.org";
 		$wgDBname = "dev";
 		break;
-	case "legomessageboardswiki.brickimedia.org":
+/*	case "legomessageboardswiki.brickimedia.org":
 	case "lmbw.brickimedia.org":
 		$ls_path = "LocalSettings_lmbw.php";
 		$bmProject = 'lmbw';
 		$wgServer = "http://lmbw.brickimedia.org";
 		$wgDBname = "lmbw";
-		break;
+		break;*/
 	case "stories.brickimedia.org":
 		$ls_path = "LocalSettings_stories.php";
 		$bmProject = 'stories';
