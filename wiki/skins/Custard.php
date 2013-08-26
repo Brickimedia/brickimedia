@@ -125,7 +125,11 @@ class CustardTemplate extends BaseTemplate
         </div>
 				
         <div id="page">
-            <div class="tabs"></div>
+            <div class="tabs">
+                <div class="test">
+                    <?php $this->data['content-navigation']; ?>
+                </div>
+            </div>
                 <h1 id="header">
                     <?php $this->html('title'); ?>
                 </h1>
