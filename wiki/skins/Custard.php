@@ -127,6 +127,11 @@ class CustardTemplate extends BaseTemplate
         <div id="page">
             <div id="tabs">
                 <ul class="top">
+                    <?php foreach ( $this->data['content_actions'] as $key => $tab ) { ?>
+                        <?php echo $this->makeListItem( $key, $tab ); ?>
+                    <?php } ?>
+                </ul>
+                <ul class="left">
                     <?php foreach ( $this->data['content_navigation']['namespaces'] as $key => $tab ) { ?>
                         <?php echo $this->makeListItem( $key, $tab ); ?>
                     <?php } ?>
