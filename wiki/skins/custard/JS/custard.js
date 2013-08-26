@@ -49,7 +49,7 @@ function getPage() {
     //generate the parameter for the php script
     var data = 'view=' + document.location.hash.replace(/^.*#/, '');
     $.ajax({
-        url: "custard/loader.php",    
+        url: "$IP/skins/custard/loader.php",    
         type: "GET",        
         data: data,        
         cache: false,
