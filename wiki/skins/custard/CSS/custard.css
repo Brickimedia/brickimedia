@@ -53,6 +53,10 @@ blockquote, q {
 	quotes: "" "";
 }
 
+.clear {
+    clear: both;
+}
+
 /* Fix IE7's issue with interpolated scaling not turned on by default. Based on an idea from http://acidmartin.wordpress.com/2009/01/05/better-image-scaling-and-resampling-in-internet-explorer/ */
 img {
 	-ms-interpolation-mode: bicubic;
@@ -173,7 +177,8 @@ body {
 }
 
 #interwiki .left a, #interwiki .right a {
-    width: 33.33%;
+    width: 33.33%; /* calc() fallback */
+    width: calc( 100% / 3 );
     height: 60px;
     line-height: 60px;
 }
@@ -254,61 +259,58 @@ body {
 
 /* Content */
 #page {
-    position: absolute;
     background: white;
-    top: 140px;
-    bottom: 0;
-    left: 50px;
-    right: 0;
-    padding: 20px;
+    margin: 60px 0 0 60px;
+    padding: 30px;
     border-top-left-radius: 5px;
 }
 
-#page #top {
+#tabs ul {
     position: absolute;
-    margin-top: -33px;
-    padding-left: 20px;
+    line-height: 0;
+    font-size: 15px;
 }
 
-#page #top li {
+#tabs li {
     display: inline-block;
-    margin: 0 5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #BFDBEE;
-    transition: border 200ms linear;
+    margin: 0 10px;
 }
 
-#page #top li:hover, #page #top li.active {
-    border-color: transparent transparent white;
+#tabs a {
+    background: #BFDBEE;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+    transition: background 200ms linear;
 }
 
-#page #top li.active a, #page #top li:hover a {
+#tabs li.selected a {
     background: white;
 }
 
-#page #top a {
-    display: inline-block;
-    background: #BFDBEE;
-    padding: 5px 20px 0;
-    border-bottom: 1px solid #BFDBEE;
-    color: black;
-    text-decoration: none;
-    font-size: 80%;
-    border-radius: 5px 5px 0 0;
-    transition: background 200ms linear, border 200ms linear;
+#tabs a:hover {
+    background: #DFEDF6;
 }
 
-#page #top li:hover a, #page #top li.active a {
-    border-bottom-color: white;
+#tabs .top {
+    margin: -50px 0 0 -10px;
 }
 
-#page #left {
-    position: absolute;
-    margin-left: -49px;
+#tabs .left {
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: right top;
+    margin-left: -145px;
+    top: 170px;
+    left: 0;
 }
 
 /* SocialProfile fixes */
 .ns-2 #header {
 	display: none;
+}
+
+/* Browser Fixes */
+#embed_npwlo {
+    display: none;
 }

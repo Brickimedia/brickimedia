@@ -26,8 +26,8 @@ $wgResourceModules['skins.custard'] = array(
             'custard/JS/cssQuery-p.js',
             'custard/JS/jcoglan-com-sylvester.js',
             'custard/JS/cssSandpaper.js',
-            'custard/JS/history.js',
-            'custard/JS/custard.js',
+            //'custard/JS/history.js',
+            //'custard/JS/custard.js',
         ),
         'remoteBasePath' => &$GLOBALS['wgStylePath'],
         'localBasePath' => &$GLOBALS['wgStyleDirectory'],
@@ -123,6 +123,7 @@ class CustardTemplate extends BaseTemplate
                     <a href="#dev">Dev</a>
                 </div>
             </div>
+            <div class="clear"></div>
         </div>
 				
         <div id="page">
