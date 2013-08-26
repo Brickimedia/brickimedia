@@ -135,6 +135,18 @@ class CustardTemplate extends BaseTemplate
                     <?php foreach ( $this->data['content_navigation']['namespaces'] as $key => $tab ) { ?>
                         <?php echo $this->makeListItem( $key, $tab ); ?>
                     <?php } ?>
+                    
+                    <?php foreach ( $this->data['content_navigation']['views'] as $key => $tab ) { ?>
+                        <?php echo $this->makeListItem( $key, $tab ); ?>
+                    <?php } ?>
+
+                    <?php foreach ( $this->data['content_navigation']['actions'] as $key => $tab ) { ?>
+                        <?php echo $this->makeListItem( $key, $tab ); ?>
+                    <?php } ?>
+
+                    <?php foreach ( $this->data['content_navigation']['variants'] as $key => $tab ) { ?>
+                        <?php echo $this->makeListItem( $key, $tab ); ?>
+                    <?php } ?>
                 </ul>
             </div>
             <h1 id="header">
