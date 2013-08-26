@@ -135,8 +135,8 @@ class CustardTemplate extends BaseTemplate
                     <li><a href="#delete" rel="ajax">Delete</a></li>
                 </ul>
                 <ul class="left">
-                    <li><a href="#page">Page</a></li>
                     <li><a href="#talk">Talk</a></li>
+                    <li><a href="#page">Page</a></li>
                 </ul>
             </div>
             <h1 id="header">
