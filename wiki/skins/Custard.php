@@ -22,11 +22,12 @@ $wgResourceModules['skins.custard'] = array(
             'custard/CSS/custard.css' => array( 'media' => 'screen' ),
         ),
         'scripts' => array(
-            'custard/JS/custard.js',
             'custard/JS/EventHelpers.js',
             'custard/JS/cssQuery-p.js',
             'custard/JS/jcoglan-com-sylvester.js',
             'custard/JS/cssSandpaper.js',
+            'custard/JS/history.js',
+            'custard/JS/custard.js',
         ),
         'remoteBasePath' => &$GLOBALS['wgStylePath'],
         'localBasePath' => &$GLOBALS['wgStyleDirectory'],
@@ -127,34 +128,14 @@ class CustardTemplate extends BaseTemplate
         <div id="page">
             <div id="tabs">
                 <ul class="top">
-                    <?php foreach ( $this->data['content_actions'] as $key => $tab ) { ?>
-                        <?php echo $this->makeListItem( $key, $tab ); ?>
-                    <?php } ?>
+                    <li><a href="#edit" rel="ajax">Edit</a></li>
+                    <li><a href="#history" rel="ajax">History</a></li>
+                    <li><a href="#move" rel="ajax">Move</a></li>
+                    <li><a href="#delete" rel="ajax">Delete</a></li>
                 </ul>
                 <ul class="left">
-                    <div class="namespaces">
-                    <?php foreach ( $this->data['content_navigation']['namespaces'] as $key => $tab ) { ?>
-                        <?php echo $this->makeListItem( $key, $tab ); ?>
-                    <?php } ?>
-                    </div>
-                    
-                    <div class="views">
-                    <?php foreach ( $this->data['content_navigation']['views'] as $key => $tab ) { ?>
-                        <?php echo $this->makeListItem( $key, $tab ); ?>
-                    <?php } ?>
-                    </div>
-
-                    <div class="actions">
-                    <?php foreach ( $this->data['content_navigation']['actions'] as $key => $tab ) { ?>
-                        <?php echo $this->makeListItem( $key, $tab ); ?>
-                    <?php } ?>
-                    </div>
-
-                    <div class="variants">
-                    <?php foreach ( $this->data['content_navigation']['variants'] as $key => $tab ) { ?>
-                        <?php echo $this->makeListItem( $key, $tab ); ?>
-                    <?php } ?>
-                    </div>
+                    <li><a href="#page">Page</a></li>
+                    <li><a href="#talk">Talk</a></li>
                 </ul>
             </div>
             <h1 id="header">
