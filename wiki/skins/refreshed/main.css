@@ -144,3 +144,33 @@ body {
 	#pagelinks a, #sitelinks a {
 		text-transform: lowercase;
 	}
+
+#userinfo {
+	width: 17em;
+	position: relative;
+}
+	#userinfo > span {
+		margin-top: 10px;
+	}
+	
+#header {
+	font-size: 15pt;
+}
+	#header li {
+		list-style-type:none;
+	} 
+	
+.headermenu {
+	opacity: 0.8;
+	background-color: midnightblue;
+	position: absolute;
+	left: 2em;
+	padding: 5px;
+}
+	.headermenu a {
+		color: white;
+	}
+	.headermenu a:hover {
+		color #ccc;
+		text-decoration: none;
+	}
