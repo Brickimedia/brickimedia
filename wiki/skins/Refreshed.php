@@ -69,7 +69,7 @@ class SkinRefreshed extends SkinTemplate {
 	}
 }
 
-class RefreshedTemplate extends QuickTemplate {
+class RefreshedTemplate extends BaseTemplate {
 
 	public function execute() {
 		global $wgRequest, $refreshedTOC;
