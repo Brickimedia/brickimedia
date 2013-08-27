@@ -138,9 +138,9 @@ class CustardTemplate extends BaseTemplate
                         <li><a href="#talk">Talk</a></li>
                         <?php if( isArticle() ) { ?>
                             <li><a href="#
-                                <?php echo mw.config.get( 'wgCanonicalNamespace' ).strtolower(); ?>
+                                <?php echo $wgCanonicalNamespaces.strtolower(); ?>
                             ">
-                                <?php echo mw.config.get( 'wgCanonicalNamespace' ); ?>
+                                <?php echo $wgCanonicalNamespaces; ?>
                             </a></li>
                         <?php } ?>
                 </ul>
