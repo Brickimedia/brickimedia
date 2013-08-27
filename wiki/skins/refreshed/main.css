@@ -154,10 +154,13 @@ body {
 		margin-left: 2em;
 		display: block;
 		padding: 0.5em;
+		text-decoration: none;
+		color: white;
 	}
 	
 	#userinfo > span:hover {
 		background-color: darkslateblue;
+		text-decoration: none;
 	}
 	
 #header {
@@ -169,16 +172,17 @@ body {
 	} 
 	
 .headermenu {
-	opacity: 0.8;
 	background-color: midnightblue;
 	position: absolute;
 	left: 2em;
 	padding: 0.5em;
+	margin: 0;
 }
 	.headermenu a {
+		opacity: 0.8;
 		text-decoration: none;
 	}
 	.headermenu a:hover {
-		color #ccc;
+		opacity: 1;
 		text-decoration: none;
 	}
