@@ -190,3 +190,7 @@ require_once("$IP/extensions/PdfHandler/PdfHandler.php");
 $wgPdfProcessor = 'gs';
 $wgPdfPostProcessor = 'convert';
 $wgPdfInfo = 'pdfinfo';
+
+#Google Analytics
+$gaAccount = "UA-38958899-1";
+require_once("$IP/extensions/googleAnalytics/googleAnalytics.php");
