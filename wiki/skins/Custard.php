@@ -136,13 +136,13 @@ class CustardTemplate extends BaseTemplate
                 </ul>
                 <ul class="left">
                         <li><a href="#talk">Talk</a></li>
-                        <?php if( isArticle() ) { ?>
+                        <?php #if( isArticle() ) { ?>
                             <li><a href="#
-                                <?php echo $wgCanonicalNamespaces.strtolower(); ?>
+                                <?php #echo $wgCanonicalNamespaces.strtolower(); ?><!-- temp -->Talk
                             ">
-                                <?php echo $wgCanonicalNamespaces; ?>
+                                <?php #echo $wgCanonicalNamespaces; ?><!-- temp -->Page
                             </a></li>
-                        <?php } ?>
+                        <?php #} ?>
                 </ul>
             </div>
             <h1 id="header">
