@@ -135,8 +135,14 @@ class CustardTemplate extends BaseTemplate
                     <li><a href="#delete" rel="ajax">Delete</a></li>
                 </ul>
                 <ul class="left">
-                    <li><a href="#talk">Talk</a></li>
-                    <li><a href="#page">Page</a></li>
+                        <li><a href="#talk">Talk</a></li>
+                        <?php if( isArticle() ) { ?>
+                            <li><a href="#
+                                <?php echo mw.config.get( 'wgCanonicalNamespace' ).strtolower(); ?>
+                            ">
+                                <?php echo mw.config.get( 'wgCanonicalNamespace' ); ?>
+                            </a></li>
+                        <?php } ?>
                 </ul>
             </div>
             <h1 id="header">
