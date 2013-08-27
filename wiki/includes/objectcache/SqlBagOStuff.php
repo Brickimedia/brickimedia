@@ -192,8 +192,10 @@ class SqlBagOStuff extends BagOStuff {
 					array( 'keyname', 'value', 'exptime' ),
 					array( 'keyname' => $tableKeys ),
 					__METHOD__ );
-				foreach ( $res as $row ) {
-					$dataRows[$row->keyname] = $row;
+				if( is_array( $res ) ){
+					foreach ( $res as $row ) {
+						$dataRows[$row->keyname] = $row;
+					}
 				}
 			}
 
