@@ -150,11 +150,19 @@ body {
 	position: relative;
 }
 	#userinfo > span {
-		margin-top: 10px;
+		margin-top: 1px;
+		margin-left: 2em;
+		display: block;
+		padding: 0.5em;
+	}
+	
+	#userinfo > span:hover {
+		background-color: darkslateblue;
 	}
 	
 #header {
 	font-size: 15pt;
+	color: white;
 }
 	#header li {
 		list-style-type:none;
@@ -165,14 +173,12 @@ body {
 	background-color: midnightblue;
 	position: absolute;
 	left: 2em;
-	padding: 5px;
+	padding: 0.5em;
 }
 	.headermenu a {
-		color: white;
+		text-decoration: none;
 	}
 	.headermenu a:hover {
 		color #ccc;
 		text-decoration: none;
 	}
-	
-/* test */
