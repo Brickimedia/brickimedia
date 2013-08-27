@@ -102,7 +102,10 @@ class RefreshedTemplate extends BaseTemplate {
 	<div id="header">
 		<div id="userinfo">
 			<?php $tools = $this->getPersonalTools();
-				echo $this->makeListItem( 'userpage', $tools['userpage'], array( "tag" => "span" ) );
+				global $wgUser, $wgArticlePath;
+				echo "<a href='" . str_replace('$1', "User:$wgUser", $wgArticlePath) . "'>$wgUser</a>";
+			
+				//echo $this->makeListItem( 'userpage', $tools['userpage'], array( "tag" => "span" ) );
 				unset($tools['userpage']);
 			?>
 			<ul class="headermenu">
