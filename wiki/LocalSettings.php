@@ -140,7 +140,28 @@ if( $wgCommandLineMode ) {
 }
 
 
-$ls_path = "LocalSettings_meta.php";
+//Global User Table
+$wgSharedDB     = 'shared'; 
+$wgSharedTables = array( 
+	'user',
+	'global_user_groups',
+	'interwiki',
+	'user_profile',
+	'user_properties',
+	'user_relationship',
+	'user_relationship_request',
+	'spam_regex',
+	'blockedby',
+	'stats_blockedby',
+	'abuse_filter',
+	'abuse_filter_action',
+	'abuse_filter_history',
+	'abuse_filter_log',
+	'spoofuser'
+ );
+ 
+$wgCookieDomain = '.brickimedia.org';
+
 switch ( $_SERVER["HTTP_HOST"] ) {
 	case "meta.brickimedia.org":
 		$ls_path = "LocalSettings_meta.php";
