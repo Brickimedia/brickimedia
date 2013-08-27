@@ -17,10 +17,10 @@ $wgExtensionMessagesFiles['googleAnalytics'] = dirname(__FILE__) . '/googleAnaly
 $wgHooks['SkinAfterBottomScripts'][]  = 'efGoogleAnalyticsHookText';
 $wgHooks['ParserAfterTidy'][] = 'efGoogleAnalyticsASAC';
 
-$wgGoogleAnalyticsAccount = $gaAccount;
-$wgGoogleAnalyticsIgnoreSysops = false;
-$wgGoogleAnalyticsIgnoreBots = true;
+$wgGoogleAnalyticsAccount = "";
 $wgGoogleAnalyticsAddASAC = false;
+$wgGoogleAnalyticsIgnoreSysops = true;
+$wgGoogleAnalyticsIgnoreBots = true;
 
 function efGoogleAnalyticsASAC( &$parser, &$text ) {
 	global $wgOut, $wgGoogleAnalyticsAccount, $wgGoogleAnalyticsAddASAC;
