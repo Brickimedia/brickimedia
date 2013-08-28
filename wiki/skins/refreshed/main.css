@@ -150,10 +150,11 @@ body {
 	position: relative;
 }
 	#userinfo > a {
-		margin-top: 1px;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		height: 2em;
 		margin-left: 2em;
 		display: block;
-		padding: 0.5em;
 		text-decoration: none;
 		color: white;
 	}
@@ -173,16 +174,17 @@ body {
 	
 .headermenu {
 	background-color: midnightblue;
+	opacity: 0.8;
 	position: absolute;
 	left: 2em;
 	padding: 0.5em;
 	margin: 0;
 }
 	.headermenu a {
-		opacity: 0.8;
 		text-decoration: none;
 	}
 	.headermenu a:hover {
 		opacity: 1;
+		background-color: midnightblue;
 		text-decoration: none;
 	}
