@@ -162,11 +162,14 @@ $wgSharedTables = array(
  
 $wgCookieDomain = '.brickimedia.org';
 
-switch ( $_SERVER["HTTP_HOST"] ) {
-	case "meta.brickimedia.org":
+require_once( "$IP/LocalSettings_private.php" );
+
+$host = explode( ".", $_SERVER["HTTP_HOST"] );
+switch ( $host[0] ) {
+	case "meta":
 		$ls_path = "LocalSettings_meta.php";
 		$bmProject = 'meta';
-		$wgServer = "http://meta.brickimedia.org";
+		$wgServer = "http://meta.$bmServerBase";
 		$wgDBname = "meta";
 		break;
 	/*case "en.brickimedia.org":
@@ -181,10 +184,10 @@ switch ( $_SERVER["HTTP_HOST"] ) {
 		$wgServer = "http://customs.brickimedia.org";
 		$wgDBname = "customs";
 		break;*/
-	case "dev.brickimedia.org":
+	case "dev":
 		$ls_path = "LocalSettings_dev.php";
 		$bmProject = 'dev';
-		$wgServer = "http://dev.brickimedia.org";
+		$wgServer = "http://dev.$bmServerBase";
 		$wgDBname = "dev";
 		break;
 	/*case "legomessageboardswiki.brickimedia.org":
