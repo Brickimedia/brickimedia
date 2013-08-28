@@ -150,9 +150,11 @@ body {
 	position: relative;
 }
 	#userinfo > a {
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-		height: 2em;
+		font-size: 15pt;
+		padding: 0.5em;
+		/*margin-top: 0.5em;*/
+		/*margin-bottom: 0.5em;*/
+		/*height: 2em;*/
 		margin-left: 2em;
 		display: block;
 		text-decoration: none;
@@ -164,24 +166,21 @@ body {
 		text-decoration: none;
 	}
 	
-#header {
-	font-size: 15pt;
-	color: white;
-}
-	#header li {
-		list-style-type:none;
-	} 
-	
 .headermenu {
-	background-color: midnightblue;
-	opacity: 0.8;
+	background-color: rgba(25, 25, 112, 0.8);
 	position: absolute;
 	left: 2em;
-	padding: 0.5em;
+	padding: 0 0.2em 0.2em 0.2em;
 	margin: 0;
+	width: 14.6em;
+	display: none;
 }
 	.headermenu a {
+		font-size: 15pt;
 		text-decoration: none;
+		display: block;
+		color: white;
+		padding: 0.2em 0.4em 0.2em 0.4em;
 	}
 	.headermenu a:hover {
 		opacity: 1;

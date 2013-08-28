@@ -102,10 +102,11 @@ class RefreshedTemplate extends BaseTemplate {
 	<div id="header">
 		<div id="userinfo">
 			<?php global $wgUser, $wgArticlePath;
-				echo "<a href='" . str_replace('$1', "User:$wgUser", $wgArticlePath) . "'>$wgUser</a>";
+				echo "<a href='javascript:;'>$wgUser</a>";
 			?>
 			<ul class="headermenu">
 				<?php 
+					echo "<a href='" . str_replace('$1', "User:$wgUser", $wgArticlePath) . "'>$wgUser</a>";
 					echo "<a href='" . str_replace('$1', "User_talk:$wgUser", $wgArticlePath) . "'>Talk</a>";
 					echo "<a href='" . str_replace('$1', "Special:Contributions/$wgUser", $wgArticlePath) . "'>Contributions</a>";
 					echo "<a href='" . str_replace('$1', "Special:LogOut", $wgArticlePath) . "'>Log Out</a>";
