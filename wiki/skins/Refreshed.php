@@ -19,20 +19,14 @@ $wgExtensionCredits['parserhook'][] = array(
 		'url' => 'https://www.mediawiki.org/wiki/Extension:ForceTocOnEveryPage'
 );
 
+global $IP;
+
 $wgResourceModules['skins.refreshed'] = array(
 		'styles' => array(
 				//"$IP/skins/common/commonElements.css" => array( 'media' => 'screen' ),
 				"$IP/skins/common/commonContent.css" => array( 'media' => 'screen' ),
 				//"$IP/skins/common/commonInterface.css" => array( 'media' => 'screen' ),
 				"$IP/skins/refreshed/main.css" => array( 'media' => 'screen' ),
-				//"$flexiblestylesheet" => array( 'media' => 'screen' ),
-				//"$IP/skins/deepsea/big.css" => array( 'media' => 'only screen and (min-width: 800px), only screen and (min-device-width: 800px)' ),
-				//"$IP/skins/deepsea/small.css" => array( 'media' => 'only screen and (max-width: 800px), only screen and (max-device-width: 800px)' ),
-				//"$IP/skins/deepsea/interactive.css" => array( 'media' => 'screen' ),
-				//"$IP/skins/common/forums.css" => array( 'media' => 'screen' ),
-				//"$globalcss" => array( 'media' => 'screen' )
-				//"$IP/skins/deepsea/projects/$bmProject.css" => array( 'media' => 'screen' ),
-				//"$globalcss" => array( 'media' => 'screen' )
 		),
 		'scripts' => array(
 				"$IP/skins/refreshed/refreshed.js",
@@ -55,15 +49,15 @@ class SkinRefreshed extends SkinTemplate {
 		$this->template  = 'RefreshedTemplate';
 
 		//$out->addModules( 'skins.refrehsed' );
-		//$out->addModuleScripts( 'skins.refreshed' );
+		$out->addModuleScripts( 'skins.refreshed' );
 
-		//$out->addScriptFile( "$IP/skins/refreshed/refreshed.js" );
-		$out->addScriptFile( "http://adams-site.x10.mx/nxtest/load.php?debug=false&lang=en&modules=skins.refreshed&only=scripts&skin=deepsea&*" );
+		//$out->addScriptFile( "../refreshed/refreshed.js" );
+		//$out->addScriptFile( "http://adams-site.x10.mx/nxtest/load.php?debug=false&lang=en&modules=skins.refreshed&only=scripts&skin=deepsea&*" );
 	}
 	function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
 		// Append to the default screen common & print styles...
-		$out->addStyle( 'refreshed/main.css', 'screen' );
+		//$out->addStyle( 'refreshed/main.css', 'screen' );
 
 		$out->addModuleStyles( 'skins.refreshed' );
 	}
@@ -116,6 +110,9 @@ class RefreshedTemplate extends BaseTemplate {
 			<?php //var_dump( $this->getPersonalTools() ); ?>
 		</div>
 		<div id="siteinfo">
+			<a href='javascript:;'>
+				<img src="../skins/refreshed/logo.png" />
+			</a>
 		</div>
 		<div id="search">
 		</div>

@@ -187,3 +187,20 @@ body {
 		background-color: midnightblue;
 		text-decoration: none;
 	}
+	
+#siteinfo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+	#siteinfo > a {
+		height: 2em;
+		display: block;
+		margin: auto;
+		width: 9em;
+		padding: 0.5em;
+	}
+	#siteinfo > a:hover {
+		background-color: darkslateblue;
+	}
