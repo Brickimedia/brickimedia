@@ -148,6 +148,7 @@ body {
 #userinfo {
 	width: 17em;
 	position: relative;
+	float: left;
 }
 	#userinfo > a {
 		font-size: 15pt;
@@ -189,10 +190,6 @@ body {
 	}
 	
 #siteinfo {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
 }
 	#siteinfo > a {
 		height: 2em;
@@ -204,3 +201,23 @@ body {
 	#siteinfo > a:hover {
 		background-color: darkslateblue;
 	}
+
+#search {
+	width: 11em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5em;
+}
+	#search input {
+		float: right;
+		border: none;
+		font-size: 12pt;
+		padding: 0.25em;
+		font-family: Lato, sans-serif;
+		width: 10em;
+	}
+	
+#refreshed-toc #toc-box:first-child {
+	display: none;
+}

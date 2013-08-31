@@ -620,8 +620,6 @@ class ResourceLoaderFileModule extends ResourceLoaderModule {
 	 * @throws MWException if the file doesn't exist
 	 */
 	protected function readStyleFile( $path, $flip ) {
-		file_put_contents("C:/temp/localPath", $path);
-			
 		$localPath = $this->getLocalPath( $path );
 		if ( !file_exists( $localPath ) ) {
 			throw new MWException( __METHOD__.": style file not found: \"$localPath\"" );

@@ -113,8 +113,28 @@ class RefreshedTemplate extends BaseTemplate {
 			<a href='javascript:;'>
 				<img src="../skins/refreshed/logo.png" />
 			</a>
+			<ul class="headermenu">
+				<a href='http://meta.brickimedia.org'>
+					<img src="../skins/refreshed/logo.png" />
+				</a>
+				<a href='http://en.brickimedia.org'>
+					<img src="../skins/refreshed/logo.png" />
+				</a>
+				<a href='http://customs.brickimedia.org'>
+					<img src="../skins/refreshed/logo.png" />
+				</a>
+				<a href='http://stories.brickimedia.org'>
+					<img src="../skins/refreshed/logo.png" />
+				</a>
+				<a href='http://cuusoo.brickimedia.org'>
+					<img src="../skins/refreshed/logo.png" />
+				</a>
+			</ul>
 		</div>
 		<div id="search">
+			<form action="/index.php" method="GET">
+				<input type="text" name="search" placeholder="search" />
+			</form>
 		</div>
 	</div>
 	<div id="fullwrapper">
