@@ -85,12 +85,17 @@ class RefreshedTemplate extends BaseTemplate {
 		$HTMLafter = $parts[1];
 		$this -> data['bodytext'] = $HTMLbefore . $HTMLafter;
 
-		$tocparts = explode( "<ul>", $toc );
-		$tocparts = explode( "</ul>", $tocparts[1] );
-		$tocHTML = $tocparts[0];
-
-		$tocHTML = preg_replace( '|<li class="toclevel-[0-9] tocsection-[0-9]+">(.+)<\/li>|', '$1', $tocHTML );
-
+		$tocparts = explode( "<ul>", $toc, 2 );
+		$tocHTML = $tocparts[1];
+		//$tocHTML = preg_replace( '|<li class="toclevel-[0-9] tocsection-[0-9]+">(.+)<\/li>|', '$1', $tocHTML );
+		//echo "<!--";
+		//echo preg_match_all( '/<li(.+?)>(.+?)<\/li>/s', $tocHTML, $matches);
+		//print_r( $matches );
+		//echo "-->";
+		
+		//Title processing
+		$myTitle = $this->data['titletext'];
+		$myTitle = str_replace( '/', '<wbr>/<wbr>', $myTitle );
 ?>
 
 	<div id="header">
@@ -113,23 +118,23 @@ class RefreshedTemplate extends BaseTemplate {
 		</div>
 		<div id="siteinfo">
 			<a href='javascript:;'>
-				<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
+				<?php  echo "<img src='$IP/skins/refreshed/brickimedia.png' />" ?>
 			</a>
 			<ul class="headermenu" style="display:none;">
 				<a href='http://meta.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
+					<?php  echo "<img src='$IP/skins/refreshed/brickimedia.png' />" ?>
 				</a>
 				<a href='http://en.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
+					<?php  echo "<img src='$IP/skins/refreshed/brickipediaINK.png' />" ?>
 				</a>
 				<a href='http://customs.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
+					<?php  echo "<img src='$IP/skins/refreshed/customsINK.png' />" ?>
 				</a>
 				<a href='http://stories.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
+					<?php  echo "<img src='$IP/skins/refreshed/brickimedia.png' />" ?>
 				</a>
 				<a href='http://cuusoo.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
+					<?php  echo "<img src='$IP/skins/refreshed/brickimedia.png' />" ?>
 				</a>
 			</ul>
 		</div>
@@ -143,9 +148,7 @@ class RefreshedTemplate extends BaseTemplate {
 		<div id="leftbar">
 			<div id="leftbar-top">
 				<div id="maintitle2">
-					<?php //$this->html('title');
-						echo $this->data['titletext'];
-					?>
+					<?php echo $myTitle; ?>
 				</div>
 				<div id="pagelinks">
 					<?php foreach ( $this->data['content_actions'] as $action ){

@@ -158,9 +158,9 @@ $wgSharedTables = array(
 	'abuse_filter_history',
 	'abuse_filter_log',
 	'spoofuser'
- );
- 
-$wgCookieDomain = '.brickimedia.org';
+);
+
+//$wgCookieDomain = in LocalSettings_private
 
 require_once( "$IP/LocalSettings_private.php" );
 

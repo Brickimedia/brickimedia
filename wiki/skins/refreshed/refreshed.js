@@ -86,7 +86,7 @@ $(document).ready(function(){
 		$("#userinfo .headermenu").toggle();
 	});
 	$("#siteinfo > a").click(function(){
-		$("#siterinfo .headermenu").toggle();
+		$("#siteinfo .headermenu").toggle();
 	});
 });
 

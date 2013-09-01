@@ -114,6 +114,19 @@ body {
 		margin-left: 0px;
 	}
 	
+	#pagelinks a, #sitelinks a {
+		text-transform: lowercase;
+	}
+	
+#refreshed-toc {
+	position: relative;
+}
+	#refreshed-toc ul {
+		margin: 0;
+	}
+	#refreshed-toc li {
+		list-style-type: none;
+	}
 	.tocnumber {
 		display: none;
 	}
@@ -124,12 +137,17 @@ body {
 		position: absolute;
 		right: 0;
 	}
-	#refreshed-toc {
-		position: relative;
+	.toclevel-2 > a {
+		padding-right: 20px !important;
 	}
-	
-	#pagelinks a, #sitelinks a {
-		text-transform: lowercase;
+	.toclevel-3 > a {
+		padding-right: 30px !important;
+	}
+	.toclevel-4 > a {
+		padding-right: 40px !important;
+	}
+	.toclevel-5 > a {
+		padding-right: 50px !important;
 	}
 
 #userinfo {
@@ -157,11 +175,8 @@ body {
 	
 .headermenu {
 	background-color: rgba(25, 25, 112, 0.8);
-	position: absolute;
-	left: 2em;
 	padding: 0 0.2em 0.2em 0.2em;
 	margin: 0;
-	width: 14.6em;
 }
 	.headermenu a {
 		font-size: 15pt;
@@ -175,6 +190,18 @@ body {
 		background-color: midnightblue;
 		text-decoration: none;
 	}
+	#userinfo .headermenu {
+		left: 2em;
+		width: 14.6em;
+		position: absolute;
+	}
+	#siteinfo .headermenu {
+		margin: auto;
+		width: 200px;
+	}
+		#siteinfo .headermenu img {
+			margin
+		}
 	
 #siteinfo {
 }
@@ -205,6 +232,6 @@ body {
 		width: 10em;
 	}
 	
-#refreshed-toc #toc-box:first-child {
+#refreshed-toc #toc-box:lastchild {
 	display: none;
 }
