@@ -229,3 +229,5 @@ require_once( "$IP/skins/Custard.php" );
 #disable anonymous editing during beta
 $wgGroupPermissions['*']['edit'] = false;
 $wgGroupPermissions['user']['edit'] = true;
+
+$wgGroupPermissions['*']['createaccount'] = false; //disable account creation

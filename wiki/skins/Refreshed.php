@@ -95,10 +95,12 @@ class RefreshedTemplate extends BaseTemplate {
 
 	<div id="header">
 		<div id="userinfo">
-			<?php global $wgUser, $wgArticlePath;
-				echo "<a href='javascript:;'>$wgUser</a>";
-			?>
-			<ul class="headermenu">
+			<a href='javascript:;'>
+				<?php global $wgUser, $wgArticlePath;
+					echo "<span>$wgUser</span>";
+				?>
+			</a>
+			<ul class="headermenu" style="display:none;">
 				<?php 
 					echo "<a href='" . str_replace('$1', "User:$wgUser", $wgArticlePath) . "'>$wgUser</a>";
 					echo "<a href='" . str_replace('$1', "User_talk:$wgUser", $wgArticlePath) . "'>Talk</a>";
@@ -111,23 +113,23 @@ class RefreshedTemplate extends BaseTemplate {
 		</div>
 		<div id="siteinfo">
 			<a href='javascript:;'>
-				<img src="../skins/refreshed/logo.png" />
+				<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
 			</a>
-			<ul class="headermenu">
+			<ul class="headermenu" style="display:none;">
 				<a href='http://meta.brickimedia.org'>
-					<img src="../skins/refreshed/logo.png" />
+					<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
 				</a>
 				<a href='http://en.brickimedia.org'>
-					<img src="../skins/refreshed/logo.png" />
+					<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
 				</a>
 				<a href='http://customs.brickimedia.org'>
-					<img src="../skins/refreshed/logo.png" />
+					<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
 				</a>
 				<a href='http://stories.brickimedia.org'>
-					<img src="../skins/refreshed/logo.png" />
+					<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
 				</a>
 				<a href='http://cuusoo.brickimedia.org'>
-					<img src="../skins/refreshed/logo.png" />
+					<?php  echo "<img src='$IP/skins/refreshed/logo.png' />" ?>
 				</a>
 			</ul>
 		</div>
@@ -141,7 +143,9 @@ class RefreshedTemplate extends BaseTemplate {
 		<div id="leftbar">
 			<div id="leftbar-top">
 				<div id="maintitle2">
-					<?php $this->html('title'); ?>
+					<?php //$this->html('title');
+						echo $this->data['titletext'];
+					?>
 				</div>
 				<div id="pagelinks">
 					<?php foreach ( $this->data['content_actions'] as $action ){
@@ -160,15 +164,6 @@ class RefreshedTemplate extends BaseTemplate {
 			</div>
 		</div>
 		<div id="contentwrapper">
-			<!-- <div id="titlearea">
-				<span id="maintitle">
-					<?php $this->html('title'); ?>
-				</span>
-				<div id="subtitle">
-					<?php $this->html('subtitle') ?>
-				</div>
-				<span id="editbutton">edit article</span>
-			</div> -->
 			<div id="content">
 				<?php $this->html('bodytext') ?>
 			</div>
@@ -194,7 +189,7 @@ class RefreshedTemplate extends BaseTemplate {
 			</div>
 		</div>
 	</div>
-	<div style="display:none;"> <?php var_dump( $this ); ?> </div>
+	<div style="display:none;"> <?php //var_dump( $this ); ?> </div>
 	<?php $this->html('bottomscripts');;?>
 		
 		

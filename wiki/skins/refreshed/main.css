@@ -24,27 +24,14 @@ body {
 	position: fixed;
 }
 
-#maintitle, #maintitle2 {
-	font-size: 3em;
-	font-family: "Lato", sans-serif;
-}
 #maintitle2 {
-	/*margin-bottom: 0.2em;*/
+	margin-bottom: 5px;
 	padding-right: 15px;
 	text-align: right;
-}
-	#editbutton {
-		background-color: #CCC;
-		font-size: 1.5em;
-		float: right;
-		padding: 0.2em 0.5em 0.3em 0.5em;
-		border-radius: 0.25em;
-		font-family: "Lato", sans-serif;
-	}
-
-#fullwrapper {
-	/*margin-left: 5%;
-	margin-right: 5%;*/
+	padding-top: 10px;
+	line-height: 1;
+	font-size: 32pt;
+	font-family: "Lato", sans-serif;
 }
 
 #contentwrapper {
@@ -151,20 +138,21 @@ body {
 	float: left;
 }
 	#userinfo > a {
-		font-size: 15pt;
 		padding: 0.5em;
-		/*margin-top: 0.5em;*/
-		/*margin-bottom: 0.5em;*/
-		/*height: 2em;*/
+		height: 2em;
 		margin-left: 2em;
-		display: block;
 		text-decoration: none;
-		color: white;
+		width: 14em;
+		display: table;
 	}
-	
 	#userinfo > a:hover {
 		background-color: darkslateblue;
-		text-decoration: none;
+	}
+	#userinfo > a span {
+		font-size: 15pt;
+		color: white;
+		display: table-cell;
+		vertical-align: middle;
 	}
 	
 .headermenu {
@@ -174,7 +162,6 @@ body {
 	padding: 0 0.2em 0.2em 0.2em;
 	margin: 0;
 	width: 14.6em;
-	display: none;
 }
 	.headermenu a {
 		font-size: 15pt;
@@ -196,7 +183,7 @@ body {
 		display: block;
 		margin: auto;
 		width: 9em;
-		padding: 0.5em;
+		padding: 0.5em 1em 0.5em 1em;
 	}
 	#siteinfo > a:hover {
 		background-color: darkslateblue;
