@@ -131,7 +131,7 @@ class RefreshedTemplate extends BaseTemplate {
 					<?php  echo "<img src='$IP/skins/refreshed/customsINK.png' />" ?>
 				</a>
 				<a href='http://stories.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/brickimedia.png' />" ?>
+					<?php  echo "<img src='$IP/skins/refreshed/LSWRefreshedLogo.png' />" ?>
 				</a>
 				<a href='http://cuusoo.brickimedia.org'>
 					<?php  echo "<img src='$IP/skins/refreshed/brickimedia.png' />" ?>
