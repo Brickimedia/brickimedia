@@ -184,6 +184,7 @@ body {
 		display: block;
 		color: white;
 		padding: 0.2em 0.4em 0.2em 0.4em;
+		text-align: center;
 	}
 	.headermenu a:hover {
 		opacity: 1;
