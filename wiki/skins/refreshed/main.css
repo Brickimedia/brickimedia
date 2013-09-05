@@ -117,6 +117,10 @@ body {
 	#pagelinks a, #sitelinks a {
 		text-transform: lowercase;
 	}
+
+#siteactions {
+	padding-top: 10px;
+}
 	
 #refreshed-toc {
 	position: relative;
@@ -233,6 +237,6 @@ body {
 		width: 10em;
 	}
 	
-#refreshed-toc #toc-box:lastchild {
+#refreshed-toc #toc-box:last-child {
 	display: none;
 }

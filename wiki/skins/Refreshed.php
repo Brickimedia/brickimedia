@@ -107,10 +107,11 @@ class RefreshedTemplate extends BaseTemplate {
 			</a>
 			<ul class="headermenu" style="display:none;">
 				<?php 
-					echo "<a href='" . str_replace('$1', "User:$wgUser", $wgArticlePath) . "'>$wgUser</a>";
-					echo "<a href='" . str_replace('$1', "User_talk:$wgUser", $wgArticlePath) . "'>Talk</a>";
-					echo "<a href='" . str_replace('$1', "Special:Contributions/$wgUser", $wgArticlePath) . "'>Contributions</a>";
-					echo "<a href='" . str_replace('$1', "Special:LogOut", $wgArticlePath) . "'>Log Out</a>";
+					foreach( $this->getPersonalTools() as $key => $tool ){
+						foreach ( $tool['links'] as $linkKey => $link ) {
+							echo $this->makeLink( $linkKey, $link, $options );
+						}
+					}
 				?>
 			</ul>
 			<img class="avatar" />
