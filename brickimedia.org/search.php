@@ -1,4 +1,5 @@
 <?php
+header("Location: /");
 switch ($_GET['site']) {
 	case "en":
 		header( 'Location: http://en.brickimedia.org/wiki/Special:Search/' . ($_GET['search']) ) ;
