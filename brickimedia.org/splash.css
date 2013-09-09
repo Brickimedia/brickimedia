@@ -29,6 +29,11 @@ body {
 	padding-right: 10px;
 	padding-bottom: 25px;
 }
+@media screen and (max-height: 550px) {
+	#middle {
+		margin-top: 100px;
+	}
+}
 .big {
 	font-size: 330%;
 }
@@ -46,6 +51,26 @@ body {
 	margin-right: 12.5%;
 	margin-left: 12.5%;
 }
+
+#ad {
+	width: 728px;
+	height: 90px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 75px;
+	display: block;
+}
+@media screen and (max-height: 626px) {
+	#ad {
+		margin-top: 50px; /* Shrink the ad margins on small resolutions to fit it */
+	}
+}
+@media screen and (max-height: 580px) {
+	#ad {
+		display: none !important; /* Hide the ad when the screen resolution is too small to fit it */
+	}
+}
+
 .tab {
 	width: 33%;
 	height: 100%;
