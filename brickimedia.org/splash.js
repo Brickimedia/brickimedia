@@ -30,10 +30,11 @@ _gaq.push(['_trackPageview']);
 })();
 /* END GOOGLE ANALYTICS CODE */
 
+/* START GOOGLE AD CODE */
 <!--
 google_ad_client = "ca-pub-9543775174763951";
-/* Splash page ad */
 google_ad_slot = "9998611139";
 google_ad_width = 728;
 google_ad_height = 90;
 //-->
+/* END GOOGLE AD CODE */

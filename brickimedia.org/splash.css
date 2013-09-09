@@ -1,7 +1,23 @@
 body {
 	background: url(img/bg.jpg) 0px 0px no-repeat fixed;
-	background-size: 100% auto;
+	background-size: cover;
 	text-align: center;
+	padding: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+	.tab {
+		font-size: smaller;
+	}
+	#middle {
+		font-size: small;
+	}
+	#bottom {
+		width: 100% !important;
+		margin-right: 0% !important;
+		margin-left: 0% !important;
+		left: 0px;
+	}
 }
 
 #topbar {
@@ -15,6 +31,24 @@ body {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
+#notice {
+	display: none;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 3px;
+	position: absolute;
+	top: 75px;
+	background: #ee0000;
+	color: #eaeaea;
+	font-family: sans-serif;
+}
+@media screen and (max-width: 480px) {
+	#notice {
+		display: block;
+	}
+}
+
 #middle {
 	display: inline-block;
 	width: auto;
