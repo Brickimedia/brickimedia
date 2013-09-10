@@ -32,23 +32,6 @@ body {
 	padding-bottom: 5px;
 }
 
-#notice {
-	display: none;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 3px;
-	position: absolute;
-	top: 75px;
-	background: #ee0000;
-	color: #eaeaea;
-	font-family: sans-serif;
-}
-@media screen and (max-width: 480px) {
-	#notice {
-		display: block;
-	}
-}
-
 #middle {
 	display: inline-block;
 	width: auto;
