@@ -63,7 +63,7 @@ body {
 #leftbar, #rightbar {
 	height: 100%;
 	position: fixed;
-	background-color: lavender;
+	background-color: #D9DBF3;
 	top: 3em;
 }
 	#leftbar-top, #rightbar-top {
@@ -166,15 +166,18 @@ body {
 		text-decoration: none;
 		width: 14em;
 		display: table;
+		text-align: right;
 	}
 	#userinfo > a:hover {
 		background-color: darkslateblue;
 	}
 	#userinfo > a span {
 		font-size: 15pt;
-		color: white;
+		color: white !important;
 		display: table-cell;
 		vertical-align: middle;
+		text-align: right;
+		padding-right: 10px;
 	}
 	
 .headermenu {
@@ -188,7 +191,6 @@ body {
 		display: block;
 		color: white;
 		padding: 0.2em 0.4em 0.2em 0.4em;
-		text-align: center;
 	}
 	.headermenu a:hover {
 		opacity: 1;
@@ -200,6 +202,10 @@ body {
 		width: 14.6em;
 		position: absolute;
 	}
+		#userinfo .headermenu a {
+			padding-right: 0.7em !important;
+			text-align: right;
+		}
 	#siteinfo .headermenu {
 		margin: auto;
 		width: 200px;
@@ -219,6 +225,9 @@ body {
 	}
 	#siteinfo > a:hover {
 		background-color: darkslateblue;
+	}
+	#siteinfo a {
+		text-align: center;
 	}
 
 #search {

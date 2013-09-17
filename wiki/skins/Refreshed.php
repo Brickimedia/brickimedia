@@ -23,7 +23,7 @@ global $IP;
 
 $wgResourceModules['skins.refreshed'] = array(
 		'styles' => array(
-				//"$IP/skins/common/commonElements.css" => array( 'media' => 'screen' ),
+				"$IP/skins/common/commonElements.css" => array( 'media' => 'screen' ),
 				"$IP/skins/common/commonContent.css" => array( 'media' => 'screen' ),
 				//"$IP/skins/common/commonInterface.css" => array( 'media' => 'screen' ),
 				"$IP/skins/refreshed/main.css" => array( 'media' => 'screen' ),

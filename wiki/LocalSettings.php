@@ -190,6 +190,12 @@ switch ( $host[0] ) {
 		$wgServer = "http://dev.$bmServerBase";
 		$wgDBname = "dev";
 		break;
+	case "admin":
+		$ls_path = "LocalSettings_admin.php";
+		$bmProject = 'admin';
+		$wgServer = "http://admin.$bmServerBase";
+		$wgDBname = "admin";
+		break;
 	/*case "legomessageboardswiki.brickimedia.org":
 	case "lmbw.brickimedia.org":
 		$ls_path = "LocalSettings_lmbw.php";
