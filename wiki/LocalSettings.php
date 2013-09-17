@@ -221,7 +221,7 @@ switch ( $host[0] ) {
 		break;
 	}
 	
-if( !$wgCommandLineMode ){
+if( !getenv("noext") ){
 	require_once( __DIR__ . '/LocalSettings_ext.php' );
 }
 require_once( $ls_path );
