@@ -4,15 +4,19 @@ var newsText = "<span class='small'>Recent updates</span><p><ul><li>An alpha pre
 var stayTuned = "<span class='small'>Stay tuned</span><p>You can stay up to date with Brickimedia developments on the following networks:<br/><br/><a href='http://www.facebook.com/brickimedia' class='social' target='_blank'><img src='img/c-facebook.png' /></a><a href='http://www.twitter.com/brickimedia' class='social' target='_blank'><img src='img/c-twitter.png' /></a><a href='http://plus.google.com/112287617429747667081' class='social' target='_blank'><img src='img/c-gplus.png' /></a><a href='http://www.github.com/Brickimedia' class='social' target='_blank'><img src='img/c-github.png' /></a><a href='http://www.youtube.com/brickimedia' class='social' target='_blank'><img src='img/c-youtube.png' /></a></p><img src='img/back.svg' width='30px' height='30px' onClick='defaultText()' style='float:right;cursor:pointer;' />";
 function defaultText() {
 	document.getElementById('middle').innerHTML = mainText;
+	document.getElementById('ad').style.display = 'block';
 };
 function downtime() {
 	document.getElementById('middle').innerHTML = aboutDowntime;
+	document.getElementById('ad').style.display = 'none';
 };
 function news() {
 	document.getElementById('middle').innerHTML = newsText;
+	document.getElementById('ad').style.display = 'none';
 };
 function connect() {
 	document.getElementById('middle').innerHTML = stayTuned;
+	document.getElementById('ad').style.display = 'none';
 };
 
 /* START GOOGLE ANALYTICS CODE */
@@ -25,3 +29,12 @@ _gaq.push(['_trackPageview']);
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 /* END GOOGLE ANALYTICS CODE */
+
+/* START GOOGLE AD CODE */
+<!--
+google_ad_client = "ca-pub-9543775174763951";
+google_ad_slot = "9998611139";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+/* END GOOGLE AD CODE */

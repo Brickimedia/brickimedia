@@ -298,19 +298,8 @@ img {
 <div id="topbar">
 	<img src="img/logo.png" alt="Brickimedia Logo" />
     <div id="toplinks">
-    	<!--<a href="http://meta.brickimedia.org/wiki/Special:UserLogin">
-        	Log in
-        </a>
-        &nbsp;|&nbsp;
-        <a href="http://meta.brickimedia.org/wiki/Special:UserLogin/signup">
-        	Sign up
-        </a>-->
-        <!--<a href="http://meta.brickimedia.org/wiki/Special:Mypage">
-        	<?php //echo $_COOKIE['bmsharedUserName']; ?>
-        </a> -->
-        
         <?php
-		if ( $_COOKIE['bmsharedUserName'] == "" ) {
+		if ( $_COOKIE['sharedUserName'] == "" ) {
 			echo '
 				<a href="http://meta.brickimedia.org/wiki/Special:UserLogin"> Log in </a>
 				&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -318,7 +307,7 @@ img {
 			';
 		} else {
 			echo '
-				<a href="http://meta.brickimedia.org/wiki/Special:Mypage">' . $_COOKIE['bmsharedUserName'] . '</a>
+				<a href="http://meta.brickimedia.org/wiki/Special:Mypage">' . $_COOKIE['sharedUserName'] . '</a>
 				&nbsp;&nbsp;|&nbsp;&nbsp;
 				<!--<a href="http://meta.brickimedia.org/wiki/Special:Mytalk">Talk</a>
 				&nbsp;&nbsp;|&nbsp;&nbsp;-->
