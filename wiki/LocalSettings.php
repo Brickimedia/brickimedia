@@ -175,7 +175,7 @@ switch ( $host[0] ) {
 	case "en.brickimedia.org":
 		$ls_path = "LocalSettings_en.php";
 		$bmProject = 'en';
-		$wgServer = "http://en.brickimedia.org";
+		$wgServer = "http://en.$bmServerBase";
 		$wgDBname = "en";
 		break;
 	/*case "customs.brickimedia.org":
