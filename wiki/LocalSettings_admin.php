@@ -83,3 +83,4 @@ $wgGroupPermissions['bureaucrat']['userrights'] = true;
 $wgGroupPermissions['*']['read'] = false;
 $wgGroupPermissions['user']['read'] = false;
 $wgGroupPermissions['sysop']['read'] = true;
+$wgGroupPermissions['*']['createaccount'] = true; //enable account creation
