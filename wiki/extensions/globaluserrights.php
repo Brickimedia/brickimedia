@@ -151,5 +151,6 @@ $wgGroupPermissions['sysadmin']['updatepoints'] = true;
 $wgGroupPermissions['sysadmin']['import'] = true;
 $wgGroupPermissions['sysadmin']['importupload'] = true;
 
-
-
+#emailconfirmed
+$wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;
+$wgImplicitGroups[] = 'emailconfirmed'; //hides from user list

@@ -183,3 +183,12 @@ if( !$bmMobile ){
 	$wgArticleFeedbackLotteryOdds = 100; // Will turn on the voting on all pages
 	$wgArticleFeedbackDashboard = true;
 }
+
+#beta test group
+$wgGroupPermissions['betatest']['autoconfirmed'] = true;
+$wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
+$wgGroupPermissions['*']['read'] = false;
+$wgGroupPermissions['user']['read'] = false;
+$wgGroupPermissions['autoconfirmed']['read'] = false;
+$wgGroupPermissions['sysop']['read'] = true;
+$wgGroupPermissions['sysadmin']['read'] = true;

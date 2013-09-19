@@ -172,12 +172,12 @@ switch ( $host[0] ) {
 		$wgServer = "http://meta.$bmServerBase";
 		$wgDBname = "meta";
 		break;
-	/*case "en.brickimedia.org":
+	case "en.brickimedia.org":
 		$ls_path = "LocalSettings_en.php";
 		$bmProject = 'en';
 		$wgServer = "http://en.brickimedia.org";
 		$wgDBname = "en";
-		break; */
+		break;
 	/*case "customs.brickimedia.org":
 		$ls_path = "LocalSettings_customs.php";
 		$bmProject = 'customs';
