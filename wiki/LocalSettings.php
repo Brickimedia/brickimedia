@@ -172,13 +172,13 @@ switch ( $host[0] ) {
 		$wgServer = "http://meta.$bmServerBase";
 		$wgDBname = "meta";
 		break;
-	case "en.brickimedia.org":
+	case "en":
 		$ls_path = "LocalSettings_en.php";
 		$bmProject = 'en';
 		$wgServer = "http://en.$bmServerBase";
 		$wgDBname = "en";
 		break;
-	/*case "customs.brickimedia.org":
+	/*case "customs":
 		$ls_path = "LocalSettings_customs.php";
 		$bmProject = 'customs';
 		$wgServer = "http://customs.$bmServerBase";
@@ -196,20 +196,20 @@ switch ( $host[0] ) {
 		$wgServer = "http://admin.$bmServerBase";
 		$wgDBname = "admin";
 		break;
-	/*case "legomessageboardswiki.brickimedia.org":
-	case "lmbw.brickimedia.org":
+	/*case "legomessageboardswiki":
+	case "lmbw":
 		$ls_path = "LocalSettings_lmbw.php";
 		$bmProject = 'lmbw';
 		$wgServer = "http://lmbw.$bmServerBase";
 		$wgDBname = "lmbw";
 		break;*/
-	/*case "stories.brickimedia.org":
+	/*case "stories":
 		$ls_path = "LocalSettings_stories.php";
 		$bmProject = 'stories';
 		$wgServer = "http://stories.$bmServerBase";
 		$wgDBname = "stories";
 		break;*/
-	/*case "cuusoo.brickimedia.org":
+	/*case "cuusoo":
 		$ls_path = "LocalSettings_cuusoo.php";
 		$bmProject = 'cuusoo';
 		$wgServer = "http://cuusoo.$bmServerBase";
