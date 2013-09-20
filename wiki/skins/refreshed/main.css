@@ -34,6 +34,15 @@ body {
 	font-family: "Lato", sans-serif;
 }
 
+#maintitle {
+	padding-left: 0.5em;
+	padding-top: 0.15em;
+}
+	#maintitle h1 {	
+		font-size: 32pt;
+		font-family: "Lato", sans-serif;
+	}
+
 #contentwrapper {
 	/*width: 64%;*/
 	width: calc(100% - 28em);
@@ -43,7 +52,7 @@ body {
 	top: 3em;
 }
 	#content {
-		padding: 1em 1em 0 1em;
+		padding: 0em 1em 0 1em;
 		font-size: 1em;
 	}
 	#content h2 {
@@ -116,6 +125,10 @@ body {
 	
 	#pagelinks a, #sitelinks a {
 		text-transform: lowercase;
+	}
+	
+	#pagelinks {
+		padding-top: 1em;
 	}
 
 #siteactions {
@@ -248,4 +261,18 @@ body {
 	
 #refreshed-toc #toc-box:last-child {
 	display: none;
+}
+
+#preftoc li {
+	display: inline;
+}
+
+#preftoc li:before {
+	content: " - ";
+}
+
+#preftoc li:first-child:before {
+	content: none !important;
+}
+
 }

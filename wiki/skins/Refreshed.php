@@ -25,7 +25,7 @@ $wgResourceModules['skins.refreshed'] = array(
 		'styles' => array(
 				"$IP/skins/common/commonElements.css" => array( 'media' => 'screen' ),
 				"$IP/skins/common/commonContent.css" => array( 'media' => 'screen' ),
-				//"$IP/skins/common/commonInterface.css" => array( 'media' => 'screen' ),
+				"$IP/skins/common/commonInterface.css" => array( 'media' => 'screen' ),
 				"$IP/skins/refreshed/main.css" => array( 'media' => 'screen' ),
 		),
 		'scripts' => array(
@@ -148,9 +148,9 @@ class RefreshedTemplate extends BaseTemplate {
 	<div id="fullwrapper">
 		<div id="leftbar">
 			<div id="leftbar-top">
-				<div id="maintitle2">
-					<?php echo $myTitle; ?>
-				</div>
+				<!-- <div id="maintitle2">
+					<?php //echo $myTitle; ?>
+				</div> -->
 				<div id="pagelinks">
 					<?php foreach ( $this->data['content_actions'] as $action ){
 				 		echo "<a class='" . $action['class'] . "' " .
@@ -168,8 +168,22 @@ class RefreshedTemplate extends BaseTemplate {
 			</div>
 		</div>
 		<div id="contentwrapper">
+			<div id="maintitle">
+				<h1>
+					<?php echo $myTitle; ?>
+				</h1>
+				
+			</div>
 			<div id="content">
-				<?php $this->html('bodytext') ?>
+				<?php $this->html('bodytext');
+				/*
+				$action = $this->data['content_actions']['edit'];
+				
+				echo "<a class='" . $action['class'] . "' " .
+				 	"id='" . $action['id'] . "' " .
+				 	"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
+				 	htmlspecialchars( $action['text'] ) . "</a>"; */
+				?>
 			</div>
 		</div>
 		<div id="rightbar">
