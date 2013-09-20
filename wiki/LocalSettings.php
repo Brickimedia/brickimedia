@@ -181,7 +181,7 @@ switch ( $host[0] ) {
 	/*case "customs.brickimedia.org":
 		$ls_path = "LocalSettings_customs.php";
 		$bmProject = 'customs';
-		$wgServer = "http://customs.brickimedia.org";
+		$wgServer = "http://customs.$bmServerBase";
 		$wgDBname = "customs";
 		break;*/
 	case "dev":
@@ -200,19 +200,19 @@ switch ( $host[0] ) {
 	case "lmbw.brickimedia.org":
 		$ls_path = "LocalSettings_lmbw.php";
 		$bmProject = 'lmbw';
-		$wgServer = "http://lmbw.brickimedia.org";
+		$wgServer = "http://lmbw.$bmServerBase";
 		$wgDBname = "lmbw";
 		break;*/
 	/*case "stories.brickimedia.org":
 		$ls_path = "LocalSettings_stories.php";
 		$bmProject = 'stories';
-		$wgServer = "http://stories.brickimedia.org";
+		$wgServer = "http://stories.$bmServerBase";
 		$wgDBname = "stories";
 		break;*/
 	/*case "cuusoo.brickimedia.org":
 		$ls_path = "LocalSettings_cuusoo.php";
 		$bmProject = 'cuusoo';
-		$wgServer = "http://cuusoo.brickimedia.org";
+		$wgServer = "http://cuusoo.$bmServerBase";
 		$wgDBname = "cuusoo";
 		break;*/
 	default:
