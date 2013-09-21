@@ -154,3 +154,8 @@ $wgGroupPermissions['sysadmin']['importupload'] = true;
 #emailconfirmed
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;
 $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
+
+#temporary stuff for beta
+$wgAddGroups['bureaucrat'] = array( 'sysadmin', 'betatest' );
+$wgRemoveGroups['bureaucrat'] = array( 'sysadmin', 'betatest' );
+$wgGroupPermissions['sysadmin']['userrights-global'] = true;
