@@ -70,8 +70,8 @@ $wgDBTableOptions   = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
 $wgDBmysql5 = false;
 
 ## Shared memory settings
-$wgMainCacheType    = CACHE_NONE;
-$wgMemCachedServers = array();
+$wgMainCacheType    = CACHE_MEMCACHED;
+$wgMemCachedServers = array( "127.0.0.1:11211" );
 
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
@@ -218,7 +218,7 @@ switch ( $host[0] ) {
 		exit(0);
 		break;
 	}
-	
+
 if( !getenv("noext") ){
 	require_once( __DIR__ . '/LocalSettings_ext.php' );
 }
