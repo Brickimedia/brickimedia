@@ -156,6 +156,9 @@ $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;
 $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
 
 #temporary stuff for beta
+$wgGroupPermissions['betatest']['autoconfirmed'] = true;
 $wgAddGroups['bureaucrat'] = array( 'sysadmin', 'betatest' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysadmin', 'betatest' );
+$wgAddGroups['sysadmin'] = array( 'sysadmin', 'betatest' );
+$wgRemoveGroups['sysadmin'] = array( 'sysadmin', 'betatest' );
 $wgGroupPermissions['sysadmin']['userrights-global'] = true;

@@ -175,7 +175,6 @@ if( !$bmMobile ){
 }
 
 #beta test group
-$wgGroupPermissions['betatest']['autoconfirmed'] = true;
 $wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
 $wgGroupPermissions['*']['read'] = false;
 $wgGroupPermissions['user']['read'] = false;

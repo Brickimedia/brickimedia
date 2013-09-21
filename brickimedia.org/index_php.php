@@ -37,7 +37,7 @@ $username = $_COOKIE['sharedUserName'];
     <a href='http://meta.brickimedia.org/wiki/Main_Page'>Meta</a> | <a href='http://en.brickimedia.org/wiki/Main_Page'>En</a> | <a href='http://www.github.com/Brickimedia/brickimedia'>GitHub</a></span>";
 		}
 	?>
-    <span class='username'><a href='http://meta.brickimedia.org/wiki/Special:MyPage'><?php echo $username; ?></a> | <a href='http://meta.brickimedia.org/wiki/Special:MyTalk'>Talk</a></span>
+    <?php if ($username != "") { echo "<span class='username'><a href='http://meta.brickimedia.org/wiki/Special:MyPage'>$username</a> | <a href='http://meta.brickimedia.org/wiki/Special:MyTalk'>Talk</a></span>"; } ?>
 	<img src="img/logo.png" alt="Brickimedia Logo" />
 </div>
 <div id="middle">
