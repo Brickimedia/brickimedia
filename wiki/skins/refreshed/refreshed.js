@@ -83,10 +83,12 @@ $("#refreshed-toc a").each(function(){
 
 $(document).ready(function(){
 	$("#userinfo > a").click(function(){
-		$("#userinfo .headermenu").toggle();
+		$("#userinfo .headermenu").fadeToggle(150);
+		$("#userinfo .arrow").toggleClass("flip");
 	});
 	$("#siteinfo > a").click(function(){
-		$("#siteinfo .headermenu").toggle();
+		$("#siteinfo .headermenu").fadeToggle(150);
+		$("#siteinfo .arrow").toggleClass("flip");
 	});
 });
 

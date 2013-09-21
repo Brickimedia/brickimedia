@@ -14,6 +14,8 @@
 body {
 	font-family: "Lato", sans-serif;
 	margin: 0;
+	background-color: #D9DBF3;
+	background-image: url("skins/refreshed/studs-tile-refreshed.png");
 }
 
 #header {
@@ -52,13 +54,12 @@ body {
 	margin-left: 12em;
 	margin-right: 12em;
 	top: 3em;
+	background-color: white;
+	z-index: -1;
 }
 	#content {
 		padding: 0em 1em 0 1em;
 		font-size: 1em;
-	}
-	#content h2 {
-		/*font-family: "Lato", sans-serif;*/
 	}
 
 #leftbar {
@@ -74,7 +75,8 @@ body {
 #leftbar, #rightbar {
 	height: 100%;
 	position: fixed;
-	background-color: #D9DBF3;
+	background-color: rgba(0, 0, 0, 0); /*#D9DBF3;*/
+	/*background-image: url("skins/refreshed/studs-tile-refreshed.png");*/
 	top: 3em;
 }
 	#leftbar-top, #rightbar-top {
@@ -204,6 +206,22 @@ body {
 		text-align: right;
 		padding-right: 10px;
 	}
+	/*#userinfo > a span:before {
+		content: url(skins/refreshed/arrow.png);
+	}*/
+	#userinfo .arrow {
+		transition:transform 1s;
+		-webkit-transition:-webkit-transform 1s; /* Safari */
+		transform:rotateX(0deg);
+		-webkit-transform:rotateX(0deg); /* Safari */
+		vertical-align: text-bottom;
+		
+	}
+	#userinfo .arrow.flip {
+		transform:rotateX(180deg);
+		-webkit-transform:rotateX(180deg); /* Safari */
+	}
+	
 	
 .headermenu {
 	background-color: rgba(25, 25, 112, 0.8);
@@ -235,25 +253,41 @@ body {
 		margin: auto;
 		width: 200px;
 	}
-		#siteinfo .headermenu img {
+		/*#siteinfo .headermenu img {
 			margin
-		}
-	
+		}*/
 #siteinfo {
 }
 	#siteinfo > a {
 		height: 2em;
 		display: block;
 		margin: auto;
-		width: 9em;
+		width: 11em;
 		padding: 0.5em 1em 0.5em 1em;
 	}
-	#siteinfo > a:hover {
-		background-color: darkslateblue;
-	}
+		#siteinfo > a:hover {
+			background-color: darkslateblue;
+		}
+		#siteinfo > a > img {
+			display: inline-block;
+		}
 	#siteinfo a {
 		text-align: center;
 	}
+	#siteinfo .arrow {
+		transition:transform 1s;
+		-webkit-transition:-webkit-transform 1s; /* Safari */
+		transform:rotateX(0deg);
+		-webkit-transform:rotateX(0deg); /* Safari */
+		vertical-align: middle;
+		margin-left: 1em;
+		display: inline-block;
+	}
+	#siteinfo .arrow.flip {
+		transform:rotateX(180deg);
+		-webkit-transform:rotateX(180deg); /* Safari */
+	}
+	
 
 #search {
 	width: 11em;
@@ -268,7 +302,7 @@ body {
 		font-size: 12pt;
 		padding: 0.25em;
 		font-family: Lato, sans-serif;
-		width: 10em;
+		width: 11em;
 	}
 	
 #refreshed-toc #toc-box:last-child {

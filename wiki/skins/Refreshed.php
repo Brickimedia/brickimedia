@@ -98,7 +98,7 @@ class RefreshedTemplate extends BaseTemplate {
 		$myTitle = str_replace( '/', '<wbr>/<wbr>', $myTitle );
 
 		$mySideTitle = $this->data['title'];
-		if( $this -> getSkin() -> getTitle() -> getNamespace() == 0 ){
+		if( $this -> getSkin() -> getTitle() -> getNamespace() == 0 && substr_count( $mySideTitle, 'editing' ) == 0 ){
 			$mySideTitle = "Page:$mySideTitle";
 		}
 		$mySideTitle = str_replace( '/', '<wbr>/<wbr>', $mySideTitle );
@@ -109,7 +109,7 @@ class RefreshedTemplate extends BaseTemplate {
 		<div id="userinfo">
 			<a href='javascript:;'>
 				<?php global $wgUser, $wgArticlePath;
-					echo "<span>$wgUser</span>";
+					echo "<img class='arrow' src='../skins/refreshed/arrow.png'/><span>$wgUser</span>";
 				?>
 			</a>
 			<ul class="headermenu" style="display:none;">
@@ -126,7 +126,7 @@ class RefreshedTemplate extends BaseTemplate {
 		</div>
 		<div id="siteinfo">
 			<a href='javascript:;'>
-				<?php  echo "<img src='$IP/skins/refreshed/brickimedia.png' />" ?>
+				<?php  echo "<img src='$IP/skins/refreshed/brickimedia.png' /><img class='arrow' src='../skins/refreshed/arrow.png'/>" ?>
 			</a>
 			<ul class="headermenu" style="display:none;">
 				<a href='http://meta.brickimedia.org'>
