@@ -47,10 +47,10 @@ body {
 
 #contentwrapper {
 	/*width: 64%;*/
-	width: calc(100% - 28em);
+	width: calc(100% - 24em);
 	position: absolute;
-	margin-left: 17em;
-	margin-right: 11em;
+	margin-left: 12em;
+	margin-right: 12em;
 	top: 3em;
 }
 	#content {
@@ -62,12 +62,12 @@ body {
 	}
 
 #leftbar {
-	width: 17em;
+	width: 12em;
 	left: 0;
 	border-right: 1px solid midnightblue;
 }
 #rightbar {
-	width: 11em;
+	width: 12em;
 	right: 0;
 	border-left: 1px solid midnightblue;
 }
@@ -180,16 +180,16 @@ body {
 	}
 
 #userinfo {
-	width: 17em;
+	width: 12em;
 	position: relative;
 	float: left;
 }
 	#userinfo > a {
 		padding: 0.5em;
 		height: 2em;
-		margin-left: 2em;
+		margin-left: 1em;
 		text-decoration: none;
-		width: 14em;
+		width: 10em;
 		display: table;
 		text-align: right;
 	}
@@ -223,8 +223,8 @@ body {
 		text-decoration: none;
 	}
 	#userinfo .headermenu {
-		left: 2em;
-		width: 14.6em;
+		left: 1em;
+		width: 10.6em;
 		position: absolute;
 	}
 		#userinfo .headermenu a {

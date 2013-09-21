@@ -96,6 +96,13 @@ class RefreshedTemplate extends BaseTemplate {
 		//Title processing
 		$myTitle = $this->data['titletext'];
 		$myTitle = str_replace( '/', '<wbr>/<wbr>', $myTitle );
+
+		$mySideTitle = $this->data['title'];
+		if( $this -> getSkin() -> getTitle() -> getNamespace() == 0 ){
+			$mySideTitle = "Page:$mySideTitle";
+		}
+		$mySideTitle = str_replace( '/', '<wbr>/<wbr>', $mySideTitle );
+		$mySideTitle = str_replace( ':', '<wbr>:<wbr>', $mySideTitle );
 ?>
 
 	<div id="header">
@@ -152,11 +159,14 @@ class RefreshedTemplate extends BaseTemplate {
 					<?php //echo $myTitle; ?>
 				</div> -->
 				<div id="pagelinks">
-					<?php foreach ( $this->data['content_actions'] as $action ){
+					<?php 
+					$this->data['content_actions']['nstab-main']['text'] = $mySideTitle;
+					
+					foreach ( $this->data['content_actions'] as $action ){
 				 		echo "<a class='" . $action['class'] . "' " .
 				 			"id='" . $action['id'] . "' " .
 				 			"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
-				 			htmlspecialchars( $action['text'] ) . "</a>";
+				 			$action['text'] . "</a>"; //no htmlspecialchars
 					} ?>
 				</div>
 			</div>
