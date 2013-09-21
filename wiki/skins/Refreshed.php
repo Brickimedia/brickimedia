@@ -189,20 +189,26 @@ class RefreshedTemplate extends BaseTemplate {
 		<div id="rightbar">
 			<div id="rightbar-top">
 				<div id="siteactions">
-					<?php foreach ( $this->data['sidebar']['top'] as $action ){
-				 		echo "<a id='" . $action['id'] . "' " .
-				 			"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
-				 			htmlspecialchars( $action['text'] ) . "</a>";
+					<?php 
+					foreach( $this->data['sidebar'] as $type ){
+						echo "<a class='main' id='" . $action['id'] . "' " .
+							"href='" . htmlspecialchars( $action['href'] ) . "'>" .
+							htmlspecialchars( $action['text'] ) . "</a>";
+						foreach ( $type as $action ){
+				 			echo "<a class='sub' id='" . $action['id'] . "' " .
+				 				"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
+				 				htmlspecialchars( $action['text'] ) . "</a>";
+				 		}
 					} ?>
 				</div>
 			</div>
 			<div id="rightbar-bottom">
 				<div id="sitelinks">
-					<?php foreach ( $this->data['sidebar']['bottom'] as $action ){
+					<?php /*foreach ( $this->data['sidebar']['bottom'] as $action ){
 				 		echo "<a id='" . $action['id'] . "' " .
 				 			"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
 				 			htmlspecialchars( $action['text'] ) . "</a>";
-					} ?>
+					}*/ ?>
 				</div>
 			</div>
 		</div>

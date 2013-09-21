@@ -194,3 +194,6 @@ $wgPdfInfo = 'pdfinfo';
 #Google Analytics
 $gaAccount = "UA-38958899-1";
 require_once("$IP/extensions/googleAnalytics/googleAnalytics.php");
+
+#global file descriptors
+require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");

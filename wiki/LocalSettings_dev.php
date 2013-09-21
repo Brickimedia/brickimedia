@@ -61,11 +61,6 @@ $wgUserLevels = array(
 );
 $wgUserProfileDisplay['stats'] = true;
 
-
-#global file descriptors
-require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
-
-
 #GlobalNewUsers
 require_once("$IP/extensions/GlobalNewUsers/GlobalNewUsers.php");
 

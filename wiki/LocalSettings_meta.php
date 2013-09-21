@@ -78,18 +78,11 @@ $wgUserLevels = array(
 );
 $wgUserProfileDisplay['stats'] = true;
 
-
-#global file descriptors
-require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
-
 #multi upload
 require_once("$IP/extensions/MultiUpload/MultiUpload.php");
 
 # Donate
 require_once("$IP/extensions/Donate/Donate.php");
-
-# ChatLogger
-#require_once("$IP/extensions/ChatLogger/ChatLogger.php");
 
 #images
 #$wgShowSQLErrors = true;

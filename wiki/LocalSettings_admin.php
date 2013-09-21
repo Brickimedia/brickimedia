@@ -62,10 +62,6 @@ $wgUserLevels = array(
 $wgUserProfileDisplay['stats'] = true;
 
 
-#global file descriptors
-require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
-
-
 #GlobalNewUsers
 require_once("$IP/extensions/GlobalNewUsers/GlobalNewUsers.php");
 
@@ -76,8 +72,6 @@ require_once("$IP/extensions/WhosGloballyOnline/WhosGloballyOnline.php");
 
 require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
 
-
-$wgDebugLogFile = '/var/log/mw.log';
 $wgGroupPermissions['bureaucrat']['userrights'] = true;
 
 $wgGroupPermissions['*']['read'] = false;

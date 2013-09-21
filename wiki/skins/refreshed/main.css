@@ -106,10 +106,15 @@ body {
 		margin-right: 5px;
 	}
 	#rightbar a {
-		padding: 0.2em 0 0.2em 10px;
 		text-align: left;
 		margin-left: 5px;
 	}
+		#rightbar a.main {
+			padding: 0.2em 0 0.2em 10px;
+		}
+		#rightbar a.sub {
+			padding: 0.2em 0 0.2em 20px;
+		}
 	#leftbar a:hover, #rightbar a:hover {
 		color: midnightblue;
 		cursor: pointer;

@@ -33,7 +33,7 @@ require_once("$IP/extensions/are/ArticleRatings.php");
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer', 'import' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer', 'import' );
 
-$wgEnableUploads  = true; //DO NOT CHANGE!! Please tell NXT if you need to upload directly onto a project.
+$wgEnableUploads  = false; //DO NOT CHANGE!! Please tell NXT if you need to upload directly onto a project.
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
 $smwgNamespacesWithSemanticLinks = array(
@@ -138,16 +138,6 @@ $wgExtraNamespaces[NS_INVENTORY] = "Inventory";
 $wgExtraNamespaces[NS_INVENTORY_TALK] = "Inventory_talk";
 $wgNamespacesWithSubpages[NS_REVIEW] = true;            //subpages enabled for the review namespace
 $wgContentNamespaces[] = 1006;
-
-if( in_array(700, $wgExtraNamespaces)){
-	print "in array";
-} else {
-	//print "nia";
-}
-
-
-#global file descriptors
-require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 
 #for {{colourbox}}
 require_once("$IP/extensions/ImageMap/ImageMap.php");

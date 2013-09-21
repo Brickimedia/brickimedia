@@ -162,8 +162,6 @@ $wgSharedTables = array(
 
 //$wgCookieDomain = in LocalSettings_private
 
-require_once( "$IP/LocalSettings_private.php" );
-
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
 switch ( $host[0] ) {
 	case "meta":
