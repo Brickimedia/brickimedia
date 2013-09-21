@@ -190,11 +190,15 @@ class RefreshedTemplate extends BaseTemplate {
 			<div id="rightbar-top">
 				<div id="siteactions">
 					<?php 
-					foreach( $this->data['sidebar'] as $type ){
-						echo "<a class='main' id='" . $action['id'] . "' " .
-							"href='" . htmlspecialchars( $action['href'] ) . "'>" .
-							htmlspecialchars( $action['text'] ) . "</a>";
-						foreach ( $type as $action ){
+					//var_dump( $this->data['sidebar'] );
+
+					unset( $this->data['sidebar']['SEARCH'] );
+					unset( $this->data['sidebar']['TOOLBOX'] );
+					unset( $this->data['sidebar']['LANGUAGES'] );
+					
+					foreach( $this->data['sidebar'] as $main => $sub ){
+						echo "<span class='main'>" . htmlspecialchars( $main ) . "</span>";
+						foreach ( $sub as $action ){
 				 			echo "<a class='sub' id='" . $action['id'] . "' " .
 				 				"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
 				 				htmlspecialchars( $action['text'] ) . "</a>";

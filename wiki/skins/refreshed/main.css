@@ -35,12 +35,14 @@ body {
 }
 
 #maintitle {
-	padding-left: 0.5em;
 	padding-top: 0.15em;
 }
 	#maintitle h1 {	
 		font-size: 32pt;
 		font-family: "Lato", sans-serif;
+		padding-top: 0.2em;
+		padding-left: 0.5em;
+		margin-bottom: 0.3em;
 	}
 
 #contentwrapper {
@@ -109,11 +111,16 @@ body {
 		text-align: left;
 		margin-left: 5px;
 	}
-		#rightbar a.main {
-			padding: 0.2em 0 0.2em 10px;
+		#rightbar .main {
+			padding: 0.15em 0 0.15em 10px;
+			display: block;
+			margin-top: 0.5em;
 		}
-		#rightbar a.sub {
-			padding: 0.2em 0 0.2em 20px;
+		#rightbar .main:first-of-type {
+			margin-top: 0em;
+		}
+		#rightbar .sub {
+			padding: 0.15em 0 0.15em 20px;
 		}
 	#leftbar a:hover, #rightbar a:hover {
 		color: midnightblue;
@@ -137,7 +144,7 @@ body {
 	}
 
 #siteactions {
-	padding-top: 10px;
+	padding-top: 1em;
 }
 	
 #refreshed-toc {
@@ -280,4 +287,12 @@ body {
 	content: none !important;
 }
 
+/******************************** CONTENT ******************************/
+
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal !important;
 }
+
