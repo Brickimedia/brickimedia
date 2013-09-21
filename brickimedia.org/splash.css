@@ -129,3 +129,25 @@ ul {
 	text-align: left;
 	font-family: Arial, sans-serif !important;
 }
+
+.beta-tools {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.username {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.tooltip {
+	cursor: help;
+}
