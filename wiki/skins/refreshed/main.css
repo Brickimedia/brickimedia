@@ -3,12 +3,19 @@
 	font-style: normal;
 	font-weight: 300;
 	src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
-  }
+}
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 700;
 	src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Lato body';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 }
 
 body {
@@ -41,7 +48,7 @@ body {
 }
 	#maintitle h1 {	
 		font-size: 32pt;
-		font-family: "Lato", sans-serif;
+		font-family: "Lato Body", sans-serif;
 		padding-top: 0.2em;
 		padding-left: 0.5em;
 		margin-bottom: 0.3em;
@@ -62,6 +69,7 @@ body {
 	top: 3em;
 	background-color: white;
 	z-index: -1;
+	font-family: "Lato Body", sans-serif;
 }
 	#content {
 		padding: 0em 1em 0 1em;
