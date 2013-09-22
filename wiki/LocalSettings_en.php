@@ -122,22 +122,22 @@ $wgUserLevels = array(
 $wgUserProfileDisplay['stats'] = true;
 
 #Review and inventory namespace
-define("NS_REVIEW", 1004);
-define("NS_REVIEW_TALK", 1005);
+define("NS_REVIEW", 118);
+define("NS_REVIEW_TALK", 119);
 $wgExtraNamespaces[NS_REVIEW] = "Review";
 $wgExtraNamespaces[NS_REVIEW_TALK] = "Review_talk";
 $wgNamespacesWithSubpages[NS_REVIEW] = true;            //subpages enabled for the review namespace
 $wgGroupPermissions['*']['editreview'] = false;
 $wgGroupPermissions['autoconfirmed']['editreview'] = true;
 $wgGroupPermissions['sysop']['editreview'] = true;
-$wgContentNamespaces[] = 1004;                           //track namespace in Special:Statistics
+$wgContentNamespaces[] = 118;                           //track namespace in Special:Statistics
 
-define("NS_INVENTORY", 1006);
-define("NS_INVENTORY_TALK", 1007);
+define("NS_INVENTORY", 114);
+define("NS_INVENTORY_TALK", 115);
 $wgExtraNamespaces[NS_INVENTORY] = "Inventory";
 $wgExtraNamespaces[NS_INVENTORY_TALK] = "Inventory_talk";
 $wgNamespacesWithSubpages[NS_REVIEW] = true;            //subpages enabled for the review namespace
-$wgContentNamespaces[] = 1006;
+$wgContentNamespaces[] = 114;
 
 #for {{colourbox}}
 require_once("$IP/extensions/ImageMap/ImageMap.php");
