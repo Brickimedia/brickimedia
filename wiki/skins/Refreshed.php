@@ -109,7 +109,17 @@ class RefreshedTemplate extends BaseTemplate {
 		<div id="userinfo">
 			<a href='javascript:;'>
 				<?php global $wgUser, $wgArticlePath;
-					echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><img class='header-avatar' src='http://meta.brickimedia.org/images/avatars/default_m.gif' /><span>$wgUser</span>";
+					$id = $wgUser -> getID();
+					if (is_file('/var/www/wiki/images/avatars/'.$id.'_m.png')) {
+						$avatar = '/images/avatars/'.$id.'_m.png';
+					} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.jpg')) {
+						$avatar = '/images/avatars/'.$id.'_m.jpg';
+					} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.gif')) {
+						$avatar = '/images/avatars/'.$id.'_m.gif';
+					} else {
+						$avatar = '/images/avatars/default_m.gif';
+					}
+					echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><img class='header-avatar' src='http://meta.brickimedia.org/" . $avatar . "' /><span>$wgUser</span>";
 				?>
 			</a>
 			<ul class="headermenu" style="display:none;">
