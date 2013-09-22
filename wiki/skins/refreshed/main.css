@@ -47,6 +47,11 @@ body {
 		margin-bottom: 0.3em;
 	}
 
+/* removes page title on socialprofile user pages */
+.ns-2 #maintitle {
+	display: none;
+}
+
 #contentwrapper {
 	/*width: 64%;*/
 	width: calc(100% - 24em);
