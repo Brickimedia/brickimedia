@@ -62,3 +62,7 @@ span.subpages {
 	display: block;
 }
 
+pre.source-css,
+pre.source-javascript {
+	overflow-x: scroll;
+}
