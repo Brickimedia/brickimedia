@@ -84,11 +84,11 @@ $("#refreshed-toc a").each(function(){
 $(document).ready(function(){
 	$("#userinfo > a").click(function(){
 		$("#userinfo .headermenu").fadeToggle(150);
-		$("#userinfo .arrow").toggleClass("flip");
+		$("#userinfo .arrow").toggleClass("rotate");
 	});
 	$("#siteinfo > a").click(function(){
 		$("#siteinfo .headermenu").fadeToggle(150);
-		$("#siteinfo .arrow").toggleClass("flip");
+		$("#siteinfo .arrow").toggleClass("rotate");
 	});
 });
 

@@ -230,16 +230,16 @@ body {
 		content: url(skins/refreshed/arrow.png);
 	}*/
 	#userinfo .arrow {
-		transition:transform 1s;
-		-webkit-transition:-webkit-transform 1s; /* Safari */
+		transition:transform .5s;
+		-webkit-transition:-webkit-transform .5s; /* Safari */
 		transform:rotateX(0deg);
 		-webkit-transform:rotateX(0deg); /* Safari */
 		vertical-align: text-bottom;
 		
 	}
-	#userinfo .arrow.flip {
-		transform:rotateX(180deg);
-		-webkit-transform:rotateX(180deg); /* Safari */
+	#userinfo .arrow.rotate {
+		transform:rotateZ(-180deg);
+		-webkit-transform:rotateZ(-180deg); /* Safari */
 	}
 	
 	
@@ -304,17 +304,17 @@ body {
 		text-align: center;
 	}
 	#siteinfo .arrow {
-		transition:transform 1s;
-		-webkit-transition:-webkit-transform 1s; /* Safari */
+		transition:transform .5s;
+		-webkit-transition:-webkit-transform .5s; /* Safari */
 		transform:rotateX(0deg);
 		-webkit-transform:rotateX(0deg); /* Safari */
 		vertical-align: middle;
 		margin-left: 1em;
 		display: inline-block;
 	}
-	#siteinfo .arrow.flip {
-		transform:rotateX(180deg);
-		-webkit-transform:rotateX(180deg); /* Safari */
+	#siteinfo .arrow.rotate {
+		transform:rotateZ(-180deg);
+		-webkit-transform:rotateZ(-180deg); /* Safari */
 	}
 	
 
