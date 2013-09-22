@@ -272,6 +272,10 @@ body {
 		#siteinfo > a > img {
 			display: inline-block;
 		}
+		#siteinfo > a > span {
+			font-size: 15pt;
+			color: white;
+		}
 	#siteinfo a {
 		text-align: center;
 	}
