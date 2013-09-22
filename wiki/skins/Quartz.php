@@ -16,19 +16,27 @@ require_once(dirname(__FILE__) . '/common/headers.php');
 
 //Testing resources.php here
 $wgResourceModules['skins.quartz'] = array(
-    'styles' => array(
-        "$IP/skins/common/commonElements.css" => array( 'media' => 'screen' ),
-        "$IP/skins/common/commonContent.css" => array( 'media' => 'screen' ),
-        "$IP/skins/common/commonInterface.css" => array( 'media' => 'screen' ),
-        "$IP/skins/quartz/screen.css" => array( 'media' => 'screen' ),		"$IP/skins/quartz/player/citrine.css" => array( 'media' => 'screen' )
-    ),
-    'scripts' => array(		"$IP/resources/jquery.effects/jquery.effects.core.js",		"$IP/resources/jquery.effects/jquery.effects.drop.js",
-    	"$IP/skins/quartz/quartz.js",
-    	"$IP/skins/common/foes.js",		"$IP/skins/quartz/player/jquery.jplayer.min.js",		"$IP/skins/quartz/player/jplayer.playlist.min.js",		"$IP/skins/quartz/player/player.js"
-    ),
-    'remoteBasePath' => $GLOBALS['wgStylePath'],
-    'localBasePath' => $GLOBALS['wgStyleDirectory']
-);#require_once( "$IP/extensions/Verbatim/verbatim.php" );
+	'styles' => array(
+		"skins/common/commonElements.css" => array( 'media' => 'screen' ),
+		"skins/common/commonContent.css" => array( 'media' => 'screen' ),
+		"skins/common/commonInterface.css" => array( 'media' => 'screen' ),
+		"skins/quartz/screen.css" => array( 'media' => 'screen' ),
+		"skins/quartz/player/citrine.css" => array( 'media' => 'screen' )
+	),
+	'scripts' => array(
+		"resources/jquery.effects/jquery.effects.core.js",
+		"resources/jquery.effects/jquery.effects.drop.js",
+		"skins/quartz/quartz.js",
+		"skins/common/foes.js",
+		"skins/quartz/player/jquery.jplayer.min.js",
+		"skins/quartz/player/jplayer.playlist.min.js",
+		"skins/quartz/player/player.js"
+	),
+	'remoteBasePath' => $GLOBALS['wgStylePath'],
+	'localBasePath' => $GLOBALS['wgStyleDirectory']
+);
+
+#require_once( "$IP/extensions/Verbatim/verbatim.php" );
 
 /**
  * SkinTemplate class for Vector skin
@@ -59,7 +67,7 @@ class SkinQuartz extends SkinTemplate {
 		);
 		$out->addModuleScripts( 'skins.quartz' );
 		$out->addStyle('quartz/quartz.css', 'screen');
-		
+
 		//from Ultrasonic
 		addTopElements($out);
 	}
@@ -89,7 +97,7 @@ class QuartzTemplate extends BaseTemplate {
 	public function execute() {
 		//also from Ultrasonic
 		addBottomElements($this);
-		
+
 		global $wgVectorUseIconWatch;
 
 		// Build additional attributes for navigation urls
