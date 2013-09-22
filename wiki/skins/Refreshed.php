@@ -99,7 +99,7 @@ class RefreshedTemplate extends BaseTemplate {
 
 		$mySideTitle = $this->data['title'];
 		if( $this -> getSkin() -> getTitle() -> getNamespace() == 0 && substr_count( $mySideTitle, 'editing' ) == 0 ){
-			$mySideTitle = "Page:$mySideTitle";
+			$mySideTitle = "Article:$mySideTitle";
 		}
 		$mySideTitle = str_replace( '/', '<wbr>/<wbr>', $mySideTitle );
 		$mySideTitle = str_replace( ':', '<wbr>:<wbr>', $mySideTitle );
@@ -109,7 +109,7 @@ class RefreshedTemplate extends BaseTemplate {
 		<div id="userinfo">
 			<a href='javascript:;'>
 				<?php global $wgUser, $wgArticlePath;
-					echo "<img class='arrow' src='../skins/refreshed/arrow.png'/><span>$wgUser</span>";
+					echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><span>$wgUser</span>";
 				?>
 			</a>
 			<ul class="headermenu" style="display:none;">
@@ -124,26 +124,38 @@ class RefreshedTemplate extends BaseTemplate {
 			<img class="avatar" />
 			<?php //var_dump( $this->getPersonalTools() ); ?>
 		</div>
+		<?php 
+		
+		$logos = array(
+			'meta' => "<img src='$IP/skins/refreshed/brickimedia.png' />",
+			'en' => "<img src='$IP/skins/refreshed/brickipediaINK.png' />",
+			'customs' => "<img src='$IP/skins/refreshed/customsINK.png' />",
+			'stories' => "<img src='$IP/skins/refreshed/LSWRefreshedLogo.png' />",
+			'cuusoo' => "<img src='$IP/skins/refreshed/cuusooink.png' />",
+			'admin' => "admin",
+			'dev' => "dev"
+		);
+
+		global $bmProject;
+		
+		?>
 		<div id="siteinfo">
 			<a href='javascript:;'>
-				<?php  echo "<img src='$IP/skins/refreshed/brickimedia.png' /><img class='arrow' src='../skins/refreshed/arrow.png'/>" ?>
+				<?php  echo $logos[$bmProject];
+					unset( $logos[$bmProject] );
+					echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/>";
+					//echo "bm:$bmProject:";
+				?>
 			</a>
 			<ul class="headermenu" style="display:none;">
-				<a href='http://meta.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/brickimedia.png' />" ?>
-				</a>
-				<a href='http://en.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/brickipediaINK.png' />" ?>
-				</a>
-				<a href='http://customs.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/customsINK.png' />" ?>
-				</a>
-				<a href='http://stories.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/LSWRefreshedLogo.png' />" ?>
-				</a>
-				<a href='http://cuusoo.brickimedia.org'>
-					<?php  echo "<img src='$IP/skins/refreshed/cuusooink.png' />" ?>
-				</a>
+				<?php 
+					foreach( $logos as $site => $logo ){
+						echo "<a href='http://$site.brickimedia.org'>";
+						echo $logo;
+						echo "</a>";
+					}
+				?>
+
 			</ul>
 		</div>
 		<div id="search">
