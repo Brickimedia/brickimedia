@@ -201,18 +201,18 @@ switch ( $host[0] ) {
 		$wgServer = "http://lmbw.$bmServerBase";
 		$wgDBname = "lmbw";
 		break;*/
-	/*case "stories":
+	case "stories":
 		$ls_path = "LocalSettings_stories.php";
 		$bmProject = 'stories';
 		$wgServer = "http://stories.$bmServerBase";
 		$wgDBname = "stories";
-		break;*/
-	/*case "cuusoo":
+		break;
+	case "cuusoo":
 		$ls_path = "LocalSettings_cuusoo.php";
 		$bmProject = 'cuusoo';
 		$wgServer = "http://cuusoo.$bmServerBase";
 		$wgDBname = "cuusoo";
-		break;*/
+		break;
 	default:
 		header( 'Location: http://www.brickimedia.org/notfound.html' ) ;
 		exit(0);
