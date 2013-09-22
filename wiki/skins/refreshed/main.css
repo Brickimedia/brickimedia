@@ -26,7 +26,12 @@ body {
 }
 
 #header {
-	background-color: midnightblue;
+   background-color: #103ca2;
+   background-image: -moz-linear-gradient(left,#040f28 0,#103ca2 50%,#040f28 100%);
+   background-image: -webkit-gradient(linear,0% 0%,100% 0%,color-stop(0,#040f28),color-stop(50%,#103ca2),color-stop(100%,#040f28));
+   background-image: -o-linear-gradient(left,#040f28 0,#103ca2 50%,#040f28 100%);
+   background-image: -ms-linear-gradient(left,#040f28 0,#103ca2 50%,#040f28 100%);
+   -webkit-font-smoothing: antialiased;
 	width: 100%;
 	height: 3em;
 	z-index: 2;
