@@ -38,6 +38,11 @@ body {
 	position: fixed;
 }
 
+.header-avatar {
+	margin-left: 10px;
+	margin-right: 7px;
+}
+
 #maintitle2 {
 	margin-bottom: 5px;
 	padding-right: 15px;

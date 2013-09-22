@@ -109,7 +109,7 @@ class RefreshedTemplate extends BaseTemplate {
 		<div id="userinfo">
 			<a href='javascript:;'>
 				<?php global $wgUser, $wgArticlePath;
-					echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><span>$wgUser</span>";
+					echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><img class='header-avatar' src='http://meta.brickimedia.org/images/avatars/default_m.gif' /><span>$wgUser</span>";
 				?>
 			</a>
 			<ul class="headermenu" style="display:none;">
