@@ -176,12 +176,12 @@ switch ( $host[0] ) {
 		$wgServer = "http://en.$bmServerBase";
 		$wgDBname = "en";
 		break;
-	/*case "customs":
+	case "customs":
 		$ls_path = "LocalSettings_customs.php";
 		$bmProject = 'customs';
 		$wgServer = "http://customs.$bmServerBase";
 		$wgDBname = "customs";
-		break;*/
+		break;
 	case "dev":
 		$ls_path = "LocalSettings_dev.php";
 		$bmProject = 'dev';
