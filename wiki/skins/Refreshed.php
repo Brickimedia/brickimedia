@@ -119,7 +119,7 @@ class RefreshedTemplate extends BaseTemplate {
 					} else {
 						$avatar = '/images/avatars/default_m.gif';
 					}
-					echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><img class='header-avatar' src='http://meta.brickimedia.org/" . $avatar . "' /><span>$wgUser</span>";
+					echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><img class='header-avatar' src='http://meta.brickimedia.org" . $avatar . "' /><span>$wgUser</span>";
 				?>
 			</a>
 			<ul class="headermenu" style="display:none;">
