@@ -2,13 +2,13 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+  src: local('Lato Light'), local('Lato-Light'), url(http://www.brickimedia.org/resources/fonts/lato/Lato-Lig.woff) format('woff');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://www.brickimedia.org/resources/fonts/lato/Lato-Bol.woff) format('woff');
 }
 
 body {
@@ -50,6 +50,7 @@ body {
 #contentwrapper {
 	/*width: 64%;*/
 	width: calc(100% - 24em);
+	min-height: 100%;
 	position: absolute;
 	margin-left: 12em;
 	margin-right: 12em;
