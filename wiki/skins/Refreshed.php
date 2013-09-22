@@ -132,8 +132,8 @@ class RefreshedTemplate extends BaseTemplate {
 			'customs' => "<img src='$IP/skins/refreshed/customsINK.png' />",
 			'stories' => "<img src='$IP/skins/refreshed/LSWRefreshedLogo.png' />",
 			'cuusoo' => "<img src='$IP/skins/refreshed/cuusooink.png' />",
-			'admin' => "<span>admin</span>",
-			'dev' => "<span>dev</span>"
+			'admin' => "<img height=22 src='$IP/skins/refreshed/admin.png' />",
+			'dev' => "<img height=26 src='$IP/skins/refreshed/dev.png' />"
 		);
 
 		global $bmProject;
