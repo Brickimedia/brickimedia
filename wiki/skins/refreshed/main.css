@@ -79,10 +79,8 @@ body {
 	margin-right: 12em;
 	top: 3em;
 	background-color: white;
-	z-index: -1;
+	z-index: 0;
 	font-family: "Lato Body", sans-serif;
-	/*border-left: 1px solid midnightblue;
-	border-right: 1px solid midnightblue;*/
 }
 	#content {
 		padding: 0em 1em 0.5em 1em;
@@ -100,8 +98,6 @@ body {
 #leftbar, #rightbar {
 	height: 100%;
 	position: fixed;
-	background-color: rgba(0, 0, 0, 0); /*#D9DBF3;*/
-	/*background-image: url("skins/refreshed/studs-tile-refreshed.png");*/
 	top: 3em;
 	color: white;
 }
@@ -231,9 +227,6 @@ body {
 		text-align: right;
 		padding-right: 10px;
 	}
-	/*#userinfo > a span:before {
-		content: url(skins/refreshed/arrow.png);
-	}*/
 	#userinfo .arrow {
 		transition:transform 0.5s;
 		-webkit-transition:-webkit-transform 0.5s; /* Safari */
