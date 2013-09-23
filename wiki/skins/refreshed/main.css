@@ -72,6 +72,7 @@ body {
 #contentwrapper {
 	/*width: 64%;*/
 	width: calc(100% - 24em);
+	width: -webkit-calc(100% - 24em); /* safari */
 	min-height: 100%;
 	position: absolute;
 	margin-left: 12em;
@@ -207,7 +208,6 @@ body {
 	}
 
 #userinfo {
-	width: 12em;
 	position: relative;
 	float: left;
 }
@@ -216,7 +216,7 @@ body {
 		height: 2em;
 		margin-left: 1em;
 		text-decoration: none;
-		width: 10em;
+		width: 100%;
 		display: table;
 		text-align: right;
 	}
