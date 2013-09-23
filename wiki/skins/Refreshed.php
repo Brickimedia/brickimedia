@@ -249,8 +249,35 @@ class RefreshedTemplate extends BaseTemplate {
 			</div>
 		</div>
 	</div>
+	<div id="footer">
+		<?php 
+		//var_dump( $this->getFooterLinks() );
+		foreach( $this->getFooterLinks() as $category => $links ){
+			$this->html( $category );
+			$noskip = false;
+			foreach( $links as $link ){
+				echo "&ensp;";
+				$this->html( $link );
+				echo "&ensp;";
+				$noskip = true;
+			}
+			echo "<br/>";
+		}
+		$footericons = $this->getFooterIcons("icononly");
+		if ( count( $footericons ) > 0 ){
+			$noskip = false;
+			foreach ( $footericons as $blockName => $footerIcons ){
+				foreach ( $footerIcons as $icon ){
+					echo "&ensp;";
+					echo $this->getSkin()->makeFooterIcon( $icon );
+					echo "&ensp;";
+				}
+			}
+		}
+		?>
+	</div>
 	<div style="display:none;"> <?php //var_dump( $this ); ?> </div>
-	<?php $this->html('bottomscripts');;?>
+	<?php $this->html('bottomscripts');?>
 		
 		
 		

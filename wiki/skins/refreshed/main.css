@@ -74,28 +74,28 @@ body {
 	width: calc(100% - 24em);
 	width: -webkit-calc(100% - 24em); /* safari */
 	min-height: 100%;
-	position: absolute;
+	position: relative;
 	margin-left: 12em;
 	margin-right: 12em;
 	top: 3em;
 	background-color: white;
 	z-index: -1;
 	font-family: "Lato Body", sans-serif;
+	/*border-left: 1px solid midnightblue;
+	border-right: 1px solid midnightblue;*/
 }
 	#content {
-		padding: 0em 1em 0 1em;
+		padding: 0em 1em 0.5em 1em;
 		font-size: 1em;
 	}
 
 #leftbar {
 	width: 12em;
 	left: 0;
-	border-right: 1px solid midnightblue;
 }
 #rightbar {
 	width: 12em;
 	right: 0;
-	border-left: 1px solid midnightblue;
 }
 #leftbar, #rightbar {
 	height: 100%;
@@ -114,16 +114,16 @@ body {
 		bottom: 4em;
 	}
 	#leftbar-top {
-		right: -1px;
+		right: 0px;
 	}
 	#leftbar-bottom {
-		right: -1px;
+		right: 0px;
 	}
 	#rightbar-top {
-		left: -1px;
+		left: 0px;
 	}
 	#rightbar-bottom {
-		left: -1px
+		left: 0px
 	}
 	#leftbar a, #rightbar a {
 		display: block;
@@ -189,7 +189,7 @@ body {
 	}
 	#toc-box {
 		width: 5px;
-		background-color: midnightblue;
+		background-color: white;
 		height: 1.7em;
 		position: absolute;
 		right: 0;
@@ -235,16 +235,16 @@ body {
 		content: url(skins/refreshed/arrow.png);
 	}*/
 	#userinfo .arrow {
-		transition:transform .5s;
-		-webkit-transition:-webkit-transform .5s; /* Safari */
+		transition:transform 0.5s;
+		-webkit-transition:-webkit-transform 0.5s; /* Safari */
 		transform:rotateX(0deg);
 		-webkit-transform:rotateX(0deg); /* Safari */
 		vertical-align: text-bottom;
 		
 	}
 	#userinfo .arrow.rotate {
-		transform:rotateZ(-180deg);
-		-webkit-transform:rotateZ(-180deg); /* Safari */
+		transform:rotateX(-180deg);
+		-webkit-transform:rotateX(-180deg); /* Safari */
 	}
 	
 	
@@ -318,8 +318,8 @@ body {
 		display: inline-block;
 	}
 	#siteinfo .arrow.rotate {
-		transform:rotateZ(-180deg);
-		-webkit-transform:rotateZ(-180deg); /* Safari */
+		transform:rotateZ(180deg);
+		-webkit-transform:rotateZ(180deg); /* Safari */
 	}
 	
 
@@ -354,6 +354,23 @@ body {
 #preftoc li:first-child:before {
 	content: none !important;
 }
+
+#footer {
+	position: relative;
+	top: 4em;
+	margin-left: 14em;
+	margin-right: 14em;
+	text-align: center;
+}
+	#footer a {
+		color: white;
+	}
+	#footer * {
+		line-height: 1.5
+	}
+	#footer img {
+		vertical-align: text-top;
+	}
 
 /******************************** CONTENT ******************************/
 
