@@ -114,10 +114,9 @@ $wgUpgradeKey = "4d6c44c3c40f5030";
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
 ## License and Creative Commons licenses are supported so far.
-$wgRightsPage = ""; # Set to the title of a wiki page that describes your license/copyright
-$wgRightsUrl  = "";
-$wgRightsText = "";
-$wgRightsIcon = "";
+$wgRightsUrl  = "http://creativecommons.org/licenses/by-sa/3.0/";
+$wgRightsText = "a Creative Commons Attribution-ShareAlike 3.0 license";
+$wgRightsIcon = "http://meta.brickimedia.org/skins/common/images/cc-by-sa.png";
 
 # Path to the GNU diff3 utility. Used for conflict resolution.
 $wgDiff3 = "/usr/bin/diff3";
