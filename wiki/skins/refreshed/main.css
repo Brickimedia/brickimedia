@@ -34,7 +34,7 @@ body {
    -webkit-font-smoothing: antialiased;
 	width: 100%;
 	height: 3em;
-	z-index: 2;
+	z-index: 20000000;
 	position: fixed;
 }
 
@@ -79,7 +79,7 @@ body {
 	margin-right: 12em;
 	top: 3em;
 	background-color: white;
-	z-index: 0;
+	z-index: 20;
 	font-family: "Lato Body", sans-serif;
 }
 	#content {
@@ -375,3 +375,8 @@ h6 {
 	font-weight: normal !important;
 }
 
+/* Fix for login/signup form pages not displaying in content section */
+#userlogin,
+#userloginForm {
+	float: none;
+}
