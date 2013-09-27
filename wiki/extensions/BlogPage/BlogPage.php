@@ -219,7 +219,7 @@ class BlogPage extends Article {
 			true
 		);
 
-		$output = '<a href=\"" . $authorTitle->escapeFullURL() . "\" rel=\"nofollow\" class=\"blog-by-avatar\">
+		$output = '<a href=\"' . $authorTitle->escapeFullURL() . '\" rel=\"nofollow\" class=\"blog-by-avatar\">
 								{$avatar->getAvatarURL()}
 							</a><div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
 
