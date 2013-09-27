@@ -182,7 +182,10 @@ class RefreshedTemplate extends BaseTemplate {
 				</div> -->
 				<div id="pagelinks">
 					<?php 
-					$this->data['content_actions']['nstab-main']['text'] = $mySideTitle;
+					reset($this->data['content_actions']);
+					$pageTab = key($this->data['content_actions']);
+					
+					$this->data['content_actions'][$pageTab]['text'] = $mySideTitle;
 					
 					foreach ( $this->data['content_actions'] as $action ){
 				 		echo "<a class='" . $action['class'] . "' " .
