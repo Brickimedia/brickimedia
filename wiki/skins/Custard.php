@@ -125,28 +125,36 @@ class CustardTemplate extends BaseTemplate
         <div id="page">
             <div id="tabs">
                 <ul class="top">
-                    <li><a href="#edit">Edit</a></li>
-                    <li><a href="#history">History</a></li>
-                    <li><a href="#move">Move</a></li>
                     <?php global $wgUser;
                         $rights = $wgUser -> getRights();
+                        echo '<li><a href="#read">Read</a></li>';
                         if (in_array('edit', $rights)) {
-                            echo '<li><a href="#delete">Delete</a></li>';
+                            echo '<li><a href="#edit">Edit</a></li>';
                         }
                         else {
-                            echo "tough";
+                            echo '<li><a href="#edit">View Source</a></li>';
+                        }
+                        echo '<li><a href="#history">History</a></li>';
+                        if (in_array('move', $rights)) {
+                            echo '<li><a href="#move">Rename</a></li>';
+                        }
+                        if (in_array('delete', $rights)) {
+                            echo '<li><a href="#delete">Delete</a></li>';
                         }
                      ?>
                 </ul>
                 <ul class="left">
-                        <li><a href="#talk">Talk</a></li>
-                        <?php #if( isArticle() ) { ?>
-                            <li><a href="#
-                                <?php #echo $wgCanonicalNamespaces.strtolower(); ?>
-                            ">
-                                <?php #echo $wgCanonicalNamespaces; ?><!-- temp -->Page
-                            </a></li>
-                        <?php #} ?>
+                        <?php global $wgTitle;
+                            if ($wgTitle -> canTalk()) {
+                                echo '<li><a href="#talk">Talk</a></li>';
+                            }
+                            if ($wgTitle -> isNamespace() == 0) {
+                                echo '<li><a href="#page">Page</a></li>';
+                            }
+                            else {
+                                echo '<li><a href="#page">'.$wgTitle -> getNamespace().' Page</a></li>';
+                            }
+                        ?>
                 </ul>
             </div>
             <h1 id="header">
