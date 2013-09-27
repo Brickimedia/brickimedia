@@ -811,7 +811,7 @@ class Comment {
 
 				// Display Block icon for logged in users for comments of users
 				// that are already not in your block list
-				/*$block_link = '';
+				$block_link = '';
 
 				if(
 					$wgUser->getID() != 0 && $wgUser->getID() != $comment['Comment_user_id'] &&
@@ -824,7 +824,6 @@ class Comment {
 					<img src=\"{$wgScriptPath}/extensions/Comments/images/block.png\" border=\"0\" alt=\"\"/>
 				</a>";
 				}
-				
 
 				// If you are ignoring the author of the comment, display message in comment box,
 				// along with a link to show the individual comment
@@ -845,7 +844,6 @@ class Comment {
 					$output .= '</div>' . "\n";
 					$output .= '</div>' . "\n";
 				}
-				*/
 
 				// Default avatar image, if SocialProfile extension isn't
 				// enabled
