@@ -129,12 +129,10 @@ require_once( "$IP/extensions/DPLForum/DPLforum.php" );
 require_once( "$IP/extensions/CreateBox/CreateBox.php" );
 require_once( "$IP/extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php" );
 require_once ( "$IP/extensions/CheckUser/CheckUser.php" );
-#require_once( "$IP/extensions/AutomaticBoardWelcome/AutomaticBoardWelcome.php" );
 require_once( "$IP/extensions/Editcount/Editcount.php" );
 require_once( "$IP/extensions/AJAXPoll/AJAXPoll.php" );
 require_once( "$IP/extensions/UserMerge/UserMerge.php" );
 #require_once( "$IP/extensions/LookupUser/LookupUser.php" );
-//require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
 require_once("$IP/extensions/MediawikiPlayer/MediawikiPlayer.php");
 require_once( "$IP/extensions/InputBox/InputBox.php" );
 require_once("$IP/extensions/RandomSelection/RandomSelection.php");
@@ -192,7 +190,7 @@ $smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
 #WhosOnline
 #require_once("$IP/extensions/WhosOnline/WhosOnline.php");
 //$wgWhosOnlineShowAnons = true;
-$wgSpecialPageGroups['WhosOnline'] = 'users';
+//$wgSpecialPageGroups['WhosOnline'] = 'users';
 
 $wgExtraNamespaces[500] = "User_blog";
 //$wgExtraNamespaces[501] = "User_block_comment";
@@ -226,3 +224,6 @@ require_once("$IP/extensions/googleAnalytics/googleAnalytics.php");
 
 #global file descriptors
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
+
+#AntiSpoof
+require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
