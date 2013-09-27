@@ -145,15 +145,17 @@ class CustardTemplate extends BaseTemplate
                 </ul>
                 <ul class="left">
                         <?php global $wgTitle;
-                            Title::newFromDBKey($this->mDbkeyform);
-                            if (Title::canTalk()) {
+                            $canTalk = $wgTitle -> canTalk();
+                            $isNamespace = $wgTitle -> isNamespace();
+                            $getNamespace = $wgTitle -> getNamespace();
+                            if ($canTalk) {
                                 echo '<li><a href="#talk">Talk</a></li>';
                             }
-                            if (Title::isNamespace() == 0) {
+                            if ($isNamespace == 0) {
                                 echo '<li><a href="#page">Page</a></li>';
                             }
                             else {
-                                echo '<li><a href="#page">'.Title::getNamespace().' Page</a></li>';
+                                echo '<li><a href="#page">'.$getNamespace.' Page</a></li>';
                             }
                         ?>
                 </ul>
