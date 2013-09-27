@@ -96,7 +96,7 @@ class BlogPage extends Article {
 		if( $wgUseEditButtonFloat == true && method_exists( $sk, 'editMenu' ) ) {
 			$wgOut->addHTML( $sk->editMenu() );
 		}
-		$wgOut->addHTML( "<h1 class=\"page-title\">{$this->getTitle()->getText()}</h1>\n" );
+		//$wgOut->addHTML( "<h1 class=\"page-title\">{$this->getTitle()->getText()}</h1>\n" );
 		$wgOut->addHTML( $this->getByLine() );
 
 		$wgOut->addHTML( "\n<!--start Article::view-->\n" );
@@ -219,7 +219,9 @@ class BlogPage extends Article {
 			true
 		);
 
-		$output = '<div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
+		$output = '<a href=\"" . $authorTitle->escapeFullURL() . "\" rel=\"nofollow\" class=\"blog-by-avatar\">
+								{$avatar->getAvatarURL()}
+							</a><div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
 
 		$authors = '';
 		foreach( $this->authors as $author ) {
