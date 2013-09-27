@@ -33,9 +33,13 @@ $wgResourceModules['skins.custard'] = array(
         'localBasePath' => &$GLOBALS['wgStyleDirectory'],
 );
 
-?>
-
-<?php
+/**
+ * New tab-generation function
+ */
+function generateTab($href, $text)
+{
+    echo '<li><a href="$href">$text</a><span class="invert"></span></li>';
+}
 
 /**
  * Skin file for skin My Skin.
@@ -61,6 +65,7 @@ class SkinCustard extends SkinTemplate
         parent::setupSkinUserCss($out);
         $out->addModuleStyles("skins.custard");
     }
+
 }
 
 /**
@@ -141,6 +146,7 @@ class CustardTemplate extends BaseTemplate
                         if (in_array('delete', $rights)) {
                             echo '<li><a href="#delete">Delete</a></li>';
                         }
+                        generateTab('#test', 'success');
                      ?>
                 </ul>
                 <ul class="left">
