@@ -218,8 +218,18 @@ class BlogPage extends Article {
 			self::getCreateDate( $this->getId() ),
 			true
 		);
-
-		$output = $avatar->getAvatarURL() . '<div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
+		$id = $wgUser -> getID();
+		if (is_file('/var/www/wiki/images/avatars/'.$id.'_m.png')) {
+			$auth_avatar = '/images/avatars/'.$id.'_m.png';
+		} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.jpg')) {
+			$auth_avatar = '/images/avatars/'.$id.'_m.jpg';
+		} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.gif')) {
+			$auth_avatar = '/images/avatars/'.$id.'_m.gif';
+		} else {
+			$auth_avatar = '/images/avatars/default_m.gif';
+		}
+		echo "<img src='http://meta.brickimedia.org" . $auth_avatar . "' style='margin-right:10px;float:left;' />";
+		$output = '<div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
 
 		$authors = '';
 		foreach( $this->authors as $author ) {
