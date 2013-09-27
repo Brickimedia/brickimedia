@@ -234,3 +234,27 @@ $wgGroupPermissions['*']['edit'] = false;
 $wgGroupPermissions['user']['edit'] = true;
 
 $wgGroupPermissions['*']['createaccount'] = false; //disable account creation
+
+# Shared uploads
+# info here: http://www.mediawiki.org/wiki/Manual:Wiki_family#Use_shared_files
+if ( $bmProject != 'meta'){
+	$wgForeignFileRepos[] = array(
+			'class'            => 'FSRepo',
+			'name'             => 'sharedFsRepo',
+			'directory'        => 'meta',
+			'hashLevels'       => 0,
+			'url'              => "http://meta.$bmServerBase/images/",
+	);
+	$wgUseSharedUploads = true;
+	$wgSharedUploadPath = $wgUploadPath;
+	$wgSharedUploadDirectory = $wgUploadDirectory;
+	$wgHashedSharedUploadDirectory = true;
+}
+$wgFetchCommonsDescriptions = true;
+$wgSharedUploadDBname = 'meta';  # DB-Name of PoolWiki
+$wgSharedUploadDBprefix = ''; # Table name prefix for PoolWiki
+$wgRepositoryBaseUrl = "http://meta.$bmServerBase/wiki/File:";
+
+$wgUploadNavigationUrl = "http://meta.$bmServerBase/wiki/Special:Upload";
+$wgUploadMissingFileUrl= "http://meta.$bmServerBase/wiki/Special:Upload";
+
