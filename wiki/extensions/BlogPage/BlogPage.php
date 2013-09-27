@@ -57,6 +57,7 @@ class BlogPage extends Article {
 
 		$wgOut->addHTML( "\t\t" . '<div id="blog-page-container">' . "\n" );
 
+		/*
 		if ( $wgBlogPageDisplay['leftcolumn'] == true ) {
 			$wgOut->addHTML( "\t\t\t" . '<div id="blog-page-left">' . "\n" );
 
@@ -86,6 +87,7 @@ class BlogPage extends Article {
 
 			$wgOut->addHTML( $this->leftAdUnit() );
 		}
+		*/
 
 		$wgOut->addHTML( "\t\t\t" . '</div><!-- #blog-page-left -->' . "\n" );
 
@@ -110,6 +112,7 @@ class BlogPage extends Article {
 
 		$wgOut->addHTML( '</div>' . "\n" );
 
+		/*
 		if ( $wgBlogPageDisplay['rightcolumn'] == true ) {
 			$wgOut->addHTML( '<div id="blog-page-right">' . "\n" );
 
@@ -121,6 +124,7 @@ class BlogPage extends Article {
 
 			$wgOut->addHTML( '</div>' . "\n" );
 		}
+		*/
 
 		$wgOut->addHTML( '<div class="cleared"></div>' . "\n" );
 		$wgOut->addHTML( '</div><!-- #blog-page-container -->' . "\n" );
