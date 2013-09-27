@@ -149,7 +149,7 @@ class CustardTemplate extends BaseTemplate
                         if (in_array('delete', $rights)) {
                             echo '<li><a href="#delete">Delete</a></li>';
                         }
-                        generateLi('#test', 'success');
+                        generateTab('#test', 'success');
                      ?>
                 </ul>
                 <ul class="left">
