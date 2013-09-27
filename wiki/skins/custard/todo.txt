@@ -1,0 +1,22 @@
+# Fix tab styling                   CSS
+# Fix page height excess            CSS
+# Add article title                 PHP
+# Add content to bar                PHP
+    # User menu
+    # Wiki menu
+    # "Follow" action
+    # Search bar
+    # User level
+    # Theme changer
+    # Notifications
+# Add functionality to bar          JS
+# Make variables independent        PHP
+# Finish styling articles           CSS
+# Convert CSS to SCSS               CSS
+# Implement modules                 JS
+    # Friends module (disable Social Profile)
+    # Chat module
+# Implement dynamic loading         JS
+# Optimize skin for touch events    JS
+# Integrate jPlayer extension       JS
+# Reinvent "ChatParty"              JS
