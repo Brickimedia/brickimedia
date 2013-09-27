@@ -134,21 +134,21 @@ class CustardTemplate extends BaseTemplate
                         global $wgTitle;
                         global $wgUser;
                         $isEditable = $wgTitle -> userCan('edit');
-                        $this -> generateTab('#read', 'Read');
+                        generateTab('#read', 'Read');
                         if ($isEditable)
                         {
                             if ($wgUser -> isAllowed('edit')) {
-                                $this -> generateTab('#edit', 'Edit');
+                                generateTab('#edit', 'Edit');
                             }
                             else {
-                                $this -> generateTab('#edit', 'View Source');
+                                generateTab('#edit', 'View Source');
                             }
                             generateTab('#history', 'History');
                             if ($wgUser -> isAllowed('move')) {
-                                $this -> generateTab('#move', 'Rename');
+                                generateTab('#move', 'Rename');
                             }
                             if ($wgUser -> isAllowed('delete')) {
-                                $this -> generateTab('#delete', 'Delete');
+                                generateTab('#delete', 'Delete');
                             }
                         }
                     ?>
@@ -162,13 +162,13 @@ class CustardTemplate extends BaseTemplate
                         $getNsText = $wgTitle -> getNsText();
                         $getNamespace = $wgTitle -> getNamespace();
                         if ($canTalk == 1) {
-                            $this -> generateTab('#talk', 'Talk');
+                            generateTab('#talk', 'Talk');
                         }
                         if ($getNamespace == 0) {
-                            $this -> generateTab('#page', 'Page');
+                            generateTab('#page', 'Page');
                         }
                         else {
-                            $this -> generateTab('#page', $getNsText.' Page');
+                            generateTab('#page', $getNsText.' Page');
                         }
                     ?>
                 </ul>
