@@ -218,13 +218,13 @@ class BlogPage extends Article {
 			self::getCreateDate( $this->getId() ),
 			true
 		);
-		$id = $wgUser -> getID();
-		if (is_file('/var/www/wiki/images/avatars/'.$id.'_m.png')) {
-			$auth_avatar = '/images/avatars/'.$id.'_m.png';
-		} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.jpg')) {
-			$auth_avatar = '/images/avatars/'.$id.'_m.jpg';
-		} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.gif')) {
-			$auth_avatar = '/images/avatars/'.$id.'_m.gif';
+		
+		if (is_file('/var/www/wiki/images/avatars/'.$author_user_id.'_m.png')) {
+			$auth_avatar = '/images/avatars/'.$author_user_id.'_m.png';
+		} elseif (is_file('/var/www/wiki/images/avatars/'.$author_user_id.'_m.jpg')) {
+			$auth_avatar = '/images/avatars/'.$author_user_id.'_m.jpg';
+		} elseif (is_file('/var/www/wiki/images/avatars/'.$author_user_id.'_m.gif')) {
+			$auth_avatar = '/images/avatars/'.$author_user_id.'_m.gif';
 		} else {
 			$auth_avatar = '/images/avatars/default_m.gif';
 		}
