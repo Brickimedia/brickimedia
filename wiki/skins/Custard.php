@@ -129,10 +129,14 @@ class CustardTemplate extends BaseTemplate
                     <li><a href="#history">History</a></li>
                     <li><a href="#move">Move</a></li>
                     <?php global $wgUser;
-                        echo "$wgUser -> getRights() = ".$wgUser -> getRights();
-                        echo "$wgUser -> getRights() -> getGroupPermissions() = ".$wgUser -> getRights() -> getGroupPermissions();
+                        $rights = $wgUser -> getRights();
+                        if (in_array('delete', $rights)) {
+                            echo '<li><a href="#delete">Delete</a></li>';
+                        }
+                        else {
+                            echo "tough";
+                        }
                      ?>
-                    <li><a href="#delete">Delete</a></li>
                 </ul>
                 <ul class="left">
                         <li><a href="#talk">Talk</a></li>
