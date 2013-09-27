@@ -217,7 +217,10 @@ class BlogPage extends Article {
 			true
 		);
 
-		$output = '<div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
+		$output = '<a href="' . $authorTitle->escapeFullURL() . '" rel="nofollow" style="float:left;margin-right:10px;">
+						{$avatar->getAvatarURL()}
+					</a>
+					<div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
 
 		$authors = '';
 		foreach( $this->authors as $author ) {
@@ -317,8 +320,7 @@ class BlogPage extends Article {
 							</a>
 							<div class=\"author-title\">
 								<a href=\"" . $authorTitle->escapeFullURL() .
-									'" rel="nofollow">' .
-									wordwrap( $author_user_name, 12, "<br />\n", false ) .          //modified by George
+									'" rel="nofollow">' . $author_user_name . 
 								'</a>
 							</div>';
 		// If the user has supplied some information about themselves on their
