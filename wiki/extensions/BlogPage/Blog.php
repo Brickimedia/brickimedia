@@ -125,6 +125,8 @@ $wgAjaxExportList[] = 'SpecialCreateBlogPost::checkTitleExistence';
 
 // New user right, required to create new blog posts via the new special page
 $wgAvailableRights[] = 'createblogpost';
+$wgGroupPermissions['*']['createblogpost'] = false;
+$wgGroupPermissions['user']['createblogpost'] = true;
 
 // Hooked functions
 $wgAutoloadClasses['BlogHooks'] = $dir . 'BlogHooks.php';

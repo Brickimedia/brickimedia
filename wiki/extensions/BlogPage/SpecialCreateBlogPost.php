@@ -67,7 +67,7 @@ class SpecialCreateBlogPost extends SpecialPage {
 			}
 
 			// Create a Title object, or try to, anyway
-			$userSuppliedTitle = $wgUser->getName() . "/" . $wgRequest->getVal( 'title2' );
+			$userSuppliedTitle = $wgRequest->getVal( 'title2' );
 			$title = Title::makeTitleSafe( NS_BLOG, $userSuppliedTitle );
 
 			// @todo CHECKME: are these still needed? The JS performs these
@@ -136,6 +136,7 @@ class SpecialCreateBlogPost extends SpecialPage {
 					// Instead of <vote />, Wikia had Template:Blog Top over
 					// here and Template:Blog Bottom at the bottom, where we
 					// have the comments tag right now
+					'<vote />' . "\n" . '<!--start text-->' . "\n" .
 						$wgRequest->getVal( 'pageBody' ) . "\n\n" .
 						'<comments />' . "\n\n" . $wikitextCategories .
 						"\n__NOEDITSECTION__",
@@ -233,21 +234,23 @@ class SpecialCreateBlogPost extends SpecialPage {
 
 		$tagcloud = '<div id="create-tagcloud">';
 		$tagnumber = 0;
-		foreach ( $cloud->tags as $tag => $att ) {
-			$tag = trim( $tag );
-			$blogUserCat = wfMsgForContent( 'blog-by-user-category',
-				wfMsgForContent( 'blog-category' ) );
-			// Ignore "Articles by User X" categories
-			if ( !preg_match( '/' . $blogUserCat . '/', $tag ) ) {
-				$slashedTag = $tag; // define variable
-				// Fix for categories that contain an apostrophe
-				if ( strpos( $tag, "'" ) ) {
-					$slashedTag = str_replace( "'", "\'", $tag );
+		if( isset( $cloud->tags) ){ //nxt
+			foreach ( $cloud->tags as $tag => $att ) {
+				$tag = trim( $tag );
+				$blogUserCat = wfMsgForContent( 'blog-by-user-category',
+					wfMsgForContent( 'blog-category' ) );
+				// Ignore "Articles by User X" categories
+				if ( !preg_match( '/' . $blogUserCat . '/', $tag ) ) {
+					$slashedTag = $tag; // define variable
+					// Fix for categories that contain an apostrophe
+					if ( strpos( $tag, "'" ) ) {
+						$slashedTag = str_replace( "'", "\'", $tag );
+					}
+					$tagcloud .= " <span id=\"tag-{$tagnumber}\" style=\"font-size:{$cloud->tags[$tag]['size']}{$cloud->tags_size_type}\">
+						<a class=\"tag-cloud-entry\" data-blog-slashed-tag=\"" . $slashedTag . "\" data-blog-tag-number=\"{$tagnumber}\">{$tag}</a>
+					</span>";
+					$tagnumber++;
 				}
-				$tagcloud .= " <span id=\"tag-{$tagnumber}\" style=\"font-size:{$cloud->tags[$tag]['size']}{$cloud->tags_size_type}\">
-					<a class=\"tag-cloud-entry\" data-blog-slashed-tag=\"" . $slashedTag . "\" data-blog-tag-number=\"{$tagnumber}\">{$tag}</a>
-				</span>";
-				$tagnumber++;
 			}
 		}
 		$tagcloud .= '</div>';
