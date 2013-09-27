@@ -36,15 +36,9 @@ $wgResourceModules['skins.custard'] = array(
 /**
  * New tab-generation function
  */
-function generateTab($href, $text, $action, $target)
+function generateTab($href, $text)
 {
-    if ($action == $target)
-    {
-        echo '<li><a href="'.$href.'" class="active">'.$text.'</a><span class="invert"></span></li>';
-    }
-    else {
-        echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
-    }
+    echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
 }
 
 /**
@@ -139,24 +133,22 @@ class CustardTemplate extends BaseTemplate
                     <?php
                         global $wgTitle;
                         global $wgUser;
-                        global $wgAction;
-                        $actionName = $this -> getName();
                         $isEditable = $wgTitle -> userCan('edit');
                         $this -> generateTab('#read', 'Read');
                         if ($isEditable)
                         {
                             if ($wgUser -> isAllowed('edit')) {
-                                $this -> generateTab('#edit', 'Edit', 'edit', $actionName);
+                                $this -> generateTab('#edit', 'Edit');
                             }
                             else {
-                                $this -> generateTab('#edit', 'View Source', 'edit', $actionName);
+                                $this -> generateTab('#edit', 'View Source');
                             }
-                            generateTab('#history', 'History', 'history', $actionName);
+                            generateTab('#history', 'History');
                             if ($wgUser -> isAllowed('move')) {
-                                $this -> generateTab('#move', 'Rename', 'move', $actionName);
+                                $this -> generateTab('#move', 'Rename');
                             }
                             if ($wgUser -> isAllowed('delete')) {
-                                $this -> generateTab('#delete', 'Delete', 'delete', $actionName);
+                                $this -> generateTab('#delete', 'Delete');
                             }
                         }
                     ?>
