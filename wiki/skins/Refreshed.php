@@ -138,10 +138,10 @@ class RefreshedTemplate extends BaseTemplate {
 		
 		$logos = array(
 			'meta' => "<img src='$IP/skins/refreshed/brickimedia.png' />",
-			'en' => "<img src='$IP/skins/refreshed/brickipediaINK.png' />",
-			'customs' => "<img src='$IP/skins/refreshed/customsINK.png' />",
-			'stories' => "<img src='$IP/skins/refreshed/LSWRefreshedLogo.png' />",
-			'cuusoo' => "<img src='$IP/skins/refreshed/cuusooink.png' />",
+			'en' => "<img src='$IP/skins/refreshed/brickipedia.png' />",
+			'customs' => "<img src='$IP/skins/refreshed/customs.png' />",
+			'stories' => "<img src='$IP/skins/refreshed/stories.png' />",
+			'cuusoo' => "<img src='$IP/skins/refreshed/cuusoo.png' />",
 			'admin' => "<img height=22 src='$IP/skins/refreshed/admin.png' />",
 			'dev' => "<img height=26 src='$IP/skins/refreshed/dev.png' />"
 		);
