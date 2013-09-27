@@ -148,7 +148,9 @@ class CustardTemplate extends BaseTemplate
                             $canTalk = $wgTitle -> canTalk();
                             $getNamespaceKey = $wgTitle -> getNamespaceKey();
                             $getNamespace = $wgTitle -> getNamespace();
-                            echo $canTalk.$getNamespaceKey.$getNamespace;
+                            echo '<span>'.(string)$canTalk.'</span>';
+                            echo '<span>'.$getNamespaceKey.'</span>';
+                            echo '<span>'.$getNamespace.'</span>';
                             /*
                             if ($canTalk) {
                                 echo '<li><a href="#talk">Talk</a></li>';
