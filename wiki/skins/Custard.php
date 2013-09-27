@@ -144,15 +144,15 @@ class CustardTemplate extends BaseTemplate
                      ?>
                 </ul>
                 <ul class="left">
-                        <?php global $wgTitle;
-                            if ($wgTitle -> canTalk()) {
+                        <?php Title::newFromText();
+                            if (Title::canTalk()) {
                                 echo '<li><a href="#talk">Talk</a></li>';
                             }
-                            if ($wgTitle -> isNamespace() == 0) {
+                            if (Title::isNamespace() == 0) {
                                 echo '<li><a href="#page">Page</a></li>';
                             }
                             else {
-                                echo '<li><a href="#page">'.$wgTitle -> getNamespace().' Page</a></li>';
+                                echo '<li><a href="#page">'.Title::getNamespace().' Page</a></li>';
                             }
                         ?>
                 </ul>
