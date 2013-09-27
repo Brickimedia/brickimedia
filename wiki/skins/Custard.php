@@ -36,9 +36,15 @@ $wgResourceModules['skins.custard'] = array(
 /**
  * New tab-generation function
  */
-function generateTab($href, $text)
+function generateTab($href, $text, $action, $target)
 {
-    echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
+    if ($action == $target)
+    {
+        echo '<li><a href="'.$href.'" class="active">'.$text.'</a><span class="invert"></span></li>';
+    }
+    else {
+        echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
+    }
 }
 
 /**
@@ -133,40 +139,44 @@ class CustardTemplate extends BaseTemplate
                     <?php
                         global $wgTitle;
                         global $wgUser;
-                        $rights = $wgUser -> getRights();
+                        global $wgActions;
+                        $actionName = $wgActions -> getName();
                         $isEditable = $wgTitle -> userCan('edit');
-                        generateTab('#read', 'Read');
+                        $this -> generateTab('#read', 'Read');
                         if ($isEditable)
                         {
-                            if (in_array('edit', $rights)) {
-                                generateTab('#edit', 'Edit');
+                            if ($wgUser -> isAllowed('edit')) {
+                                $this -> generateTab('#edit', 'Edit', 'edit', $actionName);
                             }
                             else {
-                                generateTab('#edit', 'View Source');
+                                $this -> generateTab('#edit', 'View Source', 'edit', $actionName);
                             }
-                            generateTab('#history', 'History');
-                            if (in_array('move', $rights)) {
-                                generateTab('#move', 'Rename');
+                            generateTab('#history', 'History', 'history', $actionName);
+                            if ($wgUser -> isAllowed('move')) {
+                                $this -> generateTab('#move', 'Rename', 'move', $actionName);
                             }
-                            if (in_array('delete', $rights)) {
-                                generateTab('#delete', 'Delete');
+                            if ($wgUser -> isAllowed('delete')) {
+                                $this -> generateTab('#delete', 'Delete', 'delete', $actionName);
                             }
                         }
                     ?>
                 </ul>
+                <?php
+                    echo $wgActions->getActionName().'<br/>'.$wgActions->getClass().'<br/>'.$wgActions->getContext().'<br/>'.$wgActions->getDescription().'<br/>'.$wgActions->getLang().'<br/>'.$wgActions->getLanguage().'<br/>'.$wgActions->getName().'<br/>'.$wgActions->getOutput().'<br/>'.$wgActions->getPageTitle().'<br/>'.$wgActions->getRequest().'<br/>'.$wgActions->getRestriction().'<br/>'.$wgActions->getSkin().'<br/>'.$wgActions->getTitle().'<br/>'.$wgActions->getUser();
+                ?>
                 <ul class="left">
                     <?php
                         $canTalk = $wgTitle -> canTalk();
                         $getNsText = $wgTitle -> getNsText();
                         $getNamespace = $wgTitle -> getNamespace();
                         if ($canTalk == 1) {
-                            generateTab('#talk', 'Talk');
+                            $this -> generateTab('#talk', 'Talk');
                         }
                         if ($getNamespace == 0) {
-                            generateTab('#page', 'Page');
+                            $this -> generateTab('#page', 'Page');
                         }
                         else {
-                            generateTab('#page', $getNsText.' Page');
+                            $this -> generateTab('#page', $getNsText.' Page');
                         }
                     ?>
                 </ul>
