@@ -41,6 +41,11 @@ function generateTab($href, $text)
     echo '<li><a href="$href">$text</a><span class="invert"></span></li>';
 }
 
+function generateTab2($href, $text)
+{
+    echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
+}
+
 /**
  * Skin file for skin My Skin.
  *
@@ -163,6 +168,7 @@ class CustardTemplate extends BaseTemplate
                             else {
                                 echo '<li><a href="#page">'.$getNsText.' Page</a></li>';
                             }
+                            generateTab2('#test', 'success');
                         ?>
                 </ul>
             </div>
