@@ -67,7 +67,7 @@ class SpecialCreateBlogPost extends SpecialPage {
 			}
 
 			// Create a Title object, or try to, anyway
-			$userSuppliedTitle = $wgRequest->getVal( 'title2' );
+			$userSuppliedTitle = $wgUser->getName() . "/" . $wgRequest->getVal( 'title2' );
 			$title = Title::makeTitleSafe( NS_BLOG, $userSuppliedTitle );
 
 			// @todo CHECKME: are these still needed? The JS performs these
@@ -136,7 +136,6 @@ class SpecialCreateBlogPost extends SpecialPage {
 					// Instead of <vote />, Wikia had Template:Blog Top over
 					// here and Template:Blog Bottom at the bottom, where we
 					// have the comments tag right now
-					'<vote />' . "\n" . '<!--start text-->' . "\n" .
 						$wgRequest->getVal( 'pageBody' ) . "\n\n" .
 						'<comments />' . "\n\n" . $wikitextCategories .
 						"\n__NOEDITSECTION__",
