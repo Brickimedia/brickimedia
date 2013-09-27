@@ -22,12 +22,12 @@ $wgResourceModules['skins.custard'] = array(
             'custard/CSS/custard.css' => array( 'media' => 'screen' ),
         ),
         'scripts' => array(
-            'custard/JS/EventHelpers.js',
-            'custard/JS/cssQuery-p.js',
-            'custard/JS/jcoglan-com-sylvester.js',
-            'custard/JS/cssSandpaper.js',
+            //'custard/JS/EventHelpers.js',
+            //'custard/JS/cssQuery-p.js',
+            //'custard/JS/jcoglan-com-sylvester.js',
+            //'custard/JS/cssSandpaper.js',
             //'custard/JS/history.js',
-            //'custard/JS/custard.js',
+            'custard/JS/custard.js',
         ),
         'remoteBasePath' => &$GLOBALS['wgStylePath'],
         'localBasePath' => &$GLOBALS['wgStyleDirectory'],
@@ -103,9 +103,7 @@ class CustardTemplate extends BaseTemplate
                     <a href="#meta">Meta</a>
                     <a href="#pedia">Pedia</a>
                     <a href="#customs">Customs
-                        <div>
-                            <span class="invert"></span>
-                        </div>
+                        <div><span class="invert"></span></div>
                     </a>
                 </div>
             </div>
@@ -115,9 +113,7 @@ class CustardTemplate extends BaseTemplate
             <div class="right">
                 <div class="shell">
                     <a href="#stories">Stories
-                        <div>
-                            <span class="invert"></span>
-                        </div>
+                        <div><span class="invert"></span></div>
                     </a>
                     <a href="#cuusoo">CUUSOO</a>
                     <a href="#dev">Dev</a>
@@ -129,10 +125,10 @@ class CustardTemplate extends BaseTemplate
         <div id="page">
             <div id="tabs">
                 <ul class="top">
-                    <li><a href="#edit" rel="ajax">Edit</a></li>
-                    <li><a href="#history" rel="ajax">History</a></li>
-                    <li><a href="#move" rel="ajax">Move</a></li>
-                    <li><a href="#delete" rel="ajax">Delete</a></li>
+                    <li><a href="#edit">Edit</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#move">Move</a></li>
+                    <li><a href="#delete">Delete</a></li>
                 </ul>
                 <ul class="left">
                         <li><a href="#talk">Talk</a></li>

@@ -4,7 +4,7 @@ $(document).ready(function ()
      * From http://www.queness.com/post/328/a-simple-ajax-driven-website-with-jqueryphp
     */
 
-    //Check if url hash value exists (for bookmark)
+    /*//Check if url hash value exists (for bookmark)
     $.history.init(pageload);
 
     //highlight the selected link
@@ -64,5 +64,5 @@ function getPage() {
             //display the body with fadeIn transition
             $('#content').fadeIn('slow');        
         }        
-    });
+    });*/
 }
