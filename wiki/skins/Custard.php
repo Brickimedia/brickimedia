@@ -61,6 +61,14 @@ class SkinCustard extends SkinTemplate
         parent::setupSkinUserCss($out);
         $out->addModuleStyles("skins.custard");
     }
+
+    /**
+     * New tab-generation function
+     */
+     function generateTab($href, $text)
+     {
+         echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
+     }
 }
 
 /**
@@ -141,6 +149,7 @@ class CustardTemplate extends BaseTemplate
                         if (in_array('delete', $rights)) {
                             echo '<li><a href="#delete">Delete</a></li>';
                         }
+                        generateLi('#test', 'success');
                      ?>
                 </ul>
                 <ul class="left">
