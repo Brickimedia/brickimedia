@@ -57,44 +57,12 @@ class BlogPage extends Article {
 
 		$wgOut->addHTML( "\t\t" . '<div id="blog-page-container">' . "\n" );
 
-		if ( $wgBlogPageDisplay['leftcolumn'] == true ) {
-			$wgOut->addHTML( "\t\t\t" . '<div id="blog-page-left">' . "\n" );
-
-			$wgOut->addHTML( "\t\t\t\t" . '<div class="blog-left-units">' . "\n" );
-
-			$wgOut->addHTML(
-				"\t\t\t\t\t" . '<h2>' . wfMsgExt(
-					'blog-author-title',
-					'parsemag',
-					count( $this->authors ) ) . '</h2>' . "\n"
-			);
-			// Why was this commented out? --ashley, 11 July 2011
-			if( count( $this->authors ) > 1 ) {
-				$wgOut->addHTML( $this->displayMultipleAuthorsMessage() );
-			}
-
-			// Output each author's box in the order that they appear in [[Category:Opinions by X]]
-			for( $x = 0; $x <= count( $this->authors ); $x++ ) {
-				$wgOut->addHTML( $this->displayAuthorBox( $x ) );
-			}
-
-			$wgOut->addHTML( $this->recentEditors() );
-			$wgOut->addHTML( $this->recentVoters() );
-			$wgOut->addHTML( $this->embedWidget() );
-
-			$wgOut->addHTML( '</div>' . "\n" );
-
-			$wgOut->addHTML( $this->leftAdUnit() );
-		}
-
-		$wgOut->addHTML( "\t\t\t" . '</div><!-- #blog-page-left -->' . "\n" );
-
 		$wgOut->addHTML( '<div id="blog-page-middle">' . "\n" );
 		global $wgUseEditButtonFloat;
 		if( $wgUseEditButtonFloat == true && method_exists( $sk, 'editMenu' ) ) {
 			$wgOut->addHTML( $sk->editMenu() );
 		}
-		$wgOut->addHTML( "<h1 class=\"page-title\">{$this->getTitle()->getText()}</h1>\n" );
+		//$wgOut->addHTML( "<h1 class=\"page-title\">{$this->getTitle()->getText()}</h1>\n" );
 		$wgOut->addHTML( $this->getByLine() );
 
 		$wgOut->addHTML( "\n<!--start Article::view-->\n" );
