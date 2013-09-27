@@ -219,7 +219,7 @@ class BlogPage extends Article {
 			true
 		);
 
-		$output = '{$avatar->getAvatarURL()}<div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
+		$output = $avatar->getAvatarURL() . '<div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
 
 		$authors = '';
 		foreach( $this->authors as $author ) {
