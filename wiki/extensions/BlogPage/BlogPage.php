@@ -219,9 +219,7 @@ class BlogPage extends Article {
 			true
 		);
 
-		$output = '<a href=\"' . $authorTitle->escapeFullURL() . '\" rel=\"nofollow\" class=\"blog-by-avatar\">
-								{$avatar->getAvatarURL()}
-							</a><div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
+		$output = '{$avatar->getAvatarURL()}<div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
 
 		$authors = '';
 		foreach( $this->authors as $author ) {
