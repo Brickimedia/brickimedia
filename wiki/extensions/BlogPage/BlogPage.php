@@ -229,7 +229,7 @@ class BlogPage extends Article {
 			$auth_avatar = '/images/avatars/default_m.gif';
 		}
 		echo "<img src='http://meta.brickimedia.org" . $auth_avatar . "' style='margin-right:10px;float:left;' />";
-		$output = '<div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
+		$output = '<img src="http://meta.brickimedia.org"' . $auth_avatar . '" style="margin-right:10px;float:left;" /><div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
 
 		$authors = '';
 		foreach( $this->authors as $author ) {
