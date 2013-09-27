@@ -146,20 +146,18 @@ class CustardTemplate extends BaseTemplate
                 <ul class="left">
                         <?php global $wgTitle;
                             $canTalk = $wgTitle -> canTalk();
-                            $getNamespaceKey = $wgTitle -> getNamespaceKey();
+                            $getNsText = $wgTitle -> getNsText();
                             $getNamespace = $wgTitle -> getNamespace();
-                            echo '<span>'.(string)$canTalk.'</span>';
-                            echo '<span>'.$getNamespaceKey.'</span>';
-                            echo '<span>'.$getNamespace.'</span>';
+                            echo '<span>'.$getNsText.'</span>';
                             /*
-                            if ($canTalk) {
+                            if ($canTalk == 1) {
                                 echo '<li><a href="#talk">Talk</a></li>';
                             }
-                            if ($getNamespaceKey == 0) {
+                            if ($getNamespace == 0) {
                                 echo '<li><a href="#page">Page</a></li>';
                             }
                             else {
-                                echo '<li><a href="#page">'.$getNamespace.' Page</a></li>';
+                                echo '<li><a href="#page">'.$getNsText.' Page</a></li>';
                             }
                             */
                         ?>
