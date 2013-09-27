@@ -144,7 +144,8 @@ class CustardTemplate extends BaseTemplate
                      ?>
                 </ul>
                 <ul class="left">
-                        <?php Title::newFromText();
+                        <?php global $wgTitle;
+                            Title::newFromDBKey($this->mDbkeyform);
                             if (Title::canTalk()) {
                                 echo '<li><a href="#talk">Talk</a></li>';
                             }
