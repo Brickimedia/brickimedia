@@ -153,9 +153,6 @@ class CustardTemplate extends BaseTemplate
                         }
                     ?>
                 </ul>
-                <?php
-                    echo $wgActions->getActionName().'<br/>'.$wgActions->getClass().'<br/>'.$wgActions->getContext().'<br/>'.$wgActions->getDescription().'<br/>'.$wgActions->getLang().'<br/>'.$wgActions->getLanguage().'<br/>'.$wgActions->getName().'<br/>'.$wgActions->getOutput().'<br/>'.$wgActions->getPageTitle().'<br/>'.$wgActions->getRequest().'<br/>'.$wgActions->getRestriction().'<br/>'.$wgActions->getSkin().'<br/>'.$wgActions->getTitle().'<br/>'.$wgActions->getUser();
-                ?>
                 <ul class="left">
                     <?php
                         $canTalk = $wgTitle -> canTalk();
