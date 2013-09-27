@@ -148,8 +148,6 @@ class CustardTemplate extends BaseTemplate
                             $canTalk = $wgTitle -> canTalk();
                             $getNsText = $wgTitle -> getNsText();
                             $getNamespace = $wgTitle -> getNamespace();
-                            echo '<span>'.$getNsText.'</span>';
-                            /*
                             if ($canTalk == 1) {
                                 echo '<li><a href="#talk">Talk</a></li>';
                             }
@@ -159,7 +157,6 @@ class CustardTemplate extends BaseTemplate
                             else {
                                 echo '<li><a href="#page">'.$getNsText.' Page</a></li>';
                             }
-                            */
                         ?>
                 </ul>
             </div>
