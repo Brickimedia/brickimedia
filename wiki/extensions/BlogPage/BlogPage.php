@@ -184,11 +184,17 @@ class BlogPage extends Article {
 			self::getCreateDate( $this->getId() ),
 			true
 		);
-
-		$output = '<a href="' . $authorTitle->escapeFullURL() . '" rel="nofollow" style="float:left;margin-right:10px;">
-						{$avatar->getAvatarURL()}
-					</a>
-					<div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
+		$id = $wgUser -> getID();
+		if (is_file('/var/www/wiki/images/avatars/'.$id.'_m.png')) {
+			$avatar = '/images/avatars/'.$id.'_m.png';
+		} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.jpg')) {
+			$avatar = '/images/avatars/'.$id.'_m.jpg';
+		} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.gif')) {
+			$avatar = '/images/avatars/'.$id.'_m.gif';
+		} else {
+			$avatar = '/images/avatars/default_m.gif';
+		}
+		$output = '<img class="avatar" src="http://meta.brickimedia.org' . $avatar . '" style="float:left;margin-right:10px;" /><div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
 
 		$authors = '';
 		foreach( $this->authors as $author ) {
