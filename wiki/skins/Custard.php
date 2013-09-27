@@ -33,9 +33,6 @@ $wgResourceModules['skins.custard'] = array(
         'localBasePath' => &$GLOBALS['wgStyleDirectory'],
 );
 
-global $wgTitle;
-global $wgUser;
-
 /**
  * New tab-generation function
  */
@@ -134,6 +131,8 @@ class CustardTemplate extends BaseTemplate
             <div id="tabs">
                 <ul class="top">
                     <?php
+                        global $wgTitle;
+                        global $wgUser;
                         $rights = $wgUser -> getRights();
                         $isEditable = $wgTitle -> userCan('edit');
                         generateTab('#read', 'Read');
