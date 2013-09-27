@@ -33,15 +33,13 @@ $wgResourceModules['skins.custard'] = array(
         'localBasePath' => &$GLOBALS['wgStyleDirectory'],
 );
 
+global $wgTitle;
+global $wgUser;
+
 /**
  * New tab-generation function
  */
 function generateTab($href, $text)
-{
-    echo '<li><a href="$href">$text</a><span class="invert"></span></li>';
-}
-
-function generateTab2($href, $text)
 {
     echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
 }
@@ -135,41 +133,43 @@ class CustardTemplate extends BaseTemplate
         <div id="page">
             <div id="tabs">
                 <ul class="top">
-                    <?php global $wgUser;
+                    <?php
                         $rights = $wgUser -> getRights();
-                        echo '<li><a href="#read">Read</a></li>';
-                        if (in_array('edit', $rights)) {
-                            echo '<li><a href="#edit">Edit</a></li>';
-                        }
-                        else {
-                            echo '<li><a href="#edit">View Source</a></li>';
-                        }
-                        echo '<li><a href="#history">History</a></li>';
-                        if (in_array('move', $rights)) {
-                            echo '<li><a href="#move">Rename</a></li>';
-                        }
-                        if (in_array('delete', $rights)) {
-                            echo '<li><a href="#delete">Delete</a></li>';
-                        }
-                        generateTab('#test', 'success');
-                     ?>
-                </ul>
-                <ul class="left">
-                        <?php global $wgTitle;
-                            $canTalk = $wgTitle -> canTalk();
-                            $getNsText = $wgTitle -> getNsText();
-                            $getNamespace = $wgTitle -> getNamespace();
-                            if ($canTalk == 1) {
-                                echo '<li><a href="#talk">Talk</a></li>';
-                            }
-                            if ($getNamespace == 0) {
-                                echo '<li><a href="#page">Page</a></li>';
+                        $isEditable = $wgTitle -> userCan('edit');
+                        generateTab('#read', 'Read');
+                        if ($isEditable)
+                        {
+                            if (in_array('edit', $rights)) {
+                                generateTab('#edit', 'Edit');
                             }
                             else {
-                                echo '<li><a href="#page">'.$getNsText.' Page</a></li>';
+                                generateTab('#edit', 'View Source');
                             }
-                            generateTab2('#test', 'success');
-                        ?>
+                            generateTab('#history', 'History');
+                            if (in_array('move', $rights)) {
+                                generateTab('#move', 'Rename');
+                            }
+                            if (in_array('delete', $rights)) {
+                                generateTab('#delete', 'Delete');
+                            }
+                        }
+                    ?>
+                </ul>
+                <ul class="left">
+                    <?php
+                        $canTalk = $wgTitle -> canTalk();
+                        $getNsText = $wgTitle -> getNsText();
+                        $getNamespace = $wgTitle -> getNamespace();
+                        if ($canTalk == 1) {
+                            generateTab('#talk', 'Talk');
+                        }
+                        if ($getNamespace == 0) {
+                            generateTab('#page', 'Page');
+                        }
+                        else {
+                            generateTab('#page', $getNsText.' Page');
+                        }
+                    ?>
                 </ul>
             </div>
             <h1 id="header">
