@@ -66,9 +66,9 @@ class TopUsersPoints extends SpecialPage {
 
 		$recent_title = SpecialPage::getTitleFor( 'TopUsersRecent' );
 
-		$out = '<div class="top-fan-nav">
+		/* $out = '<div class="top-fan-nav">
 			<h1>' . wfMsg( 'top-fans-by-points-nav-header' ) . '</h1>
-			<p><b>' . wfMsg( 'top-fans-total-points-link' ) . '</b></p>';
+			<p><b>' . wfMsg( 'top-fans-total-points-link' ) . '</b></p>'; */
 
 		if ( $wgUserStatsTrackWeekly ) {
 			$out .= '<p><a href="' . $recent_title->escapeFullURL( 'period=monthly' ) . '">' .
