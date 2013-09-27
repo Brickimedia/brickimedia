@@ -139,8 +139,8 @@ class CustardTemplate extends BaseTemplate
                     <?php
                         global $wgTitle;
                         global $wgUser;
-                        global $wgActions;
-                        $actionName = $wgActions -> getName();
+                        global $wgAction;
+                        $actionName = $wgAction -> getName();
                         $isEditable = $wgTitle -> userCan('edit');
                         $this -> generateTab('#read', 'Read');
                         if ($isEditable)
