@@ -273,21 +273,27 @@ body {
 
 #tabs ul {
     position: absolute;
-    font-size: 15px;
+    font-size: .75em;
+    line-height: 1.75em;
 }
 
 #tabs li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 5px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
 }
 
 #tabs a {
     background: #BFDBEE;
     color: black;
-    padding: 5px 20px;
+    width: 100%;
+    height: 100%;
     border-radius: 5px 5px 0 0;
     text-decoration: none;
     transition: background 200ms linear;
+    display: block;
 }
 
 #tabs li.selected a {
@@ -299,17 +305,13 @@ body {
 }
 
 #tabs .top {
-    margin-top: -60px;
-    line-height: 30px;
+    margin-top: -50px;
 }
 
 #tabs .left {
-    line-height: 0;
-    -webkit-transform: rotate(-90deg);
+    -webkit-transform: translateX(-100%) rotate(-90deg);
     -webkit-transform-origin: right top;
-    margin-left: -145px;
-    top: 180px;
-    left: 0;
+    margin-left: -50px;
 }
 
 /* SocialProfile fixes */
