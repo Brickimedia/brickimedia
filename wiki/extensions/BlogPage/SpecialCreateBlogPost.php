@@ -105,7 +105,7 @@ class SpecialCreateBlogPost extends SpecialPage {
 				// categories, "Articles by User $1" and "(today's date)",
 				// but the user may supply some categories themselves, so
 				// we need to take those into account, too.
-				$categories = array(
+				/* $categories = array(
 					'[[' . $localizedCatNS . ':' .
 						wfMsgForContent(
 							'blog-by-user-category',
@@ -113,7 +113,7 @@ class SpecialCreateBlogPost extends SpecialPage {
 						) . wfMsgForContent( 'word-separator' ) .
 						$wgUser->getName() . ']]',
 					"[[{$localizedCatNS}:{$today}]]"
-				);
+				); */
 
 				$userSuppliedCategories = $wgRequest->getVal( 'pageCtg' );
 				if ( !empty( $userSuppliedCategories ) ) {
