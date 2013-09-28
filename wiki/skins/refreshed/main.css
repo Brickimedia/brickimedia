@@ -67,6 +67,9 @@ body {
 .ns-2 #maintitle {
 	display: none;
 }
+.ns-202 #maintitle {
+	display: none;
+}
 
 #contentwrapper {
 	width: calc(100% - 24em);
