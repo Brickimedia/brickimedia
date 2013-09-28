@@ -27,6 +27,9 @@ $wgResourceModules['skins.refreshed'] = array(
 				"$IP/skins/common/commonContent.css" => array( 'media' => 'screen' ),
 				"$IP/skins/common/commonInterface.css" => array( 'media' => 'screen' ),
 				"$IP/skins/refreshed/main.css" => array( 'media' => 'screen' ),
+				"$IP/skins/refreshed/small.css" => array( 'media' => '(max-width: 600px)' ),
+				"$IP/skins/refreshed/medium.css" => array( 'media' => '(min-width: 601px) and (max-width: 900px)' ),
+				"$IP/skins/refreshed/big.css" => array( 'media' => '(min-width: 901px)' ),
 		),
 		'scripts' => array(
 				"$IP/skins/refreshed/refreshed.js",
@@ -106,34 +109,7 @@ class RefreshedTemplate extends BaseTemplate {
 ?>
 
 	<div id="header">
-		<div id="userinfo">
-			<a href='javascript:;'>
-				<?php global $wgUser, $wgArticlePath;
-					$id = $wgUser -> getID();
-					if (is_file('/var/www/wiki/images/avatars/'.$id.'_m.png')) {
-						$avatar = '/images/avatars/'.$id.'_m.png';
-					} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.jpg')) {
-						$avatar = '/images/avatars/'.$id.'_m.jpg';
-					} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.gif')) {
-						$avatar = '/images/avatars/'.$id.'_m.gif';
-					} else {
-						$avatar = '/images/avatars/default_m.gif';
-					}
-					echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><img class='header-avatar' src='http://meta.brickimedia.org" . $avatar . "' /><span>$wgUser</span>";
-				?>
-			</a>
-			<ul class="headermenu" style="display:none;">
-				<?php 
-					foreach( $this->getPersonalTools() as $key => $tool ){
-						foreach ( $tool['links'] as $linkKey => $link ) {
-							echo $this->makeLink( $linkKey, $link, $options );
-						}
-					}
-				?>
-			</ul>
-			<img class="avatar" />
-			<?php //var_dump( $this->getPersonalTools() ); ?>
-		</div>
+		
 		<?php 
 		
 		$logos = array(
@@ -168,14 +144,37 @@ class RefreshedTemplate extends BaseTemplate {
 
 			</ul>
 		</div>
-		<div id="search">
-			<form action="/index.php" method="GET">
-				<input type="text" name="search" placeholder="search" />
-			</form>
-		</div>
 	</div>
 	<div id="fullwrapper">
 		<div id="leftbar">
+			<div id="userinfo">
+				<a href='javascript:;'>
+					<?php global $wgUser, $wgArticlePath;
+						$id = $wgUser -> getID();
+						if (is_file('/var/www/wiki/images/avatars/'.$id.'_m.png')) {
+							$avatar = '/images/avatars/'.$id.'_m.png';
+						} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.jpg')) {
+							$avatar = '/images/avatars/'.$id.'_m.jpg';
+						} elseif (is_file('/var/www/wiki/images/avatars/'.$id.'_m.gif')) {
+							$avatar = '/images/avatars/'.$id.'_m.gif';
+						} else {
+							$avatar = '/images/avatars/default_m.gif';
+						}
+						echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><img class='header-avatar' src='http://meta.brickimedia.org" . $avatar . "' /><span>$wgUser</span>";
+					?>
+				</a>
+				<ul class="headermenu" style="display:none;">
+					<?php 
+						foreach( $this->getPersonalTools() as $key => $tool ){
+							foreach ( $tool['links'] as $linkKey => $link ) {
+								echo $this->makeLink( $linkKey, $link, $options );
+							}
+						}
+					?>
+				</ul>
+				<img class="avatar" />
+				<?php //var_dump( $this->getPersonalTools() ); ?>
+			</div>
 			<div id="leftbar-top">
 				<!-- <div id="maintitle2">
 					<?php //echo $myTitle; ?>
@@ -227,6 +226,11 @@ class RefreshedTemplate extends BaseTemplate {
 			</div>
 		</div>
 		<div id="rightbar">
+			<div id="search">
+				<form action="/index.php" method="GET">
+					<input type="text" name="search" placeholder="search" />
+				</form>
+			</div>
 			<div id="rightbar-top">
 				<div id="siteactions">
 					<?php 

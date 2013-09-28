@@ -104,12 +104,13 @@ body {
 #leftbar, #rightbar {
 	height: 100%;
 	position: fixed;
-	top: 3em;
+	top: 0;
 	color: white;
+	z-index: 3;
 }
 	#leftbar-top, #rightbar-top {
 		position: absolute;
-		top: 0;
+		top: 3em;
 	}
 	#leftbar-bottom, #rightbar-bottom {
 		position: absolute;
@@ -227,6 +228,7 @@ body {
 	}
 	#userinfo > a:hover {
 		background-color: midnightblue;
+		border: none !important
 	}
 	#userinfo > a span {
 		font-size: 15pt;
@@ -252,6 +254,7 @@ body {
 .headermenu {
 	padding: 0 0.2em 0.2em 0.2em;
 	margin: 0;
+	z-index: 4;
 }	
 #userinfo .headermenu {
 	background-color: rgba(25, 25, 112, 0.8);
