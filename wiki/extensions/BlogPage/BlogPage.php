@@ -228,9 +228,10 @@ class BlogPage extends Article {
 		} else {
 			$auth_avatar = '/images/avatars/default_m.gif';
 		}
-		$output = '<img src="http://meta.brickimedia.org' . $auth_avatar . '" style="margin-right:10px;float:left;" /><div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
+		$authorUsernameByPageName = $title->getBaseText();
+		$output = '<img src="http://meta.brickimedia.org' . $auth_avatar . '" style="margin-right:10px;float:left;" /><div class="blog-byline">' . wfMsg( 'blog-by' ) . '<a href="/wiki/User:' . $authorUsernameByPageName . '>' . $authorUsernameByPageName . '</a>';
 
-		$authors = '';
+		/*$authors = '';
 		foreach( $this->authors as $author ) {
 			$count++;
 			$userTitle = Title::makeTitle( NS_USER, $author['user_name'] );
@@ -244,7 +245,7 @@ class BlogPage extends Article {
 			$authors .= "<a href=\"{$userTitle->escapeFullURL()}\">{$author['user_name']}</a>";
 		}
 
-		$output .= $authors;
+		$output .= $authors; */
 
 		$output .= '</div>';
 
