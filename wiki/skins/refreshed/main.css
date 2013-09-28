@@ -336,7 +336,11 @@ body {
 		font-family: Lato, sans-serif;
 		width: 11em;
 	}
-	
+
+#site-notice p {
+	margin-top: 0;
+}
+
 #refreshed-toc #toc-box:last-child {
 	display: none;
 }
