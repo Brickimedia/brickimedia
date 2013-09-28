@@ -228,8 +228,7 @@ class BlogPage extends Article {
 		} else {
 			$auth_avatar = '/images/avatars/default_m.gif';
 		}
-		$authorUsernameByPageName = $title->getBaseText();
-		$output = '<img src="http://meta.brickimedia.org' . $auth_avatar . '" style="margin-right:10px;float:left;" /><div class="blog-byline">' . wfMsg( 'blog-by' ) . '<a href="/wiki/User:' . $authorUsernameByPageName . '>' . $authorUsernameByPageName . '</a>';
+		$output = '<img src="http://meta.brickimedia.org' . $auth_avatar . '" style="margin-right:10px;float:left;" /><div class="blog-byline">' . wfMsg( 'blog-by' ) . $title->getBaseText();
 
 		/*$authors = '';
 		foreach( $this->authors as $author ) {
