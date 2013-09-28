@@ -246,7 +246,7 @@ class BlogPage extends Article {
 
 		$output .= $authors; */
 		
-		$blogAuthorUsername = "[[User:{{#titleparts: {{PAGENAME}}|1|1}}|{{#titleparts: {{PAGENAME}}|1|1}}]]
+		$blogAuthorUsername = "[[User:{{#titleparts: {{PAGENAME}}|1|1}}|{{#titleparts: {{PAGENAME}}|1|1}}]]";
 		$output->addWikiText( $blogAuthorUsername );
 
 		$output .= '</div>';
