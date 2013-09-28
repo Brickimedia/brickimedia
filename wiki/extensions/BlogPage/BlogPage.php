@@ -218,7 +218,7 @@ class BlogPage extends Article {
 			self::getCreateDate( $this->getId() ),
 			true
 		);
-		
+
 		if (is_file('/var/www/wiki/images/avatars/'.$author_user_id.'_m.png')) {
 			$auth_avatar = '/images/avatars/'.$author_user_id.'_m.png';
 		} elseif (is_file('/var/www/wiki/images/avatars/'.$author_user_id.'_m.jpg')) {
@@ -230,7 +230,7 @@ class BlogPage extends Article {
 		}
 		$output = '<img src="http://meta.brickimedia.org' . $auth_avatar . '" style="margin-right:10px;float:left;" /><div class="blog-byline">' . wfMsg( 'blog-by' ) . ' ';
 
-		/*$authors = '';
+		$authors = '';
 		foreach( $this->authors as $author ) {
 			$count++;
 			$userTitle = Title::makeTitle( NS_USER, $author['user_name'] );
@@ -244,10 +244,7 @@ class BlogPage extends Article {
 			$authors .= "<a href=\"{$userTitle->escapeFullURL()}\">{$author['user_name']}</a>";
 		}
 
-		$output .= $authors; */
-		
-		$blogAuthorUsername = "[[User:{{#titleparts: {{PAGENAME}}|1|1}}|{{#titleparts: {{PAGENAME}}|1|1}}]]";
-		$output->addWikiText( $blogAuthorUsername );
+		$output .= $authors;
 
 		$output .= '</div>';
 
