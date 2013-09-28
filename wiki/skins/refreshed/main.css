@@ -337,8 +337,9 @@ body {
 		width: 11em;
 	}
 
-#site-notice p {
+#contentwrapper p:first-of-type {
 	margin-top: 0;
+	padding: 0.5em;
 }
 
 #refreshed-toc #toc-box:last-child {
