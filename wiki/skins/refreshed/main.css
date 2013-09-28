@@ -71,6 +71,11 @@ body {
 	display: none;
 }
 
+#site-notice {
+	width: 100%;
+	text-align: center;
+}
+
 #contentwrapper {
 	width: calc(100% - 24em);
 	width: -webkit-calc(100% - 24em); /* safari */

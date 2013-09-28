@@ -203,6 +203,11 @@ class RefreshedTemplate extends BaseTemplate {
 			</div>
 		</div>
 		<div id="contentwrapper">
+        	<?php if ( $this->data['sitenotice'] ) { ?>
+                <div id="site-notice">
+                    <?php $this->html('sitenotice'); ?>
+                </div>
+            <?php } ?>
 			<div id="maintitle">
 				<h1>
 					<?php echo $myTitle; ?>
