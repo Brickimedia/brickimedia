@@ -40,7 +40,7 @@ $wgGroupPermissions['janitor']['userrights-interwiki'] = true;
 $wgAddGroups['janitor'] = array( 'bot' );
 $wgRemoveGroups['janitor'] = array( 'bot' );
 
-$wgLocalDatabases = array( 'brickimedia_en', 'brickimedia_customs', 'brickimedia_lmbw', 'brickimedia_dev', 'brickimedia_stories', 'brickimedia_cuusoo' );
+$wgLocalDatabases = array( 'en', 'customs', 'lmbw', 'dev', 'stories', 'cuusoo', 'admin' );
 
 $wgExtraNamespaces[104] = "Board";
 $wgNamespaceProtection[104] = array( 'boardedit' ); //permission "editfoo" required to edit the foo namespace
