@@ -1,1 +1,10 @@
 /* anything 600px and under - phones */
+
+#leftbar {
+	left: -12em;
+	background-color: rgba(25, 25, 112, 0.8);
+}
+#rightbar {
+	right: -12em;
+	background-color: rgba(25, 25, 112, 0.8);
+}

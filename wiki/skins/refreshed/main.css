@@ -73,12 +73,8 @@ body {
 }
 
 #contentwrapper {
-	width: calc(100% - 24em);
-	width: -webkit-calc(100% - 24em); /* safari */
 	min-height: 100%;
 	position: relative;
-	margin-left: 12em;
-	margin-right: 12em;
 	top: 3em;
 	background-color: white;
 	z-index: 2;
@@ -91,11 +87,9 @@ body {
 
 #leftbar {
 	width: 12em;
-	left: 0;
 }
 #rightbar {
 	width: 12em;
-	right: 0;
 }
 #leftbar, #rightbar {
 	height: 100%;
@@ -127,17 +121,17 @@ body {
 	#rightbar-bottom {
 		left: 0px
 	}
-	#leftbar a, #rightbar a {
+	#leftbar-main a, #rightbar-main a {
 		display: block;
 		color: white;
 		text-decoration: none;
 	}
-	#leftbar a {
+	#leftbar-main a {
 		padding: 0.15em 10px 0.15em 0;
 		text-align: right;
 		margin-right: 5px;
 	}
-	#rightbar a {
+	#rightbar-main a {
 		text-align: left;
 		margin-left: 5px;
 	}
@@ -152,15 +146,15 @@ body {
 		#rightbar .sub {
 			padding: 0.15em 0 0.15em 20px;
 		}
-	#leftbar a:hover, #rightbar a:hover {
+	#leftbar-main a:hover, #rightbar-main a:hover {
 		color: #CCC;
 		cursor: pointer;
 	}
-	#leftbar a:hover {
+	#leftbar-main a:hover {
 		border-right: 5px solid #CCC;
 		margin-right: 0px;
 	}
-	#rightbar a:hover {
+	#rightbar-main a:hover {
 		border-left: 5px solid #CCC;
 		margin-left: 0px;
 	}
@@ -174,6 +168,37 @@ body {
 	}
 	#siteactions {
 		padding-top: 0.5em;
+	}
+	
+	.shower {
+		position: absolute;
+		height: 3em;
+	}
+	#leftbar .shower {
+		left: 12em;
+	}
+	#rightbar .shower {
+		right: 12em;
+	}
+	.shower img {
+		transition:transform 0.5s;
+		-webkit-transition:-webkit-transform 0.5s; /* Safari */
+	}
+		#leftbar .shower.flip img {
+			transform:rotateY(180deg);
+			-webkit-transform:rotateY(180deg); /* Safari */
+		}
+		#rightbar .shower.flip img {
+			transform:rotateY(0deg);
+			-webkit-transform:rotateY(0deg); /* Safari */
+		}
+	#leftbar .shower img {
+		transform:rotateY(0deg);
+		-webkit-transform:rotateY(0deg); /* Safari */
+	}
+	#rightbar .shower img {
+		transform:rotateY(180deg);
+		-webkit-transform:rotateY(180deg); /* Safari */
 	}
 	
 #refreshed-toc {
@@ -213,6 +238,7 @@ body {
 	float: left;
 }
 	#userinfo > a {
+		display: block;
 		padding: 0.5em;
 		height: 2em;
 		margin-left: 0.5em;
@@ -222,7 +248,7 @@ body {
 	}
 	#userinfo > a:hover {
 		background-color: midnightblue;
-		border: none !important
+		color: #CCC;
 	}
 	#userinfo > a span {
 		display: block;
@@ -365,8 +391,6 @@ body {
 #footer {
 	position: relative;
 	top: 4em;
-	margin-left: 14em;
-	margin-right: 14em;
 	text-align: center;
 	padding-bottom: 15px;
 	color: #CCC;

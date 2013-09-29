@@ -1,1 +1,19 @@
 /* anything 901px and over - most laptops, desktops */
+
+#leftbar {
+	left: 0 !important;
+}
+#rightbar {
+	right: 0 !important;
+}
+#contentwrapper {
+	margin-left: 12em;
+	margin-right: 12em;
+}
+#footer {
+	margin-left: 14em;
+	margin-right: 14em;
+}
+#leftbar .shower, #rightbar .shower {
+	display: none;
+}

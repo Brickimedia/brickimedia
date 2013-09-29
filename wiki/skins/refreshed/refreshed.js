@@ -92,3 +92,27 @@ $(document).ready(function(){
 	});
 });
 
+var left = false;
+
+$("#leftbar .shower").click(function(){
+	if(left){
+		$("#leftbar").animate({'left': '-12em'});
+	} else {
+		$("#leftbar").animate({'left': '0em'});
+	}
+	$("#leftbar .shower").toggleClass("flip");
+	left = !left;
+});
+
+var right = false;
+
+$("#rightbar .shower").click(function(){
+	if(right){
+		$("#rightbar").animate({'right': '-12em'});
+	} else {
+		$("#rightbar").animate({'right': '0em'});
+	}
+	$("#rightbar .shower").toggleClass("flip");
+	right = !right;
+});
+

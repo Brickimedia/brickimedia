@@ -147,6 +147,9 @@ class RefreshedTemplate extends BaseTemplate {
 	</div>
 	<div id="fullwrapper">
 		<div id="leftbar">
+			<div class="shower">
+				<?php echo "<img class='arrow' src='$IP/skins/refreshed/arrowside.png'/>"; ?>
+			</div>
 			<div id="userinfo">
 				<a href='javascript:;'>
 					<?php global $wgUser, $wgArticlePath;
@@ -175,29 +178,28 @@ class RefreshedTemplate extends BaseTemplate {
 				<img class="avatar" />
 				<?php //var_dump( $this->getPersonalTools() ); ?>
 			</div>
-			<div id="leftbar-top">
-				<!-- <div id="maintitle2">
-					<?php //echo $myTitle; ?>
-				</div> -->
-				<div id="pagelinks">
-					<?php 
-					reset($this->data['content_actions']);
-					$pageTab = key($this->data['content_actions']);
-					
-					$this->data['content_actions'][$pageTab]['text'] = $mySideTitle;
-					
-					foreach ( $this->data['content_actions'] as $action ){
-				 		echo "<a class='" . $action['class'] . "' " .
-				 			"id='" . $action['id'] . "' " .
-				 			"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
-				 			$action['text'] . "</a>"; //no htmlspecialchars
-					} ?>
+			<div id="leftbar-main">
+				<div id="leftbar-top">
+					<div id="pagelinks">
+						<?php 
+						reset($this->data['content_actions']);
+						$pageTab = key($this->data['content_actions']);
+						
+						$this->data['content_actions'][$pageTab]['text'] = $mySideTitle;
+						
+						foreach ( $this->data['content_actions'] as $action ){
+					 		echo "<a class='" . $action['class'] . "' " .
+					 			"id='" . $action['id'] . "' " .
+					 			"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
+					 			$action['text'] . "</a>"; //no htmlspecialchars
+						} ?>
+					</div>
 				</div>
-			</div>
-			<div id="leftbar-bottom">
-				<div id="refreshed-toc">
-					<div id="toc-box"></div>
-					<?php echo $tocHTML; ?>
+				<div id="leftbar-bottom">
+					<div id="refreshed-toc">
+						<div id="toc-box"></div>
+						<?php echo $tocHTML; ?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -226,37 +228,42 @@ class RefreshedTemplate extends BaseTemplate {
 			</div>
 		</div>
 		<div id="rightbar">
+			<div class="shower">
+				<?php echo "<img class='arrow' src='$IP/skins/refreshed/arrowside.png'/>"; ?>
+			</div>
 			<div id="search">
 				<form action="/index.php" method="GET">
 					<input type="text" name="search" placeholder="search" />
 				</form>
 			</div>
-			<div id="rightbar-top">
-				<div id="siteactions">
-					<?php 
-					//var_dump( $this->data['sidebar'] );
-
-					unset( $this->data['sidebar']['SEARCH'] );
-					unset( $this->data['sidebar']['TOOLBOX'] );
-					unset( $this->data['sidebar']['LANGUAGES'] );
-					
-					foreach( $this->data['sidebar'] as $main => $sub ){
-						echo "<span class='main'>" . htmlspecialchars( $main ) . "</span>";
-						foreach ( $sub as $action ){
-				 			echo "<a class='sub' id='" . $action['id'] . "' " .
-				 				"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
-				 				htmlspecialchars( $action['text'] ) . "</a>";
-				 		}
-					} ?>
+			<div id="rightbar-main">
+				<div id="rightbar-top">
+					<div id="siteactions">
+						<?php 
+						//var_dump( $this->data['sidebar'] );
+	
+						unset( $this->data['sidebar']['SEARCH'] );
+						unset( $this->data['sidebar']['TOOLBOX'] );
+						unset( $this->data['sidebar']['LANGUAGES'] );
+						
+						foreach( $this->data['sidebar'] as $main => $sub ){
+							echo "<span class='main'>" . htmlspecialchars( $main ) . "</span>";
+							foreach ( $sub as $action ){
+					 			echo "<a class='sub' id='" . $action['id'] . "' " .
+					 				"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
+					 				htmlspecialchars( $action['text'] ) . "</a>";
+					 		}
+						} ?>
+					</div>
 				</div>
-			</div>
-			<div id="rightbar-bottom">
-				<div id="sitelinks">
-					<?php /*foreach ( $this->data['sidebar']['bottom'] as $action ){
-				 		echo "<a id='" . $action['id'] . "' " .
-				 			"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
-				 			htmlspecialchars( $action['text'] ) . "</a>";
-					}*/ ?>
+				<div id="rightbar-bottom">
+					<div id="sitelinks">
+						<?php /*foreach ( $this->data['sidebar']['bottom'] as $action ){
+					 		echo "<a id='" . $action['id'] . "' " .
+					 			"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
+					 			htmlspecialchars( $action['text'] ) . "</a>";
+						}*/ ?>
+					</div>
 				</div>
 			</div>
 		</div>
