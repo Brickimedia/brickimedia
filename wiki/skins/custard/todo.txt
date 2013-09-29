@@ -1,4 +1,4 @@
-# Fix tab styling                   CSS
+# Fix tab styling                   CSS     DONE
 # Fix page height excess            CSS
 # Add article title                 PHP
 # Add content to bar                PHP
@@ -9,7 +9,8 @@
     # User level
     # Theme changer
     # Notifications
-# Add functionality to bar          JS
+# Add functionality to bar          PHP/JS
+# Add functionality to tabs         PHP/JS
 # Make variables independent        PHP
 # Finish styling articles           CSS
 # Convert CSS to SCSS               CSS
