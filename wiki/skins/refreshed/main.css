@@ -104,7 +104,7 @@ body {
 	}
 	#leftbar-bottom, #rightbar-bottom {
 		position: absolute;
-		bottom: 4em;
+		bottom: 1em;
 	}
 	#leftbar-bottom {
 		border-right: 1px solid white;

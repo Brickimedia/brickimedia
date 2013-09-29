@@ -72,7 +72,7 @@ $("#refreshed-toc a").click(function(){
 });
 
 $(window).scroll(function(){
-	if($(".toctext")){
+	if($(".toctext").length != 0){
 		moveBoxTo($(this).scrollTop());
 	}
 });
