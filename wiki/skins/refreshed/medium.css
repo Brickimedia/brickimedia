@@ -19,3 +19,8 @@
 #rightbar .shower {
 	display: none;
 }
+#siteinfo .headermenu,
+#siteinfo > a {
+	margin-left: calc(50% - 1em);
+	margin-left: -webkit-calc(50% - 1em);
+}
