@@ -56,6 +56,8 @@ class SkinRefreshed extends SkinTemplate {
 
 		//$out->addScriptFile( "../refreshed/refreshed.js" );
 		//$out->addScriptFile( "http://adams-site.x10.mx/nxtest/load.php?debug=false&lang=en&modules=skins.refreshed&only=scripts&skin=deepsea&*" );
+
+		$out->addMeta('viewport', 'width=device-width');
 	}
 	function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
