@@ -150,7 +150,7 @@ class RefreshedTemplate extends BaseTemplate {
 	<div id="fullwrapper">
 		<div id="leftbar">
 			<div class="shower">
-				<?php echo "<img class='arrow' src='$IP/skins/refreshed/arrowside.png'/>"; ?>
+				<?php echo "<img class='arrow' src='$IP/skins/refreshed/mobile-expand.png'/>"; ?>
 			</div>
 			<div id="userinfo">
 				<a href='javascript:;'>
@@ -231,7 +231,7 @@ class RefreshedTemplate extends BaseTemplate {
 		</div>
 		<div id="rightbar">
 			<div class="shower">
-				<?php echo "<img class='arrow' src='$IP/skins/refreshed/arrowside.png'/>"; ?>
+				<?php echo "<img class='arrow' src='$IP/skins/refreshed/mobile-expand.png'/>"; ?>
 			</div>
 			<div id="search">
 				<form action="/index.php" method="GET">
