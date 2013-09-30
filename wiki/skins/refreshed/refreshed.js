@@ -81,16 +81,22 @@ $("#refreshed-toc a").each(function(){
 		//$(this).attr({'href': 'javascript:;'});
 });
 
-$(document).ready(function(){
-	$("#userinfo > a").click(function(){
-		$("#userinfo .headermenu").fadeToggle(150);
-		$("#userinfo .arrow").toggleClass("rotate");
-	});
-	$("#siteinfo > a").click(function(){
-		$("#siteinfo .headermenu").fadeToggle(150);
-		$("#siteinfo .arrow").toggleClass("rotate");
-	});
+var user = false;
+
+$("#userinfo > a").click(function(){
+	$("#userinfo .headermenu").fadeToggle(150);
+	$("#userinfo .arrow").toggleClass("rotate");
+	user = !user;
 });
+
+var header = false;
+
+$("#siteinfo > a").click(function(){
+	$("#siteinfo .headermenu").fadeToggle(150);
+	$("#siteinfo .arrow").toggleClass("rotate");
+	header = !header;
+});
+
 
 var left = false;
 
@@ -122,12 +128,25 @@ $("#contentwrapper").click(function(){
 		$("#leftbar").animate({'left': '-12em'});
 		$("#leftbar .shower").toggleClass("flip");
 		left = !left;
-	} else if(right){
+	} 
+	if(right){
 		console.log("right");
 		$("#rightbar").animate({'right': '-12em'});
 		$("#rightbar .shower").toggleClass("flip");
 		right = !right;
-	} else {
-		console.log("nothing");
+	} 
+	if(user){
+		console.log("user");
+		$("#userinfo .headermenu").fadeToggle(150);
+		$("#userinfo .arrow").toggleClass("rotate");
+		user = !user;
+	}else{
+		console.log("no");
+	}
+	if(header){
+		console.log("header");
+		$("#siteinfo .headermenu").fadeToggle(150);
+		$("#siteinfo .arrow").toggleClass("rotate");
+		header = !header;
 	}
 });

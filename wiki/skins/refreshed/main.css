@@ -37,35 +37,20 @@ body {
 	position: fixed;
 }
 
-
-#maintitle2 {
-	margin-bottom: 5px;
-	padding-right: 15px;
-	text-align: right;
-	padding-top: 10px;
-	line-height: 1;
+#maintitle h1 {	
 	font-size: 32pt;
-	font-family: "Lato", sans-serif;
+	font-family: "Lato Body", sans-serif;
+	padding-top: 0.2em;
+	padding-left: 0.5em;
+	margin-bottom: 0.3em;
 }
-
-#maintitle {
-	padding-top: 0.15em;
-}
-	#maintitle h1 {	
-		font-size: 32pt;
-		font-family: "Lato Body", sans-serif;
-		padding-top: 0.2em;
-		padding-left: 0.5em;
-		margin-bottom: 0.3em;
+	/* removes page title on socialprofile user pages */
+	.ns-2 #maintitle {
+		display: none;
 	}
-
-/* removes page title on socialprofile user pages */
-.ns-2 #maintitle {
-	display: none;
-}
-.ns-202 #maintitle {
-	display: none;
-}
+	.ns-202 #maintitle {
+		display: none;
+	}
 
 #site-notice {
 	width: 100%;
@@ -232,12 +217,10 @@ body {
 		display: block;
 		padding: 0.5em;
 		height: 2em;
-		margin-left: 0.5em;
 		text-decoration: none;
 		min-width: 10.5em;
 		position: relative;
 		white-space: nowrap;
-		max-width: 11em;
 		overflow-x: hidden;
 		text-overflow: ellipsis;
 	}
@@ -400,7 +383,7 @@ body {
 		vertical-align: text-top;
 	}
 
-/******************************** CONTENT ******************************/
+/******************************** CONTENT/OTHER THINGS BEYOND CONTROL ******************************/
 
 h3,
 h4,
@@ -413,4 +396,8 @@ h6 {
 #userlogin,
 #userloginForm {
 	float: none;
+}
+
+#localNotice {
+	margin-bottom: 0em !important;
 }

@@ -9,6 +9,9 @@
 	background-color: rgba(25, 25, 112, 0.8);
 }
 
-#userinfo > a span {
-	max-width: 4.2em;
-}
+#userinfo > a {
+	max-width: 11em;
+}	
+	#userinfo > a span {
+		max-width: 4.2em;
+	}
