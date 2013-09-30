@@ -245,6 +245,10 @@ body {
 		text-decoration: none;
 		min-width: 10.5em;
 		position: relative;
+		white-space: nowrap;
+		max-width: 11em;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
 	}
 	#userinfo > a:hover {
 		background-color: midnightblue;
