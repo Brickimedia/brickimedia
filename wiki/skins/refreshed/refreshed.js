@@ -116,3 +116,18 @@ $("#rightbar .shower").click(function(){
 	right = !right;
 });
 
+$("#contentwrapper").click(function(){
+	if(left){
+		console.log("left");
+		$("#leftbar").animate({'left': '-12em'});
+		$("#leftbar .shower").toggleClass("flip");
+		left = !left;
+	} else if(right){
+		console.log("right");
+		$("#rightbar").animate({'right': '-12em'});
+		$("#rightbar .shower").toggleClass("flip");
+		right = !right;
+	} else {
+		console.log("nothing");
+	}
+});

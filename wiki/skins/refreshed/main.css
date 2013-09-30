@@ -183,23 +183,14 @@ body {
 	.shower img {
 		transition:transform 0.5s;
 		-webkit-transition:-webkit-transform 0.5s; /* Safari */
+		opacity: 1;
 	}
 		#leftbar .shower.flip img {
-			transform:rotateY(180deg);
-			-webkit-transform:rotateY(180deg); /* Safari */
+			opacity: 0;
 		}
 		#rightbar .shower.flip img {
-			transform:rotateY(0deg);
-			-webkit-transform:rotateY(0deg); /* Safari */
+			opacity: 0;
 		}
-	#leftbar .shower img {
-		transform:rotateY(0deg);
-		-webkit-transform:rotateY(0deg); /* Safari */
-	}
-	#rightbar .shower img {
-		transform:rotateY(180deg);
-		-webkit-transform:rotateY(180deg); /* Safari */
-	}
 	
 #refreshed-toc {
 	position: relative;
