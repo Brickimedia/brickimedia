@@ -43,6 +43,7 @@ $wgUserStatsPointValues['quiz_created'] = 0; // Points awarded for creating a qu
 $wgNamespacesForEditPoints = array( 0, 4 ); // Array of namespaces that can earn you points. Use numerical keys. 0 is mainspace, 4 is project
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 $wgUserLevels = array(
+        'Learner' => 0,
         'Bookkeeper' => 1000,
         'Wordsmith' => 1100,
         'Reader' => 1250,
