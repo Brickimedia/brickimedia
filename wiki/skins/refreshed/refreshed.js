@@ -106,7 +106,7 @@ $("#leftbar .shower").click(function(){
 	} else {
 		$("#leftbar").animate({'left': '0em'});
 	}
-	$("#leftbar .shower").toggleClass("flip");
+	$("#leftbar .shower").fadeToggle();
 	left = !left;
 });
 
@@ -118,7 +118,7 @@ $("#rightbar .shower").click(function(){
 	} else {
 		$("#rightbar").animate({'right': '0em'});
 	}
-	$("#rightbar .shower").toggleClass("flip");
+	$("#rightbar .shower").fadeToggle();
 	right = !right;
 });
 
@@ -126,13 +126,13 @@ $("#contentwrapper").click(function(){
 	if(left){
 		console.log("left");
 		$("#leftbar").animate({'left': '-12em'});
-		$("#leftbar .shower").toggleClass("flip");
+		$("#leftbar .shower").fadeToggle();
 		left = !left;
 	} 
 	if(right){
 		console.log("right");
 		$("#rightbar").animate({'right': '-12em'});
-		$("#rightbar .shower").toggleClass("flip");
+		$("#rightbar .shower").fadeToggle();
 		right = !right;
 	} 
 	if(user){
@@ -140,8 +140,6 @@ $("#contentwrapper").click(function(){
 		$("#userinfo .headermenu").fadeToggle(150);
 		$("#userinfo .arrow").toggleClass("rotate");
 		user = !user;
-	}else{
-		console.log("no");
 	}
 	if(header){
 		console.log("header");

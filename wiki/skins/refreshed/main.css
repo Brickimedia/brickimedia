@@ -158,6 +158,7 @@ body {
 	.shower {
 		position: absolute;
 		height: 3em;
+		cursor: pointer;
 	}
 	#leftbar .shower {
 		left: 12em;
@@ -165,17 +166,6 @@ body {
 	#rightbar .shower {
 		right: 12em;
 	}
-	.shower img {
-		transition:transform 0.5s;
-		-webkit-transition:-webkit-transform 0.5s; /* Safari */
-		opacity: 1;
-	}
-		#leftbar .shower.flip img {
-			opacity: 0;
-		}
-		#rightbar .shower.flip img {
-			opacity: 0;
-		}
 	
 #refreshed-toc {
 	position: relative;

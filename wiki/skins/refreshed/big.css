@@ -15,5 +15,5 @@
 	margin-right: 14em;
 }
 #leftbar .shower, #rightbar .shower {
-	display: none;
+	display: none !important;
 }
