@@ -150,7 +150,7 @@ class RefreshedTemplate extends BaseTemplate {
 	<div id="fullwrapper">
 		<div id="leftbar">
 			<div class="shower">
-				<?php echo "<img class='arrow' src='$IP/skins/refreshed/mobile-expand.png'/>"; ?>
+				<?php echo "<img class='arrow' src='$IP/skins/refreshed/mobile-expand-edit.png'/>"; ?>
 			</div>
 			<div id="userinfo">
 				<a href='javascript:;'>
