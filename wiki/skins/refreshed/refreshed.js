@@ -108,6 +108,12 @@ $("#leftbar .shower").click(function(){
 	}
 	$("#leftbar .shower").fadeToggle();
 	left = !left;
+	
+	if(right){
+		$("#rightbar").animate({'right': '-12em'});
+		$("#rightbar .shower").fadeToggle();
+		right = !right;
+	}
 });
 
 var right = false;
@@ -120,6 +126,12 @@ $("#rightbar .shower").click(function(){
 	}
 	$("#rightbar .shower").fadeToggle();
 	right = !right;
+	
+	if(left){
+		$("#leftbar").animate({'left': '-12em'});
+		$("#leftbar .shower").fadeToggle();
+		left = !left;
+	}
 });
 
 $("#contentwrapper").click(function(){
