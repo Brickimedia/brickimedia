@@ -83,20 +83,20 @@ class CustardTemplate extends BaseTemplate
         // Suppress warnings to prevent notices about missing indexes in $this->data
         wfSuppressWarnings();
         $this->html('headelement'); ?>
-				
-        <div id="toolbar">
+		<?php if ($this->data['username'] == 'ShermanTheMythran') { //temp ?>
+        <div id="toolbar" class="collapsed">
             <div class="toggle">
                 <span class="text">≡</span>
                 <span class="invert"></span>
             </div>
             <div id="mw-js-message" class="message" style="display:none;"></div>
             <?php if ( $this->data['sitenotice'] ) { ?>
-                <div id="site-notice">
+                <div id="site-notice" class="notice">
                     <?php $this->html('sitenotice'); ?>
                 </div>
             <?php } ?>
             <?php if ( $this->data['newtalk'] ) { ?>
-            <div id="new-talk" class="message">
+            <div id="new-talk" class="message notice">
                 <?php $this->html('newtalk'); ?>
             </div>
             <?php } ?>
@@ -189,6 +189,11 @@ class CustardTemplate extends BaseTemplate
             <?php $this->html('catlinks'); ?>
             <?php $this->printTrail(); ?>
         </div>
+        <?php }
+        else { ?>
+            <div id="temp" title="Not yet, but soon..."></div>
+        <?php
+        }?>
         </body>
         </html>
 	    <?php wfRestoreWarnings();
