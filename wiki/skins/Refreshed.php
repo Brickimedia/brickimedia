@@ -28,8 +28,8 @@ $wgResourceModules['skins.refreshed'] = array(
 				"$IP/skins/common/commonInterface.css" => array( 'media' => 'screen' ),
 				"$IP/skins/refreshed/main.css" => array( 'media' => 'screen' ),
 				"$IP/skins/refreshed/small.css" => array( 'media' => '(max-width: 600px)' ),
-				"$IP/skins/refreshed/medium.css" => array( 'media' => '(min-width: 601px) and (max-width: 900px)' ),
-				"$IP/skins/refreshed/big.css" => array( 'media' => '(min-width: 901px)' ),
+				"$IP/skins/refreshed/medium.css" => array( 'media' => '(min-width: 601px) and (max-width: 1000px)' ),
+				"$IP/skins/refreshed/big.css" => array( 'media' => '(min-width: 1001px)' ),
 		),
 		'scripts' => array(
 				"$IP/skins/refreshed/refreshed.js",
