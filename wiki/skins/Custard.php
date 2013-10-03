@@ -83,13 +83,13 @@ class CustardTemplate extends BaseTemplate
         // Suppress warnings to prevent notices about missing indexes in $this->data
         wfSuppressWarnings();
         $this->html('headelement'); ?>
-		<?php if ($this->data['username'] == 'ShermanTheMythran') { //temp ?>
+		<?php if ($this->data['username'] == 'ShermanTheMythran' || $this->data['username'] == 'SirComputer' || $this->data['username'] == 'ToaMeiko') { //temp whitelisting - until skin is properly functional ?>
         <div id="toolbar" class="collapsed">
             <div class="toggle">
                 <span class="text">≡</span>
                 <span class="invert"></span>
             </div>
-            <div id="mw-js-message" class="message" style="display:none;"></div>
+            <div id="mw-js-message" class="message notice" style="display:none;"></div>
             <?php if ( $this->data['sitenotice'] ) { ?>
                 <div id="site-notice" class="notice">
                     <?php $this->html('sitenotice'); ?>
@@ -100,6 +100,7 @@ class CustardTemplate extends BaseTemplate
                 <?php $this->html('newtalk'); ?>
             </div>
             <?php } ?>
+            <div id="actions"></div>
         </div>
 
         <div id="interwiki">
