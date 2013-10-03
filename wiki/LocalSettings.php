@@ -18,9 +18,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename      = "Brickimedia Meta";
-$wgMetaNamespace = "Meta";
-
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
 ## For more information on customizing the URLs
@@ -193,13 +190,13 @@ switch ( $host[0] ) {
 		$wgServer = "http://admin.$bmServerBase";
 		$wgDBname = "admin";
 		break;
-	/*case "legomessageboardswiki":
+	case "legomessageboardswiki":
 	case "lmbw":
 		$ls_path = "LocalSettings_lmbw.php";
 		$bmProject = 'lmbw';
 		$wgServer = "http://lmbw.$bmServerBase";
 		$wgDBname = "lmbw";
-		break;*/
+		break;
 	case "stories":
 		$ls_path = "LocalSettings_stories.php";
 		$bmProject = 'stories';
