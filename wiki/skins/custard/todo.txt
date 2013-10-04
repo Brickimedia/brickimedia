@@ -1,6 +1,6 @@
 # Fix tab styling                   CSS     DONE
-# Fix page height excess            CSS
-# Add article title                 PHP
+# Fix page height excess            CSS     DONE
+# Add article title                 PHP     DONE
 # Add content to bar                PHP
     # User menu
     # Wiki menu
@@ -13,11 +13,12 @@
 # Add functionality to tabs         PHP/JS
 # Make variables independent        PHP
 # Finish styling articles           CSS
+# Make pages dynamic                PHP/CSS
 # Convert CSS to SCSS               CSS
 # Implement modules                 JS
-    # Friends module (disable Social Profile)
+    # Friends module
+        (disable Social Profile)
     # Chat module
 # Implement dynamic loading         JS
 # Optimize skin for touch events    JS
 # Integrate jPlayer extension       JS
-# Reinvent "ChatParty"              JS
