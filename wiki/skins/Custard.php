@@ -18,14 +18,11 @@ $wgValidSkinNames['custard'] = 'Custard';
 //$wgExtensionMessagesFiles['Custard'] = dirname(__FILE__).'/Custard.i18n.php';
 
 $wgResourceModules['skins.custard'] = array(
-        'styles' => array(
-            'custard/CSS/custard.css' => array( 'media' => 'screen' ),
-        ),
-        'scripts' => array(
-            'custard/JS/custard.js',
-        ),
-        'remoteBasePath' => &$GLOBALS['wgStylePath'],
-        'localBasePath' => &$GLOBALS['wgStyleDirectory'],
+   'styles' => array( '$IP/skins/custard/CSS/custard.css' => array( 'media' => 'screen' ) ),
+   'scripts' => '$IP/skins/custard/CSS/custard.css',
+   'remoteBasePath' => $GLOBALS['wgStylePath'],
+   'localBasePath' => $GLOBALS['wgStyleDirectory'],
+   'position' => 'top'
 );
 
 /**

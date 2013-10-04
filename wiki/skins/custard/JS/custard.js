@@ -1,5 +1,3 @@
-$(document).ready(function() {
-
 /*
  * jQuery Function Toggle Plugin
  * Copyright 2011, Felix Kling
@@ -50,18 +48,20 @@ $(document).ready(function() {
 |---Custard Skin  JavaScript Scripts---|
 |--Written for use on Brickimedia.org--|
 \**************************************/
-$('#toolbar .toggle').funcToggle('click', function () {
-    $('#toolbar .notice').each(function() {
-        if ($(this).text().length > 0) {
-            $(this).slideDown(500, 'linear');
-        }
+$(document).ready(function () {
+
+    $('#toolbar .toggle').funcToggle('click', function () {
+        $('#toolbar .notice').each(function () {
+            if ($(this).text().length > 0) {
+                $(this).slideDown(500, 'linear');
+            }
+        });
+    }, function () {
+        $('#toolbar .notice').each(function () {
+            if ($(this).text().length > 0) {
+                $(this).slideUp(500, 'linear');
+            }
+        });
     });
-}, function() {
-    $('#toolbar .notice').each(function() {
-        if ($(this).text().length > 0) {
-            $(this).slideUp(500, 'linear');
-        }
-    });
-});
 
 });
