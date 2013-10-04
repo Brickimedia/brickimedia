@@ -19,10 +19,10 @@ $wgValidSkinNames['custard'] = 'Custard';
 
 $wgResourceModules['skins.custard'] = array(
         'styles' => array(
-            '$IP/skins/custard/CSS/custard.css' => array( 'media' => 'screen' ),
+            'custard/CSS/custard.css' => array( 'media' => 'screen' ),
         ),
         'scripts' => array(
-            '$IP/skins/custard/JS/custard.js',
+            'custard/JS/custard.js',
         ),
         'remoteBasePath' => &$GLOBALS['wgStylePath'],
         'localBasePath' => &$GLOBALS['wgStyleDirectory'],
