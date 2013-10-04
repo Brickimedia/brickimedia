@@ -118,11 +118,12 @@ class RefreshedTemplate extends BaseTemplate {
 			'meta' => "<img src='$IP/skins/refreshed/brickimedia.png' />",
 			'en' => "<img src='$IP/skins/refreshed/brickipedia.png' />",
 			'customs' => "<img src='$IP/skins/refreshed/customs.png' />",
+			'lmbw' => "<img src='$IP/skins/refreshed/lmbw.png' />",
 			'stories' => "<img src='$IP/skins/refreshed/stories.png' />",
 			'cuusoo' => "<img src='$IP/skins/refreshed/cuusoo.png' />",
 			'admin' => "<img height=22 src='$IP/skins/refreshed/admin.png' />",
-			'dev' => "<img height=26 src='$IP/skins/refreshed/dev.png' />",
-			'lmbw' => "<img src='$IP/skins/refreshed/lmbw.png' />"
+			'dev' => "<img height=26 src='$IP/skins/refreshed/dev.png' />"
+			
 		);
 
 		global $bmProject;
