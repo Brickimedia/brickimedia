@@ -25,7 +25,8 @@ $wgResourceModules['skins.custard'] = array(
             'custard/JS/custard.js'
         ),
         'remoteBasePath' => &$GLOBALS['wgStylePath'],
-        'localBasePath' => &$GLOBALS['wgStyleDirectory']
+        'localBasePath' => &$GLOBALS['wgStyleDirectory'],
+        'position' => 'top'
 );
 
 /**
