@@ -3,14 +3,14 @@
 source /media/backups/pass.sh
 
 databases=(bmshared brickimedia_meta brickimedia_en brickimedia_customs brickimedia_lmbw brickimedia_stories)
-locations=("/var/www/wiki/skins" "/var/www/wiki/extensions")
+locations=("/var/www/wiki/skins" "/var/www/wiki/extensions" "/var/www/brickimedia.org")
 
 echo "backing up dbs"
 
 for db in ${databases[*]}
 do
 	echo "backing up " $db
-	mysqldump -h localhost --user=brickimedia_db --password=Kohphuu1 $db | gzip > /media/backups/$db.sql.gz --force
+	mysqldump -h localhost --user=$dbuser --password=$dbpass $db | gzip > /media/backups/$db.sql.gz --force
 done
 
 echo "backing up files"
