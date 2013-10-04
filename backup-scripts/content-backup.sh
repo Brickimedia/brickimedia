@@ -2,7 +2,7 @@
 
 source /media/backups/pass.sh
 
-databases=(bmshared brickimedia_meta brickimedia_en brickimedia_customs brickimedia_lmbw brickimedia_stories)
+databases=(shared meta en customs lmbw stories cuusoo)
 locations=("/var/www/wiki/skins" "/var/www/wiki/extensions" "/var/www/brickimedia.org")
 
 echo "backing up dbs"
