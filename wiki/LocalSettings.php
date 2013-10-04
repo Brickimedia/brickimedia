@@ -190,13 +190,13 @@ switch ( $host[0] ) {
 		$wgServer = "http://admin.$bmServerBase";
 		$wgDBname = "admin";
 		break;
-	case "legomessageboardswiki":
+	/*case "legomessageboardswiki":
 	case "lmbw":
 		$ls_path = "LocalSettings_lmbw.php";
 		$bmProject = 'lmbw';
 		$wgServer = "http://lmbw.$bmServerBase";
 		$wgDBname = "lmbw";
-		break;
+		break;*/
 	case "stories":
 		$ls_path = "LocalSettings_stories.php";
 		$bmProject = 'stories';
