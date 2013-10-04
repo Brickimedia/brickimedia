@@ -18,15 +18,13 @@ $wgValidSkinNames['custard'] = 'Custard';
 //$wgExtensionMessagesFiles['Custard'] = dirname(__FILE__).'/Custard.i18n.php';
 
 $wgResourceModules['skins.custard'] = array(
-        'styles' => array(
-            'custard/CSS/custard.css' => array( 'media' => 'screen' )
-        ),
-        'scripts' => array(
-            'custard/JS/custard.js'
-        ),
-        'remoteBasePath' => &$GLOBALS['wgStylePath'],
-        'localBasePath' => &$GLOBALS['wgStyleDirectory'],
-        'position' => 'top'
+    'styles' => array(
+        'skins/custard/CSS/custard.css' => array( 'media' => 'screen' )
+    ),
+    'scripts' => array(
+        'skins/custard/JS/custard.js'
+    ),
+    'position' => 'top'
 );
 
 /**
@@ -96,7 +94,15 @@ class CustardTemplate extends BaseTemplate
                 <?php $this->html('newtalk'); ?>
             </div>
             <?php } ?>
-            <div id="actions"></div>
+            <div id="actions">
+                <div class="navigation module medium">Links</div>
+                <div class="search module wide">Search</div>
+                <div class="follow module narrow">Follow</div>
+                <div class="level module medium">Level</div>
+                <div class="chat module medium">Chat</div>
+                <div class="user module medium">User</div>
+                <div class="preferences module narrow">Pref.</div>
+            </div>
         </div>
 
         <div id="interwiki">

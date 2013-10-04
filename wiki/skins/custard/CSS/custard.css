@@ -195,6 +195,25 @@ body {
 
 #actions {
     height: 30px;
+    padding: 0 60px;
+}
+
+#actions .module {
+    display: inline-block;
+    text-align: center;
+    background: -webkit-linear-gradient(left, #EEE 0px, transparent 3px), -webkit-linear-gradient(right, #EEE 0px, transparent 3px);
+}
+
+#actions .module.wide {
+    width: 30%;
+}
+
+#actions .module.medium {
+    width: 15%;
+}
+
+#actions .module.narrow {
+    width: 5%;
 }
 
 /* Interwiki */

@@ -9,12 +9,13 @@
     # Search bar                                PENDING
     # User level                                PENDING
     # Theme changer                             PENDING
-    # Notifications                             DONE
+    # Notifications                             IN PROGRESS
 # Add functionality to bar          PHP/JS      PENDING
 # Add functionality to tabs         PHP/JS      PENDING
 # Make variables independent        PHP         PENDING
 # Finish styling articles           CSS         IN PROGRESS
 # Make pages dynamic                PHP/CSS     PENDING
+# Add custom tooltips               JS/CSS      PENDING
 # Convert CSS to SCSS               CSS         PENDING
 # Implement modules                 JS          PENDING
     # Friends module                            PENDING
