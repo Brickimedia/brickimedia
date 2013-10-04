@@ -181,8 +181,16 @@ body {
 
 #toolbar .notice {
     display: none;
-    min-height: 30px;
+    height: 20px;
     font-size: .75em;
+    padding: 5px 60px;
+    line-height: 20px;
+}
+
+#toolbar .notice, #toolbar .notice * {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #actions {
@@ -399,6 +407,10 @@ body {
 
 #tabs a:hover + .invert::before, #tabs a:hover + .invert::after {
     border-color: #DFEDF6;
+}
+
+.printfooter {
+    display: none;
 }
 
 /* SocialProfile fixes */
