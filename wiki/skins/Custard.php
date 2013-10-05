@@ -21,10 +21,13 @@ global $IP;
 
 $wgResourceModules['skins.custard'] = array(
     'styles' => array(
-        "$IP/skins/custard/CSS/custard.css" => array( 'media' => 'screen' )
+        "$IP/skins/custard/CSS/custard.css" => array( 'media' => 'screen' ),
     ),
     'scripts' => array(
-        "$IP/skins/custard/JS/custard.js"
+        "$IP/skins/custard/JS/custard.js",
+    ),
+    'dependencies' => array(
+        'jquery.funcToggle',
     ),
     'remoteBasePath' => $GLOBALS['wgStylePath'],
     'localBasePath' => $GLOBALS['wgStyleDirectory'],
@@ -106,7 +109,7 @@ class CustardTemplate extends BaseTemplate
                 <div class="chat module medium">Chat</div>
                 <div class="user module medium">User</div>
                 <div class="preferences module narrow">
-                    <?php echo "<object data='$IP/skins/custard/Images/gear.svg' type='image/svg+xml'></object>"; ?>
+                    <?php echo "<object data='$IP/skins/custard/Images/gear.svg' type='image/svg+xml' class='gear'></object>"; ?>
                 </div>
             </div>
         </div>
