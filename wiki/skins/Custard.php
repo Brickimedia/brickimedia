@@ -101,7 +101,7 @@ class CustardTemplate extends BaseTemplate
                 <div class="level module medium">Level</div>
                 <div class="chat module medium">Chat</div>
                 <div class="user module medium">User</div>
-                <div class="preferences module narrow"><img src="skins/custard/Images/gear.svg" alt="Preferences"/></div>
+                <div class="preferences module narrow"><embed src="$IP/skins/custard/Images/gear.svg" type="image/svg+xml" /></div>
             </div>
         </div>
 
