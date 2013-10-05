@@ -858,7 +858,6 @@ class UserProfilePage extends Article {
 						<a href="' . $level_link->escapeFullURL() . '" rel="nofollow">(' . $user_level->getLevelName() . ')</a>
 					</div>';
 		}
-		$output .= '<div id="profile-rights">' . $user_name->getGroups() . '</div>';
 		$output .= '<div class="cleared"></div>
 			</div>
 			<div class="profile-actions">';
