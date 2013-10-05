@@ -18,11 +18,11 @@ $wgValidSkinNames['custard'] = 'Custard';
 //$wgExtensionMessagesFiles['Custard'] = dirname(__FILE__).'/Custard.i18n.php';
 
 $wgResourceModules['skins.custard'] = array(
-    'styles' => array(
-        'skins/custard/CSS/custard.css' => array( 'media' => 'screen' )
-    ),
     'scripts' => array(
         'skins/custard/JS/custard.js'
+    ),
+    'styles' => array(
+        'skins/custard/CSS/custard.css' => array( 'media' => 'screen' )
     ),
     'position' => 'top'
 );
@@ -101,7 +101,7 @@ class CustardTemplate extends BaseTemplate
                 <div class="level module medium">Level</div>
                 <div class="chat module medium">Chat</div>
                 <div class="user module medium">User</div>
-                <div class="preferences module narrow"><object data="$IP/skins/custard/Images/gear.svg" type="image/svg+xml"></object></div>
+                <div class="preferences module narrow"><object data="skins/custard/Images/gear.svg" type="image/svg+xml"></object></div>
             </div>
         </div>
 

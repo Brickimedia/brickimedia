@@ -1,3 +1,4 @@
+console.log('The script is loading, so something else is wrong.');
 /*
  * jQuery Function Toggle Plugin
  * Copyright 2011, Felix Kling
