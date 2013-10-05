@@ -17,7 +17,7 @@ echo "backing up files"
 
 for path in ${locations[*]}
 do
-	file=`echo $path | cut -d/ -f5`
+	file=`echo $path | rev | cut -d/ -f1 | rev`
 	echo "backing up " $file
 	newpath=/media/backups/$file.tar.gz
 	tar -zcf $newpath $path --overwrite

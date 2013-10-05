@@ -212,6 +212,7 @@ class RefreshedTemplate extends BaseTemplate {
                     <?php $this->html('sitenotice'); ?>
                 </div>
             <?php } ?>
+            <div id="newtalk"><?php $this->html( 'newtalk' )  ?></div>
 			<div id="maintitle">
 				<h1>
 					<?php echo $myTitle; ?>
