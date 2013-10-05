@@ -200,8 +200,17 @@ body {
 
 #actions .module {
     display: inline-block;
+    height: 100%;
+    float: left;
     text-align: center;
-    background: -webkit-linear-gradient(left, #EEE 0px, transparent 3px), -webkit-linear-gradient(right, #EEE 0px, transparent 3px);
+    line-height: 1.75em;
+    background-image: -webkit-linear-gradient(bottom,#EEE 0px,transparent 15px);
+    background-size: 150%;
+    -webkit-transition: background 500ms linear;
+}
+
+#actions .module:hover {
+    background-position-y: 100%;
 }
 
 #actions .module.wide {
@@ -398,6 +407,7 @@ body {
     height: 5px;    
     margin: -5px;
     overflow: hidden;
+    z-index: -1;
 }
 
 #tabs .invert::before {
