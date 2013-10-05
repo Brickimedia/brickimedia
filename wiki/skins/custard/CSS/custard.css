@@ -206,7 +206,7 @@ body {
     line-height: 1.75em;
     background-image: -webkit-linear-gradient(bottom,#EEE 0px,transparent 15px);
     background-size: 150%;
-    -webkit-transition: background 500ms linear;
+    -webkit-transition: background 250ms linear;
 }
 
 #actions .module:hover {
@@ -223,6 +223,10 @@ body {
 
 #actions .module.narrow {
     width: 5%;
+}
+
+#actions .gear {
+    margin-top: 5px;
 }
 
 /* Interwiki */
