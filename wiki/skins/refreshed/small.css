@@ -1,5 +1,9 @@
 /* anything 600px and under - phones */
 
+.shower {
+	margin-right: .75em;
+}
+
 #leftbar {
 	left: -12em;
 	background-color: rgba(25, 25, 112, 0.8);
