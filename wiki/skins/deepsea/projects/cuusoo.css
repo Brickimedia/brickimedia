@@ -10,13 +10,6 @@ div#mw-panel div.portal div.body ul li, .vectorMenu li, #p-search-mobile,
 	background-color: #DDC97B;
 }
 
-div.vectorTabs li.selected {
-	background-color:#767676;
-	box-shadow:0px 1px 0px 0px #2D2D2D;
-	border-radius:10px;
-	moz-border-radius:10px;
-	-webkit-border-radius:10px;
-}
 div.vectorMenu ul {
 	border: solid 1px #C7C7C7;
 }
