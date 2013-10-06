@@ -62,8 +62,10 @@ class SkinCustard extends SkinTemplate
     {
         parent::setupSkinUserCss($out);
         $out->addModuleStyles("skins.custard");     // ResourceModules styles
-        $out->addScript("jquery.funcToggle");       // jQuery dependency
-        $out->addModuleScripts("skins.custard");    // ResourceModules scripts
+        $out->addModuleScripts(
+            "jquery.funcToggle",
+            "skins.custard"
+        );                                          // ResourceModules scripts
     }
 
 }
