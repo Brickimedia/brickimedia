@@ -24,6 +24,7 @@ $wgResourceModules['skins.custard'] = array(
         "$IP/skins/custard/CSS/custard.css" => array( 'media' => 'screen' ),
     ),
     'scripts' => array(
+        "$IP/resources/jquery/jquery.funcToggle.js",
         "$IP/skins/custard/JS/custard.js",
     ),
     'remoteBasePath' => $GLOBALS['wgStylePath'],
@@ -62,12 +63,7 @@ class SkinCustard extends SkinTemplate
     {
         parent::setupSkinUserCss($out);
         $out->addModuleStyles("skins.custard");     // ResourceModules styles
-        $out->addModuleScripts(
-            array(
-                "jquery.funcToggle",
-                "skins.custard",
-            )
-        );                                          // ResourceModules scripts
+        $out->addModuleScripts("skins.custard");    // ResourceModules scripts
     }
 
 }
@@ -206,7 +202,9 @@ class CustardTemplate extends BaseTemplate
         </div>
         <?php }
         else { ?>
-            <div id="temp" title="Not yet, but soon..."></div>
+            <div id="temp"><div class="loader">
+                <?php echo "<img src='$IP/skins/custard/Images/loading.gif' />" ?>
+            </div></div>
         <?php
         }?>
         </body>

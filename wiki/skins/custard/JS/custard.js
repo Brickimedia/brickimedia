@@ -1,5 +1,3 @@
-console.log('The script is loading, so something else is wrong.');
-
 /**************************************\
 |---Custard Skin  JavaScript Scripts---|
 |--Written for use on Brickimedia.org--|
@@ -18,6 +16,11 @@ $(document).ready(function () {
                 $(this).slideUp(250, 'linear');
             }
         });
+    });
+
+    $(window).on('load', function () {
+        console.log('done');
+        $('#temp .loader').fadeOut(250, 'linear');
     });
 
 });
