@@ -475,6 +475,7 @@ body {
     background: #3d9ec8;
     text-align: center;
     color: white;
+    z-index: 1;
 }
 
 #temp .wrap {
