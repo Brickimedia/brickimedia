@@ -85,7 +85,7 @@ class CustardTemplate extends BaseTemplate
         wfSuppressWarnings();
         $this->html('headelement'); ?>
 		<?php if ($this->data['username'] == 'ShermanTheMythran' || $this->data['username'] == 'SirComputer' || $this->data['username'] == 'ToaMeiko') { //temp whitelisting - until skin is properly functional ?>
-        <div id="toolbar" class="collapsed">
+        <div id="taskbar">
             <div class="toggle">
                 <span class="text">≡</span>
                 <span class="invert"></span>
@@ -142,7 +142,7 @@ class CustardTemplate extends BaseTemplate
         <div id="page">
             <div id="tabs">
                 <ul class="top">
-                    <?php
+                    <?php /*
                         global $wgTitle;
                         global $wgUser;
                         $isEditable = $wgTitle -> userCan('edit');
@@ -162,11 +162,11 @@ class CustardTemplate extends BaseTemplate
                             if ($wgUser -> isAllowed('delete')) {
                                 generateTab('#delete', 'Delete');
                             }
-                        }
+                        } */
                     ?>
                 </ul>
                 <ul class="left">
-                    <?php
+                    <?php /*
                         $canTalk = $wgTitle -> canTalk();
                         $getNsText = $wgTitle -> getNsText();
                         $getNamespace = $wgTitle -> getNamespace();
@@ -178,7 +178,7 @@ class CustardTemplate extends BaseTemplate
                         }
                         else {
                             generateTab('#page', $getNsText.' Page');
-                        }
+                        } */
                     ?>
                 </ul>
             </div>
