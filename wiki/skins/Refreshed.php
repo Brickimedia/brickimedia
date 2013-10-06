@@ -219,6 +219,31 @@ class RefreshedTemplate extends BaseTemplate {
 				</h1>
 				
 			</div>
+<<<<<<< HEAD
+=======
+			<div id="smalltoolboxwrapper">
+				<div id="smalltoolbox">
+					<?php 
+					reset($this->data['content_actions']);
+					$pageTab = key($this->data['content_actions']);
+	
+					$this->data['content_actions'][$pageTab]['text'] = $mySideTitle;
+	
+					$firstAction = true;
+					foreach ( $this->data['content_actions'] as $action ){
+						if (!$firstAction) {
+							echo "<a href='" . htmlspecialchars( $action['href'] ) . "'><i class='icon-2x icon-link' id='icon-" . $action['id'] . "'></i></a>";
+						} else {
+							echo NULL;
+							$firstAction = false;
+						}
+					} ?>
+				</div>
+					<a href="javascript:;"><i class="icon-ellipsis-horizontal icon-2x icon-link"></i></a>
+			</div>
+			
+			
+>>>>>>> origin/dev
 			<div id="content">
 				<?php $this->html('bodytext');
 				/*
