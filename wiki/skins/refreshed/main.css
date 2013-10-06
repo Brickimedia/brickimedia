@@ -1,3 +1,5 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css) (max-width: 1000px);
+
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
@@ -161,8 +163,9 @@ body {
 	
 	.shower {
 		position: absolute;
-		height: 3em;
+		height: 2.5em;
 		cursor: pointer;
+		padding-top: .5em;
 	}
 	#leftbar .shower {
 		left: 12em;
