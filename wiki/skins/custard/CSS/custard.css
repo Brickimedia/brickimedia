@@ -472,10 +472,42 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: white;
+    background: #3d9ec8;
     text-align: center;
+    color: white;
 }
 
-#temp .loader img {
-    vertical-align: middle;
+#temp .wrap {
+    margin-top: 20%;
+}
+
+#temp .infobar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #3d9ec8;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    text-align: left;
+}
+
+#temp .info {
+    display: none;
+    margin: 0 10px;
+    background: white;
+    color: black;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 15px 10px;
+}
+
+#temp .tag {
+    height: 50px;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#temp .return {
+    text-align: center;
+    font-size: .75em;
 }

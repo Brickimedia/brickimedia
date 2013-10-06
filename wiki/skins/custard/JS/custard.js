@@ -20,7 +20,11 @@ $(document).ready(function () {
 
     $(window).on('load', function () {
         console.log('done');
-        $('#temp .loader').fadeOut(250, 'linear');
+        $('#temp .loader').fadeOut(500, 'linear');
+    });
+
+    $('#temp .tag').funcToggle('click', function () {
+        $('#temp .info').slideToggle(500, 'linear');
     });
 
 });
