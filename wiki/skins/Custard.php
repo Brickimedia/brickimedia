@@ -26,9 +26,6 @@ $wgResourceModules['skins.custard'] = array(
     'scripts' => array(
         "$IP/skins/custard/JS/custard.js",
     ),
-    'dependencies' => array(
-        'jquery.funcToggle',
-    ),
     'remoteBasePath' => $GLOBALS['wgStylePath'],
     'localBasePath' => $GLOBALS['wgStyleDirectory'],
     'position' => 'top'
@@ -64,8 +61,9 @@ class SkinCustard extends SkinTemplate
     function setupSkinUserCss(OutputPage $out)
     {
         parent::setupSkinUserCss($out);
-        $out->addModuleStyles("skins.custard");
-        $out->addModuleScripts("skins.custard");
+        $out->addModuleStyles("skins.custard");     // ResourceModules styles
+        $out->addScript("jquery.funcToggle");       // jQuery dependency
+        $out->addModuleScripts("skins.custard");    // ResourceModules scripts
     }
 
 }
