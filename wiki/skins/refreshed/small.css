@@ -1,5 +1,9 @@
 /* anything 600px and under - phones */
 
+.shower {
+	padding-right: .75em;
+}
+
 #leftbar {
 	left: -12em;
 	background-color: rgba(25, 25, 112, 0.8);
@@ -15,3 +19,125 @@
 	#userinfo > a span {
 		max-width: 4.2em;
 	}
+
+#maintitle h1 {
+	border-color: #eaeaea;
+	margin-bottom: 5px;
+}
+
+#smalltoolboxwrapper {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #eaeaea;
+}
+
+#smalltoolbox {
+	width: 100px;
+	white-space: nowrap;
+	overflow-x: hidden;
+	display: inline-block;
+}
+
+.icon-link {
+	text-decoration: none;
+}
+
+#icon-ca-talk:before {
+	content: "\f086";
+}
+
+#icon-ca-talk {
+	margin-left: .75em;
+	font-size: 30px;
+	vertical-align: 7.5%;
+	color: black;
+}
+
+#icon-ca-viewsource:before {
+	content: "\f040";
+}
+
+#icon-ca-viewsource {
+	margin-left: .5em;
+	font-size: 30px;
+	color: #aaa;
+}
+
+#icon-ca-edit:before {
+	content: "\f040";
+}
+
+#icon-ca-edit {
+	margin-left: .5em;
+	font-size: 30px;
+	color: black;
+}
+
+#icon-ca-history:before {
+	content: "\f187";
+}
+
+#icon-ca-history {
+	margin-left: .5em;
+	font-size: 30px;
+	color: black;
+}
+
+#icon-ca-delete:before {
+	content: "\f00d";
+}
+
+#icon-ca-delete {
+	margin-left: .5em;
+	font-size: 35px;
+	color: black;
+}
+
+#icon-ca-move:before {
+	content: "\f090";
+}
+
+#icon-ca-move {
+	margin-left: .3em;
+	font-size: 30px;
+	color: black;
+}
+
+#icon-ca-protect:before {
+	content: "\f023";
+}
+
+#icon-ca-protect {
+	margin-left: .7em;
+	font-size: 30px;
+	color: black;
+}
+
+#icon-ca-unprotect:before {
+	content: "\f13e";
+}
+
+#icon-ca-unprotect {
+	margin-left: .7em;
+	font-size: 30px;
+	color: black;
+}
+
+#icon-ca-watch:before {
+	content: "\f006";
+}
+
+#icon-ca-watch {
+	margin-left: .5em;
+	font-size: 30px;
+	color: black;
+}
+
+#icon-ca-unwatch:before {
+	content: "\f005";
+}
+
+#icon-ca-unwatch {
+	margin-left: .5em;
+	font-size: 30px;
+	color: black;
+}

@@ -217,8 +217,29 @@ class RefreshedTemplate extends BaseTemplate {
 				<h1>
 					<?php echo $myTitle; ?>
 				</h1>
-				
 			</div>
+			<div id="smalltoolboxwrapper">
+				<div id="smalltoolbox">
+					<?php 
+					reset($this->data['content_actions']);
+					$pageTab = key($this->data['content_actions']);
+	
+					$this->data['content_actions'][$pageTab]['text'] = $mySideTitle;
+	
+					$firstAction = true;
+					foreach ( $this->data['content_actions'] as $action ){
+						if (!$firstAction) {
+							echo "<a href='" . htmlspecialchars( $action['href'] ) . "'><i class='icon-2x icon-link' id='icon-" . $action['id'] . "></i></a>";
+						} else {
+							echo NULL;
+							$firstAction = false;
+						}
+					} ?>
+				</div>
+					<a href="javascript:;"><i class="icon-ellipsis-horizontal icon-2x icon-link"></i></a>
+			</div>
+			
+			
 			<div id="content">
 				<?php $this->html('bodytext');
 				/*
@@ -233,7 +254,7 @@ class RefreshedTemplate extends BaseTemplate {
 		</div>
 		<div id="rightbar">
 			<div class="shower">
-				<?php echo "<img class='arrow' src='$IP/skins/refreshed/mobile-expand.png'/>"; ?>
+				<i class="icon-reorder icon-2x"></i>
 			</div>
 			<div id="search">
 				<form action="/index.php" method="GET">
