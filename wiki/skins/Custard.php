@@ -65,6 +65,7 @@ class SkinCustard extends SkinTemplate
     {
         parent::setupSkinUserCss($out);
         $out->addModuleStyles("skins.custard");
+        $out->addModuleScripts("skins.custard");
     }
 
 }
@@ -142,7 +143,7 @@ class CustardTemplate extends BaseTemplate
         <div id="page">
             <div id="tabs">
                 <ul class="top">
-                    <?php /*
+                    <?php
                         global $wgTitle;
                         global $wgUser;
                         $isEditable = $wgTitle -> userCan('edit');
@@ -162,11 +163,11 @@ class CustardTemplate extends BaseTemplate
                             if ($wgUser -> isAllowed('delete')) {
                                 generateTab('#delete', 'Delete');
                             }
-                        } */
+                        }
                     ?>
                 </ul>
                 <ul class="left">
-                    <?php /*
+                    <?php
                         $canTalk = $wgTitle -> canTalk();
                         $getNsText = $wgTitle -> getNsText();
                         $getNamespace = $wgTitle -> getNamespace();
@@ -178,7 +179,7 @@ class CustardTemplate extends BaseTemplate
                         }
                         else {
                             generateTab('#page', $getNsText.' Page');
-                        } */
+                        }
                     ?>
                 </ul>
             </div>
