@@ -233,30 +233,30 @@ require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php");
 $newTalkGlobalDatabases = array(
 		"meta" => array(
 				"db" => "meta",
-				"link" => "http://meta.$bmServerBase/wiki/"
+				"url" => "http://meta.$bmServerBase/wiki/"
 		),
 		"en" => array(
 				"db" => "en",
-				"link" => "http://en.$bmServerBase/wiki/"
+				"url" => "http://en.$bmServerBase/wiki/"
 		),
 		"customs" => array(
 				"db" => "customs",
-				"link" => "http://customs.$bmServerBase/wiki/"
+				"url" => "http://customs.$bmServerBase/wiki/"
 		),
 		"cuusoo" => array(
 				"db" => "cuusoo",
-				"link" => "http://cuusoo.$bmServerBase/wiki/"
+				"url" => "http://cuusoo.$bmServerBase/wiki/"
 		),
 		"stories" => array(
 				"db" => "stories",
-				"link" => "http://stories.$bmServerBase/wiki/"
+				"url" => "http://stories.$bmServerBase/wiki/"
 		),
 		"admin" => array(
 				"db" => "admin",
-				"link" => "http://admin.$bmServerBase/wiki/"
+				"url" => "http://admin.$bmServerBase/wiki/"
 		),
 		"dev" => array(
 				"db" => "dev",
-				"link" => "http://dev.$bmServerBase/wiki/"
+				"url" => "http://dev.$bmServerBase/wiki/"
 		)
 );

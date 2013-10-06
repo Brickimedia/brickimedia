@@ -1286,6 +1286,15 @@ abstract class Skin extends ContextSource {
 
 		$newtalks = $this->getUser()->getNewMessageLinks();
 		$ntl = '';
+		
+		// NXT was very naughty and copied/adapted this from the master of 1.22
+		// Allow extensions to disable or modify the new messages alert
+		if ( !wfRunHooks( 'GetNewMessagesAlert', array( &$ntl, $newtalks, $this->getUser(), $out ) ) ) {
+			return '';
+		}
+		if ( $ntl ) {
+			return $ntl;
+		}
 
 		if ( count( $newtalks ) == 1 && $newtalks[0]['wiki'] === wfWikiID() ) {
 			$uTalkTitle = $this->getUser()->getTalkPage();
