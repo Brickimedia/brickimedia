@@ -1,7 +1,7 @@
 /* anything between 601px and 1000px - tablets, big phones in landscape, very small laptops */
 
 .shower {
-	margin-right: 1em;
+	padding-right: 1em;
 }
 #leftbar {
 	left: 0 !important;
