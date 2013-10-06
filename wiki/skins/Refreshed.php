@@ -226,8 +226,14 @@ class RefreshedTemplate extends BaseTemplate {
 	
 					$this->data['content_actions'][$pageTab]['text'] = $mySideTitle;
 	
+					$firstAction = true;
 					foreach ( $this->data['content_actions'] as $action ){
-						echo "<a href='" . htmlspecialchars( $action['href'] ) . "'>" . "<i class='icon-" . $action['id'] . " icon-2x icon-link'></i></a>";
+						if (!$firstAction) {
+							echo "<a href='" . htmlspecialchars( $action['href'] ) . "'>" . "<i class='icon-" . $action['id'] . " icon-2x icon-link'></i></a>";
+						} else {
+							echo "";
+							$firstAction = false;
+						}
 					} ?>
 				</div>
 					<a href="javascript:;"><i class="icon-ellipsis-horizontal icon-2x icon-link"></i></a>
