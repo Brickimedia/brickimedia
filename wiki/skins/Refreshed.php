@@ -229,9 +229,9 @@ class RefreshedTemplate extends BaseTemplate {
 					$firstAction = true;
 					foreach ( $this->data['content_actions'] as $action ){
 						if (!$firstAction) {
-							echo "<a href='" . htmlspecialchars( $action['href'] ) . "'>" . "<i class='icon-" . $action['id'] . " icon-2x icon-link'></i></a>";
+							echo "<a href='" . htmlspecialchars( $action['href'] ) . "'>" . "<i class='icon-2x icon-link' id='icon-" . $action['id'] . "></i></a>";
 						} else {
-							echo "";
+							echo NULL;
 							$firstAction = false;
 						}
 					} ?>
