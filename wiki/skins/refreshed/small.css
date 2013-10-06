@@ -109,7 +109,6 @@
 #icon-ca-protect {
 	margin-left: .7em;
 	font-size: 30px;
-	padding-right: .2em; /*The unprotect icon itself has padding on the right side, while this one doesn't*/
 	color: black;
 }
 
