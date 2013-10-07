@@ -171,6 +171,7 @@ class RefreshedTemplate extends BaseTemplate {
 				</a>
 				<span id="pt-notifications"><a href="javascript:;"></a><span class="mw-echo-notifications-badge"></span></span>
 				<span class="mw-echo-notifications-badge"></span>
+				<span class="mw-badge"></span>
 				<ul class="headermenu" style="display:none;">
 					<?php 
 						foreach( $this->getPersonalTools() as $key => $tool ){
