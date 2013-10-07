@@ -499,6 +499,15 @@ body {
     color: black;
     border-radius: 5px 5px 0 0;
     padding: 5px 15px 10px;
+    transition: background 250ms linear;
+    -moz-transition: background 250ms linear;
+    -webkit-transition: background 250ms linear;
+    -o-transition: background 250ms linear;
+    -ms-transition: background 250ms linear;
+}
+
+#temp .info:hover {
+    background: #65B2D3;
 }
 
 #temp .tag {
