@@ -168,8 +168,9 @@ class RefreshedTemplate extends BaseTemplate {
 						}
 						echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><img class='avatar' src='http://meta.brickimedia.org" . $avatar . "' /><span>$wgUser</span>";
 					?>
-				<span id="pt-notifications"><a></a></span>
 				</a>
+				<span id="pt-notifications"><a href="javascript:;"></a><span class="mw-echo-notifications-badge"></span></span>
+				<span class="mw-echo-notifications-badge"></span>
 				<ul class="headermenu" style="display:none;">
 					<?php 
 						foreach( $this->getPersonalTools() as $key => $tool ){
