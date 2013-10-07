@@ -99,6 +99,7 @@ $wgGroupPermissions['sysop']['edit'] = false; //disable editing for sysop by def
 $wgGroupPermissions['sysop']['move'] = false; //disable moving for sysop by default
 $wgGroupPermissions['sysop']['delete'] = false; //disable deleting for sysop by default
 */
+$wgGroupPermissions['sysadmin']['read'] = true;
 $wgNamespaceProtection[NS_EN] = array( 'editen' );
 $wgNamespacePermissionLockdown[NS_EN]['read'] = array('brickipedia','global');
 $wgNamespacePermissionLockdown[NS_EN]['move'] = array('brickipedia','global');
