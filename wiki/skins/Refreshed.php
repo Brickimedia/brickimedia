@@ -222,8 +222,6 @@ class RefreshedTemplate extends BaseTemplate {
 				</h1>
 				
 			</div>
-<<<<<<< HEAD
-=======
 			<div id="smalltoolboxwrapper">
 				<div id="smalltoolbox">
 					<?php 
@@ -242,11 +240,8 @@ class RefreshedTemplate extends BaseTemplate {
 						}
 					} ?>
 				</div>
-					<a href="javascript:;"><i class="icon-ellipsis-horizontal icon-2x icon-link"></i></a>
+				<a href="javascript:;"><i class="icon-ellipsis-horizontal icon-2x icon-link"></i></a>
 			</div>
-			
-			
->>>>>>> origin/dev
 			<div id="content">
 				<?php $this->html('bodytext');
 				/*
