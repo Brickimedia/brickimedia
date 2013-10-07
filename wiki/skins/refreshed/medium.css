@@ -24,3 +24,7 @@
 	margin-left: calc(50% - 1em);
 	margin-left: -webkit-calc(50% - 1em);
 }
+
+.shower {
+	padding-right: 1em;
+}

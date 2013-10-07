@@ -254,6 +254,7 @@ class RefreshedTemplate extends BaseTemplate {
 		<div id="rightbar">
 			<div class="shower">
 				<?php echo "<img class='arrow' src='$IP/skins/refreshed/mobile-expand.png'/>"; ?>
+				<i class="icon-reorder icon-2x"></i>
 			</div>
 			<div id="search">
 				<form action="/index.php" method="GET">
