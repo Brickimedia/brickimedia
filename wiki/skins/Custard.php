@@ -205,7 +205,7 @@ class CustardTemplate extends BaseTemplate
             <div id="temp">
                 <div class="loader">
                     <div class="wrap">
-                        <?php echo "<img src='$IP/skins/custard/Images/loading.gif' /><br/>p&nbsp;l&nbsp;e&nbsp;a&nbsp;s&nbsp;e&nbsp;&nbsp;&nbsp;w&nbsp;a&nbsp;i&nbsp;t&nbsp;.&nbsp;.&nbsp;." ?>
+                        <?php echo "<img src='$IP/skins/custard/Images/loading.gif?action=purge' /><br/>p&nbsp;l&nbsp;e&nbsp;a&nbsp;s&nbsp;e&nbsp;&nbsp;&nbsp;w&nbsp;a&nbsp;i&nbsp;t&nbsp;.&nbsp;.&nbsp;." ?>
                     </div>
                 </div>
                 <div class="infobar">
