@@ -69,12 +69,12 @@ $wgShowSQLErrors = true;
 
 
 require_once("$IP/extensions/WhosGloballyOnline/WhosGloballyOnline.php");
-
 require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
 
 $wgGroupPermissions['bureaucrat']['userrights'] = true;
-
 $wgGroupPermissions['*']['read'] = false;
 $wgGroupPermissions['user']['read'] = false;
 $wgGroupPermissions['sysop']['read'] = true;
 $wgGroupPermissions['*']['createaccount'] = true; //enable account creation
+
+require_once( "$IP/extensions/LockDown/LockDown.php" );
