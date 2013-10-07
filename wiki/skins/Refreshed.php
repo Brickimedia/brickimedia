@@ -168,6 +168,7 @@ class RefreshedTemplate extends BaseTemplate {
 						}
 						echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/><img class='avatar' src='http://meta.brickimedia.org" . $avatar . "' /><span>$wgUser</span>";
 					?>
+				<span id="pt-notifications"><a></a></span>
 				</a>
 				<ul class="headermenu" style="display:none;">
 					<?php 
