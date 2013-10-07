@@ -140,7 +140,8 @@ class BlogPage extends Article {
 		global $wgContLang;
 
 		$title = $this -> getTitle() -> getBaseText();
-		$username = explode( '/', $title )[0];
+		$userparts = explode( '/', $title );
+		$username = $userparts[0];
 
 		$authorUserId = User::idFromName( $username );
 		$this->authors[] = array(
