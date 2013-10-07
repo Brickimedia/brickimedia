@@ -260,3 +260,5 @@ $newTalkGlobalDatabases = array(
 				"url" => "http://dev.$bmServerBase/wiki/"
 		)
 );
+
+require_once( "$IP/extensions/Echo/Echo.php" );
