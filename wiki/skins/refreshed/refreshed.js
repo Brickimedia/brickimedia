@@ -82,25 +82,21 @@ $("#refreshed-toc a").each(function(){
 });
 
 var user = false;
+var header = false;
+var left = false;
+var right = false;
 
-$("#userinfo > a").click(function(){
+function toggleUser(){
 	$("#userinfo .headermenu").fadeToggle(150);
 	$("#userinfo .arrow").toggleClass("rotate");
 	user = !user;
-});
-
-var header = false;
-
-$("#siteinfo > a").click(function(){
+}
+function toggleSite(){
 	$("#siteinfo .headermenu").fadeToggle(150);
 	$("#siteinfo .arrow").toggleClass("rotate");
 	header = !header;
-});
-
-
-var left = false;
-
-$("#leftbar .shower").click(function(){
+}
+function toggleLeft(){
 	if(left){
 		$("#leftbar").animate({'left': '-12em'});
 	} else {
@@ -108,17 +104,8 @@ $("#leftbar .shower").click(function(){
 	}
 	$("#leftbar .shower").fadeToggle();
 	left = !left;
-	
-	if(right){
-		$("#rightbar").animate({'right': '-12em'});
-		$("#rightbar .shower").fadeToggle();
-		right = !right;
-	}
-});
-
-var right = false;
-
-$("#rightbar .shower").click(function(){
+}
+function toggleRight(){
 	if(right){
 		$("#rightbar").animate({'right': '-12em'});
 	} else {
@@ -126,37 +113,41 @@ $("#rightbar .shower").click(function(){
 	}
 	$("#rightbar .shower").fadeToggle();
 	right = !right;
-	
+}
+
+$("#userinfo > a").click(function(){
+	toggleUser();
+});
+
+$("#siteinfo > a").click(function(){
+	toggleSite();
+});
+
+$("#leftbar .shower").click(function(){
+	toggleLeft();
+	if(right){
+		toggleRight();
+	}
+});
+
+$("#rightbar .shower").click(function(){
+	toggleRight();
 	if(left){
-		$("#leftbar").animate({'left': '-12em'});
-		$("#leftbar .shower").fadeToggle();
-		left = !left;
+		toggleLeft();
 	}
 });
 
 $("#contentwrapper").click(function(){
 	if(left){
-		console.log("left");
-		$("#leftbar").animate({'left': '-12em'});
-		$("#leftbar .shower").fadeToggle();
-		left = !left;
+		toggleLeft();
 	} 
 	if(right){
-		console.log("right");
-		$("#rightbar").animate({'right': '-12em'});
-		$("#rightbar .shower").fadeToggle();
-		right = !right;
+		toggleRight();
 	} 
 	if(user){
-		console.log("user");
-		$("#userinfo .headermenu").fadeToggle(150);
-		$("#userinfo .arrow").toggleClass("rotate");
-		user = !user;
+		toggleUser();
 	}
 	if(header){
-		console.log("header");
-		$("#siteinfo .headermenu").fadeToggle(150);
-		$("#siteinfo .arrow").toggleClass("rotate");
-		header = !header;
+		toggleHeader();
 	}
 });

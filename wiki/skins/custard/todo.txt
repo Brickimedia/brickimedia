@@ -1,23 +1,27 @@
-# Fix tab styling                   CSS     DONE
-# Fix page height excess            CSS
-# Add article title                 PHP
-# Add content to bar                PHP
-    # User menu
-    # Wiki menu
-    # "Follow" action
-    # Search bar
-    # User level
-    # Theme changer
-    # Notifications
-# Add functionality to bar          PHP/JS
-# Add functionality to tabs         PHP/JS
-# Make variables independent        PHP
-# Finish styling articles           CSS
-# Convert CSS to SCSS               CSS
-# Implement modules                 JS
-    # Friends module (disable Social Profile)
-    # Chat module
-# Implement dynamic loading         JS
-# Optimize skin for touch events    JS
-# Integrate jPlayer extension       JS
-# Reinvent "ChatParty"              JS
+* TASK                              * LANGUAGE  * STATUS
+# Fix tab styling                   CSS         DONE
+# Fix page height excess            CSS         DONE
+# Add article title                 PHP         DONE
+# Add content to bar                PHP         IN PROGRESS
+    # User menu                                 PENDING
+    # Wiki menu                                 PENDING
+    # "Follow" action                           PENDING
+    # Search bar                                PENDING
+    # User level                                PENDING
+    # Theme changer                             PENDING
+    # Notifications                             IN PROGRESS
+# Add functionality to bar          PHP/JS      PENDING
+# Add functionality to tabs         PHP/JS      PENDING
+# Make variables independent        PHP         PENDING
+# Finish styling articles           CSS         IN PROGRESS
+# Make pages dynamic                PHP/CSS     PENDING
+# Add custom tooltips               JS/CSS      PENDING
+# Convert CSS to SCSS               CSS         PENDING
+# Implement modules                 JS          PENDING
+    # Friends module                            PENDING
+        (disable Social Profile)
+    # Chat module                               PENDING
+# Implement dynamic loading         JS          PENDING
+# Prepare mobile skin               CSS         PENDING
+# Optimize skin for touch events    JS          PENDING
+# Integrate jPlayer extension       JS          PENDING

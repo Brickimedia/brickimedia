@@ -1,3 +1,5 @@
+@import url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css") (max-width: 1000px);
+
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
@@ -57,6 +59,10 @@ body {
 	text-align: center;
 }
 
+#newtalk {
+	margin-left: 2em;
+}
+
 #contentwrapper {
 	min-height: 100%;
 	position: relative;
@@ -66,7 +72,7 @@ body {
 	font-family: "Lato Body", sans-serif;
 }
 	#content {
-		padding: 0em 1em 0.5em 1em;
+		padding: 0em 1em 1em 1em;
 		font-size: 1em;
 	}
 
@@ -358,7 +364,7 @@ body {
 
 #footer {
 	position: relative;
-	top: 4em;
+	top: 3.5em;
 	text-align: center;
 	padding-bottom: 15px;
 	color: #CCC;

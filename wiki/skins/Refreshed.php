@@ -28,8 +28,8 @@ $wgResourceModules['skins.refreshed'] = array(
 				"$IP/skins/common/commonInterface.css" => array( 'media' => 'screen' ),
 				"$IP/skins/refreshed/main.css" => array( 'media' => 'screen' ),
 				"$IP/skins/refreshed/small.css" => array( 'media' => '(max-width: 600px)' ),
-				"$IP/skins/refreshed/medium.css" => array( 'media' => '(min-width: 601px) and (max-width: 900px)' ),
-				"$IP/skins/refreshed/big.css" => array( 'media' => '(min-width: 901px)' ),
+				"$IP/skins/refreshed/medium.css" => array( 'media' => '(min-width: 601px) and (max-width: 1000px)' ),
+				"$IP/skins/refreshed/big.css" => array( 'media' => '(min-width: 1001px)' ),
 		),
 		'scripts' => array(
 				"$IP/skins/refreshed/refreshed.js",
@@ -121,8 +121,8 @@ class RefreshedTemplate extends BaseTemplate {
 			'stories' => "<img src='$IP/skins/refreshed/stories.png' />",
 			'cuusoo' => "<img src='$IP/skins/refreshed/cuusoo.png' />",
 			'admin' => "<img height=22 src='$IP/skins/refreshed/admin.png' />",
-			'dev' => "<img height=26 src='$IP/skins/refreshed/dev.png' />",
-			'lmbw' => "<img src='$IP/skins/refreshed/lmbw.png' />"
+			'dev' => "<img height=26 src='$IP/skins/refreshed/dev.png' />"
+			
 		);
 
 		global $bmProject;
@@ -212,11 +212,32 @@ class RefreshedTemplate extends BaseTemplate {
                     <?php $this->html('sitenotice'); ?>
                 </div>
             <?php } ?>
+            <div id="newtalk"><?php $this->html( 'newtalk' )  ?></div>
 			<div id="maintitle">
 				<h1>
 					<?php echo $myTitle; ?>
 				</h1>
 				
+			</div>
+			<div id="smalltoolboxwrapper">
+				<div id="smalltoolbox">
+					<?php 
+					reset($this->data['content_actions']);
+					$pageTab = key($this->data['content_actions']);
+	
+					$this->data['content_actions'][$pageTab]['text'] = $mySideTitle;
+	
+					$firstAction = true;
+					foreach ( $this->data['content_actions'] as $action ){
+						if (!$firstAction) {
+							echo "<a href='" . htmlspecialchars( $action['href'] ) . "'><i class='icon-2x icon-link' id='icon-" . $action['id'] . "'></i></a>";
+						} else {
+							echo NULL;
+							$firstAction = false;
+						}
+					} ?>
+				</div>
+				<a href="javascript:;"><i class="icon-ellipsis-horizontal icon-2x icon-link"></i></a>
 			</div>
 			<div id="content">
 				<?php $this->html('bodytext');

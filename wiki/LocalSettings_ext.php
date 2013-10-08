@@ -106,11 +106,11 @@ $messages['de'] = array(
 	'termsofusepage' => 'm:Terms of Use'
 );
 $messages['pl'] = array(
-	'termsofuse' => 'Zasady Użytkowania',
+	'termsofuse' => 'Zasady UÅ¼ytkowania',
 	'termsofusepage' => 'm:Terms of Use'
 );
 $messages['jp'] = array(
-	'termsofuse' => '利用規約',
+	'termsofuse' => 'åˆ©ç”¨è¦�ç´„',
 	'termsofusepage' => 'm:Terms of Use'
 );
 
@@ -227,3 +227,36 @@ require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 
 #AntiSpoof
 require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
+
+#Global new talk page message alerts
+require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php");
+$newTalkGlobalDatabases = array(
+		"meta" => array(
+				"db" => "meta",
+				"url" => "http://meta.$bmServerBase/wiki/"
+		),
+		"en" => array(
+				"db" => "en",
+				"url" => "http://en.$bmServerBase/wiki/"
+		),
+		"customs" => array(
+				"db" => "customs",
+				"url" => "http://customs.$bmServerBase/wiki/"
+		),
+		"cuusoo" => array(
+				"db" => "cuusoo",
+				"url" => "http://cuusoo.$bmServerBase/wiki/"
+		),
+		"stories" => array(
+				"db" => "stories",
+				"url" => "http://stories.$bmServerBase/wiki/"
+		),
+		"admin" => array(
+				"db" => "admin",
+				"url" => "http://admin.$bmServerBase/wiki/"
+		),
+		"dev" => array(
+				"db" => "dev",
+				"url" => "http://dev.$bmServerBase/wiki/"
+		)
+);

@@ -155,6 +155,9 @@ return array(
 	'jquery.form' => array(
 		'scripts' => 'resources/jquery/jquery.form.js',
 	),
+    'jquery.funcToggle' => array(
+        'scripts' => 'resources/jquery/jquery.funcToggle.js',
+    ),
 	'jquery.getAttrs' => array(
 		'scripts' => 'resources/jquery/jquery.getAttrs.js',
 	),
