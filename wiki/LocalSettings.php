@@ -219,15 +219,6 @@ $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 $wgShellLocale = "en_US.utf8";
 
-/*if ( $bmProject != 'meta'){
-	$wgForeignFileRepos[] = array(
-			'class'            => 'FSRepo',
-			'name'             => 'sharedFsRepo',
-			'directory'        => 'meta',
-			'hashLevels'       => 0,
-			'url'              => "http://meta.$bmServerBase/images/",
-	);
-}*/
 $wgUseSharedUploads = true;
 $wgSharedUploadPath = 'http://meta.brickimedia.org/images/';
 $wgSharedUploadDirectory = '/var/www/wiki/images';
