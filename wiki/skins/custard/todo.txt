@@ -1,27 +1,26 @@
-* TASK                              * LANGUAGE  * STATUS
-# Fix tab styling                   CSS         DONE
-# Fix page height excess            CSS         DONE
-# Add article title                 PHP         DONE
-# Add content to bar                PHP         IN PROGRESS
+* TASK                              * LANGUAGE  * STATUS        * COMMENTS
+# Fix tab styling                   CSS         DONE            Tabs appear properly in webkit, will port over in beta build
+# Fix page height excess            CSS         DONE            Height now displays properly in all document and window sizes
+# Add article title                 PHP         DONE            Article title is aligned symmetrically with page corner
+# Add functionality to bar          PHP         PARTIAL
     # User menu                                 PENDING
     # Wiki menu                                 PENDING
     # "Follow" action                           PENDING
     # Search bar                                PENDING
     # User level                                PENDING
-    # Preferences                               IN PROGRESS
-    # Notifications                             IN PROGRESS
-# Add functionality to bar          PHP/JS      IN PROGRESS
+    # Preferences                               PARTIAL         Will eventually include popout menu with a few options and a link to Special:Preferences
+    # Notifications                             PARTIAL         Need to hook sitenotice display into a database
 # Add functionality to tabs         PHP/JS      PENDING
 # Make variables independent        PHP         PENDING
-# Finish styling articles           CSS         IN PROGRESS
+# Finish styling articles           CSS         PARTIAL
 # Make pages dynamic                PHP/CSS     PENDING
 # Add custom tooltips               JS/CSS      PENDING
 # Convert CSS to SCSS               CSS         PENDING
 # Implement modules                 JS          PENDING
-    # Friends module                            PENDING
-        (disable Social Profile)
-    # Chat module                               PENDING
+    # Friends module                            PENDING         Hope to disable SocialProfile
+    # Chat module                               PENDING         Will include a mini instance of local chat in the taskbar
 # Implement dynamic loading         JS          PENDING
+# Use custom scrollbars             JS          PENDING
 # Prepare mobile skin               CSS         PENDING
+# Perfect cross-compatibility       CSS         PENDING
 # Optimize skin for touch events    JS          PENDING
-# Integrate jPlayer extension       JS          PENDING
