@@ -249,6 +249,7 @@ class RefreshedTemplate extends BaseTemplate {
 				 	"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
 				 	htmlspecialchars( $action['text'] ) . "</a>"; */
 				?>
+				<br clear="all" />
 			</div>
 		</div>
 		<div id="rightbar">
