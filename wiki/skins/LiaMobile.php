@@ -57,7 +57,7 @@ class SkinLiaMobile extends SkinTemplate {
 				"/{$this->stylename}/csshover{$min}.htc\")}</style><![endif]-->"
 		);
 
-		$out->addModuleScripts( 'skins.liamobile', 'liamobile/lia.js' );
+		$out->addModuleScripts( 'skins.liamobile', 'liamobile/liamobile.js' );
 		$out->addStyle('common/commonElements.css', 'screen');
 		$out->addStyle('common/commonContent.css', 'screen');
 		$out->addStyle('common/commonInterface.css', 'screen');
