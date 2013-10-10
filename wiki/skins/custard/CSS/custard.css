@@ -205,7 +205,7 @@ body {
     float: left;
     text-align: center;
     line-height: 1.75em;
-    background-image: -webkit-linear-gradient(bottom,#EEE 0px,transparent 15px);
+    background-image: -webkit-linear-gradient(bottom,#EFEFEF 0px,transparent 15px);
     background-size: 150%;
     -webkit-transition: background 250ms linear;
 }
@@ -224,6 +224,10 @@ body {
 
 #actions .module.narrow {
     width: 5%;
+}
+
+#actions .preferences {
+    cursor: pointer;
 }
 
 #actions .gear {
@@ -264,11 +268,22 @@ body {
     padding-left: 100px;
 }
 
+#interwiki .shell {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flexbox;
+}
+
 #interwiki .left a, #interwiki .right a {
     width: 33.33%; /* calc() fallback */
     width: calc( 100% / 3 );
     height: 60px;
     line-height: 60px;
+    -moz-box-flex: 1.0;
+    -webkit-box-flex: 1.0;
+    -ms-flex: 1.0;
+    flex: 1.0;
 }
 
 #interwiki .mid a {
@@ -490,6 +505,15 @@ body {
     border-radius: 5px 5px 0 0;
     color: white;
     text-align: left;
+    transition: background 250ms linear;
+    -moz-transition: background 250ms linear;
+    -webkit-transition: background 250ms linear;
+    -o-transition: background 250ms linear;
+    -ms-transition: background 250ms linear;
+}
+
+#temp .infobar:hover {
+    background: #65B2D3;
 }
 
 #temp .info {
@@ -499,15 +523,6 @@ body {
     color: black;
     border-radius: 5px 5px 0 0;
     padding: 5px 15px 10px;
-    transition: background 250ms linear;
-    -moz-transition: background 250ms linear;
-    -webkit-transition: background 250ms linear;
-    -o-transition: background 250ms linear;
-    -ms-transition: background 250ms linear;
-}
-
-#temp .info:hover {
-    background: #65B2D3;
 }
 
 #temp .tag {
