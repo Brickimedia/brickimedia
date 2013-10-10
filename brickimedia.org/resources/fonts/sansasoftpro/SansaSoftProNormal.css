@@ -1,0 +1,11 @@
+/* Font-face for exotic fonts (different file formats are for different browsers) */
+@font-face {
+    font-family: 'SansaSoftProNormal';
+    src: url('http://lego.cuusoo.com/apps/cuusoo/static/fonts/sansasoftpro-normal-webfont.eot');
+    src: url('http://lego.cuusoo.com/apps/cuusoo/static/fonts/sansasoftpro-normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://lego.cuusoo.com/apps/cuusoo/static/fonts/sansasoftpro-normal-webfont.woff') format('woff'),
+         url('http://lego.cuusoo.com/apps/cuusoo/static/fonts/sansasoftpro-normal-webfont.ttf') format('truetype'),
+         url('http://lego.cuusoo.com/apps/cuusoo/static/fonts/sansasoftpro-normal-webfont.svg#SansaSoftProNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
