@@ -8,9 +8,9 @@
     # "Follow" action                           PENDING
     # Search bar                                PENDING
     # User level                                PENDING
-    # Theme changer                             PENDING
+    # Preferences                               IN PROGRESS
     # Notifications                             IN PROGRESS
-# Add functionality to bar          PHP/JS      PENDING
+# Add functionality to bar          PHP/JS      IN PROGRESS
 # Add functionality to tabs         PHP/JS      PENDING
 # Make variables independent        PHP         PENDING
 # Finish styling articles           CSS         IN PROGRESS

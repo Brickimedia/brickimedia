@@ -48,7 +48,7 @@ function generateTab($href, $text)
  */
 
 /**
- * SkinTemplate class for My Skin skin
+ * SkinTemplate class for Custard skin
  *
  * @ingroup Skins
  */
@@ -83,157 +83,157 @@ class CustardTemplate extends BaseTemplate
         // Suppress warnings to prevent notices about missing indexes in $this->data
         wfSuppressWarnings();
         $this->html('headelement'); ?>
-		<?php if ($this->data['username'] == 'ShermanTheMythran' || $this->data['username'] == 'SirComputer' || $this->data['username'] == 'ToaMeiko') { //temp whitelisting - until skin is properly functional ?>
-        <div id="taskbar">
-            <div class="toggle">
-                <span class="text">≡</span>
-                <span class="invert"></span>
-            </div>
-            <div id="mw-js-message" class="message notice" style="display:none;"></div>
-            <?php if ( $this->data['sitenotice'] ) { ?>
-                <div id="site-notice" class="notice">
-                    <?php $this->html('sitenotice'); ?>
+		<?php
+        if ( $this->data['username'] == 'ShermanTheMythran' || $this->data['username'] == 'SirComputer' || $this->data['username'] == 'ToaMeiko' ) { //temp whitelisting - until skin is properly functional ?>
+            <div id="taskbar">
+                <div class="toggle">
+                    <span class="text">≡</span>
+                    <span class="invert"></span>
                 </div>
-            <?php } ?>
-            <?php if ( $this->data['newtalk'] ) { ?>
-            <div id="new-talk" class="message notice">
-                <?php $this->html('newtalk'); ?>
-            </div>
-            <?php } ?>
-            <div id="actions">
-                <div class="navigation module medium">Links</div>
-                <div class="search module wide">Search</div>
-                <div class="follow module narrow">Follow</div>
-                <div class="level module medium">Level</div>
-                <div class="chat module medium">Chat</div>
-                <div class="user module medium">User</div>
-                <div class="preferences module narrow">
-                    <?php echo "<object data='$IP/skins/custard/Images/gear.svg' type='image/svg+xml' class='gear'></object>"; ?>
+                <div id="mw-js-message" class="message notice" style="display:none;"></div>
+                <?php
+            if ( $this->data['sitenotice'] ) { ?>
+                    <div id="site-notice" class="notice">
+                        <?php $this->html('sitenotice'); ?>
+                    </div>
+                <?php
+            } ?>
+                <?php
+            if ( $this->data['newtalk'] ) { ?>
+                <div id="new-talk" class="message notice">
+                    <?php $this->html('newtalk'); ?>
+                </div>
+                <?php
+            } ?>
+                <div id="actions">
+                    <div class="navigation module medium">Links</div>
+                    <div class="search module wide">Search</div>
+                    <div class="follow module narrow">Follow</div>
+                    <div class="level module medium">Level</div>
+                    <div class="chat module medium">Chat</div>
+                    <div class="user module medium">User</div>
+                    <div class="preferences module narrow">
+                        <a href="/wiki/Special:Preferences" title="Preferences">
+                            <svg class="gear" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+                                <g>
+                                    <g id="svg_13">
+                                        <ellipse stroke="#bbbbbb" fill-opacity="0" ry="5" rx="5" id="svg_17" cy="10" cx="10" stroke-width="4" fill="#000000"/>
+                                        <g id="svg_2">
+                                            <circle stroke="#bbbbbb" id="svg_30" r="1" cy="3.5" cx="10" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
+                                            <circle stroke="#bbbbbb" id="svg_32" r="1" cy="10" cx="16.5" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
+                                            <circle stroke="#bbbbbb" id="svg_33" r="1" cy="10" cx="3.5" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
+                                            <circle stroke="#bbbbbb" id="svg_34" r="1" cy="16.5" cx="10" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
+                                        </g>
+                                        <g id="svg_8" transform="rotate(45 10 10)">
+                                            <circle id="svg_9" stroke="#bbbbbb" r="1" cy="3.5" cx="10" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
+                                            <circle id="svg_10" stroke="#bbbbbb" r="1" cy="10" cx="16.5" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
+                                            <circle id="svg_11" stroke="#bbbbbb" r="1" cy="10" cx="3.5" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
+                                            <circle id="svg_12" stroke="#bbbbbb" r="1" cy="16.5" cx="10" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <!--[if lte IE 8]>
+                                <?php echo "<object data='$IP/skins/custard/Images/gear.svg' type='image/svg+xml' class='gear'></object>"; ?>
+                            <![endif]-->
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="interwiki">
-            <div class="left">
-                <div class="shell">
-                    <a href="#meta">Meta</a>
-                    <a href="#pedia">Pedia</a>
-                    <a href="#customs">Customs
-                        <div><span class="invert"></span></div>
-                    </a>
+            <div id="interwiki">
+                <div class="left">
+                    <div class="shell">
+                        <a href="#meta">Meta</a>
+                        <a href="#pedia">Pedia</a>
+                        <a href="#customs">Customs
+                            <div><span class="invert"></span></div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="mid">
-                <a href="#main">Brickimedia</a>
-            </div>
-            <div class="right">
-                <div class="shell">
-                    <a href="#stories">Stories
-                        <div><span class="invert"></span></div>
-                    </a>
-                    <a href="#cuusoo">CUUSOO</a>
-                    <a href="#dev">Dev</a>
+                <div class="mid">
+                    <a href="#main">Brickimedia</a>
                 </div>
+                <div class="right">
+                    <div class="shell">
+                        <a href="#stories">Stories
+                            <div><span class="invert"></span></div>
+                        </a>
+                        <a href="#cuusoo">CUUSOO</a>
+                        <a href="#dev">Dev</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
             </div>
-            <div class="clear"></div>
-        </div>
 				
-        <div id="page">
-            <div id="tabs">
-                <ul class="top">
-                    <?php
-                        global $wgTitle;
-                        global $wgUser;
-                        $isEditable = $wgTitle -> userCan('edit');
-                        generateTab('#read', 'Read');
-                        if ($isEditable)
-                        {
-                            if ($wgUser -> isAllowed('edit')) {
-                                generateTab('#edit', 'Edit');
-                            }
-                            else {
-                                generateTab('#edit', 'View Source');
-                            }
-                            generateTab('#history', 'History');
-                            if ($wgUser -> isAllowed('move')) {
-                                generateTab('#move', 'Rename');
-                            }
-                            if ($wgUser -> isAllowed('delete')) {
-                                generateTab('#delete', 'Delete');
-                            }
-                        }
-                    ?>
-                </ul>
-                <ul class="left">
-                    <?php
+            <div id="page">
+                <div id="tabs">
+                    <ul class="top">
+                        <?php
+                            global $wgTitle;
+                            global $wgUser;
+                            $isEditable = $wgTitle -> userCan('edit');
+                            generateTab('#read', 'Read');
+            if ( $isEditable ) {
+                if ( $wgUser -> isAllowed('edit') ) {
+                    generateTab('#edit', 'Edit');
+                } else {
+                    generateTab('#edit', 'View Source');
+                }
+                    generateTab('#history', 'History');
+                if ( $wgUser -> isAllowed('move') ) {
+                    generateTab('#move', 'Rename');
+                }
+                if ( $wgUser -> isAllowed('delete') ) {
+                    generateTab('#delete', 'Delete');
+                }
+            }
+                        ?>
+                    </ul>
+                    <ul class="left">
+                        <?php
                         $canTalk = $wgTitle -> canTalk();
                         $getNsText = $wgTitle -> getNsText();
                         $getNamespace = $wgTitle -> getNamespace();
-                        if ($canTalk == 1) {
-                            generateTab('#talk', 'Talk');
-                        }
-                        if ($getNamespace == 0) {
-                            generateTab('#page', 'Page');
-                        }
-                        else {
-                            generateTab('#page', $getNsText.' Page');
-                        }
-                    ?>
-                </ul>
-            </div>
-            <h1 id="header">
-                <?php $this->html('title'); ?>
-            </h1>
-            <?php if ( $this->data['subtitle'] ) { ?>
-                <div class="sub-header">
-                    <?php $this->html('subtitle'); ?>
+            if ( $canTalk == 1 ) {
+                generateTab('#talk', 'Talk');
+            }
+            if ( $getNamespace == 0 ) {
+                generateTab('#page', 'Page');
+            } else {
+                generateTab('#page', $getNsText.' Page');
+            }
+                        ?>
+                    </ul>
                 </div>
-            <?php } ?>
-            <?php if ( $this->data['undelete'] ) { ?>
-                <div id="sub-header">
-                    <?php $this->html('undelete'); ?>
-                </div>
-            <?php } ?>
-            <div id="content">
-                <?php $this->html('bodytext') ?>
-            </div>
-            <?php $this->html('catlinks'); ?>
-            <?php $this->printTrail(); ?>
-        </div>
-        <?php }
-        else { ?>
-            <div id="temp">
-                <div class="loader">
-                    <div class="wrap">
-                        <?php echo "<img src='$IP/skins/custard/Images/loading.gif?action=purge' /><br/>p&nbsp;l&nbsp;e&nbsp;a&nbsp;s&nbsp;e&nbsp;&nbsp;&nbsp;w&nbsp;a&nbsp;i&nbsp;t&nbsp;.&nbsp;.&nbsp;." ?>
+                <h1 id="header">
+                    <?php $this->html('title'); ?>
+                </h1>
+                <?php
+            if ( $this->data['subtitle'] ) { ?>
+                    <div class="sub-header">
+                        <?php $this->html('subtitle'); ?>
                     </div>
-                </div>
-                <div class="infobar">
-                    <div class="tag">not yet, but soon...</div>
-                    <div class="info">
-                        <h2>What is Custard?</h2>
-                        <p>Custard is a wiki skin designed exclusively for Brickimedia, aiming to make the wiki experience as simple, clean, and streamlined as possible.</p>
-                        <h2>Why is it called that?</h2>
-                        <p>The name needed to reflect the style and feel of the concept, and the best way to do that seemed to be to choose something that was very smooth and creamy.</p>
-                        <h2>Who is making the skin?</h2>
-                        <p>Development of the skin is headed by maestro35 (aka ShermanTheMythran), but feedback from others is always welcome!</p>
-                        <h2>How can I view the skin?</h2>
-                        <p>Currently, it is whitelisted (only a select few can see it), because it is generally unstable; however, it will open to a closed beta group in the near future, in which stage it will remain until it is ready for release. Stay tuned to find out how to apply for closed beta!</p>
-                        <h2>What makes it so special?</h2>
-                        <p>Custard is being designed to feel like a contained system, meaning it will seem like an app unto itself. As conceptualized, the interface will be minimalistic, navigation will be efficient, and you will be able to access anything from anywhere at any time.</p>
-                        <h2>When will I be able to see it?</h2>
-                        <p>There are currently no set dates for stages of development, but you can keep tabs on the <a href="https://github.com/Brickimedia/brickimedia/blob/master/wiki/skins/custard/todo.txt">ToDo list</a>. Major updates will also be posted here.</p>
-                        <br/>
-                        <i>If you have any further incquiries concerning Custard, you can always leave a message on <a href="http://meta.brickimedia.org/wiki/User_talk:ShermanTheMythran">my talk page</a>. Thanks! ~Sherm</i>
-                        <br/>
-                        <div class="return">
-                            <a href="http://meta.brickimedia.org/wiki/Main_Page?useskin=refreshed">return to Meta</a>
-                        </div>
+                <?php 
+            }
+            if ( $this->data['undelete'] ) { ?>
+                    <div id="sub-header">
+                        <?php $this->html('undelete'); ?>
                     </div>
-                </div>
+                    <?php
+            } ?>
+                    <div id="content">
+                        <?php $this->html('bodytext') ?>
+                    </div>
+                <?php $this->html('catlinks');
+                $this->printTrail(); ?>
             </div>
         <?php
-        }?>
+        } else { ?>
+            require_once("$IP/skins/custard/whitelist.php");
+        <?php
+        } ?>
         </body>
         </html>
 	    <?php wfRestoreWarnings();

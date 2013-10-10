@@ -111,7 +111,8 @@ body {
     width: 100%;
     min-height: 30px;
     background: white;
-    top: 0;
+    bottom: 100%;
+    margin-bottom: -30px;
     z-index: 2;
     box-shadow: 0 0 25px -10px black;
 }
@@ -184,8 +185,11 @@ body {
     display: none;
     height: 20px;
     font-size: .75em;
+    margin: 0;
     padding: 5px 60px;
+    border: none;
     line-height: 20px;
+    background: none;
 }
 
 #taskbar .notice, #taskbar .notice * {
@@ -226,8 +230,9 @@ body {
     width: 5%;
 }
 
-#actions .preferences {
-    cursor: pointer;
+#actions .preferences a {
+    display: block;
+    height: 100%;
 }
 
 #actions .gear {
