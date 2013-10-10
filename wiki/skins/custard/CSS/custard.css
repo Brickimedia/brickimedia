@@ -182,7 +182,6 @@ body {
 }
 
 #taskbar .notice {
-    display: none;
     height: 20px;
     font-size: .75em;
     margin: 0;
@@ -230,12 +229,28 @@ body {
     width: 5%;
 }
 
-#actions .preferences a {
+#actions .preferences a, #actions .watch a {
     display: block;
     height: 100%;
 }
 
-#actions .gear {
+#actions .watch.watched path {
+    stroke: #BBB;
+}
+
+#actions .watch.watched circle {
+    fill: #BBB;
+}
+
+#actions .watch.disabled path {
+    stroke: #DDD;
+}
+
+#actions .watch.disabled circle {
+    fill: #DDD;
+}
+
+#actions svg, #actions object {
     margin-top: 5px;
 }
 
@@ -301,7 +316,6 @@ body {
 
 #interwiki a {
     display: block;
-    float: left;
     background: #BFDBEE;
     color: black;
     text-align: center;

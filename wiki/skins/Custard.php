@@ -34,11 +34,25 @@ $wgResourceModules['skins.custard'] = array(
 
 /**
  * New tab-generation function
- */
+ *
 function generateTab($href, $text)
 {
     echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
 }
+
+function isWatchable()
+{
+    if (!$wgTitle -> isWatchable()) {
+        echo "disabled";
+    }
+}
+
+function isWatching()
+{
+    if ($wgTitle -> userIsWatching($this->data["title"])) {
+        echo "class='watching'";
+    }
+}*/
 
 /**
  * Skin file for skin My Skin.
@@ -80,6 +94,31 @@ class CustardTemplate extends BaseTemplate
      */
     public function execute()
     {
+        global $wgTitle;
+        global $wgUser;
+
+        function generateTab($href, $text)
+        {
+            echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
+        }
+
+        function checkWatch($href, $scope)
+        {
+            if ($wgTitle -> isWatchable()) {
+                if ($wgTitle -> userIsWatching($this->data["title"]) && $scope == 'selector') {
+                    echo "watching";
+                } else if ($wgTitle -> userIsWatching($this->data["title"]) && $scope == 'action') {
+                    echo " href='?action=unwatch'";
+                } else if (!$wgTitle -> userIsWatching($this->data["title"]) && $scope == 'action') {
+                    echo " href='?action=watch'";
+                }
+            } else {
+                if ($scope == 'selector') {
+                    echo "disabled";
+                }
+            }
+        }
+
         // Suppress warnings to prevent notices about missing indexes in $this->data
         wfSuppressWarnings();
         $this->html('headelement'); ?>
@@ -108,7 +147,20 @@ class CustardTemplate extends BaseTemplate
                 <div id="actions">
                     <div class="navigation module medium">Links</div>
                     <div class="search module wide">Search</div>
-                    <div class="follow module narrow">Follow</div>
+                    <div class="watch module narrow <?php checkWatch('selector') ?>">
+                        <a<?php checkWatch('action') ?>>
+                            <svg class="eye" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+                                <g>
+                                    <path fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="null" d="m1.55,10c0,-0.00331 3.78149,-4.35 8.45,-4.35c4.66851,0 8.450001,4.34669 8.450001,4.35c0,0.00331 -3.78149,4.35 -8.450001,4.35c-4.66851,0 -8.45,-4.34669 -8.45,-4.35z" id="svg_1"/>
+                                    <circle fill="#000000" stroke="#3d9ec8" stroke-dasharray="null" cx="10" cy="10" r="2.5" id="svg_2"/>
+                                </g>
+                            </svg>
+                            <!--[if lte IE 8]>
+                                <?php echo "<object data='$IP/skins/custard/Images/eye.svg' type='image/svg+xml' class='eye'></object>"; ?>
+                            <![endif]-->
+                        </a>
+                    </div>
                     <div class="level module medium">Level</div>
                     <div class="chat module medium">Chat</div>
                     <div class="user module medium">User</div>
@@ -171,8 +223,6 @@ class CustardTemplate extends BaseTemplate
                 <div id="tabs">
                     <ul class="top">
                         <?php
-                            global $wgTitle;
-                            global $wgUser;
                             $isEditable = $wgTitle -> userCan('edit');
                             generateTab('#read', 'Read');
             if ( $isEditable ) {
