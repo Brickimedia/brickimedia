@@ -294,9 +294,8 @@ class CustardTemplate extends BaseTemplate
                 $this->printTrail(); ?>
             </div>
         <?php
-        } else { ?>
+        } else {
             require_once("$IP/skins/custard/whitelist.php");
-        <?php
         } ?>
         </body>
         </html>
