@@ -102,7 +102,7 @@ class CustardTemplate extends BaseTemplate
             echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
         }
 
-        function checkWatch($href, $scope)
+        /*function checkWatch($href, $scope)
         {
             if ($wgTitle -> isWatchable()) {
                 if ($wgTitle -> userIsWatching($this->data["title"]) && $scope == 'selector') {
@@ -117,7 +117,7 @@ class CustardTemplate extends BaseTemplate
                     echo "disabled";
                 }
             }
-        }
+        }*/
 
         // Suppress warnings to prevent notices about missing indexes in $this->data
         wfSuppressWarnings();
@@ -147,8 +147,22 @@ class CustardTemplate extends BaseTemplate
                 <div id="actions">
                     <div class="navigation module medium">Links</div>
                     <div class="search module wide">Search</div>
-                    <div class="watch module narrow <?php checkWatch('selector') ?>">
-                        <a<?php checkWatch('action') ?>>
+                    <div class="watch module narrow <?php
+            if ($wgTitle -> isWatchable()) {
+                if ($wgTitle -> userIsWatching($this->data["title"])) {
+                    echo "watching";
+                }
+            } else {
+                echo "disabled";
+            } ?>">
+                        <a<?php
+            if ($wgTitle -> isWatchable()) {
+                if ($wgTitle -> userIsWatching($this->data["title"])) {
+                    echo " href='?action=unwatch'";
+                } else {
+                    echo " href='?action=watch'";
+                }
+            } ?>>
                             <svg class="eye" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                                 <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
                                 <g>
@@ -171,7 +185,7 @@ class CustardTemplate extends BaseTemplate
                                 <g>
                                     <g id="svg_13">
                                         <ellipse stroke="#bbbbbb" fill-opacity="0" ry="5" rx="5" id="svg_17" cy="10" cx="10" stroke-width="4" fill="#000000"/>
-                                        <g id="svg_2">
+                                        <g id="svg_3">
                                             <circle stroke="#bbbbbb" id="svg_30" r="1" cy="3.5" cx="10" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
                                             <circle stroke="#bbbbbb" id="svg_32" r="1" cy="10" cx="16.5" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
                                             <circle stroke="#bbbbbb" id="svg_33" r="1" cy="10" cx="3.5" fill-opacity="0" stroke-dasharray="null" stroke-width="2.5" fill="none"/>
