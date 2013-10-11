@@ -294,7 +294,7 @@ class CustardTemplate extends BaseTemplate
                 $this->printTrail(); ?>
             </div>
         <?php
-        } else {
+        } else { ?>
 <div id="temp">
     <div class="loader">
         <div class="wrap">
@@ -327,7 +327,7 @@ class CustardTemplate extends BaseTemplate
         </div>
     </div>
 </div>
-        } ?>
+        <?php } ?>
         </body>
         </html>
 	    <?php wfRestoreWarnings();
