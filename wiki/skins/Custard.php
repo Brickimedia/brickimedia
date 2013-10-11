@@ -27,6 +27,9 @@ $wgResourceModules['skins.custard'] = array(
         "$IP/resources/jquery/jquery.funcToggle.js",
         "$IP/skins/custard/JS/custard.js",
     ),
+    'dependencies' => array(
+        "jquery.jPlayer",
+    ),
     'remoteBasePath' => $GLOBALS['wgStylePath'],
     'localBasePath' => $GLOBALS['wgStyleDirectory'],
     'position' => 'top'
