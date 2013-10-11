@@ -139,29 +139,15 @@ class BlogPage extends Article {
 	function getAuthors() {
 		global $wgContLang;
 
-		$articleText = $this->pageContent;
-		$categoryName = $wgContLang->getNsText( NS_CATEGORY );
-		$blogCat = wfMsgForContent( 'blog-category' );
+		$title = $this -> getTitle() -> getBaseText();
+		$userparts = explode( '/', $title );
+		$username = $userparts[0];
 
-		// This unbelievably weak and hacky regex is used to find out the
-		// author's name from the category. See also getBlurb(), which uses a
-		// similar regex.
-		preg_match_all(
-			"/\[\[(?:(?:c|C)ategory|{$categoryName}):\s?" .
-				wfMsgForContent( 'blog-by-user-category', $blogCat ) .
-			" (.*)\]\]/",
-			$articleText,
-			$matches
-		);
-		$authors = $matches[1];
-
-		foreach( $authors as $author ) {
-			$authorUserId = User::idFromName( $author );
-			$this->authors[] = array(
-				'user_name' => trim( $author ),
+		$authorUserId = User::idFromName( $username );
+		$this->authors[] = array(
+				'user_name' => trim( $username ),
 				'user_id' => $authorUserId
-			);
-		}
+		);
 	}
 
 	/**
@@ -218,6 +204,8 @@ class BlogPage extends Article {
 			self::getCreateDate( $this->getId() ),
 			true
 		);
+		
+		$author_user_id = $this->authors[0]['user_id'];
 
 		if (is_file('/var/www/wiki/images/avatars/'.$author_user_id.'_m.png')) {
 			$auth_avatar = '/images/avatars/'.$author_user_id.'_m.png';

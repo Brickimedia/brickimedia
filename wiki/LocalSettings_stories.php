@@ -11,7 +11,7 @@ $wgLanguageCode = "en";
 #Skin stuff
 require_once( "$IP/skins/quartz/resources.php" );
 $wgDefaultSkin = 'quartz';
-$wgSkipSkins = array("deepsea", "lia", "standard");
+$wgSkipSkins = array("lia", "standard");
 
 
 //uploads

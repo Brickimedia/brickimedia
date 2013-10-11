@@ -217,6 +217,7 @@ class RefreshedTemplate extends BaseTemplate {
 				<h1>
 					<?php echo $myTitle; ?>
 				</h1>
+				
 			</div>
 			<div id="smalltoolboxwrapper">
 				<div id="smalltoolbox">
@@ -236,10 +237,8 @@ class RefreshedTemplate extends BaseTemplate {
 						}
 					} ?>
 				</div>
-					<a href="javascript:;"><i class="icon-ellipsis-horizontal icon-2x icon-link"></i></a>
+				<a href="javascript:;"><i class="icon-ellipsis-horizontal icon-2x icon-link"></i></a>
 			</div>
-			
-			
 			<div id="content">
 				<?php $this->html('bodytext');
 				/*
@@ -250,11 +249,12 @@ class RefreshedTemplate extends BaseTemplate {
 				 	"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
 				 	htmlspecialchars( $action['text'] ) . "</a>"; */
 				?>
+				<br clear="all" />
 			</div>
 		</div>
 		<div id="rightbar">
 			<div class="shower">
-				<i class="icon-reorder icon-2x"></i>
+				<?php echo "<img class='arrow' src='$IP/skins/refreshed/mobile-expand.png'/>"; ?>
 			</div>
 			<div id="search">
 				<form action="/index.php" method="GET">

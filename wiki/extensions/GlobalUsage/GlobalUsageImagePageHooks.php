@@ -49,15 +49,9 @@ class GlobalUsageImagePageHooks {
 		foreach ( $query->getSingleImageResult() as $wiki => $result ) {
 			$wikiName = WikiMap::getWikiName( $wiki );
 			$escWikiName = Sanitizer::escapeClass( $wikiName );
-			$wikiCodeName = substr($escWikiName, 12);
-			
-			global $bmProjectsData, $bmProjectsDataHidden;
-			$projectsData = array_merge($bmProjectsData, $bmProjectsDataHidden);
-			$wikiPrettyName = $projectsData[$wikiCodeName]['name'];
-			
 			$guHtml .= "<li class='mw-gu-onwiki-$escWikiName'>" . $context->msg(
 				'globalusage-on-wiki',
-				$targetName, $wikiPrettyName )->parse() . "\n<ul>";
+				$targetName, $escWikiName )->parse() . "\n<ul>";
 			foreach ( $result as $item ) { //NXT
 				$thing = SpecialGlobalUsage::formatItem( $item );
 				$url = "http://$wikiCodeName.brickimedia.org/wiki/$thing";

@@ -1,6 +1,11 @@
 /**
  * Vector-specific scripts
  */
+ 
+$('.mobile-nav-arrow, .nav-drop').toggle(function(){ 
+	$(this).addClass('drop-hover').next('ul').show().parent().addClass('button-hover'); }, 
+	function(){ $(this).removeClass('drop-hover').next('ul').hide().parent().removeClass('button-hover'); });
+	
 /*jQuery( function ( $ ) {
 	$( 'div.vectorMenu' ).each( function () {
 		var $el = $( this );
@@ -21,7 +26,7 @@
 } );*/
 
 /*Button Group Scripts - by ShermanTheMythran*/
-$(document).ready(function() {
+/*$(document).ready(function() {
 $('.vectorMenu').hover( function() { $('.menu ul').slideDown(); }, function() { $('.menu ul').slideUp(); } );
 $('.edit-button-group .drop').on('click', function() {
 	if ( $(this).parent('.edit-button-group').hasClass('active') ) {
@@ -70,7 +75,7 @@ $(document).ready(function() {
 	if ($.cookies.get('swapTabs') == 'tabs') {
 		$('#swapTabs').click();
 	}
-});
+});*/
 
 /**
  * Copyright (c) 2005 - 2010, James Auldridge

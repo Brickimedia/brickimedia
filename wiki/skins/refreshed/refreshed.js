@@ -81,13 +81,6 @@ $("#refreshed-toc a").each(function(){
 		//$(this).attr({'href': 'javascript:;'});
 });
 
-$("#smalltoolboxcontainer > a").click(function(){
-	$("#smalltoolbox").animate({'width': '100%'});
-	$(this).css({'display': 'none'});
-});
-
-
-
 var user = false;
 var header = false;
 var left = false;

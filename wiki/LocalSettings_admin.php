@@ -69,12 +69,73 @@ $wgShowSQLErrors = true;
 
 
 require_once("$IP/extensions/WhosGloballyOnline/WhosGloballyOnline.php");
-
 require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
 
 $wgGroupPermissions['bureaucrat']['userrights'] = true;
+$wgGroupPermissions['*']['createaccount'] = false; //nobody needs to be creating an account through the admin wiki
 
+# Namespaces for each project's private discussions
+require_once("$IP/extensions/Lockdown/Lockdown.php"); //extension to handle per-namespace restrictions of 'read' rights
+define("NS_EN", 2000);
+define("NS_CUSTOMS", 2001);
+define("NS_STORIES", 2002);
+define("NS_CUUSOO", 2003);
+define("NS_LMBW", 2004);
+$wgExtraNamespaces[NS_EN] = "Bricki";
+$wgExtraNamespaces[NS_CUSTOMS] = "Customs";
+$wgExtraNamespaces[NS_STORIES] = "Stories";
+$wgExtraNamespaces[NS_CUUSOO] = "CUUSOO";
+$wgExtraNamespaces[NS_LMBW] = "LMBW";
+#Protection for the namespaces
 $wgGroupPermissions['*']['read'] = false;
+$wgGroupPermissions['*']['edit'] = false;
 $wgGroupPermissions['user']['read'] = false;
+$wgGroupPermissions['user']['edit'] = false;
+$wgGroupPermissions['autoconfirmed']['read'] = false;
+$wgGroupPermissions['autoconfirmed']['edit'] = false;
 $wgGroupPermissions['sysop']['read'] = true;
-$wgGroupPermissions['*']['createaccount'] = true; //enable account creation
+$wgNamespaceProtection[NS_EN] = array( 'editen' );
+$wgNamespacePermissionLockdown[NS_EN]['read'] = array('brickipedia','global');
+$wgNamespacePermissionLockdown[NS_EN]['move'] = array('brickipedia','global');
+$wgNamespacePermissionLockdown[NS_EN]['delete'] = array('brickipedia','global');
+$wgNamespaceProtection[NS_CUSTOMS] = array( 'editcustoms' );
+$wgNamespacePermissionLockdown[NS_CUSTOMS]['read'] = array('customs','global');
+$wgNamespacePermissionLockdown[NS_CUSTOMS]['move'] = array('customs','global');
+$wgNamespacePermissionLockdown[NS_CUSTOMS]['delete'] = array('customs','global');
+$wgNamespaceProtection[NS_STORIES] = array( 'editstories' );
+$wgNamespacePermissionLockdown[NS_STORIES]['read'] = array('stories','global');
+$wgNamespacePermissionLockdown[NS_STORIES]['move'] = array('stories','global');
+$wgNamespacePermissionLockdown[NS_STORIES]['delete'] = array('stories','global');
+$wgNamespaceProtection[NS_CUUSOO] = array( 'editcuusoo' );
+$wgNamespacePermissionLockdown[NS_CUUSOO]['read'] = array('cuusoo','global');
+$wgNamespacePermissionLockdown[NS_CUUSOO]['move'] = array('cuusoo','global');
+$wgNamespacePermissionLockdown[NS_CUUSOO]['delete'] = array('cuusoo','global');
+$wgNamespaceProtection[NS_LMBW] = array( 'editlmbw' );
+$wgNamespacePermissionLockdown[NS_LMBW]['read'] = array('lmbw','global');
+$wgNamespacePermissionLockdown[NS_LMBW]['move'] = array('lmbw','global');
+$wgNamespacePermissionLockdown[NS_LMBW]['delete'] = array('lmbw','global');
+$wgNamespacePermissionLockdown[NS_MAIN]['edit'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_MAIN]['read'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_MAIN]['move'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_MAIN]['delete'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_HELP]['edit'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_HELP]['read'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_HELP]['move'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_HELP]['delete'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_PROJECT]['edit'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_PROJECT]['read'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_PROJECT]['move'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+$wgNamespacePermissionLockdown[NS_PROJECT]['delete'] = array('sysop','en','customs','stories','cuusoo','lmbw','global');
+#Permissions
+$wgGroupPermissions['brickipedia']['editen'] = true;
+$wgGroupPermissions['customs']['editcustoms'] = true;
+$wgGroupPermissions['stories']['editstories'] = true;
+$wgGroupPermissions['cuusoo']['editcuusoo'] = true;
+$wgGroupPermissions['lmbw']['editlmbw'] = true;
+$wgGroupPermissions['global']['editen'] = true;
+$wgGroupPermissions['global']['editcustoms'] = true;
+$wgGroupPermissions['global']['editstories'] = true;
+$wgGroupPermissions['global']['editcuusoo'] = true;
+$wgGroupPermissions['global']['editlmbw'] = true;
+#Track edits in Special:Statistics just for records
+$wgContentNamespaces = array( NS_MAIN, NS_HELP, NS_PROJECT, NS_EN, NS_CUSTOMS, NS_STORIES, NS_CUUSOO, NS_LMBW );

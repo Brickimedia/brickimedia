@@ -72,7 +72,7 @@ body {
 	font-family: "Lato Body", sans-serif;
 }
 	#content {
-		padding: 0em 1em 1em 1em;
+		padding: 0em 1em;
 		font-size: 1em;
 	}
 
@@ -163,9 +163,8 @@ body {
 	
 	.shower {
 		position: absolute;
-		height: 2.5em;
+		height: 3em;
 		cursor: pointer;
-		padding-top: .5em;
 	}
 	#leftbar .shower {
 		left: 12em;
