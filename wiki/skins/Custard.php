@@ -145,8 +145,11 @@ class CustardTemplate extends BaseTemplate
                 <?php
             } ?>
                 <div id="actions">
+                    <div class="user module medium">User</div>
                     <div class="navigation module medium">Links</div>
                     <div class="search module wide">Search</div>
+                    <div class="level module medium">Level</div>
+                    <div class="chat module medium">Chat</div>
                     <div class="watch module narrow <?php
             if ($wgTitle -> isWatchable()) {
                 if ($wgTitle -> userIsWatching($this->data["title"])) {
@@ -154,7 +157,7 @@ class CustardTemplate extends BaseTemplate
                 }
             } else {
                 echo "disabled";
-            } ?>">
+            } ?>" title="Watch">
                         <a<?php
             if ($wgTitle -> isWatchable()) {
                 if ($wgTitle -> userIsWatching($this->data["title"])) {
@@ -166,8 +169,8 @@ class CustardTemplate extends BaseTemplate
                             <svg class="eye" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                                 <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
                                 <g>
-                                    <path fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="null" d="m1.55,10c0,-0.00331 3.78149,-4.35 8.45,-4.35c4.66851,0 8.450001,4.34669 8.450001,4.35c0,0.00331 -3.78149,4.35 -8.450001,4.35c-4.66851,0 -8.45,-4.34669 -8.45,-4.35z" id="svg_1"/>
-                                    <circle fill="#000000" stroke="#3d9ec8" stroke-dasharray="null" cx="10" cy="10" r="2.5" id="svg_2"/>
+                                    <path fill="none" stroke="#BBB" stroke-width="2" stroke-dasharray="null" d="m1.55,10c0,-0.00331 3.78149,-4.35 8.45,-4.35c4.66851,0 8.450001,4.34669 8.450001,4.35c0,0.00331 -3.78149,4.35 -8.450001,4.35c-4.66851,0 -8.45,-4.34669 -8.45,-4.35z" id="svg_1"/>
+                                    <circle fill="#BBB" stroke="#3d9ec8" stroke-dasharray="null" cx="10" cy="10" r="2.5" id="svg_2"/>
                                 </g>
                             </svg>
                             <!--[if lte IE 8]>
@@ -175,9 +178,6 @@ class CustardTemplate extends BaseTemplate
                             <![endif]-->
                         </a>
                     </div>
-                    <div class="level module medium">Level</div>
-                    <div class="chat module medium">Chat</div>
-                    <div class="user module medium">User</div>
                     <div class="preferences module narrow">
                         <a href="/wiki/Special:Preferences" title="Preferences">
                             <svg class="gear" width="20" height="20" xmlns="http://www.w3.org/2000/svg">

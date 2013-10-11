@@ -5,7 +5,7 @@
 # Add functionality to bar          PHP         PARTIAL
     # User menu                                 PENDING
     # Wiki menu                                 PENDING
-    # "Follow" action                           PENDING
+    # "Follow" action                           PARTIAL         Functions properly, but should eventually work without redirecting
     # Search bar                                PENDING
     # User level                                PENDING
     # Preferences                               PARTIAL         Will eventually include popout menu with a few options and a link to Special:Preferences

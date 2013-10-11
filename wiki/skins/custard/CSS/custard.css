@@ -234,12 +234,12 @@ body {
     height: 100%;
 }
 
-#actions .watch.watched path {
-    stroke: #BBB;
+#actions .watch.watching path {
+    stroke: #000;
 }
 
-#actions .watch.watched circle {
-    fill: #BBB;
+#actions .watch.watching circle {
+    fill: #000;
 }
 
 #actions .watch.disabled path {
