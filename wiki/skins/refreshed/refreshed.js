@@ -151,8 +151,3 @@ $("#contentwrapper").click(function(){
 		toggleHeader();
 	}
 });
-
-$("#smalltoolboxcontainer > a").click(function(){
-	$("#smalltoolbox").animate({'width': '100%'});
-	$(this).css({'display': 'none'});
-});
