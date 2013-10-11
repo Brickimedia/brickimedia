@@ -168,6 +168,12 @@ return array(
 	'jquery.hoverIntent' => array(
 		'scripts' => 'resources/jquery/jquery.hoverIntent.js',
 	),
+    'jquery.jPlayer' => array(
+        'scripts' => array(
+            'resources/jquery/jquery.jPlayer.min.js',
+            'resources/jquery/jquery.jPlayer.playlist.min.js',
+        ),
+    ),
 	'jquery.json' => array(
 		'scripts' => 'resources/jquery/jquery.json.js',
 	),
