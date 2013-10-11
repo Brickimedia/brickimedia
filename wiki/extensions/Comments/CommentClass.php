@@ -292,7 +292,7 @@ class Comment {
 		);
 
 		$log = new LogPage( 'comments', true /* show in RecentChanges? */ );
-		$log->addEntry( '+ comment', $wgUser->getUserPage(), $message );
+		$log->addEntry( wfMsg( 'comment-log-add' ), $wgUser->getUserPage(), $message );
 
 		wfRunHooks( 'Comment::add', array( $this, $commentId, $this->PageID ) );
 	}
