@@ -100,7 +100,7 @@ class RefreshedTemplate extends BaseTemplate {
 		
 		//Title processing
 		$myTitle = $this->data['titletext'];
-		$myTitle = str_replace( '/', '<wbr>/<wbr>', $myTitle );
+		//$myTitle = str_replace( '/', '<wbr>/<wbr>', $myTitle );
 
 		$mySideTitle = $this->data['title'];
 		if( $this -> getSkin() -> getTitle() -> getNamespace() == 0 && substr_count( $mySideTitle, 'editing' ) == 0 ){
