@@ -53,6 +53,12 @@ body {
 	.ns-202 #maintitle {
 		display: none;
 	}
+	
+@media (min-width: 600px) {
+	.title-overlay {
+		display: none;
+	}
+}
 
 #site-notice {
 	width: 100%;
