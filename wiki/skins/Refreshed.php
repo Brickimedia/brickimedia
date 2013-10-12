@@ -216,6 +216,7 @@ class RefreshedTemplate extends BaseTemplate {
 			<div id="maintitle">
 				<h1>
 					<?php echo $myTitle; ?>
+					<h1 class="title-overlay">&nbsp;</h1>
 				</h1>
 				
 			</div>
