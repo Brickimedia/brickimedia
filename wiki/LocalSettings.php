@@ -214,7 +214,11 @@ $wgGroupPermissions['*']['createaccount'] = false; //disable account creation
 
 # UPLOADS
 # info here: http://www.mediawiki.org/wiki/Manual:Wiki_family#Use_shared_files
-$wgEnableUploads  = false;
+if ($host[0] != "meta") {
+	$wgEnableUploads  = false;
+} else {
+	$wgEnableUploads  = true;
+}
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 $wgShellLocale = "en_US.utf8";
