@@ -19,7 +19,7 @@ Setting up a local clone
 ----------
 To set up a local clone, you'll first need Apache or nginx, PHP, and MySQL installed.
 
-The webserver should be configured to where "localhost" will direct to the /brickimedia.org subfolder of the clone, and that "meta.localhost" and other subdomains should be directed to the /wiki subfolder of the clone.
+The webserver should be configured to where "localhost" will direct to the ```/brickimedia.org``` subfolder of the clone, and that "meta.localhost" and other subdomains should be directed to the ```/wiki``` subfolder of the clone.
 
 In your ```/wiki``` directory of your clone, create a new file titled ```LocalSettings_private.php```. The following code should be placed in that file:
 ```php
@@ -39,6 +39,7 @@ Next, you need to make the databases, which will be one sharing the same name as
 - ```stories```
 - ```admin```
 - ```dev```
+
 Additionally, a ```shared``` and a ```globalblocking``` database is required.
 
 Now you'll need to add extensions not held in the Brickimedia/brickimedia clone, which can be found at https://github.com/Brickimedia. Each extension should be installed according to its MediaWiki.org instructions, or in a /wiki/extensions subfolder of the name of the extension.
@@ -48,6 +49,7 @@ Next will be database tables. Access the SQL with adminer as instructed above, a
 The following tables need to be placed in the shared database:
 - ```user```
 - ```user_properties```
+
 Further tables to be included in the shared database are in the next step.
 
 Now try accessing the wiki, http://meta.locahost for example. Depending on your configuration, it may send you to a Not Found 404 page. To fix this, simply change the URL to http://meta.localhost/index.php?title=Main_Page. The page will likely display SQL errors, which will be from missing tables in the databases. To fix this, you can do one of two things. The first option is available if you can use command line:
