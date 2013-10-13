@@ -200,6 +200,7 @@ body {
 #actions {
     height: 30px;
     padding: 0 60px;
+    line-height: 30px;
 }
 
 #actions .module {
@@ -207,7 +208,6 @@ body {
     height: 100%;
     float: left;
     text-align: center;
-    line-height: 1.75em;
     background-image: -webkit-linear-gradient(bottom,#EFEFEF 0px,transparent 15px);
     background-size: 150%;
     -webkit-transition: background 250ms linear;
@@ -252,6 +252,33 @@ body {
 
 #actions svg, #actions object {
     margin-top: 5px;
+}
+
+#actions .menu {
+    visibility: hidden;
+    background: white;
+    text-align: left;
+    padding: 5px 0px 10px;
+    border-radius: 0 0 5px 5px;
+    -webkit-transition: background 250ms linear;
+}
+
+#actions .module:hover .menu {
+    visibility: visible;
+    background: #EFEFEF;
+}
+
+#actions .menu a {
+    display: block;
+    color: black;
+    padding: 0px 20px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    -webkit-transition: background 250ms linear;
+}
+
+#actions .menu a:hover {
+    background: white;
 }
 
 /* Interwiki */

@@ -24,11 +24,14 @@ $wgResourceModules['skins.custard'] = array(
         "$IP/skins/custard/CSS/custard.css" => array( 'media' => 'screen' ),
     ),
     'scripts' => array(
-        "$IP/resources/jquery/jquery.funcToggle.js",
+        "$IP/resources/jquery/jquery.funcToggle.js",            //adding temporarily because dependencies aren't working
+        "$IP/resources/jquery/jquery.jPlayer.min.js",           // ""
+        "$IP/resources/jquery/jquery.jPlayer.playlist.min.js",  // ""
         "$IP/skins/custard/JS/custard.js",
     ),
     'dependencies' => array(
-        "jquery.jPlayer",
+        //'jquery.funcToggle',
+        //'jquery.jPlayer',
     ),
     'remoteBasePath' => $GLOBALS['wgStylePath'],
     'localBasePath' => $GLOBALS['wgStyleDirectory'],
@@ -100,6 +103,8 @@ class CustardTemplate extends BaseTemplate
         global $wgTitle;
         global $wgUser;
 
+        $ip = $wgUser -> getRequest() -> getIP();
+
         function generateTab($href, $text)
         {
             echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
@@ -126,7 +131,7 @@ class CustardTemplate extends BaseTemplate
         wfSuppressWarnings();
         $this->html('headelement'); ?>
 		<?php
-        if ( $this->data['username'] == 'ShermanTheMythran' || $this->data['username'] == 'SirComputer' || $this->data['username'] == 'ToaMeiko' ) { //temp whitelisting - until skin is properly functional ?>
+        if ( $this->data['username'] == 'ShermanTheMythran' || $this->data['username'] == 'SirComputer' || $this->data['username'] == 'ToaMeiko' || $wgUser -> getName() == '127.0.0.1' ) { //temp whitelisting - until skin is properly functional ?>
             <div id="taskbar">
                 <div class="toggle">
                     <span class="text">≡</span>
@@ -148,7 +153,22 @@ class CustardTemplate extends BaseTemplate
                 <?php
             } ?>
                 <div id="actions">
-                    <div class="user module medium">User</div>
+                    <div class="user module medium">
+                        <?php echo $wgUser -> getName(); ?>
+                        <ul class="menu">
+                            <li><a href="/wiki/<?php echo str_replace(' ', '_', $wgUser -> getUserPage()); ?>">Userpage</a></li>
+                            <li><a href="/wiki/<?php echo str_replace(' ', '_', $wgUser -> getTalkPage()); ?>">Talk</a></li>
+                            <?php
+            if ($wgUser -> isLoggedIn()) { ?>
+                            <li><a href="/wiki/User_blog:<?php echo $wgUser -> getTitleKey(); ?>">Blog</a></li>
+                            <li><a href="/wiki/Special:Contributions">Contributions</a></li><?php
+            } else { ?>
+                            <li><a href="/wiki/Special:Contributions">Contributions</a></li>
+                            <li><a href="/wiki/Special:UserLogin">Sign Up / Log In</a></li><?php
+            }
+                            ?>
+                        </ul>
+                    </div>
                     <div class="navigation module medium">Links</div>
                     <div class="search module wide">Search</div>
                     <div class="level module medium">Level</div>
@@ -297,42 +317,8 @@ class CustardTemplate extends BaseTemplate
                 $this->printTrail(); ?>
             </div>
         <?php
-        } else { ?>
-            <div id="temp">
-                <div class="loader">
-                    <div class="wrap">
-                        <?php
-                            echo "<img src='$IP/skins/custard/Images/loading.gif?action=purge' /><br/>p&nbsp;l&nbsp;e&nbsp;a&nbsp;s&nbsp;e&nbsp;&nbsp;&nbsp;w&nbsp;a&nbsp;i&nbsp;t&nbsp;.&nbsp;.&nbsp;.";
-                        ?>
-                    </div>
-                </div>
-                <?php
-                    echo "<img src='$IP/skins/custard/Images/soon.jpg' alt='soon...' class='splash'/>";
-                ?>
-                <div class="infobar">
-                    <div class="tag">not yet, but soon...</div>
-                    <div class="info">
-                        <h2>What is Custard?</h2>
-                        <p>Custard is a wiki skin designed exclusively for Brickimedia, aiming to make the wiki experience as simple, clean, and streamlined as possible.</p>
-                        <h2>Why is it called that?</h2>
-                        <p>The name needed to reflect the style and feel of the concept, and the best way to do that seemed to be to choose something that was very smooth and creamy.</p>
-                        <h2>Who is making the skin?</h2>
-                        <p>Development of the skin is headed by maestro35 (aka ShermanTheMythran), but feedback from others is always welcome!</p>
-                        <h2>How can I view the skin?</h2>
-                        <p>Currently, it is whitelisted (only a select few can see it), because it is generally unstable; however, it will open to a closed beta group in the near future, in which stage it will remain until it is ready for release. Stay tuned to find out how to apply for closed beta!</p>
-                        <h2>What makes it so special?</h2>
-                        <p>Custard is being designed to feel like a contained system, meaning it will seem like an app unto itself. As conceptualized, the interface will be minimalistic, navigation will be efficient, and you will be able to access anything from anywhere at any time.</p>
-                        <h2>When will I be able to see it?</h2>
-                        <p>There are currently no set dates for stages of development, but you can keep tabs on the <a href="https://github.com/Brickimedia/brickimedia/blob/master/wiki/skins/custard/todo.txt">ToDo list</a>. Major updates will also be posted here.</p>
-                        <i>If you have any further incquiries concerning Custard, you can always leave a message on <a href="http://meta.brickimedia.org/wiki/User_talk:ShermanTheMythran">my talk page</a>. Thanks! ~Sherm</i>
-                        <br/>
-                        <div class="return">
-                            <a href="http://meta.brickimedia.org/wiki/Main_Page?useskin=refreshed">return to Meta</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <?php
+        } else {
+            include "$IP/skins/custard/whitelist.php";
         } ?>
         </body>
         </html>
