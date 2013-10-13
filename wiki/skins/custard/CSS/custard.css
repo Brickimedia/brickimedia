@@ -281,6 +281,18 @@ body {
     background: white;
 }
 
+#actions .search {
+    line-height: 1.75em;
+}
+
+#actions .search input {
+    border: none;
+    margin: 0;
+    padding: 2px 4px;
+    background: #EFEFEF;
+    border-radius: 5px;
+}
+
 /* Interwiki */
 #interwiki {
     padding-top: 30px;

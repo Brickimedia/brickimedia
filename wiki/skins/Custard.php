@@ -103,35 +103,22 @@ class CustardTemplate extends BaseTemplate
         global $wgTitle;
         global $wgUser;
 
-        $ip = $wgUser -> getRequest() -> getIP();
+        $ip = $wgUser->getRequest()->getIP();
 
         function generateTab($href, $text)
         {
             echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
         }
 
-        /*function checkWatch($href, $scope)
-        {
-            if ($wgTitle -> isWatchable()) {
-                if ($wgTitle -> userIsWatching($this->data["title"]) && $scope == 'selector') {
-                    echo "watching";
-                } else if ($wgTitle -> userIsWatching($this->data["title"]) && $scope == 'action') {
-                    echo " href='?action=unwatch'";
-                } else if (!$wgTitle -> userIsWatching($this->data["title"]) && $scope == 'action') {
-                    echo " href='?action=watch'";
-                }
-            } else {
-                if ($scope == 'selector') {
-                    echo "disabled";
-                }
-            }
-        }*/
-
         // Suppress warnings to prevent notices about missing indexes in $this->data
         wfSuppressWarnings();
         $this->html('headelement'); ?>
 		<?php
-        if ( $this->data['username'] == 'ShermanTheMythran' || $this->data['username'] == 'SirComputer' || $this->data['username'] == 'ToaMeiko' || $wgUser -> getName() == '127.0.0.1' ) { //temp whitelisting - until skin is properly functional ?>
+        if ( $this->data['username'] == 'ShermanTheMythran'
+            || $this->data['username'] == 'SirComputer'
+            || $this->data['username'] == 'ToaMeiko'
+            || $wgUser->getName() == '127.0.0.1'
+        ) { //temp whitelisting - until skin is properly functional ?>
             <div id="taskbar">
                 <div class="toggle">
                     <span class="text">≡</span>
@@ -169,10 +156,17 @@ class CustardTemplate extends BaseTemplate
                             ?>
                         </ul>
                     </div>
-                    <div class="navigation module medium">Links</div>
-                    <div class="search module wide">Search</div>
+                    <div class="navigation module medium">Navigation</div>
+                    <div class="tools module medium">Tools</div>
+                    <div class="search module medium">
+                        <div id="search">
+				            <form action="/index.php" method="GET">
+					            <input type="text" name="search" placeholder="search" />
+				            </form>
+			            </div>
+                    </div>
                     <div class="level module medium">Level</div>
-                    <div class="chat module medium">Chat</div>
+                    <div class="chat module narrow">Chat</div>
                     <div class="watch module narrow <?php
             if ($wgTitle -> isWatchable()) {
                 if ($wgTitle -> userIsWatching($this->data["title"])) {
