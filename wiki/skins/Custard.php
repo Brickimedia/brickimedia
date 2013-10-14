@@ -39,28 +39,6 @@ $wgResourceModules['skins.custard'] = array(
 );
 
 /**
- * New tab-generation function
- *
-function generateTab($href, $text)
-{
-    echo '<li><a href="'.$href.'">'.$text.'</a><span class="invert"></span></li>';
-}
-
-function isWatchable()
-{
-    if (!$wgTitle -> isWatchable()) {
-        echo "disabled";
-    }
-}
-
-function isWatching()
-{
-    if ($wgTitle -> userIsWatching($this->data["title"])) {
-        echo "class='watching'";
-    }
-}*/
-
-/**
  * Skin file for skin My Skin.
  *
  * @file
@@ -117,7 +95,7 @@ class CustardTemplate extends BaseTemplate
         if ( $this->data['username'] == 'ShermanTheMythran'
             || $this->data['username'] == 'SirComputer'
             || $this->data['username'] == 'ToaMeiko'
-            || $wgUser->getName() == '127.0.0.1'
+            || $this->data['username'] == 'Root'
         ) { //temp whitelisting - until skin is properly functional ?>
             <div id="taskbar">
                 <div class="toggle">
@@ -151,12 +129,96 @@ class CustardTemplate extends BaseTemplate
                             <li><a href="/wiki/Special:Contributions">Contributions</a></li><?php
             } else { ?>
                             <li><a href="/wiki/Special:Contributions">Contributions</a></li>
-                            <li><a href="/wiki/Special:UserLogin">Sign Up / Log In</a></li><?php
+                            <li><a href="/wiki/Special:UserLogin">Log In</a></li>
+                            <li><a href="/wiki/Special:UserLogin/signup">Sign Up</a></li><?php
             }
                             ?>
                         </ul>
                     </div>
-                    <div class="navigation module medium">Navigation</div>
+                    <div class="navigation module medium">
+                        Navigation
+                        <ul class="menu">
+                            <?php
+                                //echo wfMessage('navigation')->text();
+                                //$nav = explode('/n', wfMessage('Navigation')->parse);
+                                // OKAY, so it appears that messages (MediaWiki:Pagename) aren't quite working out just yet.
+                                // So what I'll do is temporarily import the raw text from the page.
+                                // The only real drawback is that it won't parse.
+                                $nav = explode('/n', file_get_contents("$IP/index.php?title=MediaWiki:Navigation&action=raw"));
+                                $lastUsed = 0;
+            for ($navNum = 0; $navNum <= count($nav); $navNum++) {
+                if (substr($nav[$navNum], 0, 1) == '*') {
+                    if (substr($nav[$navNum], 0, 2) == '**') {
+                        if (substr($nav[$navNum], 0, 3) == '***') {
+                            switch ($lastUsed) {
+                            case 0:
+                                echo '<li>undefined<ul class="submenu1"><li>undefined<ul class="submenu2">';
+                                break;
+                            case 1:
+                                echo '<ul class="submenu1"><li>undefined<ul class="submenu2">';
+                                break;
+                            case 2:
+                                echo '<ul class="submenu2">';
+                                break;
+                            case 3:
+                                echo '</li>';
+                                break;
+                            }
+                            if (!stristr($nav[$navNum], '|')) {
+                                $nav[$navNum] .= '|' . $nav[$navNum];
+                            }
+                            $itemArray = explode('|', $nav[$navNum]);
+                            echo '<li><a href="/wiki/'.str_replace(' ', '_', $itemArray[0]).'">'.$itemArray[1].'</a>';
+                            $lastUsed = 3;
+                        } else {
+                            switch ($lastUsed) {
+                            case 0:
+                                echo '<li>undefined<ul class="submenu1">';
+                                break;
+                            case 1:
+                                echo '<ul class="menu">';
+                                break;
+                            case 2:
+                                echo '</li>';
+                                break;
+                            case 3:
+                                echo '</li></ul>';
+                                break;
+                            }
+                            if (!stristr($nav[$navNum], '|')) {
+                                $nav[$navNum] .= '|' . $nav[$navNum];
+                            }
+                            $itemArray = explode('|', $nav[$navNum]);
+                            echo '<li><a href="/wiki/'.str_replace(' ', '_', $itemArray[0]).'">'.$itemArray[1].'</a>';
+                            $lastUsed = 2;
+                        }
+                    } else {
+                        switch ($lastUsed) {
+                        case 0:
+                            echo '';
+                            break;
+                        case 1:
+                            echo '</li>';
+                            break;
+                        case 2:
+                            echo '</li></ul>';
+                            break;
+                        case 3:
+                            echo '</li></ul></li></ul>';
+                            break;
+                        }
+                        if (!stristr($nav[$navNum], '|')) {
+                            $nav[$navNum] .= '|' . $nav[$navNum];
+                        }
+                        $itemArray = explode('|', $nav[$navNum]);
+                        echo '<li><a href="/wiki/'.str_replace(' ', '_', $itemArray[0]).'">'.$itemArray[1].'</a>';
+                        $lastUsed = 1;
+                    }
+                }
+            }
+                            ?>
+                        </ul>
+                    </div>
                     <div class="tools module medium">Tools</div>
                     <div class="search module medium">
                         <div id="search">
@@ -312,7 +374,7 @@ class CustardTemplate extends BaseTemplate
             </div>
         <?php
         } else {
-            include "$IP/skins/custard/whitelist.php";
+            require "$IP/skins/custard/whitelist.php";
         } ?>
         </body>
         </html>
