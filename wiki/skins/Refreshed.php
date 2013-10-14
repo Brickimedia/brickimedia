@@ -100,7 +100,7 @@ class RefreshedTemplate extends BaseTemplate {
 		
 		//Title processing
 		$myTitle = $this->data['titletext'];
-		$myTitle = str_replace( '/', '<wbr>/<wbr>', $myTitle );
+		//$myTitle = str_replace( '/', '<wbr>/<wbr>', $myTitle );
 
 		$mySideTitle = $this->data['title'];
 		if( $this -> getSkin() -> getTitle() -> getNamespace() == 0 && substr_count( $mySideTitle, 'editing' ) == 0 ){
@@ -230,14 +230,14 @@ class RefreshedTemplate extends BaseTemplate {
 					$firstAction = true;
 					foreach ( $this->data['content_actions'] as $action ){
 						if (!$firstAction) {
-							echo "<a href='" . htmlspecialchars( $action['href'] ) . "'><i class='icon-2x icon-link' id='icon-" . $action['id'] . "'></i></a>";
+							echo "<a href='" . htmlspecialchars( $action['href'] ) . "'><i class='icon-2x link-icon' id='icon-" . $action['id'] . "'></i></a>";
 						} else {
 							echo NULL;
 							$firstAction = false;
 						}
 					} ?>
 				</div>
-				<a href="javascript:;"><i class="icon-ellipsis-horizontal icon-2x icon-link"></i></a>
+				<a href="javascript:;"><i class="link-icon" id="icon-more"></i></a>
 			</div>
 			<div id="content">
 				<?php $this->html('bodytext');
@@ -249,11 +249,12 @@ class RefreshedTemplate extends BaseTemplate {
 				 	"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
 				 	htmlspecialchars( $action['text'] ) . "</a>"; */
 				?>
+				<br clear="all" />
 			</div>
 		</div>
 		<div id="rightbar">
 			<div class="shower">
-				<?php echo "<img class='arrow' src='$IP/skins/refreshed/mobile-expand.png'/>"; ?>
+				<?php echo "<i class='icon-reorder icon-2x icon-link'></i>"; ?>
 				<i class="icon-reorder icon-2x"></i>
 			</div>
 			<div id="search">
