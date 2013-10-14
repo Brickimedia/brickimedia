@@ -46,12 +46,3 @@ _gaq.push(['_trackPageview']);
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 /* END GOOGLE ANALYTICS CODE */
-
-/* START GOOGLE AD CODE */
-<!--
-google_ad_client = "ca-pub-9543775174763951";
-google_ad_slot = "9998611139";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-/* END GOOGLE AD CODE */

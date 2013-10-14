@@ -62,6 +62,9 @@ $wgUserProfileDisplay['stats'] = true;
 #global file descriptors
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 
+#Verbatim tag
+require_once("$IP/extensions/Verbatim/verbatim.php");
+
 #beta test group
 $wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
 $wgGroupPermissions['*']['read'] = false;

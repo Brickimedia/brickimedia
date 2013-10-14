@@ -100,7 +100,7 @@ class RefreshedTemplate extends BaseTemplate {
 		
 		//Title processing
 		$myTitle = $this->data['titletext'];
-		$myTitle = str_replace( '/', '<wbr>/<wbr>', $myTitle );
+		//$myTitle = str_replace( '/', '<wbr>/<wbr>', $myTitle );
 
 		$mySideTitle = $this->data['title'];
 		if( $this -> getSkin() -> getTitle() -> getNamespace() == 0 && substr_count( $mySideTitle, 'editing' ) == 0 ){
@@ -216,6 +216,7 @@ class RefreshedTemplate extends BaseTemplate {
 			<div id="maintitle">
 				<h1>
 					<?php echo $myTitle; ?>
+					<h1 class="title-overlay">&nbsp;</h1>
 				</h1>
 				
 			</div>
@@ -249,6 +250,7 @@ class RefreshedTemplate extends BaseTemplate {
 				 	"href='" . htmlspecialchars( $action['href'] ) . "'>" . 
 				 	htmlspecialchars( $action['text'] ) . "</a>"; */
 				?>
+				<br clear="all" />
 			</div>
 		</div>
 		<div id="rightbar">
