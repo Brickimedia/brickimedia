@@ -19,6 +19,14 @@
 	src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url'brickimedia.org/resources/fonts/font-awesome/fontawesome-webfont.eot?v=3.2.1');
+  src: url('brickimedia.org/resources/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('brickimedia.org/resources/fonts/font-awesome/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('brickimedia.org/resources/fonts/font-awesome/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('brickimedia.org/resources/fonts/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
 	font-family: "Lato", sans-serif;
 	margin: 0;
@@ -54,6 +62,12 @@ body {
 		display: none;
 	}
 
+@media (min-width: 600px) {
+	.title-overlay {
+		display: none;
+	}
+}
+
 #site-notice {
 	width: 100%;
 	text-align: center;
@@ -72,7 +86,7 @@ body {
 	font-family: "Lato Body", sans-serif;
 }
 	#content {
-		padding: 0em 1em 1em 1em;
+		padding: 0em 1em;
 		font-size: 1em;
 	}
 
@@ -171,6 +185,8 @@ body {
 	}
 	#rightbar .shower {
 		right: 12em;
+		height: 2.5em;
+		padding-top: .5em;
 	}
 	
 #refreshed-toc {

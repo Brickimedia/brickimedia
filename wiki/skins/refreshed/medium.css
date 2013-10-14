@@ -19,6 +19,9 @@
 #leftbar .shower {
 	display: none;
 }
+#rightbar .shower {
+	margin-right: 0.5em;
+}
 #siteinfo .headermenu,
 #siteinfo > a {
 	margin-left: calc(50% - 1em);

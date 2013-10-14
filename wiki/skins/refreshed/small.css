@@ -1,3 +1,4 @@
+
 /* anything 600px and under - phones */
 
 #leftbar {
@@ -15,14 +16,42 @@
 	#userinfo > a span {
 		max-width: 4.2em;
 	}
-	
+
+#maintitle {
+	width: 100%;
+	position: relative;
+}
+
+#maintitle h1 {
+	overflow-x: scroll;
+	white-space: nowrap;
+	padding-right: 7px;
+}
+
+.title-overlay {
+	overflow-x: visible !important;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) -98%, rgba(255,255,255,0.95) 52%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(-98%,rgba(255,255,255,0)), color-stop(52%,rgba(255,255,255,0.95)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) -98%,rgba(255,255,255,0.95) 52%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(255,255,255,0) -98%,rgba(255,255,255,0.95) 52%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) -98%,rgba(255,255,255,0.95) 52%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(255,255,255,0) -98%,rgba(255,255,255,0.95) 52%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
 .shower {
 	padding-right: .75em;
 }
 
+#rightbar .shower {
+	margin-right: 0em;
+}
 #maintitle h1 {
     border-color: #eaeaea;
-    margin-bottom: 5px;
+    margin-bottom: 9px;
 }
 
 #smalltoolboxwrapper {
@@ -37,12 +66,12 @@
     display: inline-block;
 }
 
-.icon-link {
+.link-icon {
     text-decoration: none;
 }
 
 #icon-ca-talk:before {
-    content: "\f086";
+    content: "\f075";
 }
 
 #icon-ca-talk {
@@ -70,6 +99,21 @@
     margin-left: .5em;
     font-size: 30px;
     color: black;
+}
+
+#icon-more:before {
+  content: "\f141";
+}
+
+#icon-more {
+  margin-left: .2em;
+  color: black;
+  font-size: 2em;
+  vertical-align: 7.5%;
+}
+
+#ca-addsection {
+    display: none;
 }
 
 #icon-ca-history:before {
