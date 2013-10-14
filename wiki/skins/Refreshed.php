@@ -51,19 +51,13 @@ class SkinRefreshed extends SkinTemplate {
 		$this->stylename = 'refreshed';
 		$this->template  = 'RefreshedTemplate';
 
-		//$out->addModules( 'skins.refrehsed' );
 		$out->addModuleScripts( 'skins.refreshed' );
-
-		//$out->addScriptFile( "../refreshed/refreshed.js" );
-		//$out->addScriptFile( "http://adams-site.x10.mx/nxtest/load.php?debug=false&lang=en&modules=skins.refreshed&only=scripts&skin=deepsea&*" );
 
 		$out->addMeta('viewport', 'width=device-width');
 	}
 	function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
-		// Append to the default screen common & print styles...
-		//$out->addStyle( 'refreshed/main.css', 'screen' );
-
+		
 		$out->addModuleStyles( 'skins.refreshed' );
 	}
 }
@@ -72,8 +66,6 @@ class RefreshedTemplate extends BaseTemplate {
 
 	public function execute() {
 		global $wgRequest, $refreshedTOC;
-
-		$skin = $this->data['skin'];
 
 		// suppress warnings to prevent notices about missing indexes in $this->data
 		wfSuppressWarnings();
@@ -122,7 +114,6 @@ class RefreshedTemplate extends BaseTemplate {
 			'cuusoo' => "<img src='$IP/skins/refreshed/cuusoo.png' />",
 			'admin' => "<img height=22 src='$IP/skins/refreshed/admin.png' />",
 			'dev' => "<img height=26 src='$IP/skins/refreshed/dev.png' />"
-			
 		);
 
 		global $bmProject;
@@ -133,7 +124,6 @@ class RefreshedTemplate extends BaseTemplate {
 				<?php  echo $logos[$bmProject];
 					unset( $logos[$bmProject] );
 					echo "<img class='arrow' src='$IP/skins/refreshed/arrow.png'/>";
-					//echo "bm:$bmProject:";
 				?>
 			</a>
 			<ul class="headermenu" style="display:none;">
@@ -144,7 +134,6 @@ class RefreshedTemplate extends BaseTemplate {
 						echo "</a>";
 					}
 				?>
-
 			</ul>
 		</div>
 	</div>
@@ -179,7 +168,6 @@ class RefreshedTemplate extends BaseTemplate {
 					?>
 				</ul>
 				<img class="avatar" />
-				<?php //var_dump( $this->getPersonalTools() ); ?>
 			</div>
 			<div id="leftbar-main">
 				<div id="leftbar-top">
@@ -265,9 +253,7 @@ class RefreshedTemplate extends BaseTemplate {
 			<div id="rightbar-main">
 				<div id="rightbar-top">
 					<div id="siteactions">
-						<?php 
-						//var_dump( $this->data['sidebar'] );
-	
+						<?php
 						unset( $this->data['sidebar']['SEARCH'] );
 						unset( $this->data['sidebar']['TOOLBOX'] );
 						unset( $this->data['sidebar']['LANGUAGES'] );
@@ -295,8 +281,7 @@ class RefreshedTemplate extends BaseTemplate {
 		</div>
 	</div>
 	<div id="footer">
-		<?php 
-		//var_dump( $this->getFooterLinks() );
+		<?php
 		foreach( $this->getFooterLinks() as $category => $links ){
 			$this->html( $category );
 			$noskip = false;
@@ -321,11 +306,7 @@ class RefreshedTemplate extends BaseTemplate {
 		}
 		?>
 	</div>
-	<div style="display:none;"> <?php //var_dump( $this ); ?> </div>
 	<?php $this->html('bottomscripts');?>
-		
-		
-		
 <?php 		
 	}
 }
