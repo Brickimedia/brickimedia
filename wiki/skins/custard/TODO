@@ -3,7 +3,7 @@
 # Fix page height excess            CSS         DONE            Height now displays properly in all document and window sizes
 # Add article title                 PHP         DONE            Article title is aligned symmetrically with page corner
 # Add functionality to bar          PHP         PARTIAL
-    # User menu                                 PENDING
+    # User menu                                 PARTIAL         Having trouble calling messages
     # Wiki menu                                 PENDING
     # "Follow" action                           PARTIAL         Functions properly, but should eventually work without redirecting
     # Search bar                                PENDING
