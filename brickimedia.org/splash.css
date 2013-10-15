@@ -87,6 +87,11 @@ body {
 		display: none !important; /* Hide the ad when the screen resolution is too small to fit it */
 	}
 }
+@media screen and (max-width: 750px) {
+	#ad {
+		display: none; /* Hide the ad when it is too wide for the window */
+	}
+}
 
 .tab {
 	width: 33%;
