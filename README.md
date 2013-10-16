@@ -11,6 +11,7 @@ To Do
 ----------
 - Finish refreshed default Brickimedia skin
 - Finish custard Brickimedia skin
+- Create mobile interface for WikiEditor extension
 - Change Brickimedia-specific items in our skins to variables for open source
 - Upgrade to MediaWiki 1.22
 - Install Echo globally
