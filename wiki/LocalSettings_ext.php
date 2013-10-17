@@ -49,22 +49,6 @@ $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 $wgDefaultUserOptions['wikieditor-preview'] = 1;
 $wgDefaultUserOptions['wikieditor-publish'] = 0;
 
-# File Types
-$wgFileExtensions = array( 'png','gif','jpg','jpeg','svg','mp4','mov','flv','psd','ogg','pdf','ogv','odt','bmp','bmp.png' );
-
-# SVG Rendering
-$wgAllowTitlesInSVG = true;
-$wgSVGConverters = array(
-		'ImageMagick' => '$path/convert -background transparent -thumbnail $widthx$height\! $input PNG:$output',
-		'sodipodi' => '$path/sodipodi -z -w $width -f $input -e $output',
-		'inkscape' => '$path/inkscape -z -w $width -f $input -e $output',
-		'batik' => 'java -Djava.awt.headless=true -jar $path/batik-1.7/batik-rasterizer.jar -w $width -d $output $input',
-		'rsvg' => '$path/rsvg -w$width -h$height $input $output',
-		'imgserv' => '$path/imgserv-wrapper -i svg -o png -w$width $input $output'
-);
-$wgSVGConverter = 'batik';
-$wgSVGConverterPath = "/usr/local/bin";
-
 # Vector Skin
 require_once( "$IP/extensions/Vector/Vector.php" );
 $wgVectorUseSimpleSearch = true;
