@@ -242,4 +242,6 @@ $wgUseInstantCommons = false;
 $wgFileExtensions = array( 'png','gif','jpg','jpeg','svg','mp4','mov','flv','psd','ogg','pdf','ogv','odt','bmp','bmp.png' );
 
 # SVG Rendering
-$wgSVGConverter = 'ImageMagick';
+$wgSVGConverters = array(
+	'ImageMagick' => '$path/convert -background transparent -thumbnail $widthx$height\! $input PNG:$output'
+);
