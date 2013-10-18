@@ -5,7 +5,7 @@ $wgSitename      = "Brickipedia";
 $wgMetaNamespace = "Brickipedia";
 
 $wgDBprefix         = "";
-$wgLogo             = "http://www.brickimedia.org/Brickipedia-Wiki-Logo.png";
+$wgLogo             = "http://meta.brickimedia.org/images/a/ab/Brickipedia-Wiki-Logo.png";
 $wgFavicon          = "http://www.brickimedia.org/favicon.ico";
 
 $wgLanguageCode = "en";
