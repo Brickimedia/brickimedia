@@ -1,37 +1,62 @@
 /* Exo font for use on Brickimedia */
 @font-face {
-	font-family: Exo;
+	font-family: 'Exo';
+	src: url('http://www.brickimedia.org/resources/fonts/exo/Exo-Regular.eot') format('embedded-opentype'),
+		url('http://www.brickimedia.org/resources/fonts/exo/Exo-Regular.woff') format('woff'),
+		url('http://www.brickimedia.org/resources/fonts/exo/Exo-Regular.otf') format('opentype');
 	font-style: normal;
 	font-weight: normal;
+<<<<<<< HEAD
 	src: url(http://www.brickimedia.org/resources/fonts/exo/Exo-Regular.woff),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Regular.otf),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Regular.eot),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Regular.ttf);
+=======
+>>>>>>> 1ba51fd2762fccefd6d12dc74b0793d97898ba54
 }
 @font-face {
-	font-family: Exo;
+	font-family: 'Exo';
+	src: url('http://www.brickimedia.org/resources/fonts/exo/Exo-Regular-Italic.eot') format('embedded-opentype'),
+		url('http://www.brickimedia.org/resources/fonts/exo/Exo-Regular-Italic.woff') format('woff'),
+		url('http://www.brickimedia.org/resources/fonts/exo/Exo-Regular-Italic.otf') format('opentype');
 	font-style: italic;
 	font-weight: normal;
+<<<<<<< HEAD
 	src: url(http://www.brickimedia.org/resources/fonts/exo/Exo-Regular-Italic.woff),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Regular-Italic.otf),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Regular-Italic.eot),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Regular-Italic.ttf);
+=======
+>>>>>>> 1ba51fd2762fccefd6d12dc74b0793d97898ba54
 }
 @font-face {
-	font-family: Exo;
+	font-family: 'Exo';
+	src: url('http://www.brickimedia.org/resources/fonts/exo/Exo-Bold.eot') format('embedded-opentype'),
+		url('http://www.brickimedia.org/resources/fonts/exo/Exo-Bold.woff') format('woff'),
+		url('http://www.brickimedia.org/resources/fonts/exo/Exo-Bold.otf') format('opentype');
 	font-style: normal;
 	font-weight: bold;
+<<<<<<< HEAD
 	src: url(http://www.brickimedia.org/resources/fonts/exo/Exo-Bold.woff),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Bold.otf),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Bold.eot),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Bold.ttf);
+=======
+>>>>>>> 1ba51fd2762fccefd6d12dc74b0793d97898ba54
 }
 @font-face {
-	font-family: Exo;
+	font-family: 'Exo';
+	src: url('http://www.brickimedia.org/resources/fonts/exo/Exo-Bold-Italic.eot') format('embedded-opentype'),
+		url('http://www.brickimedia.org/resources/fonts/exo/Exo-Bold-Italic.woff') format('woff'),
+		url('http://www.brickimedia.org/resources/fonts/exo/Exo-Bold-Italic.otf') format('opentype');
 	font-style: italic;
 	font-weight: bold;
+<<<<<<< HEAD
 	src: url(http://www.brickimedia.org/resources/fonts/exo/Exo-Bold-Italic.woff),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Bold-Italic.otf),
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Bold-Italic.eot);
 		 url(http://www.brickimedia.org/resources/fonts/exo/Exo-Bold-Italic.ttf);
 }
+=======
+}
+>>>>>>> 1ba51fd2762fccefd6d12dc74b0793d97898ba54

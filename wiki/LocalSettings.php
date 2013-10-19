@@ -212,7 +212,7 @@ $wgGroupPermissions['user']['edit'] = true;
 
 $wgGroupPermissions['*']['createaccount'] = false; //disable account creation
 
-# UPLOADS
+# UPLOADS AND OTHER FILE STUFF ******************************
 # info here: http://www.mediawiki.org/wiki/Manual:Wiki_family#Use_shared_files
 if ($host[0] != "meta") {
 	$wgEnableUploads  = false;
@@ -237,3 +237,11 @@ $wgUploadNavigationUrl = "http://meta.$bmServerBase/wiki/Special:Upload";
 $wgUploadMissingFileUrl = "http://meta.$bmServerBase/wiki/Special:Upload";
 
 $wgUseInstantCommons = false;
+
+# File Types
+$wgFileExtensions = array( 'png','gif','jpg','jpeg','svg','mp4','mov','flv','psd','ogg','pdf','ogv','odt','bmp','bmp.png' );
+
+# SVG Rendering
+$wgSVGConverters = array(
+	'ImageMagick' => '$path/convert -background transparent -thumbnail $widthx$height\! $input PNG:$output'
+);

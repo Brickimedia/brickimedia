@@ -54,7 +54,7 @@ class GlobalUsageImagePageHooks {
 				$targetName, $escWikiName )->parse() . "\n<ul>";
 			foreach ( $result as $item ) { //NXT
 				$thing = SpecialGlobalUsage::formatItem( $item );
-				$url = "http://$wikiCodeName.brickimedia.org/wiki/$thing";
+				$url = "http://$escWikiName.brickimedia.org/wiki/$thing";
   				
 				$guHtml .= "<li><a name=\"test\" href=\"$url\">$thing</a></li>\n";
 				

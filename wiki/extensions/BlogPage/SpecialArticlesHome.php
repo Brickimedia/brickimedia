@@ -67,10 +67,6 @@ class ArticlesHome extends SpecialPage {
 		$output .= '<p class="main-page-sub-links"><a href="' .
 			SpecialPage::getTitleFor( 'CreateBlogPost' )->escapeFullURL() . '">' .
 			wfMsg( 'ah-write-article' ) . '</a> - <a href="' .
-				// original used date( 'F j, Y' ) which returned something like
-				// December 5, 2008
-				Title::makeTitle( NS_CATEGORY, $today )->escapeFullURL() . '">' .
-				wfMsg( 'ah-todays-articles' ) . '</a> - <a href="' .
 				Title::newMainPage()->escapeFullURL() . '">' .
 					wfMsg( 'mainpage' ) . '</a></p>' . "\n\n";
 
