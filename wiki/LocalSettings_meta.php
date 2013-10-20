@@ -48,6 +48,7 @@ $wgNamespacesWithSubpages[104] = true;            //subpages enabled for the foo
 
 //uploading
 $wgEnableUploads = true;
+$wgMaxUploadSize = 1024*1024*8;
 
 #SocialProfile
 require_once( "$IP/extensions/SocialProfile/SocialProfile.php" );
