@@ -135,7 +135,7 @@ class SpecialUpload extends SpecialPage {
 	public function execute( $par ) {
 		$host = explode( ".", $_SERVER["HTTP_HOST"] );
 		if ($host[0] != "meta") {
-                        $this->getOutput()->redirect( 'http://meta.brickimedia.org/wiki/Special:Upload' );
+                        $this->getOutput()->redirect( 'http://meta.$bmServerBase/wiki/Special:Upload' );
                         return;
                 }
 		$this->setHeaders();
