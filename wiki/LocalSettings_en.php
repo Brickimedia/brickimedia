@@ -33,8 +33,6 @@ require_once("$IP/extensions/are/ArticleRatings.php");
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer', 'import' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer', 'import' );
 
-$wgEnableUploads  = false; //DO NOT CHANGE!! Please tell NXT if you need to upload directly onto a project.
-
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
 $smwgNamespacesWithSemanticLinks = array(
 	              NS_MAIN => true,
