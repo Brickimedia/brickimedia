@@ -21,8 +21,6 @@ $wgGroupPermissions['autoconfirmed']['edit'] = true;
 $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;
 
-$wgEnableUploads  = false; //DO NOT CHANGE!! Please tell NXT if you need to upload directly onto a project.
-
 #beta test group
 $wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
 $wgGroupPermissions['*']['read'] = false;
