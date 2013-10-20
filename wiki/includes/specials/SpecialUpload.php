@@ -133,6 +133,11 @@ class SpecialUpload extends SpecialPage {
 	 * Special page entry point
 	 */
 	public function execute( $par ) {
+		$host = explode( ".", $_SERVER["HTTP_HOST"] );
+		if ($host[0] != "meta") {
+                        $this->getOutput()->redirect( 'http://meta.brickimedia.org/wiki/Special:UploadAvatar' );
+                        return;
+                }
 		$this->setHeaders();
 		$this->outputHeader();
 
