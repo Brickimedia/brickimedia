@@ -19,8 +19,6 @@ require_once("$IP/extensions/are/ArticleRatings.php");
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'reviewer', 'forumadmin' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'reviewer', 'forumadmin' );
 
-$wgEnableUploads  = false; //DO NOT CHANGE!! Please tell NXT, or at least log it if you need to upload directly onto a project.
-
 //Semantic MediaWiki -- Do not touch unless you know what you are doing
 require_once( "$IP/extensions/Validator/Validator.php" );
 include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
