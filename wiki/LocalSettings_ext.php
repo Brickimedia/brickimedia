@@ -80,26 +80,7 @@ function lfTOULink( $sk, &$tpl ) {
         $tpl->data['footerlinks']['places'][] = 'termsofuse';
         return true;
 }
-$messages['en'] = array(
-	'termsofuse' => 'Terms of Use',
-	'termsofusepage' => 'm:Terms of Use'
-);
-$messages['fr'] = array(
-	'termsofuse' => 'Conditions d\'utilisation',
-	'termsofusepage' => 'm:Terms of Use'
-);
-$messages['de'] = array(
-	'termsofuse' => 'Nutzungsbedingungen',
-	'termsofusepage' => 'm:Terms of Use'
-);
-$messages['pl'] = array(
-	'termsofuse' => 'Zasady UÅ¼ytkowania',
-	'termsofusepage' => 'm:Terms of Use'
-);
-$messages['jp'] = array(
-	'termsofuse' => 'åˆ©ç”¨è¦�ç´„',
-	'termsofusepage' => 'm:Terms of Use'
-);
+$wgExtensionMessagesFiles['TermsOfUse'] = dirname( __FILE__ ) . '/extensions/i18n/TermsOfUse.i18n.php';
 
 
 #Autoconfirmed
