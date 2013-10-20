@@ -13,12 +13,6 @@ require_once( "$IP/skins/quartz/resources.php" );
 $wgDefaultSkin = 'quartz';
 $wgSkipSkins = array("lia", "standard");
 
-
-//uploads
-$wgEnableUploads  = false; //DO NOT CHANGE!! Please tell NXT if you need to upload directly onto a project.
-$wgUploadNavigationUrl = "http://meta.brickimedia.org/wiki/Special:Upload";
-$wgUploadMissingFileUrl= "http://meta.brickimedia.org/wiki/Special:Upload";
-
 #SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");
 require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
