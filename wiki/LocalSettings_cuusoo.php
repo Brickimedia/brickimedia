@@ -12,11 +12,6 @@ $wgLanguageCode = "en";
 
 $wgDefaultSkin = 'deepsea';
 
-$wgEnableUploads  = true;
-
-$wgUploadNavigationUrl = "http://meta.brickimedia.org/wiki/Special:Upload";
-$wgUploadMissingFileUrl= "http://meta.brickimedia.org/wiki/Special:Upload";
-
 #SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");
 require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
