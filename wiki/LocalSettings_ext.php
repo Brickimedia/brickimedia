@@ -82,6 +82,8 @@ function lfTOULink( $sk, &$tpl ) {
 }
 $wgExtensionMessagesFiles['TermsOfUse'] = dirname( __FILE__ ) . '/extensions/i18n/TermsOfUse.i18n.php';
 
+#Messages
+$wgExtensionMessagesFiles['defaultMessages'] = dirname( __FILE__ ) . '/extensions/i18n/defaultMessages.i18n.php';
 
 #Autoconfirmed
 $wgAutoConfirmAge = 86400*3;
