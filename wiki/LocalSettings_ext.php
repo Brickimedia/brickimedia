@@ -18,6 +18,9 @@ require_once("$IP/extensions/GlobalBlocking/GlobalBlocking.php");
 require_once("$IP/extensions/globaluserrights.php");
 require_once("$IP/extensions/EditUser/EditUser.php");
 
+#Uploads
+$wgEnableUploads = true;
+
 #Stop those spammers!
 require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
 #...without reCAPTCHA. --southerner
