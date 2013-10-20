@@ -14,8 +14,6 @@ $wgDefaultSkin = 'deepsea';
 
 $wgEnableUploads  = true;
 
-//uploading
-$wgEnableUploads = false;
 $wgUploadNavigationUrl = "http://meta.brickimedia.org/wiki/Special:Upload";
 $wgUploadMissingFileUrl= "http://meta.brickimedia.org/wiki/Special:Upload";
 
