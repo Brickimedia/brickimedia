@@ -10,9 +10,6 @@ $wgFavicon          = "http://www.brickimedia.org/favicon.ico";
 
 $wgLanguageCode = "en";
 
-//uploads
-$wgEnableUploads  = false; //DO NOT CHANGE!! Please tell NXT if you need to upload directly onto a project.
-
 //forums
 require_once("$IP/extensions/WikiForum/WikiForum.php");
 
