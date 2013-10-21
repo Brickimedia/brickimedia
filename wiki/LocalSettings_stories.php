@@ -11,7 +11,7 @@ $wgLanguageCode = "en";
 #Skin stuff
 require_once( "$IP/skins/quartz/resources.php" );
 $wgDefaultSkin = 'quartz';
-$wgSkipSkins = array("lia", "standard");
+$wgSkipSkins = array("lia", "liamobile", "standard");
 
 #SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");
