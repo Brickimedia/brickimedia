@@ -1,18 +1,18 @@
 body, div#mw-panel {
-        background-color: #89959E;
+        background-color: #412300;
 }
 
 #p-personal li, #p-media li, div.vectorTabs li, div.vectorMenu, #p-search,
 div#mw-panel div.portal div.body ul li, .vectorMenu li, #p-search-mobile,
 #expander, .submenu a {
-        background-color: #C7C7C7;
+        background-color: #884900;
 }
 
 div.vectorTabs li.selected {
         background-color: #FFFFFF;
 }
 div.vectorMenu ul {
-        border: solid 1px #C7C7C7;
+        border: solid 1px #884900;
 }
 
 /* no longer :visited */
