@@ -238,3 +238,5 @@ $wgFileExtensions = array( 'png','gif','jpg','jpeg','svg','mp4','mov','flv','psd
 $wgSVGConverters = array(
 	'ImageMagick' => '$path/convert -background transparent -thumbnail $widthx$height\! $input PNG:$output'
 );
+
+require_once( "$IP/extensions/GlobalDBAccess/GlobalDBAccess.php" );

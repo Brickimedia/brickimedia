@@ -1037,8 +1037,7 @@ class LocalFile extends File {
 			$user = $wgUser;
 		}
 
-		//$dbw = $this->repo->getMasterDB();
-		$dbw = wfGetDB(DB_MASTER, array(), 'meta');
+		$dbw = $this->repo->getMasterDB();
 		$dbw->begin( __METHOD__ );
 
 		if ( !$props ) {

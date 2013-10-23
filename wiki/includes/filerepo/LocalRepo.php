@@ -286,7 +286,9 @@ class LocalRepo extends FileRepo {
 	 * @return DatabaseBase
 	 */
 	function getSlaveDB() {
-		return wfGetDB( DB_SLAVE );
+		//return wfGetDB( DB_SLAVE );
+		$meta = new GlobalDBAccess( 'meta' );
+		$dbw = $meta -> slave;
 	}
 
 	/**
@@ -294,7 +296,9 @@ class LocalRepo extends FileRepo {
 	 * @return DatabaseBase
 	 */
 	function getMasterDB() {
-		return wfGetDB( DB_MASTER );
+		//return wfGetDB( DB_MASTER );
+		$meta = new GlobalDBAccess( 'meta' );
+		$dbw = $meta -> master;
 	}
 
 	/**
