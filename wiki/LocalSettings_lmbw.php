@@ -5,8 +5,8 @@ $wgSitename      = "Lego Message Boards Wiki";
 $wgMetaNamespace = "LMBW";
 
 $wgDBprefix         = "";
-$wgLogo             = "http://www.brickimedia.org/Brickipedia-Wiki-Logo.png";
-$wgFavicon          = "http://www.brickimedia.org/favicon.ico";
+$wgLogo             = "";
+$wgFavicon          = "$IP/images/favicons/lmbw.ico";
 
 $wgLanguageCode = "en";
 $wgGroupPermissions['*']['edit'] = true;
