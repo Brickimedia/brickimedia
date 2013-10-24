@@ -6,7 +6,7 @@ $wgMetaNamespace = "Brickipedia";
 
 $wgDBprefix         = "";
 $wgLogo             = "http://meta.brickimedia.org/images/a/ab/Brickipedia-Wiki-Logo.png";
-$wgFavicon          = "$IP/images/favicons/favicon.ico";
+$wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'deepsea';

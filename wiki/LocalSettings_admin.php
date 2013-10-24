@@ -6,7 +6,7 @@ $wgMetaNamespace = "Admin";
 
 $wgDBprefix         = "";
 $wgLogo             = "http://meta.brickimedia.org/images/thumb/d/df/BrickiCustomsLogo.png/160px-BrickiCustomsLogo.png";
-$wgFavicon          = "$IP/images/favicons/favicon.ico";
+$wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 

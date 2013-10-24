@@ -6,7 +6,7 @@ $wgMetaNamespace = "Customs";
 
 $wgDBprefix         = "";
 $wgLogo             = "http://meta.brickimedia.org/images/d/d1/Customs-logo.png";
-$wgFavicon          = "$IP/images/favicons/favicon.ico";
+$wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'monobook';

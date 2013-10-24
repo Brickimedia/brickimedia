@@ -3,7 +3,7 @@
 $wgSitename         = "Brickimedia Meta";
 $wgMetaNamespace    = "Brickimedia";
 $wgLogo             = "http://meta.brickimedia.org/skins/common/images/common-logo.png";
-$wgFavicon          = "$IP/images/favicons/favicon.ico";
+$wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'deepsea';

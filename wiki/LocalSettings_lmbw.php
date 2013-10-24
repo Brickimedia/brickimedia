@@ -6,7 +6,7 @@ $wgMetaNamespace = "LMBW";
 
 $wgDBprefix         = "";
 $wgLogo             = "";
-$wgFavicon          = "$IP/images/favicons/lmbw.ico";
+$wgFavicon          = "$wgScriptPath/images/favicons/lmbw.ico";
 
 $wgLanguageCode = "en";
 $wgGroupPermissions['*']['edit'] = true;

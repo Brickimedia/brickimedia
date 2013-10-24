@@ -6,7 +6,7 @@ $wgMetaNamespace = "LEGO CUUSOO Wiki";
 
 $wgDBprefix = "";
 $wgLogo = "http://meta.brickimedia.org/images/3/37/CUUSOO_Wiki_Logo.png";
-$wgFavicon = "$IP/images/favicons/cuusoo.ico";
+$wgFavicon = "$wgScriptPath/images/favicons/cuusoo.ico";
 
 $wgLanguageCode = "en";
 
