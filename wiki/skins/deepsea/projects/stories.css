@@ -10,6 +10,7 @@ div.vectorTabs li.selected {
         background-color: #9B3000;
 }
 
+/* no longer :visited */
 div#mw-panel div.portal div.body ul li a, #p-media a, #p-personal a,
 div.vectorTabs li a, div.vectorMenu li a,
 div#mw-panel div.portal div.body ul li a {
