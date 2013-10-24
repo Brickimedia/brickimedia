@@ -1187,7 +1187,8 @@ class LocalFile extends File {
 			# New file; create the description page.
 			# There's already a log entry, so don't make a second RC entry
 			# Squid and file cache for the description page are purged by doEdit.
-			$status = $wikiPage->doEdit( $pageText, $comment, EDIT_NEW | EDIT_SUPPRESS_RC, false, $user );
+			$metadb = wfGetDB( DB_MASTER, array(), 'meta' );
+			$status = $wikiPage->doEdit( $pageText, $comment, EDIT_NEW | EDIT_SUPPRESS_RC, false, $user, $metadb );
 
 			if ( isset( $status->value['revision'] ) ) { // XXX; doEdit() uses a transaction
 				$dbw->begin();

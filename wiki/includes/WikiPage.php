@@ -1410,7 +1410,7 @@ class WikiPage extends Page implements IDBAccessObject {
 	 *
 	 *  Compatibility note: this function previously returned a boolean value indicating success/failure
 	 */
-	public function doEdit( $text, $summary, $flags = 0, $baseRevId = false, $user = null ) {
+	public function doEdit( $text, $summary, $flags = 0, $baseRevId = false, $user = null, $dbw = null ) {
 		global $wgUser, $wgUseAutomaticEditSummaries, $wgUseRCPatrol, $wgUseNPPatrol;
 
 		# Low-level sanity check
@@ -1461,8 +1461,9 @@ class WikiPage extends Page implements IDBAccessObject {
 		$editInfo = $this->prepareTextForEdit( $text, null, $user );
 		$text = $editInfo->pst;
 		$newsize = strlen( $text );
-
-		$dbw = wfGetDB( DB_MASTER );
+		if( is_null( $dbw ) ){
+			$dbw = wfGetDB( DB_MASTER );
+		}
 		$now = wfTimestampNow();
 		$this->mTimestamp = $now;
 
