@@ -70,7 +70,7 @@ $wgNamespaceProtection[NS_NEWS] = array( 'editnews' );
 $wgGroupPermissions['*']['editnews'] = false;
 $wgGroupPermissions['user']['editnews'] = false;
 $wgGroupPermissions['autoconfirmed']['editnews'] = false;
-$wgGroupPermissions['patroller']['editnews'] = true;
+$wgGroupPermissions['newsreporter']['editnews'] = true;
 $wgGroupPermissions['sysop']['editnews'] = true;
 
 define("NS_CUSTOM", 116);
@@ -160,7 +160,7 @@ $wgNamespaceAliases = array(
 #Verbatim
 require_once("$IP/extensions/Verbatim/verbatim.php");
 
-# Article Raitings
+# Article Ratings
 global $bmMobile;
 if( !$bmMobile ){
 	require_once( "$IP/extensions/UserDailyContribs/UserDailyContribs.php" );
