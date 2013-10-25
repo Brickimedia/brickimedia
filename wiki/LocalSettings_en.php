@@ -72,6 +72,8 @@ $wgGroupPermissions['user']['editnews'] = false;
 $wgGroupPermissions['autoconfirmed']['editnews'] = false;
 $wgGroupPermissions['newsreporter']['editnews'] = true;
 $wgGroupPermissions['sysop']['editnews'] = true;
+$wgAddGroups['sysop'] = array('newsreporter');
+$wgRemoveGroups['sysop'] = array('newsreporter');
 
 define("NS_CUSTOM", 116);
 $wgExtraNamespaces[NS_CUSTOM] = "Custom";
