@@ -180,25 +180,20 @@ $wgEnableAjaxLogin = array(
 		'deepsea' => true,
 );*/
 
-#MediaWikiChat
-require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
-
-
 #render pdfs
 require_once("$IP/extensions/PdfHandler/PdfHandler.php");
 $wgPdfProcessor = 'gs';
 $wgPdfPostProcessor = 'convert';
 $wgPdfInfo = 'pdfinfo';
 
-#Google Analytics
-$gaAccount = "UA-38958899-1";
-require_once("$IP/extensions/googleAnalytics/googleAnalytics.php");
-
-#global file descriptors
+#more extensions
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
-
-#AntiSpoof
 require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
+	$gcwikis = array( 'meta', 'en', 'customs', 'cuusoo', 'stories', 'dev' );
+require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
+require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
+	$gaAccount = "UA-38958899-1";
+require_once("$IP/extensions/googleAnalytics/googleAnalytics.php");
 
 #Global new talk page message alerts
 require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php");
