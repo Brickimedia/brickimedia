@@ -9,5 +9,5 @@ $messages['en'] = array(
         'grouppage-board' => 'm:Board',
         'group-board-member' => 'board member',
         'group-chatmod' => 'Chat Moderators',
-        'group-chatmod' => 'chat moderator',
+        'group-chatmod-member' => 'chat moderator',
 );
