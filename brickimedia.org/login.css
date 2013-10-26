@@ -1,9 +1,35 @@
 body {
-	background: rgb(65,158,200);
+	background: url(img/bg.jpg) 0px 0px no-repeat fixed;
+	background-size: cover;
 	color: #fff;
 	text-align: center;
 	font-family: "Lato", sans-serif;
 	font-size: 1.3em;
+}
+
+#topbar {
+	position: fixed;
+	top: 0px;
+	right: 0;
+	width: 100%;
+	height: 30px;
+	background: rgba(33,33,33,0.5);
+	z-index: 9999;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#middle {
+	display: inline-block;
+	width: auto;
+	background: rgba(65,158,200,0.6);
+	margin-top: 100px;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 25px;
 }
 
 h1 {
@@ -31,7 +57,7 @@ a:hover {
 }
 
 #loginContainer {
-	padding-top: 80px;
+	padding-top: 40px;
 }
 
 .loginInput {
