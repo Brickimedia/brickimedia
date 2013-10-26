@@ -31,6 +31,9 @@ body {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+#topbar a {
+	text-decoration: none;
+}
 
 #middle {
 	display: inline-block;
@@ -85,11 +88,6 @@ body {
 @media screen and (max-height: 580px) {
 	#ad {
 		display: none !important; /* Hide the ad when the screen resolution is too small to fit it */
-	}
-}
-@media screen and (max-width: 750px) {
-	#ad {
-		display: none; /* Hide the ad when it is too wide for the window */
 	}
 }
 
@@ -155,4 +153,63 @@ ul {
 
 .tooltip {
 	cursor: help;
+}
+
+/* Log in */
+h1 {
+	margin: 10px 0 5px 0;
+	font-size: 2.5em;
+	font-weight: lighter;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+}
+#loginContainer a {
+	color: #ccc;
+	font-size: .75em;
+	text-decoration: none;
+}
+
+#loginContainer a:hover {
+	color: #eaeaea;
+}
+
+#loginContainer {
+	padding-top: 40px;
+}
+
+.loginInput {
+	margin: 2px auto 0 auto;
+	font-family: "Lato", sans-serif;
+	font-size: 1em;
+	padding: 0.25em;
+	display: block;
+	border: 0;
+	width: 11.5em;
+}
+
+.smallText {
+	font-size: .7em;
+}
+
+#loginSubmit {
+	background-color: rgb(192, 192, 192);
+	background-image: none;
+	margin: 5px auto 0 auto;
+	font-family: "Lato", sans-serif;
+	font-size: 1em;
+	padding: 0.25em;
+	display: block;
+	border: 0;
+	width: 12em;
+}
+
+#loginSubmit:hover {
+	background-color: #eaeaea;
+	cursor: pointer;
+}
+
+#bottomLinkContainer {
+	padding-top: 5px;
 }
