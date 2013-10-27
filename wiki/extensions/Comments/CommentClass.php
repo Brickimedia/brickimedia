@@ -19,7 +19,7 @@ class Comment {
 	var $CommentParentID = 0;
 	var $CommentVote = 0;
 	var $CommentScore = 0;
-	var $OrderBy = 0;
+	var $OrderBy = 1;
 	var $Allow = '';
 	var $Voting = '';
 	var $AllowPlus = true;
@@ -460,7 +460,7 @@ class Comment {
 		}
 		$this->CommentVote = $vote;
 	}
-
+	/*
 	function setOrderBy( $order ) {
 		if( is_numeric( $order ) ) {
 			if( $order == 0 ) {
@@ -470,7 +470,7 @@ class Comment {
 			}
 			$this->OrderBy = $order;
 		}
-	}
+	} */
 
 	/**
 	 * Purge caches (memcached, parser cache and Squid cache)
