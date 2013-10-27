@@ -19,7 +19,7 @@ class Comment {
 	var $CommentParentID = 0;
 	var $CommentVote = 0;
 	var $CommentScore = 0;
-	var $OrderBy = 1;
+	var $OrderBy = 0;
 	var $Allow = '';
 	var $Voting = '';
 	var $AllowPlus = true;
