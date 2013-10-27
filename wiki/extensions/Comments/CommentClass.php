@@ -510,12 +510,12 @@ class Comment {
 		if( $x['thread'] == $y['thread'] ) {
 			if( $x['timestamp'] == $y['timestamp'] ) {
 				return 0;
-			} elseif( $x['timestamp'] < $y['timestamp'] ) {//NXT
+			} elseif( $x['timestamp'] > $y['timestamp'] ) {
 				return -1;
 			} else {
 				return 1;
 			}
-		} elseif( $x['thread'] < $y['thread'] ) {//NXT
+		} elseif( $x['thread'] > $y['thread'] ) {
 			return -1;
 		} else {
 			return 1;
@@ -579,8 +579,6 @@ class Comment {
 
 		if( $this->OrderBy != 0 ) {
 			$params['ORDER BY'] = 'Comment_Score DESC';
-		} else {
-    		$params['ORDER BY'] = 'Comment_Date DESC';
 		}
 
 		// If SocialProfile is installed, query the user_stats table too.
@@ -813,7 +811,7 @@ class Comment {
 
 				// Display Block icon for logged in users for comments of users
 				// that are already not in your block list
-				/*$block_link = '';
+				$block_link = '';
 
 				if(
 					$wgUser->getID() != 0 && $wgUser->getID() != $comment['Comment_user_id'] &&
@@ -847,7 +845,7 @@ class Comment {
 					$output .= '</div>' . "\n";
 					$output .= '</div>' . "\n";
 				}
-				*/
+				
 
 				// Default avatar image, if SocialProfile extension isn't
 				// enabled
