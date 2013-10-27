@@ -579,6 +579,8 @@ class Comment {
 
 		if( $this->OrderBy != 0 ) {
 			$params['ORDER BY'] = 'Comment_Score DESC';
+		} else {
+    		$params['ORDER BY'] = 'Comment_Date DESC';
 		}
 
 		// If SocialProfile is installed, query the user_stats table too.
