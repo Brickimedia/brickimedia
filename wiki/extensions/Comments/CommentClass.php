@@ -460,7 +460,7 @@ class Comment {
 		}
 		$this->CommentVote = $vote;
 	}
-	/*
+	
 	function setOrderBy( $order ) {
 		if( is_numeric( $order ) ) {
 			if( $order == 0 ) {
@@ -470,7 +470,7 @@ class Comment {
 			}
 			$this->OrderBy = $order;
 		}
-	} */
+	}
 
 	/**
 	 * Purge caches (memcached, parser cache and Squid cache)
