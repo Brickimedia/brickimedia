@@ -808,7 +808,7 @@ class Comment {
 					$container_class = 'reply';
 					$comment_class = 'r-message';
 				}
-
+				/*
 				// Display Block icon for logged in users for comments of users
 				// that are already not in your block list
 				$block_link = '';
@@ -845,6 +845,7 @@ class Comment {
 					$output .= '</div>' . "\n";
 					$output .= '</div>' . "\n";
 				}
+				*/
 				
 
 				// Default avatar image, if SocialProfile extension isn't
