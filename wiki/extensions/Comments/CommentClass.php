@@ -507,18 +507,25 @@ class Comment {
 	}
 
 	public static function sortCommentList( $x, $y ) {
+		// -1 == x goes above y
+		// 1 == x goes below y
 		if( $x['thread'] == $y['thread'] ) {
-			if( $x['timestamp'] == $y['timestamp'] ) {
+			//same thread
+			if($x['CommentID'] == $x['thread']){
+				return -1;//x is parent
+			} elseif ($y['CommentID'] == $y['thread']){
+				return 1;//y is parent
+			} elseif( $x['timestamp'] == $y['timestamp'] ) {
 				return 0;
 			} elseif( $x['timestamp'] > $y['timestamp'] ) {
-				return -1;
+				return 1;//x newer than y
 			} else {
-				return 1;
+				return -1;//x older than y
 			}
 		} elseif( $x['thread'] > $y['thread'] ) {
-			return -1;
+			return -1;//x newer than y
 		} else {
-			return 1;
+			return 1;//x older than y
 		}
 	}
 
