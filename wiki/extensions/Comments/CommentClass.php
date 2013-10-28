@@ -652,18 +652,6 @@ class Comment {
 	 */
 	function displayOrderForm() {
 		$output = '<div class="c-order">
-			<div class="c-order-select">
-				<form name="ChangeOrder" action="">
-					<select name="TheOrder">
-						<option value="0">' .
-							wfMsg( 'comments-sort-by-date' ) .
-						'</option>
-						<option value="1">' .
-							wfMsg( 'comments-sort-by-score' ) .
-						'</option>
-					</select>
-				</form>
-			</div>
 			<div id="spy" class="c-spy">
 				<a href="javascript:void(0)">' .
 					wfMsg( 'comments-auto-refresher-enable' ) .
