@@ -33,7 +33,24 @@ require_once("$IP/extensions/are/ArticleRatings.php");
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer', 'import' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer', 'import' );
 
+#News namespace
+define("NS_NEWS", 2000);
+$wgExtraNamespaces[NS_NEWS] = "News";
+$wgNamespaceProtection[NS_NEWS] = array( 'editnews' );
+$wgGroupPermissions['*']['editnews'] = false;
+$wgGroupPermissions['user']['editnews'] = false;
+$wgGroupPermissions['autoconfirmed']['editnews'] = false;
+$wgGroupPermissions['newsreporter']['editnews'] = true;
+$wgGroupPermissions['sysop']['editnews'] = true;
+$wgAddGroups['sysop'] = array('newsreporter');
+$wgRemoveGroups['sysop'] = array('newsreporter');
+
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
+$smwgNamespaceIndex = 100;
+
+include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
+enableSemantics('en.brickimedia.org');
+
 $smwgNamespacesWithSemanticLinks = array(
 	              NS_MAIN => true,
 	              NS_TALK => false,
@@ -57,29 +74,14 @@ $smwgNamespacesWithSemanticLinks = array(
        'SMW_NS_TYPE_TALK' => false,
          'SMW_NS_CONCEPT' => true,
     'SMW_NS_CONCEPT_TALK' => false,
-			    'NS_NEWS' => true,
+			      NS_NEWS => true,
 );
 
 #Namespace subpages
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
 
-#News namespace
-define("NS_NEWS", 2000);
-$wgExtraNamespaces[NS_NEWS] = "News_report";
-$wgNamespaceProtection[NS_NEWS] = array( 'editnews' );
-$wgGroupPermissions['*']['editnews'] = false;
-$wgGroupPermissions['user']['editnews'] = false;
-$wgGroupPermissions['autoconfirmed']['editnews'] = false;
-$wgGroupPermissions['newsreporter']['editnews'] = true;
-$wgGroupPermissions['sysop']['editnews'] = true;
-$wgAddGroups['sysop'] = array('newsreporter');
-$wgRemoveGroups['sysop'] = array('newsreporter');
-
 define("NS_CUSTOM", 116);
 $wgExtraNamespaces[NS_CUSTOM] = "Custom";
-
-include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
-enableSemantics('en.brickimedia.org');
 
 #SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");

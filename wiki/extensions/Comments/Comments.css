@@ -1,11 +1,11 @@
 /* CSS styles for Comments extension */
 .full {
-	width: 600px;
+	width: 100%;
 }
 
 .reply {
-	margin-left: 70px !important;
-	width: 460px;
+	margin-left: 10% !important;
+	width: 90%
 }
 
 .c-item {
