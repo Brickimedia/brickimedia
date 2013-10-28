@@ -808,11 +808,11 @@ class Comment {
 					$container_class = 'reply';
 					$comment_class = 'r-message';
 				}
-				/*
+				
 				// Display Block icon for logged in users for comments of users
 				// that are already not in your block list
 				$block_link = '';
-
+				/*
 				if(
 					$wgUser->getID() != 0 && $wgUser->getID() != $comment['Comment_user_id'] &&
 					!( in_array( $comment['Comment_Username'], $block_list ) )
@@ -824,12 +824,12 @@ class Comment {
 					<img src=\"{$wgScriptPath}/extensions/Comments/images/block.png\" border=\"0\" alt=\"\"/>
 				</a>";
 				}
-				
+				*/				
 
 				// If you are ignoring the author of the comment, display message in comment box,
 				// along with a link to show the individual comment
 				$hide_comment_style = '';
-
+				/*
 				if( in_array( $comment['Comment_Username'], $block_list ) ) {
 					$hide_comment_style = 'display:none;';
 
