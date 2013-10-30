@@ -23,14 +23,10 @@ body {
         margin-top: 100px;
         color: #ffffff;
         font-family: 'Lato', sans-serif;
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 25px;
 }
 
 .big {
-        font-size: 330%;
+        font-size: 250%;
 }
 
 a {
