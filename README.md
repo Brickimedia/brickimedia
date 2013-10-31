@@ -62,7 +62,7 @@ Now try accessing the wiki, http://meta.locahost for example. Depending on your 
 cd /var/www/brickimedia/wiki/maintenance
 WIKI=meta php update.php
 ```
-or on windows;
+or on Windows;
 ```bat
 ::   This needs to be the address of the folder where PHP is installed
 cd C:/xampp/php
@@ -77,9 +77,9 @@ The second option is to go back into adminer, and the SQL error you see should b
 
 Assuming you have set up everything correctly, you should have a fully functioning clone server. Additional help can be requested to any Brickimedia system administrator.
 
-#### Editing the hosts file
+#### Editing the hosts file ####
 
-On windows, in order to allow http://localhost to connect to your own machine, you need to edit the ```hosts``` file. It normally resides in C:/windows/system32/drivers/etc or somewhere similar. Search the internet for "Windows hosts file" if you cannot find it
+On Windows, in order to allow http://localhost to connect to your own machine, you need to edit the ```hosts``` file. It normally resides in C:/windows/system32/drivers/etc or somewhere similar. Search the internet for "Windows hosts file" if you cannot find it
 
 Once found, you must edit it. Open an instance of notepad **running as administrator**, and add these lines to the bottom of the file:
 ```bat
@@ -91,3 +91,5 @@ cuusoo.localhost    127.0.0.1
 stories.localhost   127.0.0.1
 ````
 Save the file, an recheck http://meta.localhost. You should no longer see a 404 error.
+
+If you are on a Linux system and are unable to access subdomains of localhost, then you can edit the hosts file like you would on Windows by running ```sudo nano /etc/hosts``` in Terminal.
