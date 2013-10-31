@@ -35,7 +35,7 @@ $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat'
 
 #News namespace
 define("NS_NEWS", 2000);
-$wgExtraNamespaces[NS_NEWS] = "Brickipedia News";
+$wgExtraNamespaces[NS_NEWS] = "Brickipedia_News";
 $wgNamespaceProtection[NS_NEWS] = array( 'editnews' );
 $wgGroupPermissions['*']['editnews'] = false;
 $wgGroupPermissions['user']['editnews'] = false;
