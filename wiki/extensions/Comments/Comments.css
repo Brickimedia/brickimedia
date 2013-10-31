@@ -76,12 +76,8 @@ Besides, ny.css sets it back to 10px anyway, so this way everyone can be happy.
 .c-ignored-links a {
 }
 
-.f-message {
-	width: 460px;
-}
-
-.r-message {
-	width: 360px;
+.f-message, .r-message {
+	width: auto;
 }
 
 .c-score {
@@ -129,7 +125,7 @@ Besides, ny.css sets it back to 10px anyway, so this way everyone can be happy.
 }
 
 textarea#comment {
-	width: 530px;
+	width: 100%;
 }
 
 .c-form-button {
