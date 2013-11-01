@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 # Enabled Extensions. Most extensions are enabled by including the base extension file here
 # but check specific extension documentation for more details
@@ -18,14 +18,14 @@ require_once("$IP/extensions/GlobalBlocking/GlobalBlocking.php");
 require_once("$IP/extensions/globaluserrights.php");
 require_once("$IP/extensions/EditUser/EditUser.php");
 
-#Uploads
+// Uploads
 $wgEnableUploads = true;
 
-#Stop those spammers!
+// Stop those spammers!
 require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
-#...without reCAPTCHA. --southerner
-#require_once("$IP/extensions/ConfirmEdit/Asirra.php");
-#$wgCaptchaClass = 'Asirra';
+//...without reCAPTCHA. --southerner
+//require_once("$IP/extensions/ConfirmEdit/Asirra.php");
+//$wgCaptchaClass = 'Asirra';
 require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php");
 $wgCaptchaClass = 'QuestyCaptcha';
 $arr = array (
@@ -39,32 +39,33 @@ foreach ( $arr as $key => $value ) {
 }
 $wgGroupPermissions['autoconfirmed']['skipcaptcha'] = true;
 $wgGroupPermissions['bot']['skipcaptcha'] = true;
+$wgGroupPermissions['sysadmin']['skipcatcha'] = true;
 $wgCaptchaTriggers['edit']          = true;
 
-# Pretty URLs
+// Short URLs
 $wgArticlePath = "/wiki/$1";
 $wgUsePathInfo = true;
 
-# WikiEditor
+// WikiEditor
 require_once( "$IP/extensions/WikiEditor/WikiEditor.php" );
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 $wgDefaultUserOptions['wikieditor-preview'] = 1;
 $wgDefaultUserOptions['wikieditor-publish'] = 0;
 
-# Vector Skin
+// Vector Skin
 require_once( "$IP/extensions/Vector/Vector.php" );
 $wgVectorUseSimpleSearch = true;
 
-# DISPLAYTITLE
+// DISPLAYTITLE
 $wgRestrictDisplayTitle = false;
 
-# Cite
+// Cite
 require_once( "$IP/extensions/Cite/Cite.php" );
 require_once( "$IP/extensions/Cite/SpecialCite.php" );
 $wgCiteEnablePopups = true;                             // Pop-up citations
 
-# Brickimedia Footer Icon
+// Brickimedia Footer Icon
 $wgFooterIcons['brickimedia']['brickimedia'] = array(
 	"src" => "http://www.brickimedia.org/img/brickimedia-tag.png",
 	"url" => "http://www.brickimedia.org",
@@ -73,7 +74,7 @@ $wgFooterIcons['brickimedia']['brickimedia'] = array(
 	"width" => "88"
 );
 
-# Terms of Use link in footer
+// Terms of Use link in footer
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'lfTOULink';
 function lfTOULink( $sk, &$tpl ) {
         $tpl->set( 'termsofuse', $sk->footerLink( 'termsofuse', 'termsofusepage' ) );
@@ -82,15 +83,15 @@ function lfTOULink( $sk, &$tpl ) {
 }
 $wgExtensionMessagesFiles['TermsOfUse'] = dirname( __FILE__ ) . '/extensions/i18n/TermsOfUse.i18n.php';
 
-#Messages
+// Messages
 $wgExtensionMessagesFiles['defaultMessages'] = dirname( __FILE__ ) . '/extensions/i18n/defaultMessages.i18n.php';
 $wgExtensionMessagesFiles['UserGroups'] = dirname( __FILE__ ) . '/extensions/i18n/UserGroups.i18n.php';
 
-#Autoconfirmed
+// Autoconfirmed
 $wgAutoConfirmAge = 86400*3;
 $wgAutoConfirmCount = 5;
 
-# More extensions
+// More extensions
 require_once( "$IP/extensions/videoflash.php" );// Allows in-page embedding of videos from many sources. http://www.mediawiki.org/wiki/Extension:VideoFlash
 require_once( "$IP/extensions/BlogPage/Blog.php" );
 require_once( "$IP/extensions/VoteNY/Vote.php" );
@@ -108,7 +109,7 @@ require_once("$IP/extensions/MediawikiPlayer/MediawikiPlayer.php");
 require_once( "$IP/extensions/InputBox/InputBox.php" );
 require_once("$IP/extensions/RandomSelection/RandomSelection.php");
 
-//Skins
+// Skins
 //LS_global MUST be before deepsea is included!
 require_once( "$IP/skins/deepsea/resources.php" );
 #require_once( "$IP/skins/monaco/monaco.php" );
@@ -118,45 +119,45 @@ $wgSkipSkins = array( 'liamobile' );
 $wgAllowUserCss = true;
 $wgAllowUserJs = true;
 
-#Force enhanced rc
+// Force enhanced rc
 $wgDefaultUserOptions['usenewrc'] = 1;
 
-#For the forums //turn off caching?
+// For the forums //turn off caching?
 $wgShowExceptionDetails = true;
 
-# WikiForum
+// WikiForum
 require_once( "$IP/extensions/WikiForum/WikiForum.php" );
 $wgWikiForumAllowAnonymous = false; //disabled because of spam
 
-#OggHandler
-#require( "$IP/extensions/OggHandler/OggHandler.php" );
-#$wgFFmpegLocation = '/usr/bin/ffmpeg';
-#$wgOggThumbLocation = '/usr/local/bin/oggThumb';
+// OggHandler
+//require( "$IP/extensions/OggHandler/OggHandler.php" );
+//$wgFFmpegLocation = '/usr/bin/ffmpeg';
+//$wgOggThumbLocation = '/usr/local/bin/oggThumb';
 
-#Upload by url/external images
+// Upload by url/external images
 $wgAllowCopyUploads = true;
 $wgCopyUploadsFromSpecialUpload = true;
 $wgAllowExternalImages = true;
 
-#HTML (feel free to disable; testing still)
+// HTML (feel free to disable; testing still)
 include_once("$IP/extensions/HTMLTags/HTMLTags.php");
 $wgHTMLTagsAttributes['iframe'] = array( 'src', 'width', 'height', 'style' );
 $wgHTMLTagsAttributes['form'] = array( 'action', 'method' );
 $wgHTMLTagsAttributes['input'] = array( 'type', 'name', 'value', 'src', 'border', 'alt' );
 $wgHTMLTagsAttributes['img'] = array( 'alt', 'border', 'src', 'width', 'height' );
 
-#SMW Factbox
+// SMW Factbox
 $smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
 
-#Special:RandomWiki
-#require_once("$IP/extensions/RandomWiki/RandomWiki.php");
-#require_once ('extensions/FooterManager/FooterManager.php');
+// Special:RandomWiki
+//require_once("$IP/extensions/RandomWiki/RandomWiki.php");
+//require_once ('extensions/FooterManager/FooterManager.php');
 
-#EveryXLoad (hooks for scripts that don't need to run every pageload
+// EveryXLoad (hooks for scripts that don't need to run every pageload
 //require_once("$IP/extensions/EveryXLoad/EveryXLoad.php");
 
-#WhosOnline
-#require_once("$IP/extensions/WhosOnline/WhosOnline.php");
+// WhosOnline
+//require_once("$IP/extensions/WhosOnline/WhosOnline.php");
 //$wgWhosOnlineShowAnons = true;
 //$wgSpecialPageGroups['WhosOnline'] = 'users';
 
@@ -168,7 +169,7 @@ $wgExtraNamespaces[500] = "User_blog";
 //$wgExtraNamespaces[2001] = "Board_Thread";
 //$wgExtraNamespaces[2002] = "Topic";
 
-#AjaxLogin
+//AjaxLogin
 /*require_once("$IP/extensions/AjaxLogin/AjaxLogin.php");
 $wgEnableAjaxLogin = array(
         'monobook' => true,
@@ -176,13 +177,13 @@ $wgEnableAjaxLogin = array(
 		'deepsea' => true,
 );*/
 
-#render pdfs
+// Render pdfs
 require_once("$IP/extensions/PdfHandler/PdfHandler.php");
 $wgPdfProcessor = 'gs';
 $wgPdfPostProcessor = 'convert';
 $wgPdfInfo = 'pdfinfo';
 
-#more extensions
+// More extensions
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
 	$gcwikis = array( 'meta', 'en', 'customs', 'cuusoo', 'stories', 'dev' );
@@ -191,7 +192,7 @@ require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
 	$gaAccount = "UA-38958899-1";
 require_once("$IP/extensions/googleAnalytics/googleAnalytics.php");
 
-#Global new talk page message alerts
+//Global new talk page message alerts
 require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php");
 $newTalkGlobalDatabases = array(
 		"meta" => array(
