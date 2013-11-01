@@ -210,7 +210,7 @@ require_once( "$IP/skins/Custard.php" );
 $wgGroupPermissions['*']['edit'] = false;
 $wgGroupPermissions['user']['edit'] = true;
 
-$wgGroupPermissions['*']['createaccount'] = false; //disable account creation
+$wgGroupPermissions['*']['createaccount'] = true;
 
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
