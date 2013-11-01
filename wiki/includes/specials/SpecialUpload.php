@@ -133,6 +133,7 @@ class SpecialUpload extends SpecialPage {
 	 * Special page entry point
 	 */
 	public function execute( $par ) {
+		global $bmProject;
 		if( $bmProject != "meta" ) {
         	$this->getOutput()->redirect( "http://meta.brickimedia.org/wiki/Special:Upload?fromproject=$bmProject" ); //this line needs to be adjusted accordingly on other domains
         	return;
