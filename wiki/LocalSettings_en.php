@@ -178,3 +178,5 @@ if( !$bmMobile ){
 
 #beta test group
 $wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
+
+require_once( "$IP/extensions/WikiArticleFeeds/WikiArticleFeeds.php" );
