@@ -10,7 +10,7 @@ $wgFavicon = "$wgScriptPath/images/favicons/cuusoo.ico";
 
 $wgLanguageCode = "en";
 
-$wgDefaultSkin = 'deepsea';
+$wgDefaultSkin = 'refreshed';
 
 #SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");
@@ -60,8 +60,3 @@ require_once("$IP/extensions/Verbatim/verbatim.php");
 
 #beta test group
 $wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
-$wgGroupPermissions['*']['read'] = false;
-$wgGroupPermissions['user']['read'] = false;
-$wgGroupPermissions['autoconfirmed']['read'] = false;
-$wgGroupPermissions['sysop']['read'] = true;
-$wgGroupPermissions['sysadmin']['read'] = true;
