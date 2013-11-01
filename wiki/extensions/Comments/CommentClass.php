@@ -366,10 +366,12 @@ class Comment {
 	function addVote() {
 		global $wgMemc, $wgUser;
 		$dbw = wfGetDB( DB_MASTER );
+		
+		wfSuppressWarnings();
+		$commentDate = date( 'Y-m-d H:i:s' );
+		wfRestoreWarnings();
+		
 		if( $this->UserAlreadyVoted() == false ) {
-			wfSuppressWarnings();
-			$commentDate = date( 'Y-m-d H:i:s' );
-			wfRestoreWarnings();
 			$dbw->insert(
 				'Comments_Vote',
 				array(
@@ -382,6 +384,22 @@ class Comment {
 				),
 				__METHOD__
 			);
+		
+		} else {
+			$dbw->update(
+				'Comments_Vote',
+				array(
+					'Comment_Vote_Score' => $this->CommentVote,
+					'Comment_Vote_Date' => $commentDate,
+					'Comment_Vote_IP' => $_SERVER['REMOTE_ADDR']
+				),
+				array(
+					'Comment_Vote_id' => $this->CommentID,
+					'Comment_Vote_user_id' => $wgUser->getId(),
+				),
+				__METHOD__
+			);
+		}
 			$dbw->commit();
 
 			// update cache voted list
@@ -411,7 +429,6 @@ class Comment {
 			}
 
 			$this->updateCommentVoteStats();
-		}
 	}
 
 	function updateCommentVoteStats() {
@@ -453,7 +470,9 @@ class Comment {
 	}
 
 	function setCommentVote( $vote ) {
-		if( $vote < 0 ) {
+		if( $vote == 0 ) {
+			$vote = 0;
+		} elseif( $vote < 0 ){
 			$vote = -1;
 		} else {
 			$vote = 1;
@@ -540,7 +559,7 @@ class Comment {
 
 		$res = $dbr->select(
 			array( 'Comments_Vote', 'Comments' ),
-			'CommentID',
+			array( 'CommentID', 'Comment_Vote_Score' ),
 			array(
 				'Comment_Page_ID' => $this->PageID,
 				'Comment_Vote_user_id' => $wgUser->getID()
@@ -552,7 +571,7 @@ class Comment {
 
 		$voted = array();
 		foreach( $res as $row ) {
-			$voted[] = $row->CommentID;
+			$voted[$row->CommentID] = $row->Comment_Vote_Score;
 		}
 
 		return $voted;
@@ -664,7 +683,7 @@ class Comment {
 		return $output;
 	}
 
-	function getVoteLink( $commentID, $voteType ) {
+	function getVoteLink( $commentID, $voteType, $votePrevious = 0 ) {
 		global $wgUser, $wgScriptPath, $wgOut;
 
 		// Blocked users cannot vote, obviously
@@ -690,12 +709,25 @@ class Comment {
 		}
 
 		$imagePath = $wgScriptPath . '/extensions/Comments/images';
-		if( $voteType == 1 ) {
-			$voteLink .= "<img src=\"{$imagePath}/thumbs-up.gif\" border=\"0\" alt=\"+\" /></a>";
+		if( $votePrevious == 0){
+			if( $voteType == 1 ) {
+				$voteLink .= "<img src=\"{$imagePath}/up-unvoted.png\" data-vote-value=\"0\" border=\"0\" alt=\"+\" /></a>";
+			} else {
+				$voteLink .= "<img src=\"{$imagePath}/down-unvoted.png\" data-vote-value=\"0\" border=\"0\" alt=\"-\" /></a>";
+			}
+		} elseif( $votePrevious == 1){
+			if( $voteType == 1 ) {
+				$voteLink .= "<img src=\"{$imagePath}/up-voted.png\" data-vote-value=\"1\" border=\"0\" alt=\"+\" /></a>";
+			} else {
+				$voteLink .= "<img src=\"{$imagePath}/down-unvoted.png\" data-vote-value=\"0\" border=\"0\" alt=\"-\" /></a>";
+			}
 		} else {
-			$voteLink .= "<img src=\"{$imagePath}/thumbs-down.gif\" border=\"0\" alt=\"-\" /></a>";
+			if( $voteType == 1 ) {
+				$voteLink .= "<img src=\"{$imagePath}/up-unvoted.png\" data-vote-value=\"0\" border=\"0\" alt=\"+\" /></a>";
+			} else {
+				$voteLink .= "<img src=\"{$imagePath}/down-voted.png\" data-vote-value=\"-1\" border=\"0\" alt=\"-\" /></a>";
+			}
 		}
-
 		return $voteLink;
 	}
 
@@ -880,10 +912,10 @@ class Comment {
 
 					// Voting is possible only when database is unlocked
 					if( !wfReadOnly() ) {
-						if( !in_array( $comment['CommentID'], $voted ) ) {
+						if( !array_key_exists( $comment['CommentID'], $voted ) ) {
 							// You can only vote for other people's comments,
 							// not for your own
-							if( $wgUser->getName() != $comment['Comment_Username'] ) {
+							//if( $wgUser->getName() != $comment['Comment_Username'] ) {
 								$output .= "<span id=\"CommentBtn{$comment['CommentID']}\">";
 								if( $this->AllowPlus == true ) {
 									$output .= $this->getVoteLink( $comment['CommentID'], 1 );
@@ -893,13 +925,25 @@ class Comment {
 									$output .= $this->getVoteLink( $comment['CommentID'], -1 );
 								}
 								$output .= '</span>';
-							} else {
-								$output .= wfMsg( 'word-separator' ) . wfMsg( 'comments-you' );
-							}
+							//} else {
+							//	$output .= wfMsg( 'word-separator' ) . wfMsg( 'comments-you' );
+							//}
 						} else {
-							// Already voted?
-							$output .= '<img src="' . $wgScriptPath . '/extensions/Comments/images/voted.gif" border="0" alt="" />' .
-										wfMsg( 'comments-voted-label' );
+							// You can only vote for other people's comments,
+							// not for your own
+							//if( $wgUser->getName() != $comment['Comment_Username'] ) {
+								$output .= "<span id=\"CommentBtn{$comment['CommentID']}\">";
+								if( $this->AllowPlus == true ) {
+									$output .= $this->getVoteLink( $comment['CommentID'], 1, $voted[$comment['CommentID']] );
+								}
+
+								if( $this->AllowMinus == true ) {
+									$output .= $this->getVoteLink( $comment['CommentID'], -1, $voted[$comment['CommentID']] );
+								}
+								$output .= '</span>';
+							//} else {
+							//	$output .= wfMsg( 'word-separator' ) . wfMsg( 'comments-you' );
+							//}
 						}
 					}
 				}

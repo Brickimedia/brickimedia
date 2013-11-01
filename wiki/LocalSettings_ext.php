@@ -66,11 +66,11 @@ $wgCiteEnablePopups = true;                             // Pop-up citations
 
 # Brickimedia Footer Icon
 $wgFooterIcons['brickimedia']['brickimedia'] = array(
-"src" => "http://www.brickimedia.org/img/brickimedia-tag.png",
-"url" => "http://www.brickimedia.org",
-"alt" => "Brickimedia",
-"height" => "31",
-"width" => "88"
+	"src" => "http://www.brickimedia.org/img/brickimedia-tag.png",
+	"url" => "http://www.brickimedia.org",
+	"alt" => "Brickimedia",
+	"height" => "31",
+	"width" => "88"
 );
 
 # Terms of Use link in footer
@@ -121,7 +121,7 @@ $wgAllowUserJs = true;
 #Force enhanced rc
 $wgDefaultUserOptions['usenewrc'] = 1;
 
-#For the forums //turn of caching?
+#For the forums //turn off caching?
 $wgShowExceptionDetails = true;
 
 # WikiForum
@@ -132,10 +132,6 @@ $wgWikiForumAllowAnonymous = false; //disabled because of spam
 #require( "$IP/extensions/OggHandler/OggHandler.php" );
 #$wgFFmpegLocation = '/usr/bin/ffmpeg';
 #$wgOggThumbLocation = '/usr/local/bin/oggThumb';
-
-#Categories
-$noCategorySuggestNamespaces = array(0, 1, 2, 3, 8, 9, 10, 11);
-//require_once("$IP/extensions/CategorySuggest/CategorySuggest.php");
 
 #Upload by url/external images
 $wgAllowCopyUploads = true;

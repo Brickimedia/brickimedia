@@ -18,7 +18,6 @@ $wgGroupPermissions['import']['import'] = true;
 $wgGroupPermissions['import']['importupload'] = true;
 $wgGroupPermissions['import']['noratelimit'] = true;
 $wgGroupPermissions['import']['apihighlimits'] = true;
-$wgGroupPermissions['autoconfirmed']['edit'] = true;
 $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;
 
@@ -42,8 +41,8 @@ $wgGroupPermissions['user']['editnews'] = false;
 $wgGroupPermissions['autoconfirmed']['editnews'] = false;
 $wgGroupPermissions['newsreporter']['editnews'] = true;
 $wgGroupPermissions['sysop']['editnews'] = true;
-$wgAddGroups['sysop'] = array('newsreporter');
-$wgRemoveGroups['sysop'] = array('newsreporter');
+$wgAddGroups['sysop'][] = 'newsreporter';
+$wgRemoveGroups['sysop'][] = 'newsreporter';
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
 $smwgNamespaceIndex = 100;

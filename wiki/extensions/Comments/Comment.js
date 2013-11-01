@@ -82,10 +82,23 @@ var Comment = {
 			[ cid, vt, ( ( vg ) ? vg : 0 ), document.commentform.pid.value ],
 			function( response ) {
 				document.getElementById( 'Comment' + cid ).innerHTML = response.responseText;
-				var img = '<img src="' + wgScriptPath + '/extensions/Comments/images/voted.gif" alt="" />';
-				document.getElementById( 'CommentBtn' + cid ).innerHTML =
-					img + '<span class="CommentVoted">' +
-					mw.msg( 'comments-voted-label' ) + '</span>';
+				var imgpath = wgScriptPath + '/extensions/Comments/images/';
+				if(vt == 1){
+					$( '#CommentBtn' + cid + ' a[data-vote-type=1] img' ).attr('src', imgpath+'up-voted.png' )
+						.attr({'data-vote-value': 1});
+					$( '#CommentBtn' + cid + ' a[data-vote-type=-1] img' ).attr('src', imgpath+'down-unvoted.png' )
+						.attr({'data-vote-value': 0});
+				} else if(vt == -1) {
+					$( '#CommentBtn' + cid + ' a[data-vote-type=-1] img' ).attr('src', imgpath+'down-voted.png' )
+						.attr({'data-vote-value': -1});
+					$( '#CommentBtn' + cid + ' a[data-vote-type=1] img' ).attr('src', imgpath+'up-unvoted.png' )
+						.attr({'data-vote-value': 0});
+				} else {
+					$( '#CommentBtn' + cid + ' a[data-vote-type=1] img' ).attr('src', imgpath+'up-unvoted.png' )
+						.attr({'data-vote-value': 0});
+					$( '#CommentBtn' + cid + ' a[data-vote-type=-1] img' ).attr('src', imgpath+'down-unvoted.png' )
+						.attr({'data-vote-value': 0});
+				}
 			}
 		);
 	},
@@ -268,9 +281,14 @@ jQuery( document ).ready( function() {
 	// Voting links
 	jQuery( 'a#comment-vote-link' ).click( function() {
 		var that = jQuery( this );
+		var vote = that.data( 'vote-type' );
+		if( that.children().data( 'vote-value' ) == 1 || that.children().data( 'vote-value' ) == -1 ){
+			vote = 0;
+			console.log("vote = 0");
+		}
 		Comment.vote(
 			that.data( 'comment-id' ),
-			that.data( 'vote-type' ),
+			vote,
 			that.data( 'voting' )
 		);
 	} );
