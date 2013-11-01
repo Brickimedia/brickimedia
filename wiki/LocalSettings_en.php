@@ -9,7 +9,7 @@ $wgLogo             = "http://meta.brickimedia.org/images/a/ab/Brickipedia-Wiki-
 $wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
-$wgDefaultSkin = 'deepsea';
+$wgDefaultSkin = 'refreshed';
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['upload'] = false;
 $wgGroupPermissions['sysop']['upload'] = true;
@@ -178,8 +178,3 @@ if( !$bmMobile ){
 
 #beta test group
 $wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
-$wgGroupPermissions['*']['read'] = false;
-$wgGroupPermissions['user']['read'] = false;
-$wgGroupPermissions['autoconfirmed']['read'] = false;
-$wgGroupPermissions['sysop']['read'] = true;
-$wgGroupPermissions['sysadmin']['read'] = true;
