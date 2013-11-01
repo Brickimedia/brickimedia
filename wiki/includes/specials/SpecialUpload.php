@@ -133,11 +133,10 @@ class SpecialUpload extends SpecialPage {
 	 * Special page entry point
 	 */
 	public function execute( $par ) {
-		$host = explode( ".", $_SERVER["HTTP_HOST"] );
-		if ($host[0] != "meta") {
-                        $this->getOutput()->redirect( 'http://meta.brickimedia.org/wiki/Special:Upload' ); //this line needs to be adjusted accordingly on other domains
-                        return;
-                }
+		if( $bmProject != "meta" ) {
+        	$this->getOutput()->redirect( "http://meta.brickimedia.org/wiki/Special:Upload?fromproject=$bmProject" ); //this line needs to be adjusted accordingly on other domains
+        	return;
+        }
 		$this->setHeaders();
 		$this->outputHeader();
 
@@ -389,6 +388,7 @@ class SpecialUpload extends SpecialPage {
 	 * Checks are made in SpecialUpload::execute()
 	 */
 	protected function processUpload() {
+		global $wgRequest, $bmAllProjects;
 		// Fetch the file if required
 		$status = $this->mUpload->fetchFile();
 		if( !$status->isOK() ) {
@@ -447,7 +447,14 @@ class SpecialUpload extends SpecialPage {
 		// Success, redirect to description page
 		$this->mUploadSuccessful = true;
 		wfRunHooks( 'SpecialUploadComplete', array( &$this ) );
-		$this->getOutput()->redirect( $this->mLocalFile->getTitle()->getFullURL() );
+		
+		$projectGiven = $wgRequest->getVal('fromproject');
+		if( in_array( $projectGiven, $bmAllProjects ) ){
+			$projectFrom = $projectGiven;
+		} else {
+			$projectFrom = 'meta';
+		}
+		$this->getOutput()->redirect( "http://$projectFrom.brickimedia.org/wiki/{$this->mLocalFile->getTitle()->getFullText()}" );
 	}
 
 	/**

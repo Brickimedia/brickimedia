@@ -138,6 +138,8 @@ $wgSharedTables = array(
 
 //$wgCookieDomain = in LocalSettings_private
 
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'cuusoo' );
+
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
 switch ( $host[0] ) {
 	case "meta":
