@@ -62,16 +62,12 @@ define("NS_PORTAL_TALK", 301);
 $wgExtraNamespaces[NS_PORTAL] = "Portal";
 $wgExtraNamespaces[NS_PORTAL_TALK] = "Portal_talk";
 $wgNamespacesWithSubpages[NS_PORTAL] = true;            //subpages enabled for the review namespace
-$wgGroupPermissions['*']['edit'] = true;
-//$wgGroupPermissions['autoconfirmed']['editreview'] = true;
-//$wgGroupPermissions['sysop']['editreview'] = true;
-//$wgContentNamespaces[] = 500;                           //track namespace in Special:Statistics
 
-$wgGroupPermissions['*']['edit'] = false;
-$wgGroupPermissions['user']['edit'] = false;
-$wgGroupPermissions['*']['createtalk'] = false;
+$wgGroupPermissions['*']['edit'] = true;
+$wgGroupPermissions['user']['edit'] = true;
+$wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = false;
-$wgGroupPermissions['*']['createaccount'] = false;
+$wgGroupPermissions['*']['createaccount'] = true;
 $wgGroupPermissions['sysop']['createaccount'] = true;
 $wgGroupPermissions['sysadmin']['createaccount'] = true;
 
@@ -80,8 +76,3 @@ require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 
 #beta test group
 $wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
-$wgGroupPermissions['*']['read'] = false;
-$wgGroupPermissions['user']['read'] = false;
-$wgGroupPermissions['autoconfirmed']['read'] = false;
-$wgGroupPermissions['sysop']['read'] = true;
-$wgGroupPermissions['sysadmin']['read'] = true;
