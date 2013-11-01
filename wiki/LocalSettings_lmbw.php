@@ -23,8 +23,3 @@ $wgGroupPermissions['*']['createpage'] = true;
 
 #beta test group
 $wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
-$wgGroupPermissions['*']['read'] = false;
-$wgGroupPermissions['user']['read'] = false;
-$wgGroupPermissions['autoconfirmed']['read'] = false;
-$wgGroupPermissions['sysop']['read'] = true;
-$wgGroupPermissions['sysadmin']['read'] = true;
