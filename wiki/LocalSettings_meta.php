@@ -6,7 +6,7 @@ $wgLogo             = "http://meta.brickimedia.org/skins/common/images/common-lo
 $wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
-$wgDefaultSkin = 'deepsea';
+$wgDefaultSkin = 'refreshed';
 
 $wgGroupPermissions['board']['read'] = true;
 $wgGroupPermissions['board']['edit'] = true;
