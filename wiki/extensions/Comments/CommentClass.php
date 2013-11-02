@@ -915,7 +915,7 @@ class Comment {
 						if( !array_key_exists( $comment['CommentID'], $voted ) ) {
 							// You can only vote for other people's comments,
 							// not for your own
-							//if( $wgUser->getName() != $comment['Comment_Username'] ) {
+							if( $wgUser->getName() != $comment['Comment_Username'] ) {
 								$output .= "<span id=\"CommentBtn{$comment['CommentID']}\">";
 								if( $this->AllowPlus == true ) {
 									$output .= $this->getVoteLink( $comment['CommentID'], 1 );
@@ -925,13 +925,13 @@ class Comment {
 									$output .= $this->getVoteLink( $comment['CommentID'], -1 );
 								}
 								$output .= '</span>';
-							//} else {
-							//	$output .= wfMsg( 'word-separator' ) . wfMsg( 'comments-you' );
-							//}
+							} else {
+								$output .= wfMsg( 'word-separator' ) . wfMsg( 'comments-you' );
+							}
 						} else {
 							// You can only vote for other people's comments,
 							// not for your own
-							//if( $wgUser->getName() != $comment['Comment_Username'] ) {
+							if( $wgUser->getName() != $comment['Comment_Username'] ) {
 								$output .= "<span id=\"CommentBtn{$comment['CommentID']}\">";
 								if( $this->AllowPlus == true ) {
 									$output .= $this->getVoteLink( $comment['CommentID'], 1, $voted[$comment['CommentID']] );
@@ -941,9 +941,9 @@ class Comment {
 									$output .= $this->getVoteLink( $comment['CommentID'], -1, $voted[$comment['CommentID']] );
 								}
 								$output .= '</span>';
-							//} else {
-							//	$output .= wfMsg( 'word-separator' ) . wfMsg( 'comments-you' );
-							//}
+							} else {
+								$output .= wfMsg( 'word-separator' ) . wfMsg( 'comments-you' );
+							}
 						}
 					}
 				}
