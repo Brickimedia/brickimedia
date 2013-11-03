@@ -1,4 +1,5 @@
-/*
+/* Use screen.css instead. I'm not sure why thsi apge even exists.
+ *
  * Any rules which should not be flipped automatically in right-to-left situations should be
  * prepended with @noflip in a comment block. Images that should be embedded as base64 data-URLs
  * should be prepended with @embed in a comment block.
