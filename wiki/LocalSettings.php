@@ -203,7 +203,7 @@ if( !getenv("noext") ){
 require_once( $ls_path );
 
 
-require_once( "$IP/skins/Refreshed.php" );
+require_once( "$IP/skins/Refreshed/Refreshed.php" );
 $wgDefaultSkin = 'refreshed';
 
 require_once( "$IP/skins/Custard.php" );
@@ -222,7 +222,7 @@ $wgUseSharedUploads = true;
 $wgSharedUploadPath = 'http://meta.brickimedia.org/images/';
 $wgSharedUploadDirectory = '/var/www/wiki/images';
 $wgHashedSharedUploadDirectory = true;
-	
+
 $wgFetchCommonsDescriptions = true;
 $wgSharedUploadDBname = 'meta';  # DB-Name of PoolWiki
 $wgSharedUploadDBprefix = ''; # Table name prefix for PoolWiki
