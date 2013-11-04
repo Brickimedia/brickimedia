@@ -67,7 +67,7 @@ $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;
 $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = false;
-$wgGroupPermissions['*']['createaccount'] = true;
+$wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['sysop']['createaccount'] = true;
 $wgGroupPermissions['sysadmin']['createaccount'] = true;
 
