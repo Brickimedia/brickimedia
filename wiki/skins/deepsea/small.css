@@ -365,7 +365,7 @@ div#simpleSearch {
 	}
 	
 	
-	/*Fixes glitch. Remove it is causes other problems. */
+/*Fixes glitch. Remove it if it causes other problems. */
   #content{
     width: 100% !important;
   }
@@ -409,4 +409,3 @@ div#simpleSearch {
   #p-views, #p-cactions{
     margin-right: -20px !important;
   }
-}
