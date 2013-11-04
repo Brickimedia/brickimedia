@@ -663,6 +663,4 @@ if ( ie6_bugs ) {
 	importScriptURI( mw.config.get( 'stylepath' ) + '/common/IEFixes.js' );
 }
 
-console.log('letstest');
-
 })();
