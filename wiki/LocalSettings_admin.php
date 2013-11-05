@@ -42,19 +42,7 @@ $wgUserStatsPointValues['quiz_created'] = 0; // Points awarded for creating a qu
 $wgNamespacesForEditPoints = array( 0, 4 ); // Array of namespaces that can earn you points. Use numerical keys. 0 is mainspace, 4 is project
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 $wgUserLevels = array(
-        'Newcomer' => 0,
-        'Beginner' => 500,
-        'Novice' => 1000,
-        'Amateur' => 1500,
-        'Thinking With Bricks' => 2000,
-        'Bricktastic' => 2500,
-        'Building Bigger' => 5000,
-        'Brick Master' => 7500,
-        'Master Builder' => 10000,
-        'LEGO Wizard' => 12500,
-        'Outstanding Brickimedian' => 15000,
-        'Honorable Brickimedian' => 20000,
-        'Legendary Brickimedian' => 25000,
+        'Sysop' => 0,
 );
 $wgUserProfileDisplay['stats'] = true;
 
