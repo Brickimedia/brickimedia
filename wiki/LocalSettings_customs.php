@@ -1,7 +1,7 @@
 <?php
 
 //$wgReadOnly = "Sorry, setup is currently being done. Any actions that will modify the database have been disabled";
-$wgSitename      = "Brickipedia Customs";
+$wgSitename      = "Brickimedia Customs";
 $wgMetaNamespace = "Customs";
 
 $wgDBprefix         = "";
