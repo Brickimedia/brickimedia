@@ -5,7 +5,7 @@ $wgSitename      = "Brickimedia Customs";
 $wgMetaNamespace = "Customs";
 
 $wgDBprefix         = "";
-$wgLogo             = "http://meta.brickimedia.org/images/d/d1/Customs-Logo.png";
+$wgLogo             = "http://meta.brickimedia.org/images/4/4e/Customs-Logo.png";
 $wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
