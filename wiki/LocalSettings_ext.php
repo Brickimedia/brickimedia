@@ -98,7 +98,6 @@ require_once( "$IP/extensions/VoteNY/Vote.php" );
 require_once( "$IP/extensions/Comments/Comment.php" );
 require_once( "$IP/extensions/ProtectSite/ProtectSite.php" );
 require_once( "$IP/extensions/DPLForum/DPLforum.php" );
-require_once( "$IP/extensions/CreateBox/CreateBox.php" );
 require_once( "$IP/extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php" );
 require_once ( "$IP/extensions/CheckUser/CheckUser.php" );
 require_once( "$IP/extensions/Editcount/Editcount.php" );
