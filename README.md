@@ -56,7 +56,7 @@ The following tables need to be placed in the shared database:
 
 Further tables to be included in the shared database are in the next step.
 
-Now try accessing the wiki, http://meta.locahost for example. Depending on your configuration, it may send you to a Not Found 404 page. This may be fixed by changing the URL to http://meta.localhost/index.php?title=Main_Page. However, fixing this error is often more complicated. On windows, you will need to edit the ```hosts``` file, see footnote. The page will likely display SQL errors, which will be from missing tables in the databases. To fix this, you can do one of two things. The first option is available if you can use command line:
+Now try accessing the wiki, http://meta.localhost for example. Depending on your configuration, it may send you to a Not Found 404 page. This may be fixed by changing the URL to http://meta.localhost/index.php?title=Main_Page. However, fixing this error is often more complicated. On windows, you will need to edit the ```hosts``` file, see footnote. The page will likely display SQL errors, which will be from missing tables in the databases. To fix this, you can do one of two things. The first option is available if you can use command line:
 ```sh
 # This needs to be the address of the /wiki/maintenance subfolder of your clone
 cd /var/www/brickimedia/wiki/maintenance

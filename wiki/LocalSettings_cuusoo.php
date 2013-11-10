@@ -10,7 +10,7 @@ $wgFavicon = "$wgScriptPath/images/favicons/cuusoo.ico";
 
 $wgLanguageCode = "en";
 
-$wgDefaultSkin = 'refreshed';
+$wgDefaultSkin = 'deepsea';
 
 #SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");

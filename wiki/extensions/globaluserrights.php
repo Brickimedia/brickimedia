@@ -124,6 +124,7 @@ $wgGroupPermissions['bureaucrat']['renameuser'] = false;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod' );
+
 #oversight
 $wgGroupPermissions['oversight']['suppressrevision'] = true;
 $wgGroupPermissions['oversight']['hideuser'] = true;
@@ -157,8 +158,8 @@ $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
 
 #temporary stuff for beta
 $wgGroupPermissions['betatest']['autoconfirmed'] = true;
-$wgAddGroups['bureaucrat'] = array( 'sysadmin', 'betatest' );
-$wgRemoveGroups['bureaucrat'] = array( 'sysadmin', 'betatest' );
+/*$wgAddGroups['bureaucrat'] = array( 'sysadmin', 'betatest' );
+$wgRemoveGroups['bureaucrat'] = array( 'sysadmin', 'betatest' );*/
 $wgAddGroups['sysadmin'] = array( 'sysadmin', 'betatest' );
 $wgRemoveGroups['sysadmin'] = array( 'sysadmin', 'betatest' );
 $wgGroupPermissions['sysadmin']['userrights-global'] = true;

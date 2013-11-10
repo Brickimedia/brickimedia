@@ -17,7 +17,6 @@ html,
 body {
 	height: 100%;
 	margin: 0;
-	padding: 0;
 	font-family: sans-serif;
 	font-size: 1em;
 }
@@ -509,7 +508,7 @@ div#simpleSearch button#searchButton > img {
 /* Panel */
 div#mw-panel {
 	position: absolute;
-	top: 160px;
+	top: 165px;
 	padding-top: 1em;
 	width: 10em;
 	left: 0;
@@ -1270,11 +1269,7 @@ background-position: -16px -16px;
 background-position: -32px -32px;
 }*/
 
-/* CSS placed here will affect users of the Lia skin - Temporairly placed here until Lia.css is created. */
-
-#p-navigation {
-    margin-top: 2em;
-}
+/*Portal styles*/
 
 .portal {
 background-color: #fdfdfd !important;
@@ -1291,6 +1286,10 @@ border: 2px solid #91aacf !important;
 padding-top:5px;
 padding-right:5px;
 margin:5px;
+}
+
+#p-actions {
+	margin-top:30px;
 }
 
 #p-media li {
@@ -1347,10 +1346,6 @@ box-shadow: inset 2px 2px 7px #C9C9C9;
 display:none;
 }
 
-#p-navigation {
-margin-top:25px;
-}
-
 /*test*/
 #p-namespaces {
 display:none;
@@ -1363,6 +1358,7 @@ border-radius:10px;
 
 .button talk {
 margin-left:5px;
+z-index:1;
 }
 
 a.button talk {
