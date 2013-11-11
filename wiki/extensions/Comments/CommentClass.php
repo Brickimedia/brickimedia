@@ -902,11 +902,15 @@ class Comment {
 						self::getTimeAgo( strtotime( $comment['Comment_Date'] ) )
 					) . '</div>' . "\n";
 				wfRestoreWarnings();
+				
+				
 
 				$output .= '<div class="c-score">' . "\n";
+				
+				$votedUsers = $this->getUserVotesString( $comment['CommentID'] );
 
 				if( $this->AllowMinus == true || $this->AllowPlus == true ) {
-					$output .= '<span class="c-score-title">' .
+					$output .= '<span class="c-score-title" title="' . $votedUsers . '">' .
 						wfMsg( 'comments-score-text' ) .
 						" <span id=\"Comment{$comment['CommentID']}\">{$CommentScore}</span></span>";
 
@@ -974,6 +978,36 @@ class Comment {
 		}
 		$output .= '<a id="end" name="end" rel="nofollow"></a>';
 		return $output;
+	}
+	
+	/**
+	 * returns a string of users who have voted for a comment
+	 * @param $id Comment id
+	 * @return string list of users
+	 */
+	function getUserVotesString( $id ){
+		$dbr = wfGetDb( DB_SLAVE );
+		
+		$res = $dbr -> select(
+				'Comments_Vote',
+				'Comment_Vote_Username',
+				array( 'Comment_Vote_ID' => $id )
+		);
+		
+		$string = '';
+		$first = true;
+		
+		foreach( $res as $row ){
+			if ( $first ) {
+				$string .= 'Voted: ';
+			} else {
+				$string .= ', ';
+			}
+			$first = false;
+			$string .= $row->Comment_Vote_Username;
+		}
+		
+		return $string;
 	}
 
 	/**
