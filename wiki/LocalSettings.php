@@ -208,8 +208,7 @@ $wgDefaultSkin = 'refreshed';
 
 require_once( "$IP/skins/Custard.php" );
 
-#disable anonymous editing during beta
-$wgGroupPermissions['*']['edit'] = false;
+$wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;
 
 $wgGroupPermissions['*']['createaccount'] = true;
