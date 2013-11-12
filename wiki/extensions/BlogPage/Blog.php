@@ -28,7 +28,6 @@ $wgExtensionCredits['other'][] = array(
 
 // Define the namespace constants
 define( 'NS_BLOG', 500 );
-define( 'NS_BLOG_TALK', 501 );
 
 // ResourceLoader support for MediaWiki 1.17+
 $blogResourceTemplate = array(
