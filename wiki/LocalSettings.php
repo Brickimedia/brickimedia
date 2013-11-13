@@ -192,7 +192,7 @@ switch ( $host[0] ) {
 		$wgDBname = "cuusoo";
 		break;
 	default:
-		header( 'Location: http://www.brickimedia.org/notfound.html' ) ;
+		//header( 'Location: http://www.brickimedia.org/notfound.html' ) ;
 		exit(0);
 		break;
 	}

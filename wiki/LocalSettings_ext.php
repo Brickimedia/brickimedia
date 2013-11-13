@@ -14,9 +14,9 @@ require_once( "$IP/extensions/Vector/Vector.php" );
 require_once( "$IP/extensions/GlobalUserrights/GlobalUserrights.php" );
 require_once( "$IP/extensions/Interwiki/Interwiki.php" );
 require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
-require_once("$IP/extensions/GlobalBlocking/GlobalBlocking.php");
-require_once("$IP/extensions/globaluserrights.php");
-require_once("$IP/extensions/EditUser/EditUser.php");
+require_once( "$IP/extensions/GlobalBlocking/GlobalBlocking.php" );
+require_once( "$IP/extensions/globaluserrights.php" );
+require_once( "$IP/extensions/EditUser/EditUser.php" );
 
 // Uploads
 $wgEnableUploads = true;
@@ -26,7 +26,7 @@ require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
 //...without reCAPTCHA. --southerner
 //require_once("$IP/extensions/ConfirmEdit/Asirra.php");
 //$wgCaptchaClass = 'Asirra';
-require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php");
+require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php" );
 $wgCaptchaClass = 'QuestyCaptcha';
 $arr = array (
         "What is Brickimedia about?" => "LEGO",
@@ -104,9 +104,9 @@ require_once( "$IP/extensions/Editcount/Editcount.php" );
 require_once( "$IP/extensions/AJAXPoll/AJAXPoll.php" );
 require_once( "$IP/extensions/UserMerge/UserMerge.php" );
 #require_once( "$IP/extensions/LookupUser/LookupUser.php" );
-require_once("$IP/extensions/MediawikiPlayer/MediawikiPlayer.php");
+require_once( "$IP/extensions/MediawikiPlayer/MediawikiPlayer.php" );
 require_once( "$IP/extensions/InputBox/InputBox.php" );
-require_once("$IP/extensions/RandomSelection/RandomSelection.php");
+require_once( "$IP/extensions/RandomSelection/RandomSelection.php" );
 
 // Skins
 //LS_global MUST be before deepsea is included!
@@ -177,22 +177,23 @@ $wgEnableAjaxLogin = array(
 );*/
 
 // Render pdfs
-require_once("$IP/extensions/PdfHandler/PdfHandler.php");
+require_once( "$IP/extensions/PdfHandler/PdfHandler.php" );
 $wgPdfProcessor = 'gs';
 $wgPdfPostProcessor = 'convert';
 $wgPdfInfo = 'pdfinfo';
 
 // More extensions
-require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
+require_once( "$IP/extensions/GlobalUsage/GlobalUsage.php" );
 require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
 	$gcwikis = array( 'meta', 'en', 'customs', 'cuusoo', 'stories', 'dev' );
 require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
-require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
+require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$gaAccount = "UA-38958899-1";
-require_once("$IP/extensions/googleAnalytics/googleAnalytics.php");
+require_once( "$IP/extensions/googleAnalytics/googleAnalytics.php" );
+require_once( "$IP/extensions/NumberOfComments/NumberOfComments.php" );
 
 //Global new talk page message alerts
-require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php");
+require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php" );
 $newTalkGlobalDatabases = array(
 		"meta" => array(
 				"db" => "meta",
