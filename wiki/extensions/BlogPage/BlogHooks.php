@@ -349,7 +349,6 @@ class BlogHooks {
 	 */
 	public static function onCanonicalNamespaces( &$list ) {
 		$list[NS_BLOG] = 'Blog';
-		$list[NS_BLOG_TALK] = 'Blog_talk';
 		return true;
 	}
 
