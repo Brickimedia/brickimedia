@@ -351,3 +351,4 @@ class BlogHooks {
 		$list[NS_BLOG] = 'Blog';
 		return true;
 	}
+}
