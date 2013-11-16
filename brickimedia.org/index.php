@@ -1,5 +1,4 @@
 <?php
-$testers = array('ToaMeiko', 'UltrasonicNXT', 'NovaFlare', 'Ajraddatz', 'Jeyo', 'Berrybrick', 'LSCStealthNinja', 'BrickfilmNut', 'ErkelonJay', 'Legoboy9373', 'Tu-Sais-Qui', 'Djgourhan', 'CJC95', 'CzechMate', 'Klagoer', 'Captain Jag', 'SirComputer');
 $username = $_COOKIE['sharedUserName'];
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
@@ -31,13 +30,8 @@ $username = $_COOKIE['sharedUserName'];
 
 <body>
 <div id="topbar">
-	<?php
-    	if (in_array("$username", $testers)) {
-    		echo "<span class='beta-tools'><span title='You are logged in as a Brickimedia beta tester' class='tooltip'>Beta Tools:</span>
-    <a href='http://meta.brickimedia.org/wiki/Main_Page'>Meta</a> | <a href='http://en.brickimedia.org/wiki/Main_Page'>En</a> | <a href='http://www.github.com/Brickimedia/brickimedia'>GitHub</a></span>";
-		}
-	?>
-    <?php if ($username != "") { echo "<span class='username'><a href='http://meta.brickimedia.org/wiki/Special:MyPage'>$username</a> | <a href='http://meta.brickimedia.org/wiki/Special:MyTalk'>Talk</a></span>"; } ?>
+    <?php if (!empty($username)) { echo "<span class='beta-tools'><span title='You are logged in as a Brickimedia beta tester' class='tooltip'>Beta Tools:</span>
+    <a href='http://meta.brickimedia.org/wiki/Main_Page'>Meta</a> | <a href='http://en.brickimedia.org/wiki/Main_Page'>En</a> | <a href='http://www.github.com/Brickimedia/brickimedia'>GitHub</a></span><span class='username'><a href='http://meta.brickimedia.org/wiki/Special:MyPage'>$username</a> | <a href='http://meta.brickimedia.org/wiki/Special:MyTalk'>Talk</a></span>"; } ?>
 	<img src="img/logo.png" alt="Brickimedia Logo" />
 </div>
 <div id="middle">
