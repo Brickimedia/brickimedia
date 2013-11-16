@@ -1,6 +1,6 @@
 <?php
 
-$wgReadOnly = "Sorry, content is currently being imported. Any actions that will modify the database have been disabled";
+//$wgReadOnly = "Sorry, content is currently being imported. Any actions that will modify the database have been disabled";
 $wgSitename      = "Brickipedia";
 $wgMetaNamespace = "Brickipedia";
 
