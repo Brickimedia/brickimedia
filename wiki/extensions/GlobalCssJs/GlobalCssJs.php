@@ -48,8 +48,5 @@ function wfGlobalCssJs(&$out) {
 }
  
 function efGlobalCssJs() {
-    global $wgMessageCache;
     require_once( dirname( __FILE__ ) . '/GlobalCssJs.i18n.php' );
-    foreach( efGlobalCssJsMessages() as $lang => $messages )
-        $wgMessageCache->addMessages( $messages, $lang );
 }
