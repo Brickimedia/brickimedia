@@ -191,6 +191,8 @@ require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$gaAccount = "UA-38958899-1";
 require_once( "$IP/extensions/googleAnalytics/googleAnalytics.php" );
 require_once( "$IP/extensions/NumberOfComments/NumberOfComments.php" );
+	$wgGlobalCssJsUrl = 'http://meta.brickimedia.org/index.php';
+require_once( "$IP/extensions/GlobalCssJs/GlobalCssJs.php" );
 
 //Global new talk page message alerts
 require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php" );
@@ -224,3 +226,4 @@ $newTalkGlobalDatabases = array(
 				"url" => "http://dev.$bmServerBase/wiki/"
 		)
 );
+
