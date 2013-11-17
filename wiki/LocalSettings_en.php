@@ -14,10 +14,6 @@ $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['upload'] = false;
 $wgGroupPermissions['sysop']['upload'] = true;
 $wgGroupPermissions['sysadmin']['upload'] = true;
-$wgGroupPermissions['import']['import'] = true;
-$wgGroupPermissions['import']['importupload'] = true;
-$wgGroupPermissions['import']['noratelimit'] = true;
-$wgGroupPermissions['import']['apihighlimits'] = true;
 $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;
 
@@ -29,8 +25,8 @@ $ratingsJSONPaths = array(
 require_once("$IP/extensions/are/ArticleRatings.php");
 
 // User groups
-$wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer', 'import' );
-$wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer', 'import' );
+$wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer' );
+$wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer' );
 
 #News namespace
 define("NS_NEWS", 2000);
