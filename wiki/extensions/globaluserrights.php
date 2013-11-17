@@ -50,8 +50,6 @@ $wgGroupPermissions['patroller']['patrol'] = true;
 $wgGroupPermissions['patroller']['autopatrol'] = true;
 $wgGroupPermissions['patroller']['movefile'] = true;
 $wgGroupPermissions['patroller']['globalblock-exempt'] = true;
-
-#rollback
 $wgGroupPermissions['patroller']['rollback'] = true; #HAH! It's part of patroller now! :D
 
 #reviewer
@@ -156,10 +154,6 @@ $wgGroupPermissions['sysadmin']['importupload'] = true;
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;
 $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
 
-#temporary stuff for beta
-$wgGroupPermissions['betatest']['autoconfirmed'] = true;
-/*$wgAddGroups['bureaucrat'] = array( 'sysadmin', 'betatest' );
-$wgRemoveGroups['bureaucrat'] = array( 'sysadmin', 'betatest' );*/
-$wgAddGroups['sysadmin'] = array( 'sysadmin', 'betatest' );
-$wgRemoveGroups['sysadmin'] = array( 'sysadmin', 'betatest' );
-$wgGroupPermissions['sysadmin']['userrights-global'] = true;
+$wgAddGroups['sysadmin'] = array( 'sysadmin' );
+$wgRemoveGroups['sysadmin'] = array( 'sysadmin' );
+
