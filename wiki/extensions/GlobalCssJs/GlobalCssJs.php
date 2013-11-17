@@ -50,11 +50,11 @@ function globalCssJsPrefHook( $user, &$preferences ) {
     $list = array();
 	if ( $wgAllowUserCss ) {
 		$attrs = array( 'href' => "$wgGlobalCssJsUrl?title=User:$name/global.css" );
-		$list[] = HTML::element( 'a', array(), wfMessage( 'prefs-global-css' )->escaped() );
+		$list[] = HTML::element( 'a', $attrs, wfMessage( 'prefs-global-css' )->escaped() );
 	}
 	if ( $wgAllowUserJs ) {
 		$attrs = array( 'href' => "$wgGlobalCssJsUrl?title=User:$name/global.js" );
-		$list[] = HTML::element( 'a', array(), wfMessage( 'prefs-global-js' )->escaped() );
+		$list[] = HTML::element( 'a', $attrs, wfMessage( 'prefs-global-js' )->escaped() );
 	}
 	
 	if( count( $list ) ) {
