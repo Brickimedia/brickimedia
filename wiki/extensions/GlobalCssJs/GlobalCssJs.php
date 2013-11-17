@@ -12,11 +12,11 @@ if(!defined('MEDIAWIKI')) {
 }
  
 $wgExtensionCredits['other'][] = array(
-'name' => 'Global CSS/JS',
-'author' => 'Ryan Schmidt',
-'version' => '2.0.1',
-'url' => 'http://www.mediawiki.org/wiki/Extension:GlobalCssJs',
-'description' => 'Allows global CSS and JS on a "central" wiki to be loaded for all wikis in the farm',
+	'name' => 'Global CSS/JS',
+	'author' => 'Ryan Schmidt',
+	'version' => '2.0.1',
+	'url' => 'http://www.mediawiki.org/wiki/Extension:GlobalCssJs',
+	'description' => 'Allows global CSS and JS on a "central" wiki to be loaded for all wikis in the farm',
 );
  
 $wgExtensionFunctions[] = 'efGlobalCssJs';
@@ -39,17 +39,14 @@ function wfGlobalCssJs(&$out) {
     if($wgUseSiteCss)
         $out->addScript('<style type="text/css">/*<![CDATA[*/ @import "' . $url . '?title=MediaWiki:Global.css&action=raw&ctype=text/css";/*]]>*/</style>' . "\n");
     if($wgUseSiteJs)
-        $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=MediaWiki:Global.js&action=raw&ctype=' . $wgJsMimeType . 'dontcountme=s"></script>' . "\n");
+        $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=MediaWiki:Global.js&action=raw&ctype=' . $wgJsMimeType . '&dontcountme=s"></script>' . "\n");
     if($wgAllowUserCss)
         $out->addScript('<style type="text/css">/*<![CDATA[*/ @import "' . $url . '?title=User:' . $name . '/global.css&action=raw&ctype=text/css"; /*]]>*/</style>' . "\n");
     if($wgAllowUserJs)
-        $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=User:' . $name . '/global.js&action=raw&ctype=' . $wgJsMimeType . 'dontcountme=s"></script>' . "\n");
+        $out->addScript('<script type="' . $wgJsMimeType . '" src="' . $url . '?title=User:' . $name . '/global.js&action=raw&ctype=' . $wgJsMimeType . '&dontcountme=s"></script>' . "\n");
     return true;
 }
  
 function efGlobalCssJs() {
-    global $wgMessageCache;
     require_once( dirname( __FILE__ ) . '/GlobalCssJs.i18n.php' );
-    foreach( efGlobalCssJsMessages() as $lang => $messages )
-        $wgMessageCache->addMessages( $messages, $lang );
 }
