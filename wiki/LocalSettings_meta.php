@@ -28,17 +28,6 @@ $wgGroupPermissions['sysop']['abusefilter-modify-restricted'] = true;
 $wgGroupPermissions['sysop']['abusefilter-revert'] = true;
 $wgGroupPermissions['sysop']['abusefilter-view-private'] = true;
 $wgGroupPermissions['sysop']['abusefilter-log-private'] = true;
-$wgGroupPermissions['janitor']['globalblock'] = true;
-$wgGroupPermissions['janitor']['globalunblock'] = true;
-$wgGroupPermissions['janitor']['abusefilter-modify'] = true;
-$wgGroupPermissions['janitor']['abusefilter-private'] = true;
-$wgGroupPermissions['janitor']['abusefilter-modify-restricted'] = true;
-$wgGroupPermissions['janitor']['abusefilter-revert'] = true;
-$wgGroupPermissions['janitor']['abusefilter-view-private'] = true;
-$wgGroupPermissions['janitor']['abusefilter-log-private'] = true;
-$wgGroupPermissions['janitor']['userrights-interwiki'] = true;
-$wgAddGroups['janitor'] = array( 'bot' );
-$wgRemoveGroups['janitor'] = array( 'bot' );
 
 $wgLocalDatabases = array( 'en', 'customs', 'dev', 'stories', 'cuusoo', 'admin' );
 
