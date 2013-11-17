@@ -577,7 +577,10 @@ class DeepSeaTemplate extends BaseTemplate {
 							'hover' => 'For all your own LEGO Stories' ),
 						'cuusoo' => array( 'name' => 'CUUSOO',
 							'hover' => 'The LEGO CUUSOO Wiki' ),
-						//'dev' => array( 'name' => 'Test' ),
+						'dev' => array( 'name' => 'Dev',
+							'hover' => 'The Brickimedia development wiki' ),
+						'admin' => array( 'name' => 'Admin',
+							'hover' => 'The admin organisation wiki' ),
 					);
 					global $bmProject;
 	
