@@ -9,7 +9,7 @@ $wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
 $wgLanguageCode = "en";
 
 #Skin stuff
-require_once( "$IP/skins/quartz/resources.php" );
+require_once( "$IP/skins/Quartz/quartz/resources.php" );
 $wgDefaultSkin = 'quartz';
 $wgSkipSkins = array("lia", "liamobile", "standard");
 
