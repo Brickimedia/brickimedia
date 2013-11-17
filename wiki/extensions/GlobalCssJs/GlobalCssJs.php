@@ -18,24 +18,19 @@ $wgExtensionCredits['other'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:GlobalCssJs',
 	'description' => 'Allows global CSS and JS on a "central" wiki to be loaded for all wikis in the farm',
 );
- 
-$wgExtensionFunctions[] = 'efGlobalCssJs';
- 
-$wgHooks['UserToggles'][] = 'wfGlobalCssJsAddPrefToggle';
+
+$wgExtensionMessagesFiles[] = __DIR__ . '/GlobalCssJs.i18n.php';
+
 $wgHooks['BeforePageDisplay'][] = 'wfGlobalCssJs';
- 
-function wfGlobalCssJsAddPrefToggle(&$extraToggles) {
-    $extraToggles[] = 'enableglobalcssjs';
-    return true;
-}
- 
+$wgHooks['GetPreferences'][] = 'globalCssJsPrefHook';
+
 function wfGlobalCssJs(&$out) {
     global $wgGlobalCssJsUrl, $wgUser, $wgAllowUserCss, $wgAllowUserJs, $wgJsMimeType, $wgUseSiteCss, $wgUseSiteJs;
     if( !isset($wgGlobalCssJsUrl) || !$wgUser->isLoggedIn() )
             return true;
     $name = urlencode($wgUser->getName());
     $url = $wgGlobalCssJsUrl; // just makes the lines shorter, nothing more.
-    $toggle = $wgUser->getBoolOption('enableglobalcssjs');
+    
     if($wgUseSiteCss)
         $out->addScript('<style type="text/css">/*<![CDATA[*/ @import "' . $url . '?title=MediaWiki:Global.css&action=raw&ctype=text/css";/*]]>*/</style>' . "\n");
     if($wgUseSiteJs)
@@ -47,6 +42,34 @@ function wfGlobalCssJs(&$out) {
     return true;
 }
  
-function efGlobalCssJs() {
-    require_once( dirname( __FILE__ ) . '/GlobalCssJs.i18n.php' );
+function globalCssJsPrefHook( $user, &$preferences ) {
+	global $wgGlobalCssJsUrl, $wgUser, $wgAllowUserCss, $wgAllowUserJs;
+	
+    $name = urlencode($wgUser->getName());
+	
+    $list = array();
+	if ( $wgAllowUserCss ) {
+		$attrs = array( 'href' => "$wgGlobalCssJsUrl?title=User:$name/global.css" );
+		$list[] = HTML::element( 'a', array(), wfMessage( 'prefs-global-css' )->escaped() );
+	}
+	if ( $wgAllowUserJs ) {
+		$attrs = array( 'href' => "$wgGlobalCssJsUrl?title=User:$name/global.js" );
+		$list[] = HTML::element( 'a', array(), wfMessage( 'prefs-global-js' )->escaped() );
+	}
+	
+	if( count( $list ) ) {
+		$string = implode(
+			wfMessage( 'pipe-separator' )->escaped(),
+			$list
+		);
+		$preferences['globalcssjs'] = array(
+			'type' => 'info',
+			'raw' => true,
+			'label-message' => 'prefs-global-css-js', // a system message
+			'section' => 'rendering/skin',
+			'default' => $string
+		);
+	}
+ 
+	return true;
 }
