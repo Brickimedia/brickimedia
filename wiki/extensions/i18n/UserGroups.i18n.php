@@ -3,7 +3,7 @@
 $messages = array();
 $messages['en'] = array(
         'group-sysadmin' => 'System Administrators',
-        'grouppage-sysadmin' => 'm:Technical Department',
+        'grouppage-sysadmin' => 'm:System Administrators',
         'group-sysadmin-member' => 'system administrator',
         'group-board' => 'Brickimedia Board',
         'grouppage-board' => 'm:Board',
