@@ -16,8 +16,12 @@ $defaultRatingsJSONPath = "customs_ratings.json";
 $ratingsJSONPaths = array();
 require_once("$IP/extensions/are/ArticleRatings.php");
 
-$wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'reviewer', 'forumadmin' );
-$wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'reviewer', 'forumadmin' );
+$wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'reviewer' );
+$wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'reviewer' );
+$wgAddGroups['reviewer'][] = 'reviewer'; //Allow CQM users to add other members to that group
+$wgRemoveGroups['sysop'][] = 'newsreporter'; //Allow CQM users to remove other members to that group
+$wgGroupPermissions['sysop']['changeRating'] = true;
+
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing
 require_once( "$IP/extensions/Validator/Validator.php" );

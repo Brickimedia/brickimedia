@@ -27,6 +27,8 @@ require_once("$IP/extensions/are/ArticleRatings.php");
 // User groups
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer' );
+$wgAddGroups['reviewer'][] = 'reviewer'; //Allow QCG and RQM users to add other members to that group
+$wgRemoveGroups['sysop'][] = 'newsreporter'; //Allow QCG and RQM users to remove other members to that group
 
 #News namespace
 define("NS_NEWS", 2000);
