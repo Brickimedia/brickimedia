@@ -10,6 +10,6 @@ $messages['en'] = array(
         'group-board-member' => 'board member',
         'group-chatmod' => 'Chat Moderators',
         'group-chatmod-member' => 'chat moderator',
-        'group-patroller-member' => 'patroller'
+        'group-patroller-member' => 'patroller',
         'group-reviewer-member' => 'reviewer'
 );
