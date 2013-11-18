@@ -2,7 +2,7 @@
 
 //$wgReadOnly = "Sorry, setup is currently being done. Any actions that will modify the database have been disabled";
 $wgSitename      = "LEGO CUUSOO Wiki";
-$wgMetaNamespace = "LEGO CUUSOO Wiki";
+$wgMetaNamespace = "LEGO_CUUSOO_Wiki";
 
 $wgDBprefix = "";
 $wgLogo = "http://meta.brickimedia.org/images/3/37/CUUSOO_Wiki_Logo.png";
