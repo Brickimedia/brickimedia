@@ -3,7 +3,7 @@
 //$wgReadOnly = "Sorry, setup is currently being done. Any actions that will modify the database have been disabled";
 $wgSitename      = "Brickimedia Customs";
 $wgMetaNamespace = "Customs";
-$wgNamespaceAliases['BC'] = NS_PROJECT;
+//$wgNamespaceAliases['BC'] = NS_PROJECT;
 
 $wgDBprefix         = "";
 $wgLogo             = "http://meta.brickimedia.org/images/4/4e/Customs-Logo.png";
