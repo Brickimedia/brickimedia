@@ -2,6 +2,7 @@
 
 $wgSitename      = "LEGO Stories Wiki";
 $wgMetaNamespace = "LEGO_Stories_Wiki";
+$wgNamespaceAliases['LSW'] = NS_PROJECT;
 
 $wgLogo             = "http://meta.brickimedia.org/images/thumb/9/96/LEGO_Stories_Wiki_Logo.png/160px-LEGO_Stories_Wiki_Logo.png";
 $wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
@@ -9,7 +10,7 @@ $wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
 $wgLanguageCode = "en";
 
 #Skin stuff
-require_once( "$IP/skins/quartz/resources.php" );
+require_once( "$IP/skins/Quartz/quartz/resources.php" );
 $wgDefaultSkin = 'quartz';
 $wgSkipSkins = array("lia", "liamobile", "standard");
 

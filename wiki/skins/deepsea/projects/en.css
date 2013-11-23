@@ -1,3 +1,0 @@
-body {
-	/* @embed */	background-image: url(../images/studs-tile-light.png);	background-repeat: repeat;}
-body, #expander, div#mw-panel {	background-color: #3d9ec8;}#p-personal li, #p-media li, div.vectorTabs li, div.vectorMenu, #p-search,div#mw-panel div.portal div.body ul li, .vectorMenu li {	background-color: #BFDBEE;}div.vectorTabs li.selected {	background-color: #FFFFFF;}div.vectorMenu ul {	border: solid 1px #BFDBEE;}/* no longer :visited */div#mw-panel div.portal div.body ul li a, #p-media a, #p-personal adiv.vectorTabs li a, div.vectorMenu li a,div#mw-panel div.portal div.body ul li a {	color: #0645ad;}.submenu a {	background-color: #BFDBEE;}.submenu a:hover {	background-color: #BFDBEE;	text-decoration: none;}

@@ -241,3 +241,5 @@ $wgSVGConverters = array(
 );
 
 $wgLocaltimezone = "UTC";
+
+$wgEnableScaryTranscluding = true;
