@@ -158,7 +158,7 @@ $wgGroupPermissions['patroller']['trusted'] = true;
 $wgNamespaceAliases = array(
         'BP' => NS_PROJECT,
     );
-	
+
 #Verbatim
 require_once("$IP/extensions/Verbatim/verbatim.php");
 
@@ -169,7 +169,7 @@ if( !$bmMobile ){
 	require_once( "$IP/extensions/ClickTracking/ClickTracking.php" );
 	require_once( "$IP/extensions/EmailCapture/EmailCapture.php" );
 	require_once( "$IP/extensions/ArticleFeedback/ArticleFeedback.php" );
- 
+
 	$wgArticleFeedbackLotteryOdds = 100; // Will turn on the voting on all pages
 	$wgArticleFeedbackDashboard = true;
 }
@@ -178,3 +178,4 @@ if( !$bmMobile ){
 $wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
 
 require_once( "$IP/extensions/WikiArticleFeeds/WikiArticleFeeds.php" );
+require_once( "$IP/extensions/CSS/CSS.php" );
