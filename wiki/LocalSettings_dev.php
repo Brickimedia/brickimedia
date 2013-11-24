@@ -70,3 +70,4 @@ require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
 
 $wgDebugLogFile = '/var/log/mw.log';
 $wgGroupPermissions['bureaucrat']['userrights'] = true;
+$wgGroupPermissions['bureaucrat']['editinterface'] = true;
