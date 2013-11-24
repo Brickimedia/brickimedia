@@ -4,6 +4,7 @@
 $wgSitename      = "Brickimedia Customs";
 $wgMetaNamespace = "Customs";
 $wgNamespaceAliases['BC'] = NS_PROJECT;
+$wgNamespacesWithSubpages[NS_PROJECT] = true;
 
 $wgDBprefix         = "";
 $wgLogo             = "http://meta.brickimedia.org/images/4/4e/Customs-Logo.png";
@@ -22,7 +23,6 @@ $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 
 $wgAddGroups['reviewer'][] = 'reviewer'; //Allow CQM users to add other members to that group
 $wgRemoveGroups['sysop'][] = 'newsreporter'; //Allow CQM users to remove other members to that group
 $wgGroupPermissions['sysop']['changeRating'] = true;
-
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing
 require_once( "$IP/extensions/Validator/Validator.php" );
