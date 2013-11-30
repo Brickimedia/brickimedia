@@ -3,6 +3,8 @@
 $wgSitename      = "LEGO Stories Wiki";
 $wgMetaNamespace = "LEGO_Stories_Wiki";
 $wgNamespaceAliases['LSW'] = NS_PROJECT;
+$wgNamespaceAliases['N'] = NS_NINJAGO;
+$wgNamespaceAliases['LU'] = NS_LEGO_UNIVERSE;
 
 $wgLogo             = "http://meta.brickimedia.org/images/thumb/9/96/LEGO_Stories_Wiki_Logo.png/160px-LEGO_Stories_Wiki_Logo.png";
 $wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
@@ -60,9 +62,19 @@ $wgUserProfileDisplay['stats'] = true;
 #Custom namespaces
 define("NS_PORTAL", 300);
 define("NS_PORTAL_TALK", 301);
+define("NS_LEGO_UNIVERSE", 302);
+define("NS_LEGO_UNIVERSE_TALK", 303);
+define("NS_NINJAGO", 304);
+define("NS_NINJAGO_TALK", 305);
 $wgExtraNamespaces[NS_PORTAL] = "Portal";
 $wgExtraNamespaces[NS_PORTAL_TALK] = "Portal_talk";
+$wgExtraNamespaces[NS_LEGO_UNIVERSE] = "LEGO_Universe";
+$wgExtraNamespaces[NS_LEGO_UNIVERSE_TALK] = "LEGO_Universe_talk";
+$wgExtraNamespaces[NS_NINJAGO] = "Ninjago";
+$wgExtraNamespaces[NS_NINJAGO_TALK] = "Ninjago_talk";
 $wgNamespacesWithSubpages[NS_PORTAL] = true;            //subpages enabled for the review namespace
+$wgNamespacesWithSubpages[NS_LEGO_UNIVERSE] = true;
+$wgNamespacesWithSubpages[NS_NINJAGO] = true;
 
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;
