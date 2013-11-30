@@ -2,11 +2,9 @@
 
 $wgSitename      = "LEGO Stories Wiki";
 $wgMetaNamespace = "LEGO_Stories_Wiki";
-$wgNamespaceAliases = array(
-        'LSW' => NS_PROJECT,
-        'N'   => NS_NINJAGO,
-        'LU'  => NS_LEGO_UNIVERSE
-);
+$wgNamespaceAliases['LSW'] = NS_PROJECT;
+$wgNamespaceAliases['N'] = NS_NINJAGO;
+$wgNamespaceAliases['LU'] = NS_LEGO_UNIVERSE;
 
 $wgLogo             = "http://meta.brickimedia.org/images/thumb/9/96/LEGO_Stories_Wiki_Logo.png/160px-LEGO_Stories_Wiki_Logo.png";
 $wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
