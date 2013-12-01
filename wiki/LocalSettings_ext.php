@@ -30,9 +30,10 @@ require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php" );
 $wgCaptchaClass = 'QuestyCaptcha';
 $arr = array (
         "What is Brickimedia about?" => "LEGO",
-        'Please write the magic word, "passion", here:' => 'passion',
-        'Type the code word, 567, here:' => '567',
-        'What is half of 8?' => '4',
+        'Please write the magic word, "energy", here:' => 'energy',
+        'Type the code word, 329, here:' => '329',
+        'What is half of 6?' => '3',
+        'Write the number 4 in letters:' => 'four',
 );
 foreach ( $arr as $key => $value ) {
         $wgCaptchaQuestions[] = array( 'question' => $key, 'answer' => $value );
