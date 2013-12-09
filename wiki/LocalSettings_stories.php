@@ -1,5 +1,12 @@
 <?php
 
+define("NS_PORTAL", 300);
+define("NS_PORTAL_TALK", 301);
+define("NS_LEGO_UNIVERSE", 302);
+define("NS_LEGO_UNIVERSE_TALK", 303);
+define("NS_NINJAGO", 304);
+define("NS_NINJAGO_TALK", 305);
+
 $wgSitename      = "LEGO Stories Wiki";
 $wgMetaNamespace = "LEGO_Stories_Wiki";
 $wgNamespaceAliases['LSW'] = NS_PROJECT;
@@ -60,12 +67,6 @@ $wgUserLevels = array(
 $wgUserProfileDisplay['stats'] = true;
 
 #Custom namespaces
-define("NS_PORTAL", 300);
-define("NS_PORTAL_TALK", 301);
-define("NS_LEGO_UNIVERSE", 302);
-define("NS_LEGO_UNIVERSE_TALK", 303);
-define("NS_NINJAGO", 304);
-define("NS_NINJAGO_TALK", 305);
 $wgExtraNamespaces[NS_PORTAL] = "Portal";
 $wgExtraNamespaces[NS_PORTAL_TALK] = "Portal_talk";
 $wgExtraNamespaces[NS_LEGO_UNIVERSE] = "LEGO_Universe";
