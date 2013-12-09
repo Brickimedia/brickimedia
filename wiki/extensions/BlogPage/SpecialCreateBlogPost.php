@@ -136,7 +136,7 @@ class SpecialCreateBlogPost extends SpecialPage {
 					// Instead of <vote />, Wikia had Template:Blog Top over
 					// here and Template:Blog Bottom at the bottom, where we
 					// have the comments tag right now
-						$wgRequest->getVal( 'pageBody' ) . "\n\n" .
+						$wgRequest->getVal( 'pageBody' ) . "\n\n==Comments ({{NUMBEROFCOMMENTS}})" .
 						'<comments />' . "\n\n" . $wikitextCategories .
 						"\n__NOEDITSECTION__",
 					wfMsgForContent( 'blog-create-summary' )
