@@ -26,18 +26,25 @@ require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
 //...without reCAPTCHA. --southerner
 //require_once("$IP/extensions/ConfirmEdit/Asirra.php");
 //$wgCaptchaClass = 'Asirra';
-require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php" );
-$wgCaptchaClass = 'QuestyCaptcha';
-$arr = array (
-        "What is Brickimedia about?" => "LEGO",
-        'Please write the magic word, "energy", here:' => 'energy',
-        'Type the code word, 329, here:' => '329',
-        'What is half of 6?' => '3',
-        'Write the number 4 in letters:' => 'four',
-);
-foreach ( $arr as $key => $value ) {
-        $wgCaptchaQuestions[] = array( 'question' => $key, 'answer' => $value );
-}
+//require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php" );
+//$wgCaptchaClass = 'QuestyCaptcha';
+//$arr = array (
+//        "What is Brickimedia about?" => "LEGO",
+//        'Please write the magic word, "energy", here:' => 'energy',
+//        'Type the code word, 329, here:' => '329',
+//        'What is half of 6?' => '3',
+//        'Write the number 4 in letters:' => 'four',
+//);
+//foreach ( $arr as $key => $value ) {
+//        $wgCaptchaQuestions[] = array( 'question' => $key, 'answer' => $value );
+//}
+//QuestyCaptcha is unreliable. --Seahorse
+require_once "$IP/extensions/ConfirmEdit/FancyCaptcha.php";
+$wgCaptchaClass = 'FancyCaptcha';
+$wgCaptchaDirectory = "/var/www/images/captcha";
+$wgCaptchaDirectoryLevels = 0; // Set this to a value greater than zero to break the images into subdirectories
+$wgCaptchaSecret = "brickimediacaptcha7";
+
 $wgGroupPermissions['autoconfirmed']['skipcaptcha'] = true;
 $wgGroupPermissions['bot']['skipcaptcha'] = true;
 $wgGroupPermissions['sysadmin']['skipcatcha'] = true;
