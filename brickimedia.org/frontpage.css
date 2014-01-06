@@ -1,17 +1,19 @@
 body {
-	background: url(img/bg.jpg) 0px 0px no-repeat fixed;
+	background: url(img/bg.jpg) 0 0 no-repeat fixed;
 	background-size: cover;
-	padding: 0px;
+	padding: 0;
 	font-family: 'Lato', sans-serif;
 }
 #header {
 	width: 100%;
 	height: 100px;
 	position: fixed;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	background: #002541 url(img/stud-cyan.png) bottom right repeat-x;
-	box-shadow: 0 0px 10px #000000;
+	-webkit-box-shadow: 0 0 10px #000;
+	-moz-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
 	font-family: 'Lato', sans-serif;
 	font-size: 17px;
 	z-index: 1;
@@ -23,8 +25,8 @@ body {
 }
 #header-cover {
 	position: fixed;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100px;
 	display: table;
@@ -36,9 +38,7 @@ body {
 	vertical-align: middle;
 }
 #header-logo img {
-	margin-left: 10px;
-	margin-bottom: 35px;
-	margin-top: 7px;
+	margin: 7px 0 35px 10px;
 }
 #header-links-cont {
 	display: table-cell;
@@ -58,6 +58,7 @@ body {
 	text-align: center;
 }
 .header-links-a:hover {
+	background: rgb(65,158,200);
 	background: rgba(65,158,200,.6);
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
@@ -66,9 +67,8 @@ body {
 	transition: all .5s;
 }
 #header-links-cont a {
-	margin-right: 20px;
-	margin-left: 20px;
-	color: #ffffff;
+	margin: 0 20px;
+	color: #fff;
 	text-decoration: none;
 }
 #content {
@@ -77,9 +77,8 @@ body {
 #bodycontent {
 	width: 100%;
 	max-width: 1000px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 25px;
+	margin: 0 25px auto;
+	background: rgb(65,158,200);
 	background: rgba(65,158,200,0.7);
 	padding: 20px;
 	color: #ffffff;
@@ -88,7 +87,7 @@ body {
 	color: #eaeaea;
 }
 #bodycontent a:hover {
-	color: #ffffff;
+	color: #fff;
 }
 .intro {
 	text-align: center !important;
@@ -105,19 +104,18 @@ body {
 	width: 60px;
 	height: 18px;
 	background: url(img/bullet.png) 0 0 repeat-x;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin: 50px auto;
 }
 #wiki-nav {
 	display: table;
 	width: 90%;
 	height: 70px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 	text-align: center;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
 	border-radius: 35px;
+	background: rgb(249,249,249);
 	background: rgba(249,249,249,0.4);
 }
 .wiki-nav-item {
@@ -133,18 +131,20 @@ body {
 	font-size: 110%;
 }
 .wiki-nav-item a {
-	color: #ffffff !important;
+	color: #fff !important;
 	text-decoration: none;
 	display: block;
 	line-height: 4em;
 }
 .meta {
-	border-top-left-radius: 35px;
-	border-bottom-left-radius: 35px;
+	-webkit-border-radius: 0 0 35px 35px;
+	-moz-border-radius: 0 0 35px 35px;
+	border-radius: 0 0 35px 35px;
 }
 .cuusoo {
-	border-top-right-radius: 35px;
-	border-bottom-right-radius: 35px;
+	-webkit-border-radius: 35px 35px 0 0;
+	-moz-border-radius: 35px 35px 0 0;
+	border-radius: 35px 35px 0 0;
 }
 .meta:hover {
 	background: #89959E;
@@ -175,12 +175,10 @@ h1 {
 	padding: 10px;
 }
 .engage-table-cell img {
-	margin-right: 5px;
-	margin-left: 5px;
+	margin: 0 5px;
 }
 .fb-like {
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 #ad {
 	margin-top: 25px;
@@ -198,7 +196,7 @@ h1 {
     #ad {
 	display: none;
     }
-    html, body, p { width: 100%; display: block; margin: 0px; padding: 0px; }
+    html, body, p { width: 100%; display: block; margin: 0; padding: 0; }
     .wiki-nav-item {
 	display: block;
     }
