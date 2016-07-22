@@ -1,3 +1,6 @@
+#DEFUNCT
+This repository and organisation are no longer here, we have moved to Wikimedia Phabricator (see [#454](https://github.com/Brickimedia/brickimedia/issues/454)) - Please create an account there and report issues at https://phabricator.wikimedia.org/maniphest/task/edit/form/1/ :)
+
 Brickimedia
 ===========
 
